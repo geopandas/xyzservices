@@ -18,7 +18,7 @@ jobs:
     strategy:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
-        environment-file: ci/latest.yaml
+        environment-file: [ci/latest.yaml]
 
     steps:
       - name: checkout repo
