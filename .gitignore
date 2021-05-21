@@ -1,3 +1,6 @@
+# Extra XYZservices
+provider_sources/leaflet-providers-raw.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
