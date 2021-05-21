@@ -6,7 +6,7 @@ Will be replaced by the actual tests once the loading machinery is in place.
 """
 
 from contextily import providers
-import xyzservices as xyz
+import xyzservices.providers as xyz
 
 _all = providers.keys()
 
