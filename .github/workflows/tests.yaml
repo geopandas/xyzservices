@@ -30,6 +30,16 @@ jobs:
           environment-file: ${{ matrix.environment-file }}
           micromamba-version: 'latest'
 
+      - name: Install xyzservices
+        shell: bash -l {0}
+        run: pip install .
+        if: matrix.os != 'windows-latest'
+
+      - name: Install xyzservices
+        shell: powershell
+        run: pip install .
+        if: matrix.os == 'windows-latest'
+
       - name: run tests - bash
         shell: bash -l {0}
         run: pytest -v .
