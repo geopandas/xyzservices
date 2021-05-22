@@ -8,7 +8,7 @@ setuptools.setup(
     author_email="daniel.arribas.bel@gmail.com",
     license="3-Clause BSD",
     packages=setuptools.find_packages(),
-    python_requires=">=3.6",
+    python_requires=">=3.7",
     package_data={
         "xyzservices": ["provider_sources/leaflet-providers-parsed.json"],
     },
