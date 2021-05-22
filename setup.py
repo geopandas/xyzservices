@@ -9,4 +9,7 @@ setuptools.setup(
     license="3-Clause BSD",
     packages=setuptools.find_packages(),
     python_requires=">=3.6",
+    package_data={
+        "provider_sources": ["leaflet-providers-parsed.json"],
+    },
 )
