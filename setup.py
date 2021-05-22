@@ -1,4 +1,17 @@
 import setuptools
+import os, sys, shutil
+
+
+# store the source JSON in `share/xyzservices`
+datadir = os.path.join(sys.prefix, "share", "xyzservices")
+if not os.path.exists(datadir):
+    os.makedirs(datadir)
+
+shutil.copyfile(
+    "./xyzservices/provider_sources/leaflet-providers-parsed.json",
+    os.path.join(datadir, "providers.json"),
+)
+
 
 setuptools.setup(
     name="xyzservices",
