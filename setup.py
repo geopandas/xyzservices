@@ -10,6 +10,8 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     python_requires=">=3.6",
     package_data={
-        "provider_sources": ["provider_sources/leaflet-providers-parsed.json"],
+        "provider_sources": [
+            "xyzservices/provider_sources/leaflet-providers-parsed.json"
+        ],
     },
 )
