@@ -1,4 +1,5 @@
 import setuptools
+import versioneer
 
 with open("README.md", "r", encoding="utf8") as fh:
     long_description = fh.read()
@@ -8,7 +9,6 @@ setuptools.setup(
     description="Source of XYZ tiles providers",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    version="0.0.0",
     url="https://github.com/geopandas/xyzservices",
     author="Dani Arribas-Bel, Martin Fleischmann",
     author_email="daniel.arribas.bel@gmail.com, martin@martinfleischmann.net",
@@ -24,4 +24,6 @@ setuptools.setup(
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3 :: Only",
     ],
+    version=versioneer.get_version(),
+    cmdclass=versioneer.get_cmdclass(),
 )
