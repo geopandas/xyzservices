@@ -16,7 +16,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     python_requires=">=3.7",
     package_data={
-        "provider_sources": ["leaflet-providers-parsed.json"],
+        "xyzservices": ["provider_sources/leaflet-providers-parsed.json"],
     },
     classifiers=[
         "License :: OSI Approved :: BSD License",

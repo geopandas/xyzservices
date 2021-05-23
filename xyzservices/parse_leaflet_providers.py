@@ -229,11 +229,11 @@ def generate_file(data, description):
 
 if __name__ == "__main__":
     data, description = get_json_data()
-    with open("../provider_sources/leaflet-providers-raw.json", "w") as f:
+    with open("provider_sources/leaflet-providers-raw.json", "w") as f:
         json.dump(data, f)
 
     result = process_data(data)
-    with open("../provider_sources/leaflet-providers-parsed.json", "w") as f:
+    with open("provider_sources/leaflet-providers-parsed.json", "w") as f:
         # wanted to add this as header to the file, but JSON does not support
         # comments
         print(
