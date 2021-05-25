@@ -1,0 +1,3 @@
+include versioneer.py
+include xyzservices/_version.py
+include LICENSE
