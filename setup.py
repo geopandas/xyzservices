@@ -9,7 +9,7 @@ if not os.path.exists(datadir):
     os.makedirs(datadir)
 
 shutil.copyfile(
-    "./xyzservices/provider_sources/leaflet-providers-parsed.json",
+    "./xyzservices/data/providers.json",
     os.path.join(datadir, "providers.json"),
 )
 
@@ -29,7 +29,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     python_requires=">=3.7",
     package_data={
-        "xyzservices": ["provider_sources/leaflet-providers-parsed.json"],
+        "providers": ["data/providers.json"],
     },
     classifiers=[
         "License :: OSI Approved :: BSD License",
