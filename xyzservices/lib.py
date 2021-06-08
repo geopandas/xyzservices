@@ -29,10 +29,9 @@ class TileProvider(Bunch):
         return new
 
 
-def _load_json(path):
+def _load_json(f):
 
-    with open(path, "r") as f:
-        data = json.load(f)
+    data = json.loads(f)
 
     providers = Bunch()
 
