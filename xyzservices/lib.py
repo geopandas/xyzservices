@@ -41,7 +41,8 @@ class TileProvider(Bunch):
             tile number
         scale_factor : str
             Scale factor (where supported). For example, you can get double resolution
-            (512 x 512) instead of standard one (256 x 256) with ``"@2x"``
+            (512 x 512) instead of standard one (256 x 256) with ``"@2x"``. If you want
+            to keep a placeholder, pass `"{r}"`.
 
         Returns
         -------
