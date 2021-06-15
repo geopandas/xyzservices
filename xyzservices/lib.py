@@ -190,8 +190,12 @@ dd {
     display: none;
 }
 
-.xyz-checkbox:checked ~ .xyz-inside {
+.xyz-checkbox:checked~.xyz-inside {
     display: contents;
+}
+
+.xyz-collapsible li>input {
+    display: none;
 }
 
 .xyz-collapsible>li>label {
@@ -207,20 +211,16 @@ ul.xyz-collapsible {
     padding-left: 20px!important;
 }
 
-.xyz-checkbox + label:before {
+.xyz-checkbox+label:before {
     content: '►';
     font-size: 11px;
 }
 
-.xyz-checkbox:checked + label:before {
+.xyz-checkbox:checked+label:before {
     content: '▼';
 }
 
 .xyz-wrap {
     margin-bottom: 10px;
-}
-
-.xyz-collapsible li>input {
-    display: none;
 }
 """
