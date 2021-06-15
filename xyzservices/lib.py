@@ -28,9 +28,9 @@ class Bunch(dict):
             uid = str(uuid.uuid4())
             children += f"""
             <li class="xyz-child">
-                <label for="{uid}">{key} <span>{obj}</span></label>
                 <input type="checkbox" id="{uid}" class="xyz-checkbox"/>
-                <div style="xyz-inside">
+                <label for="{uid}">{key} <span>{obj}</span></label>
+                <div class="xyz-inside">
                     {self[key]._repr_html_(inside=True)}
                 </div>
             </li>
@@ -186,16 +186,12 @@ dd {
     padding-left: 10px;
 }
 
-.xyz-collapsible li>input+* {
+.xyz-inside {
     display: none;
 }
 
-.xyz-collapsible li>input:checked+* {
-    display: block;
-}
-
-.xyz-collapsible li>input {
-    display: none;
+.xyz-checkbox:checked ~ .xyz-inside {
+    display: contents;
 }
 
 .xyz-collapsible>li>label {
@@ -211,16 +207,20 @@ ul.xyz-collapsible {
     padding-left: 20px!important;
 }
 
-li.xyz-child:before {
+.xyz-checkbox + label:before {
     content: '►';
     font-size: 11px;
 }
 
-input:checked+li.xyz-child:before {
+.xyz-checkbox:checked + label:before {
     content: '▼';
 }
 
 .xyz-wrap {
     margin-bottom: 10px;
+}
+
+.xyz-collapsible li>input {
+    display: none;
 }
 """
