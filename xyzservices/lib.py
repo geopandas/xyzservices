@@ -33,8 +33,10 @@ class TileProvider(Bunch):
         Returns True if the TileProvider requires access token to fetch tiles
         """
         # both attribute and placeholder in url are required to make it work
-        if hasattr(self, "accessToken") and "accessToken" in self.url:
-            return True
+        for key, val in self.items():
+            if isinstance(val, str) and "<insert your" in val:
+                if key in self.url:
+                    return True
         return False
 
 
