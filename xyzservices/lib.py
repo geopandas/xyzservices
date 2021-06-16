@@ -28,7 +28,7 @@ class TileProvider(Bunch):
         new.update(kwargs)
         return new
 
-    def build_url(self, x=None, y=None, z=None, scale_factor=None):
+    def build_url(self, x=None, y=None, z=None, token=None, scale_factor=None):
         """
         Build the URL of tiles from the TileProvider object
 
@@ -39,7 +39,9 @@ class TileProvider(Bunch):
 
         x, y, z : int
             tile number
-        scale_factor : str
+        token : str (optional)
+            Access token (or API key or similar) for the tiles requiring one.
+        scale_factor : str (optional)
             Scale factor (where supported). For example, you can get double resolution
             (512 x 512) instead of standard one (256 x 256) with ``"@2x"``. If you want
             to keep a placeholder, pass `"{r}"`.
@@ -62,6 +64,9 @@ class TileProvider(Bunch):
         >>> xyz.CartoDB.DarkMatter.build_url(x=9, y=11, z=5, scale_factor="@2x")
         'https://a.basemaps.cartocdn.com/dark_all/5/9/11@2x.png'
 
+        >>> xyz.MapBox.build_url(token="my_token")
+        'https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token=my_token'
+
         """
         provider = self.copy()
 
@@ -71,6 +76,11 @@ class TileProvider(Bunch):
             y = "{y}"
         if not z:
             z = "{z}"
+
+        if token:
+            for key, val in provider.items():
+                if isinstance(val, str) and "<insert your" in val:
+                    provider[key] = token
 
         url = provider.pop("url")
         subdomains = provider.pop("subdomains", "abc")

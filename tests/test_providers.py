@@ -32,6 +32,7 @@ def test_build_url():
             "name": "my_public_provider",
         }
     )
+
     retina = TileProvider(
         {
             "url": "https://myserver.com/tiles/{z}/{x}/{y}{r}.png",
@@ -49,6 +50,15 @@ def test_build_url():
         }
     )
 
+    required_token = TileProvider(
+        {
+            "url": "https://myserver.com/tiles/{z}/{x}/{y}_{api_token}.png",
+            "attribution": "(C) xyzservices",
+            "name": "my_public_provider",
+            "api_token": "<insert your API token here>",
+        }
+    )
+
     expected = "https://myserver.com/tiles/{z}/{x}/{y}.png"
     assert basic.build_url() == expected
 
@@ -63,3 +73,6 @@ def test_build_url():
 
     expected = "https://myserver.com/tiles/3/1/2@5x.png"
     assert retina.build_url(1, 2, 3, scale_factor="@5x") == expected
+
+    expected = "https://myserver.com/tiles/{z}/{x}/{y}_my_token.png"
+    assert required_token.build_url(token="my_token") == expected
