@@ -141,11 +141,11 @@ def pythonize_data(data):
 
 if __name__ == "__main__":
     data, description = get_json_data()
-    with open("../provider_sources/leaflet-providers-raw.json", "w") as f:
+    with open("./leaflet-providers-raw.json", "w") as f:
         json.dump(data, f)
 
     result = process_data(data)
-    with open("../provider_sources/leaflet-providers-parsed.json", "w") as f:
+    with open("./leaflet-providers-parsed.json", "w") as f:
         result["_meta"] = {
             "description": (
                 "JSON representation of the leaflet providers defined by the "

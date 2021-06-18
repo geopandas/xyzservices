@@ -9,12 +9,12 @@ The compressed JSON is shipped with the package.
 
 import json
 
-with open("../provider_sources/leaflet-providers-parsed.json", "r") as f:
+with open("./leaflet-providers-parsed.json", "r") as f:
     leaflet = json.load(f)
     # remove meta data
     leaflet.pop("_meta", None)
 
-with open("../provider_sources/xyzservices-providers.json", "r") as f:
+with open("./xyzservices-providers.json", "r") as f:
     xyz = json.load(f)
     # remove templates
     xyz.pop("single_provider_name")
@@ -24,5 +24,5 @@ with open("../provider_sources/xyzservices-providers.json", "r") as f:
 # combine both
 leaflet.update(xyz)
 
-with open("./data/providers.json", "w") as f:
+with open("../xyzservices/data/providers.json", "w") as f:
     json.dump(leaflet, f)
