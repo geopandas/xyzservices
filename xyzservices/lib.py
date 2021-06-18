@@ -74,7 +74,7 @@ class TileProvider(Bunch):
 
         Can return URL with placeholders or the final tile URL.
 
-        Attributes
+        Parameters
         ----------
 
         x, y, z : int
