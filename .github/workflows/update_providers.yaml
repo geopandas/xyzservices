@@ -1,6 +1,12 @@
 name: Update leaflet providers
 
 on:
+  push:
+    branches:
+      - '*'
+  pull_request:
+    branches:
+      - '*'
   schedule:
       - cron: '42 23 1,15 * *'
   workflow_dispatch:
