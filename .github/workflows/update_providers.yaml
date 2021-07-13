@@ -42,15 +42,11 @@ jobs:
           python _parse_leaflet_providers.py
 
       - name: Commit files
+        uses: actions/checkout@v2
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           git add provider_sources/leaflet-providers-parsed.json
-          git commit -m "Update leaflet providers" -a
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          force: true
+          git commit -m "Update leaflet providers"
+          git push
 
