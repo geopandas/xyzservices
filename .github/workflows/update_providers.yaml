@@ -1,0 +1,48 @@
+name: Update leaflet providers
+
+on:
+  schedule:
+      - cron: '42 23 1,15 * *'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Manual update reason
+        default: refresh
+        required: false
+
+jobs:
+  unittests:
+    name: Update leaflet providers
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      matrix:
+        environment-file: [ci/update_providers.yaml]
+
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v2
+
+      - name: setup micromamba
+        uses: mamba-org/provision-with-micromamba@main
+        with:
+          environment-file: ${{ matrix.environment-file }}
+          micromamba-version: 'latest'
+
+      - name: Parse leaflet providers
+        shell: bash -l {0}
+        run: python provider_sources/_parse_leaflet_providers.py
+
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add provider_sources/leaflet-providers-parsed.json
+          git commit -m "Update leaflet providers" -a
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true
+
