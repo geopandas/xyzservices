@@ -5,3 +5,4 @@ dependencies:
   - python
   # tests
   - pytest
+  - pytest-cov

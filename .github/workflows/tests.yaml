@@ -42,10 +42,12 @@ jobs:
 
       - name: run tests - bash
         shell: bash -l {0}
-        run: pytest -v .
+        run: pytest -v . --cov=xyzservices --cov-append --cov-report term-missing --cov-report xml
         if: matrix.os != 'windows-latest'
 
       - name: run tests - powershell
         shell: powershell
-        run: pytest -v .
+        run: pytest -v . --cov=xyzservices --cov-append --cov-report term-missing --cov-report xml
         if: matrix.os == 'windows-latest'
+
+      - uses: codecov/codecov-action@v1
