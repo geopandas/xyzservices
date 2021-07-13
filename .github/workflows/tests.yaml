@@ -49,3 +49,5 @@ jobs:
         shell: powershell
         run: pytest -v . --cov=xyzservices --cov-append --cov-report term-missing --cov-report xml
         if: matrix.os == 'windows-latest'
+
+      - uses: codecov/codecov-action@v1
