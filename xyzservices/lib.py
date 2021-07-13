@@ -135,6 +135,17 @@ class TileProvider(Bunch):
 
         return url.format(x=x, y=y, z=z, s=subdomains[0], r=r, **provider)
 
+    def requires_token(self):
+        """
+        Returns True if the TileProvider requires access token to fetch tiles
+        """
+        # both attribute and placeholder in url are required to make it work
+        for key, val in self.items():
+            if isinstance(val, str) and "<insert your" in val:
+                if key in self.url:
+                    return True
+        return False
+
     def _repr_html_(self, inside=False):
         provider_info = ""
         for key, val in self.items():
