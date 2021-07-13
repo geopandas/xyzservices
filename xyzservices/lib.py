@@ -77,7 +77,7 @@ class TileProvider(Bunch):
         Parameters
         ----------
 
-        x, y, z : int
+        x, y, z : int (optional)
             tile number
         token : str (optional)
             Access token (or API key or similar) for the tiles requiring one.
@@ -110,11 +110,11 @@ class TileProvider(Bunch):
         """
         provider = self.copy()
 
-        if not x:
+        if x is not None:
             x = "{x}"
-        if not y:
+        if y is not None:
             y = "{y}"
-        if not z:
+        if z is not None:
             z = "{z}"
 
         if token:
