@@ -42,7 +42,10 @@ def get_json_data():
 
         index_path = "file://" + os.path.join(tmpdirname, "index.html")
 
-        driver = selenium.webdriver.Firefox()
+        opts = selenium.webdriver.FirefoxOptions()
+        opts.add_argument("--headless")
+
+        driver = selenium.webdriver.Firefox(options=opts)
         driver.get(index_path)
         data = driver.execute_script(
             "return JSON.stringify(L.TileLayer.Provider.providers)"

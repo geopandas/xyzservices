@@ -37,7 +37,9 @@ jobs:
 
       - name: Parse leaflet providers
         shell: bash -l {0}
-        run: python provider_sources/_parse_leaflet_providers.py
+        run: |
+          cd provider_sources
+          python _parse_leaflet_providers.py
 
       - name: Commit files
         run: |
