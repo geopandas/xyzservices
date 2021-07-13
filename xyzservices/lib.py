@@ -68,6 +68,17 @@ class TileProvider(Bunch):
         new.update(kwargs)
         return new
 
+    def requires_token(self):
+        """
+        Returns True if the TileProvider requires access token to fetch tiles
+        """
+        # both attribute and placeholder in url are required to make it work
+        for key, val in self.items():
+            if isinstance(val, str) and "<insert your" in val:
+                if key in self.url:
+                    return True
+        return False
+
     def _repr_html_(self, inside=False):
         provider_info = ""
         for key, val in self.items():
