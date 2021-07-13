@@ -110,11 +110,11 @@ class TileProvider(Bunch):
         """
         provider = self.copy()
 
-        if x is not None:
+        if x is None:
             x = "{x}"
-        if y is not None:
+        if y is None:
             y = "{y}"
-        if z is not None:
+        if z is None:
             z = "{z}"
 
         if token:
