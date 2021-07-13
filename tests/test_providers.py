@@ -77,6 +77,9 @@ def test_build_url():
     expected = "https://myserver.com/tiles/{z}/{x}/{y}_my_token.png"
     assert required_token.build_url(api_token="my_token") == expected
 
+    with pytest.raises(ValueError, match="Token is required for this provider"):
+        required_token.build_url()
+
 
 def test_requires_token():
     private_provider = TileProvider(
@@ -147,3 +150,15 @@ def test_html_repr():
     assert bunch_repr.count('<li class="xyz-child">') == 2
     assert bunch_repr.count('<div class="xyz-wrap">') == 3
     assert bunch_repr.count('<div class="xyz-header">') == 3
+
+
+def test_copy():
+    basic = TileProvider(
+        {
+            "url": "https://myserver.com/tiles/{z}/{x}/{y}.png",
+            "attribution": "(C) xyzservices",
+            "name": "my_public_provider",
+        }
+    )
+    basic2 = basic.copy()
+    assert isinstance(basic2, TileProvider)

@@ -68,6 +68,10 @@ class TileProvider(Bunch):
         new.update(kwargs)
         return new
 
+    def copy(self, **kwargs):
+        new = TileProvider(self)  # takes a copy preserving the class
+        return new
+
     def build_url(self, x=None, y=None, z=None, scale_factor=None, **kwargs):
         """
         Build the URL of tiles from the TileProvider object
