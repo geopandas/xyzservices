@@ -28,8 +28,6 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.PAT }}
 
       - name: setup micromamba
         uses: mamba-org/provision-with-micromamba@main
