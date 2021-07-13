@@ -47,5 +47,5 @@ jobs:
           git config user.email github-actions@github.com
           git add provider_sources/leaflet-providers-parsed.json
           git commit -m "Update leaflet providers"
-          git push
+          git push origin HEAD:main
 
