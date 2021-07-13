@@ -42,7 +42,7 @@ jobs:
           python _parse_leaflet_providers.py
 
       - name: Commit files
-        uses: actions/checkout@v2
+        # uses: actions/checkout@v2
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
