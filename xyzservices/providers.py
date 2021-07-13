@@ -1,17 +1,15 @@
 import importlib.resources
 import os, sys
 
-from . import provider_sources
+from . import data
 from .lib import _load_json
 
-data = os.path.join(sys.prefix, "share", "xyzservices", "providers.json")
+data_path = os.path.join(sys.prefix, "share", "xyzservices", "providers.json")
 
-if os.path.exists(data):
-    with open(data, "r") as f:
+if os.path.exists(data_path):
+    with open(data_path, "r") as f:
         json = f.read()
 else:
-    json = importlib.resources.read_text(
-        provider_sources, "leaflet-providers-parsed.json"
-    )
+    json = importlib.resources.read_text(data, "providers.json")
 
 providers = _load_json(json)
