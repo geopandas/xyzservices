@@ -13,10 +13,11 @@
             "name": "OpenStreetMap.Mapnik"
         },
         "second_provider_name": {
-            "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+            "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?access-token={accessToken}",
             "max_zoom": 19,
             "attribution": "(C) OpenStreetMap contributors",
-            "name": "OpenStreetMap.Mapnik"
+            "name": "OpenStreetMap.Mapnik",
+            "accessToken": "<insert your access token here>"
         }
     }
 }
