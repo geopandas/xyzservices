@@ -1,5 +1,5 @@
 """
-IMPORTANT: copied from:
+IMPORTANT: core copied from:
 
 https://github.com/geopandas/contextily/blob/e0bb25741f9448c5b6b0e54d403b0d03d9244abd/scripts/parse_leaflet_providers.py
 
@@ -10,11 +10,6 @@ extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers).
 It accesses the defined TileLayer.Providers objects through javascript
 using Selenium as JSON, and then processes this a fully specified
 javascript-independent dictionary and saves that final result as a JSON file.
-
------------------------------
-Temporary, to run on gds_env:
-
-    mamba install -c conda-forge --freeze-installed geckodriver firefox selenium
 """
 import datetime
 import json
