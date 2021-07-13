@@ -41,8 +41,10 @@ jobs:
           cd provider_sources
           python _parse_leaflet_providers.py
 
+      - name: checkout repo for commit
+        uses: actions/checkout@v2
+
       - name: Commit files
-        # uses: actions/checkout@v2
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
