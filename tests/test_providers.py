@@ -75,7 +75,7 @@ def test_build_url():
     assert retina.build_url(1, 2, 3, scale_factor="@5x") == expected
 
     expected = "https://myserver.com/tiles/{z}/{x}/{y}_my_token.png"
-    assert required_token.build_url(token="my_token") == expected
+    assert required_token.build_url(api_token="my_token") == expected
 
 
 def test_html_repr():

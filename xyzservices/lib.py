@@ -68,7 +68,7 @@ class TileProvider(Bunch):
         new.update(kwargs)
         return new
 
-    def build_url(self, x=None, y=None, z=None, token=None, scale_factor=None):
+    def build_url(self, x=None, y=None, z=None, scale_factor=None, **kwargs):
         """
         Build the URL of tiles from the TileProvider object
 
@@ -104,7 +104,7 @@ class TileProvider(Bunch):
         >>> xyz.CartoDB.DarkMatter.build_url(x=9, y=11, z=5, scale_factor="@2x")
         'https://a.basemaps.cartocdn.com/dark_all/5/9/11@2x.png'
 
-        >>> xyz.MapBox.build_url(token="my_token")
+        >>> xyz.MapBox.build_url(accessToken="my_token")
         'https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token=my_token'
 
         """
@@ -117,10 +117,13 @@ class TileProvider(Bunch):
         if z is None:
             z = "{z}"
 
-        if token:
-            for key, val in provider.items():
-                if isinstance(val, str) and "<insert your" in val:
-                    provider[key] = token
+        provider.update(kwargs)
+
+        if provider.requires_token():
+            raise ValueError(
+                "Token is required for this provider, but not provided. "
+                "You can either update TileProvider or pass respective keywords to build_url()."
+            )
 
         url = provider.pop("url")
         subdomains = provider.pop("subdomains", "abc")
