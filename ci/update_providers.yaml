@@ -1,0 +1,11 @@
+name: update_providers
+channels:
+  - conda-forge
+dependencies:
+  - python
+  # tests
+  - pytest
+  - pytest-cov
+  - selenium
+  - geckodriver
+  - firefox
