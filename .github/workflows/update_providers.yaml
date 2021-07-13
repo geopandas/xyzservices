@@ -28,6 +28,8 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
 
       - name: setup micromamba
         uses: mamba-org/provision-with-micromamba@main
