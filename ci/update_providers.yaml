@@ -9,5 +9,5 @@ dependencies:
   - selenium
   - geckodriver
   - firefox
-  - git
+  - gitpython
   - html2text
