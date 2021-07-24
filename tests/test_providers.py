@@ -152,6 +152,7 @@ def test_html_repr():
     assert bunch_repr.count('<div class="xyz-header">') == 3
 
 
+
 def test_copy():
     basic = TileProvider(
         {
@@ -162,3 +163,14 @@ def test_copy():
     )
     basic2 = basic.copy()
     assert isinstance(basic2, TileProvider)
+
+
+def test_callable():
+    # only testing the callable functionality to override a keyword, as we
+    # cannot test the actual providers that need an API key
+    updated_provider = xyz.GeoportailFrance.plan(apikey="mykey")
+    assert isinstance(updated_provider, TileProvider)
+    assert "url" in updated_provider
+    assert updated_provider["apikey"] == "mykey"
+    # check that original provider dict is not modified
+    assert xyz.GeoportailFrance.plan["apikey"] == "choisirgeoportail"
