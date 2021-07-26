@@ -13,7 +13,7 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-
+import xyzservices  # noqa
 
 # -- Project information -----------------------------------------------------
 
@@ -21,8 +21,9 @@ project = "xyzservices"
 copyright = "2021, Martin Fleischmann, Dani Arribas-Bel"
 author = "Martin Fleischmann, Dani Arribas-Bel"
 
+version = xyzservices.__version__
 # The full version, including alpha/beta/rc tags
-release = "2021.08"
+release = version
 
 html_title = f'xyzservices <span id="release">{release}</span>'
 
