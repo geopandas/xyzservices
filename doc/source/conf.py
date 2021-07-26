@@ -41,7 +41,7 @@ extensions = [
     "sphinx_copybutton",
 ]
 
-jupyter_execute_notebooks = "force"
+jupyter_execute_notebooks = "off"
 autosummary_generate = True
 
 # Add any paths that contain templates here, relative to this directory.
