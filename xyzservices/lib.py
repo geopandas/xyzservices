@@ -6,7 +6,28 @@ import uuid
 
 
 class Bunch(dict):
-    """A dict with attribute-access"""
+    """A dict with attribute-access
+
+    :class:`Bunch` is used to store :class:`TileProvider` objects.
+
+    Examples
+    --------
+    >>> black_and_white = TileProvider(
+    ...     name="My black and white tiles",
+    ...     url="https://myserver.com/bw/{z}/{x}/{y}",
+    ...     attribution="(C) xyzservices",
+    ... )
+    >>> colorful = TileProvider(
+    ...     name="My colorful tiles",
+    ...     url="https://myserver.com/color/{z}/{x}/{y}",
+    ...     attribution="(C) xyzservices",
+    ... )
+    >>> MyTiles = Bunch(BlackAndWhite=black_and_white, Colorful=colorful)
+    >>> MyTiles
+    {'BlackAndWhite': {'name': 'My black and white tiles', 'url': 'https://myserver.com/bw/{z}/{x}/{y}', 'attribution': '(C) xyzservices'}, 'Colorful': {'name': 'My colorful tiles', 'url': 'https://myserver.com/color/{z}/{x}/{y}', 'attribution': '(C) xyzservices'}}
+    >>> MyTiles.BlackAndWhite.url
+    'https://myserver.com/bw/{z}/{x}/{y}'
+    """
 
     def __getattr__(self, key):
         try:
@@ -61,6 +82,51 @@ class TileProvider(Bunch):
     """
     A dict with attribute-access and that
     can be called to update keys
+
+
+    Examples
+    --------
+
+    You can create custom :class:`TileProvider` by passing your attributes to the object as it
+    would have been a ``dict()``. It is recommended to always specify ``name``, ``url``,
+    and ``attribution``, although none of them is strictly required.
+
+    >>> public_provider = TileProvider(
+    ...     name="My public tiles",
+    ...     url="https://myserver.com/tiles/{z}/{x}/{y}",
+    ...     attribution="(C) xyzservices",
+    ... )
+
+    Alternatively, you can create it from a dictionary of attributes. When specifying a
+    placeholder for the access token, please use the ``"<insert your access token here>"``
+    string to ensure that :meth:`~xyzservices.TileProvider.requires_token` method works properly.
+
+    >>> private_provider = TileProvider(
+    ...    {
+    ...        "url": "https://myserver.com/tiles/{z}/{x}/{y}?access_token={accessToken}",
+    ...        "attribution": "(C) xyzservices",
+    ...        "accessToken": "<insert your access token here>",
+    ...        "name": "my_private_provider",
+    ...    }
+    ... )
+
+    You can then fetch all information as attributes:
+
+    >>> public_provider.url
+    'https://myserver.com/tiles/{z}/{x}/{y}'
+
+    >>> public_provider.attribution
+    '(C) xyzservices'
+
+    To ensure you will be able to use the tiles, you can check if the :class:`TileProvider`
+    requires a token or API key.
+
+    >>> public_provider.requires_token()
+    False
+    >>> private_provider.requires_token()
+    True
+
+
     """
 
     def __call__(self, **kwargs):
@@ -139,9 +205,39 @@ class TileProvider(Bunch):
 
         return url.format(x=x, y=y, z=z, s=subdomains[0], r=r, **provider)
 
-    def requires_token(self):
+    def requires_token(self) -> bool:
         """
-        Returns True if the TileProvider requires access token to fetch tiles
+        Returns ``True`` if the TileProvider requires access token to fetch tiles.
+
+        The token attribute name vary and some :class:`TileProvider` objects may require more
+        than one token (e.g. ``HERE``). The information is deduced from the presence of
+        `'<insert your...'` string in one or more of attributes. When specifying a
+        placeholder for the access token, please use the ``"<insert your access token here>"``
+        string to ensure that :meth:`~xyzservices.TileProvider.requires_token` method works properly.
+
+        Returns
+        -------
+        bool
+
+        Examples
+        --------
+        >>> import xyzservices.providers as xyz
+        >>> xyz.MapBox.requires_token()
+        True
+
+        >>> xyz.CartoDB.Positron
+        False
+
+        We can specify this API key by calling the object or overriding the attribute.
+        Overriding the attribute will alter existing object:
+
+        >>> xyz.OpenWeatherMap.Clouds["apiKey"] = "my-private-api-key"
+
+        Calling the object will return a copy:
+
+        >>> xyz.OpenWeatherMap.Clouds(apiKey="my-private-api-key")
+
+
         """
         # both attribute and placeholder in url are required to make it work
         for key, val in self.items():
