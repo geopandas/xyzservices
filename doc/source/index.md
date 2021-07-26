@@ -1,4 +1,6 @@
-# xyzservices - Source of XYZ tiles providers
+# xyzservices
+
+Source of XYZ tiles providers.
 
 `xyzservices` is a lightweight library providing a repository of available XYZ services
 offering raster basemap tiles. The repository is provided via Python API and as a
@@ -17,7 +19,13 @@ code.
 
 ### Installation
 
-**Note: Installation does not currently work as `xyzservices` is not released yet.**
+
+```{attention}
+Installation does not currently work as `xyzservices` is not released yet. Install from source
+using:
+
+`pip install git+https://github.com/geopandas/xyzservices.git`.
+```
 
 You can install `xyzservices` from `conda` or `pip`:
 
@@ -83,3 +91,16 @@ If you would like to contribute to the project, have a look at the list of
 ## License
 
 BSD 3-Clause License
+
+
+```{toctree}
+---
+maxdepth: 2
+caption: Documentation
+hidden: true
+---
+introduction
+api
+changelog
+GitHub <https://github.com/geopandas/xyzservices>
+```
