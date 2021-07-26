@@ -1,0 +1,14 @@
+version: 2
+formats: []
+
+sphinx:
+  configuration: doc/source/conf.py
+
+conda:
+    environment: doc/environment.yml
+
+python:
+    version: 3
+    install:
+        - method: pip
+          path: .
