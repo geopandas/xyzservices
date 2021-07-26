@@ -1,0 +1,5 @@
+myst-nb
+numpydoc
+sphinx
+sphinx-copybutton
+furo
