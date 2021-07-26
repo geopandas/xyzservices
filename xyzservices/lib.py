@@ -3,6 +3,7 @@ Utilities to support XYZservices
 """
 import json
 import uuid
+from typing import Optional
 
 
 class Bunch(dict):
@@ -93,7 +94,7 @@ class TileProvider(Bunch):
 
     >>> public_provider = TileProvider(
     ...     name="My public tiles",
-    ...     url="https://myserver.com/tiles/{z}/{x}/{y}",
+    ...     url="https://myserver.com/tiles/{z}/{x}/{y}.png",
     ...     attribution="(C) xyzservices",
     ... )
 
@@ -103,7 +104,7 @@ class TileProvider(Bunch):
 
     >>> private_provider = TileProvider(
     ...    {
-    ...        "url": "https://myserver.com/tiles/{z}/{x}/{y}?access_token={accessToken}",
+    ...        "url": "https://myserver.com/tiles/{z}/{x}/{y}.png?access_token={accessToken}",
     ...        "attribution": "(C) xyzservices",
     ...        "accessToken": "<insert your access token here>",
     ...        "name": "my_private_provider",
@@ -113,7 +114,7 @@ class TileProvider(Bunch):
     You can then fetch all information as attributes:
 
     >>> public_provider.url
-    'https://myserver.com/tiles/{z}/{x}/{y}'
+    'https://myserver.com/tiles/{z}/{x}/{y}.png'
 
     >>> public_provider.attribution
     '(C) xyzservices'
@@ -126,6 +127,12 @@ class TileProvider(Bunch):
     >>> private_provider.requires_token()
     True
 
+    You can also generate URL in the required format with or without placeholders:
+
+    >>> public_provider.build_url()
+    'https://myserver.com/tiles/{z}/{x}/{y}.png'
+    >>> private_provider.build_url(x=12, y=21, z=11, accessToken="my_token")
+    'https://myserver.com/tiles/11/12/21.png?access_token=my_token'
 
     """
 
@@ -138,9 +145,16 @@ class TileProvider(Bunch):
         new = TileProvider(self)  # takes a copy preserving the class
         return new
 
-    def build_url(self, x=None, y=None, z=None, scale_factor=None, **kwargs):
+    def build_url(
+        self,
+        x: Optional[int] = None,
+        y: Optional[int] = None,
+        z: Optional[int] = None,
+        scale_factor: Optional[str] = None,
+        **kwargs,
+    ) -> str:
         """
-        Build the URL of tiles from the TileProvider object
+        Build the URL of tiles from the :class:`TileProvider` object
 
         Can return URL with placeholders or the final tile URL.
 
@@ -149,17 +163,19 @@ class TileProvider(Bunch):
 
         x, y, z : int (optional)
             tile number
-        token : str (optional)
-            Access token (or API key or similar) for the tiles requiring one.
         scale_factor : str (optional)
             Scale factor (where supported). For example, you can get double resolution
             (512 x 512) instead of standard one (256 x 256) with ``"@2x"``. If you want
             to keep a placeholder, pass `"{r}"`.
 
+        **kwargs
+            Other potential attributes updating the :class:`TileProvider`.
+
         Returns
         -------
 
         url : str
+            Formatted URL
 
         Examples
         --------
