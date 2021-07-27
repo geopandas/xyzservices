@@ -1,5 +1,6 @@
 import importlib.resources
-import os, sys
+import os
+import sys
 
 from . import data
 from .lib import _load_json
