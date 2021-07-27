@@ -3,7 +3,7 @@ name: Publish xyzservices to PyPI / GitHub
 on:
   push:
     tags:
-      - "*"
+      - "2*"
 
 jobs:
   build-n-publish:
