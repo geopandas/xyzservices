@@ -15,12 +15,10 @@ import datetime
 import json
 import os
 import tempfile
-import textwrap
 
-import selenium.webdriver
 import git
 import html2text
-
+import selenium.webdriver
 
 GIT_URL = "https://github.com/leaflet-extras/leaflet-providers.git"
 

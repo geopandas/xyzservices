@@ -25,7 +25,10 @@ class Bunch(dict):
     ... )
     >>> MyTiles = Bunch(BlackAndWhite=black_and_white, Colorful=colorful)
     >>> MyTiles
-    {'BlackAndWhite': {'name': 'My black and white tiles', 'url': 'https://myserver.com/bw/{z}/{x}/{y}', 'attribution': '(C) xyzservices'}, 'Colorful': {'name': 'My colorful tiles', 'url': 'https://myserver.com/color/{z}/{x}/{y}', 'attribution': '(C) xyzservices'}}
+    {'BlackAndWhite': {'name': 'My black and white tiles', 'url': \
+'https://myserver.com/bw/{z}/{x}/{y}', 'attribution': '(C) xyzservices'}, 'Colorful': \
+{'name': 'My colorful tiles', 'url': 'https://myserver.com/color/{z}/{x}/{y}', \
+'attribution': '(C) xyzservices'}}
     >>> MyTiles.BlackAndWhite.url
     'https://myserver.com/bw/{z}/{x}/{y}'
     """
@@ -88,9 +91,9 @@ class TileProvider(Bunch):
     Examples
     --------
 
-    You can create custom :class:`TileProvider` by passing your attributes to the object as it
-    would have been a ``dict()``. It is recommended to always specify ``name``, ``url``,
-    and ``attribution``, although none of them is strictly required.
+    You can create custom :class:`TileProvider` by passing your attributes to the object
+    as it would have been a ``dict()``. It is recommended to always specify ``name``,
+    ``url``, and ``attribution``, although none of them is strictly required.
 
     >>> public_provider = TileProvider(
     ...     name="My public tiles",
@@ -99,12 +102,13 @@ class TileProvider(Bunch):
     ... )
 
     Alternatively, you can create it from a dictionary of attributes. When specifying a
-    placeholder for the access token, please use the ``"<insert your access token here>"``
-    string to ensure that :meth:`~xyzservices.TileProvider.requires_token` method works properly.
+    placeholder for the access token, please use the ``"<insert your access token
+    here>"`` string to ensure that :meth:`~xyzservices.TileProvider.requires_token`
+    method works properly.
 
     >>> private_provider = TileProvider(
     ...    {
-    ...        "url": "https://myserver.com/tiles/{z}/{x}/{y}.png?access_token={accessToken}",
+    ...        "url": "https://myserver.com/tiles/{z}/{x}/{y}.png?apikey={accessToken}",
     ...        "attribution": "(C) xyzservices",
     ...        "accessToken": "<insert your access token here>",
     ...        "name": "my_private_provider",
@@ -119,8 +123,8 @@ class TileProvider(Bunch):
     >>> public_provider.attribution
     '(C) xyzservices'
 
-    To ensure you will be able to use the tiles, you can check if the :class:`TileProvider`
-    requires a token or API key.
+    To ensure you will be able to use the tiles, you can check if the
+    :class:`TileProvider` requires a token or API key.
 
     >>> public_provider.requires_token()
     False
@@ -208,7 +212,8 @@ class TileProvider(Bunch):
         if provider.requires_token():
             raise ValueError(
                 "Token is required for this provider, but not provided. "
-                "You can either update TileProvider or pass respective keywords to build_url()."
+                "You can either update TileProvider or pass respective keywords "
+                "to build_url()."
             )
 
         url = provider.pop("url")
@@ -225,11 +230,12 @@ class TileProvider(Bunch):
         """
         Returns ``True`` if the TileProvider requires access token to fetch tiles.
 
-        The token attribute name vary and some :class:`TileProvider` objects may require more
-        than one token (e.g. ``HERE``). The information is deduced from the presence of
-        `'<insert your...'` string in one or more of attributes. When specifying a
-        placeholder for the access token, please use the ``"<insert your access token here>"``
-        string to ensure that :meth:`~xyzservices.TileProvider.requires_token` method works properly.
+        The token attribute name vary and some :class:`TileProvider` objects may require
+        more than one token (e.g. ``HERE``). The information is deduced from the
+        presence of `'<insert your...'` string in one or more of attributes. When
+        specifying a placeholder for the access token, please use the ``"<insert your
+        access token here>"`` string to ensure that
+        :meth:`~xyzservices.TileProvider.requires_token` method works properly.
 
         Returns
         -------
