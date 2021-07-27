@@ -1,4 +1,4 @@
-name: Update leaflet providers
+name: Update leaflet providers/compress JSON
 
 on:
   schedule:
@@ -29,17 +29,18 @@ jobs:
           environment-file: ${{ matrix.environment-file }}
           micromamba-version: 'latest'
 
-      - name: Parse leaflet providers
+      - name: Parse leaflet providers/compress output
         shell: bash -l {0}
         run: |
-          cd provider_sources
-          python _parse_leaflet_providers.py
+          make update-leaflet
+          make compress
 
       - name: Commit files
         run: |
           git config --global user.name 'Martin Fleischmann'
           git config --global user.email 'martinfleis@users.noreply.github.com'
           git add provider_sources/leaflet-providers-parsed.json
-          git commit -am "Update leaflet providers [automated]"
+          git add xyzservices/data/providers.json
+          git commit -am "Update leaflet providers/compress JSON [automated]"
           git push
 
