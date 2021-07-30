@@ -17,8 +17,6 @@ code.
 
 ### Installation
 
-**Note: Installation does not currently work as `xyzservices` is not released yet.**
-
 You can install `xyzservices` from `conda` or `pip`:
 
 ```shell
