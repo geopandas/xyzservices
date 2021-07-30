@@ -15,18 +15,29 @@ If you want to add a new provider, simply add its details to
 make compress
 ```
 
-You can add a single `TileProvider` or a `Bunch` of `TileProviders` using the following
-schema:
+You can add a single `TileProvider` or a `Bunch` of `TileProviders`. Use the following
+schema to add a single provider:
 
 ```json
 {
+   ...
    "single_provider_name": {
       "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
       "max_zoom": 19,
       "attribution": "(C) OpenStreetMap contributors",
       "name": "OpenStreetMap.Mapnik"
    },
-   "provider_bunch_name": {
+   ...
+}
+```
+
+If you want to add a bunch of related providers, you can group then within a `Bunch`
+using the following schema:
+
+```json
+{
+  ...
+  "provider_bunch_name": {
       "first_provider_name": {
             "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
             "max_zoom": 19,
@@ -40,9 +51,9 @@ schema:
             "name": "OpenStreetMap.Mapnik",
             "accessToken": "<insert your access token here>"
       }
-   }
+   },
+   ...
 }
-```
 
 It is recommended to always specify at least `name`, `url`, and `attribution`, although
 none of them is strictly required. Don't forget to add any other custom attribute
