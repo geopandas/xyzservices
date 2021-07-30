@@ -9,11 +9,7 @@ contributions to the codebase and documentaion.
 ## Providers
 
 If you want to add a new provider, simply add its details to
-`provider_sources/xyzservices-providers.json` and then finalise the JSON using:
-
-```
-make compress
-```
+`provider_sources/xyzservices-providers.json`.
 
 You can add a single `TileProvider` or a `Bunch` of `TileProviders`. Use the following
 schema to add a single provider:
@@ -31,8 +27,9 @@ schema to add a single provider:
 }
 ```
 
-If you want to add a bunch of related providers, you can group then within a `Bunch`
-using the following schema:
+If you want to add a bunch of related providers (different versions from a single source
+like `Stamen.Toner` and `Stamen.TonerLite`), you can group then within a `Bunch` using
+the following schema:
 
 ```json
 {
@@ -55,16 +52,11 @@ using the following schema:
    ...
 }
 
-It is recommended to always specify at least `name`, `url`, and `attribution`, although
-none of them is strictly required. Don't forget to add any other custom attribute
+It is mandatory to always specify at least `name`, `url`, and `attribution`.
+Don't forget to add any other custom attribute
 required by the provider. When specifying a placeholder for the access token, please use
 the `"<insert your access token here>"` string to ensure that `requires_token()` method
 works properly.
-
-Running `make compress` after adding the provider will create compressed JSON combinign
-automatically created `leaflet-providers-parsed.json` and `yzservices-providers.json`
-into `xyzservices/data/providers.json` that is shipped with the library.
-
 
 ## Code and documentation
 
