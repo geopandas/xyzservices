@@ -31,6 +31,7 @@ setuptools.setup(
     license="3-Clause BSD",
     packages=setuptools.find_packages(),
     python_requires=">=3.7",
+    include_package_data=True,
     package_data={
         "providers": ["data/providers.json"],
     },
