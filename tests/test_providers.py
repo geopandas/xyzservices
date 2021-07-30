@@ -24,6 +24,22 @@ def test_minimal_provider_metadata(provider_name):
             check_provider(xyz[provider_name][variant])
 
 
+def test_expect_name_url_attribution():
+    msg = (
+        "The attributes `name`, `url`, and `attribution` are "
+        "required to initialise a `TileProvider`. Please provide "
+        "values for: "
+    )
+    with pytest.raises(AttributeError, match=msg + "`name`, `url`, `attribution`"):
+        TileProvider({})
+    with pytest.raises(AttributeError, match=msg + "`url`, `attribution`"):
+        TileProvider({"name": "myname"})
+    with pytest.raises(AttributeError, match=msg + "`attribution`"):
+        TileProvider({"url": "my_url", "name": "my_name"})
+    with pytest.raises(AttributeError, match=msg + "`attribution`"):
+        TileProvider(url="my_url", name="my_name")
+
+
 def test_build_url():
     basic = TileProvider(
         {
@@ -150,7 +166,6 @@ def test_html_repr():
     assert bunch_repr.count('<li class="xyz-child">') == 2
     assert bunch_repr.count('<div class="xyz-wrap">') == 3
     assert bunch_repr.count('<div class="xyz-header">') == 3
-
 
 
 def test_copy():

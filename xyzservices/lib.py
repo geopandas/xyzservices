@@ -92,8 +92,8 @@ class TileProvider(Bunch):
     --------
 
     You can create custom :class:`TileProvider` by passing your attributes to the object
-    as it would have been a ``dict()``. It is recommended to always specify ``name``,
-    ``url``, and ``attribution``, although none of them is strictly required.
+    as it would have been a ``dict()``. It is required to always specify ``name``,
+    ``url``, and ``attribution``.
 
     >>> public_provider = TileProvider(
     ...     name="My public tiles",
@@ -139,6 +139,21 @@ class TileProvider(Bunch):
     'https://myserver.com/tiles/11/12/21.png?access_token=my_token'
 
     """
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        missing = []
+        for el in ["name", "url", "attribution"]:
+            if el not in self.keys():
+                missing.append(el)
+        if len(missing) > 0:
+            msg = (
+                f"The attributes `name`, `url`, "
+                f"and `attribution` are required to initialise "
+                f"a `TileProvider`. Please provide values for: "
+                f'`{"`, `".join(missing)}`'
+            )
+            raise AttributeError(msg)
 
     def __call__(self, **kwargs):
         new = TileProvider(self)  # takes a copy preserving the class
