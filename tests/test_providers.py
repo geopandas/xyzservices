@@ -24,6 +24,63 @@ def test_minimal_provider_metadata(provider_name):
             check_provider(xyz[provider_name][variant])
 
 
+def test_build_url():
+    basic = TileProvider(
+        {
+            "url": "https://myserver.com/tiles/{z}/{x}/{y}.png",
+            "attribution": "(C) xyzservices",
+            "name": "my_public_provider",
+        }
+    )
+
+    retina = TileProvider(
+        {
+            "url": "https://myserver.com/tiles/{z}/{x}/{y}{r}.png",
+            "attribution": "(C) xyzservices",
+            "name": "my_public_provider",
+            "r": "@2x",
+        }
+    )
+
+    silent_retina = TileProvider(
+        {
+            "url": "https://myserver.com/tiles/{z}/{x}/{y}{r}.png",
+            "attribution": "(C) xyzservices",
+            "name": "my_public_provider",
+        }
+    )
+
+    required_token = TileProvider(
+        {
+            "url": "https://myserver.com/tiles/{z}/{x}/{y}_{api_token}.png",
+            "attribution": "(C) xyzservices",
+            "name": "my_private_provider",
+            "api_token": "<insert your API token here>",
+        }
+    )
+
+    expected = "https://myserver.com/tiles/{z}/{x}/{y}.png"
+    assert basic.build_url() == expected
+
+    expected = "https://myserver.com/tiles/3/1/2.png"
+    assert basic.build_url(1, 2, 3) == expected
+    assert basic.build_url(1, 2, 3, scale_factor="@2x") == expected
+    assert silent_retina.build_url(1, 2, 3) == expected
+
+    expected = "https://myserver.com/tiles/3/1/2@2x.png"
+    assert retina.build_url(1, 2, 3) == expected
+    assert silent_retina.build_url(1, 2, 3, scale_factor="@2x") == expected
+
+    expected = "https://myserver.com/tiles/3/1/2@5x.png"
+    assert retina.build_url(1, 2, 3, scale_factor="@5x") == expected
+
+    expected = "https://myserver.com/tiles/{z}/{x}/{y}_my_token.png"
+    assert required_token.build_url(api_token="my_token") == expected
+
+    with pytest.raises(ValueError, match="Token is required for this provider"):
+        required_token.build_url()
+
+
 def test_requires_token():
     private_provider = TileProvider(
         {
@@ -93,6 +150,19 @@ def test_html_repr():
     assert bunch_repr.count('<li class="xyz-child">') == 2
     assert bunch_repr.count('<div class="xyz-wrap">') == 3
     assert bunch_repr.count('<div class="xyz-header">') == 3
+
+
+
+def test_copy():
+    basic = TileProvider(
+        {
+            "url": "https://myserver.com/tiles/{z}/{x}/{y}.png",
+            "attribution": "(C) xyzservices",
+            "name": "my_public_provider",
+        }
+    )
+    basic2 = basic.copy()
+    assert isinstance(basic2, TileProvider)
 
 
 def test_callable():

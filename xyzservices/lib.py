@@ -3,6 +3,7 @@ Utilities to support XYZservices
 """
 import json
 import uuid
+from typing import Optional
 
 
 class Bunch(dict):
@@ -96,7 +97,7 @@ class TileProvider(Bunch):
 
     >>> public_provider = TileProvider(
     ...     name="My public tiles",
-    ...     url="https://myserver.com/tiles/{z}/{x}/{y}",
+    ...     url="https://myserver.com/tiles/{z}/{x}/{y}.png",
     ...     attribution="(C) xyzservices",
     ... )
 
@@ -107,7 +108,7 @@ class TileProvider(Bunch):
 
     >>> private_provider = TileProvider(
     ...    {
-    ...        "url": "https://myserver.com/tiles/{z}/{x}/{y}?api_token={accessToken}",
+    ...        "url": "https://myserver.com/tiles/{z}/{x}/{y}.png?apikey={accessToken}",
     ...        "attribution": "(C) xyzservices",
     ...        "accessToken": "<insert your access token here>",
     ...        "name": "my_private_provider",
@@ -117,7 +118,7 @@ class TileProvider(Bunch):
     You can then fetch all information as attributes:
 
     >>> public_provider.url
-    'https://myserver.com/tiles/{z}/{x}/{y}'
+    'https://myserver.com/tiles/{z}/{x}/{y}.png'
 
     >>> public_provider.attribution
     '(C) xyzservices'
@@ -130,6 +131,12 @@ class TileProvider(Bunch):
     >>> private_provider.requires_token()
     True
 
+    You can also generate URL in the required format with or without placeholders:
+
+    >>> public_provider.build_url()
+    'https://myserver.com/tiles/{z}/{x}/{y}.png'
+    >>> private_provider.build_url(x=12, y=21, z=11, accessToken="my_token")
+    'https://myserver.com/tiles/11/12/21.png?access_token=my_token'
 
     """
 
@@ -137,6 +144,87 @@ class TileProvider(Bunch):
         new = TileProvider(self)  # takes a copy preserving the class
         new.update(kwargs)
         return new
+
+    def copy(self, **kwargs):
+        new = TileProvider(self)  # takes a copy preserving the class
+        return new
+
+    def build_url(
+        self,
+        x: Optional[int] = None,
+        y: Optional[int] = None,
+        z: Optional[int] = None,
+        scale_factor: Optional[str] = None,
+        **kwargs,
+    ) -> str:
+        """
+        Build the URL of tiles from the :class:`TileProvider` object
+
+        Can return URL with placeholders or the final tile URL.
+
+        Parameters
+        ----------
+
+        x, y, z : int (optional)
+            tile number
+        scale_factor : str (optional)
+            Scale factor (where supported). For example, you can get double resolution
+            (512 x 512) instead of standard one (256 x 256) with ``"@2x"``. If you want
+            to keep a placeholder, pass `"{r}"`.
+
+        **kwargs
+            Other potential attributes updating the :class:`TileProvider`.
+
+        Returns
+        -------
+
+        url : str
+            Formatted URL
+
+        Examples
+        --------
+        >>> import xyzservices.providers as xyz
+
+        >>> xyz.CartoDB.DarkMatter.build_url()
+        'https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png'
+
+        >>> xyz.CartoDB.DarkMatter.build_url(x=9, y=11, z=5)
+        'https://a.basemaps.cartocdn.com/dark_all/5/9/11.png'
+
+        >>> xyz.CartoDB.DarkMatter.build_url(x=9, y=11, z=5, scale_factor="@2x")
+        'https://a.basemaps.cartocdn.com/dark_all/5/9/11@2x.png'
+
+        >>> xyz.MapBox.build_url(accessToken="my_token")
+        'https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token=my_token'
+
+        """
+        provider = self.copy()
+
+        if x is None:
+            x = "{x}"
+        if y is None:
+            y = "{y}"
+        if z is None:
+            z = "{z}"
+
+        provider.update(kwargs)
+
+        if provider.requires_token():
+            raise ValueError(
+                "Token is required for this provider, but not provided. "
+                "You can either update TileProvider or pass respective keywords "
+                "to build_url()."
+            )
+
+        url = provider.pop("url")
+        subdomains = provider.pop("subdomains", "abc")
+        if scale_factor:
+            r = scale_factor
+            provider.pop("r", None)
+        else:
+            r = provider.pop("r", "")
+
+        return url.format(x=x, y=y, z=z, s=subdomains[0], r=r, **provider)
 
     def requires_token(self) -> bool:
         """
