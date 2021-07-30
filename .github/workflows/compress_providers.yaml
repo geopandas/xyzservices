@@ -19,6 +19,7 @@ jobs:
       with:
         ref: ${{github.event.pull_request.head.ref}}
         repository: ${{github.event.pull_request.head.repo.full_name}}
+        token: ${{ secrets.PAT }}
 
     - name: setup micromamba
       uses: mamba-org/provision-with-micromamba@main
