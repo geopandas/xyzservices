@@ -1,6 +1,6 @@
 ---
 
-name: Contribution of a provider
+name: Contribution of a new provider
 about: Contributing additional providers to a xyzservices-providers.JSON
 title: "PRO:"
 labels: "community_contribution"
