@@ -63,7 +63,8 @@ Once updated, you can (optionally) compress the provider sources by executing `m
 repository root.
 
 ```bash
-cd xyzservices make compress
+cd xyzservices
+make compress
 ```
 
 ## Code and documentation
@@ -100,11 +101,12 @@ In particular, when submitting a pull request:
 
 ## Updating sources from leaflet
 
-`leaflet-providers-parsed.json` is an automatically generated file. You can create a fresh version
+`leaflet-providers-parsed.json` is an automatically generated file by GHA. You can create a fresh version
 using `make update-leaflet` from the repository root:
 
 ```bash
-cd xyzservices make update-leaflet
+cd xyzservices
+make update-leaflet
 ```
 
 Note that you will need functional installation of `selenium` with Firefox webdriver, `git` and `html2text` packages.

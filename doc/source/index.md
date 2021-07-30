@@ -101,6 +101,7 @@ hidden: true
 ---
 introduction
 api
+contributing
 changelog
 GitHub <https://github.com/geopandas/xyzservices>
 ```
