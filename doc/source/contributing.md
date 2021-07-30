@@ -51,6 +51,7 @@ the following schema:
    },
    ...
 }
+```
 
 It is mandatory to always specify at least `name`, `url`, and `attribution`.
 Don't forget to add any other custom attribute
