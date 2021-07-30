@@ -25,5 +25,5 @@
         "max_zoom": 19,
         "attribution": "(C) OpenStreetMap contributors",
         "name": "OpenStreetMap.Mapnik"
-    },
+    }
 }
