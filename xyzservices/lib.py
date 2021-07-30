@@ -353,6 +353,7 @@ dl.xyz-attrs {
     margin: 0;
     display: grid;
     grid-template-columns: 125px auto;
+    background-color: #eee;
 }
 
 .xyz-attrs dt,
