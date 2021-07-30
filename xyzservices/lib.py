@@ -92,8 +92,8 @@ class TileProvider(Bunch):
     --------
 
     You can create custom :class:`TileProvider` by passing your attributes to the object
-    as it would have been a ``dict()``. It is recommended to always specify ``name``,
-    ``url``, and ``attribution``, although none of them is strictly required.
+    as it would have been a ``dict()``. It is required to always specify ``name``,
+    ``url``, and ``attribution``.
 
     >>> public_provider = TileProvider(
     ...     name="My public tiles",
