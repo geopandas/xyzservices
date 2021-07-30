@@ -58,6 +58,14 @@ required by the provider. When specifying a placeholder for the access token, pl
 the `"<insert your access token here>"` string to ensure that `requires_token()` method
 works properly.
 
+Once updated, you can (optionally) compress the provider sources by executing `make compress` from the
+repository root.
+
+```bash
+cd xyzservices
+make compress
+```
+
 ## Code and documentation
 
 At this stage of `xyzservices` development, the priorities are to define a simple,
@@ -88,3 +96,16 @@ In particular, when submitting a pull request:
   for local imports when necessary in tests.
 - `xyzservices` supports Python 3.7+ only. When possible, do not introduce additional
   dependencies. If that is necessary, make sure they can be treated as optional.
+
+
+## Updating sources from leaflet
+
+`leaflet-providers-parsed.json` is an automatically generated file by GHA. You can create a fresh version
+using `make update-leaflet` from the repository root:
+
+```bash
+cd xyzservices
+make update-leaflet
+```
+
+Note that you will need functional installation of `selenium` with Firefox webdriver, `git` and `html2text` packages.
