@@ -33,7 +33,7 @@ setuptools.setup(
     python_requires=">=3.7",
     include_package_data=True,
     package_data={
-        "providers": ["data/providers.json"],
+        "xyzservices": ["data/providers.json"],
     },
     classifiers=[
         "License :: OSI Approved :: BSD License",
