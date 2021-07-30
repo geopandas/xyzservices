@@ -139,17 +139,18 @@ class TileProvider(Bunch):
     'https://myserver.com/tiles/11/12/21.png?access_token=my_token'
 
     """
+
     def __init__(self, *args, **kwargs):
-        super().__init__( *args, **kwargs)
+        super().__init__(*args, **kwargs)
         missing = []
-        for el in ['name', 'url', 'attribution']:
+        for el in ["name", "url", "attribution"]:
             if el not in self.keys():
                 missing.append(el)
-        if len(missing)>0:
+        if len(missing) > 0:
             msg = (
-                f'The attributes `name`, `url`, '
-                f'and `attribution` are required to initialise '
-                f'a `TileProvider`. Please provide values for: '
+                f"The attributes `name`, `url`, "
+                f"and `attribution` are required to initialise "
+                f"a `TileProvider`. Please provide values for: "
                 f'`{"`, `".join(missing)}`'
             )
             raise AttributeError(msg)
