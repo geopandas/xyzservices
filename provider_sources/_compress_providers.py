@@ -1,7 +1,7 @@
 """
-This script takes both provider sources stored in `provider_sources`, removes
-items which do not represent actual providers (metadata from leaflet-providers-parsed
-and templates from xyzservices-providers), combines them together and saves as a compressed
+This script takes both provider sources stored in `provider_sources`, removes items
+which do not represent actual providers (metadata from leaflet-providers-parsed and
+templates from xyzservices-providers), combines them together and saves as a compressed
 JSON to data/providers.json.
 
 The compressed JSON is shipped with the package.
