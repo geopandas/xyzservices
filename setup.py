@@ -1,20 +1,5 @@
 import setuptools
-import os, sys, shutil
 import versioneer
-
-
-# store the source JSON in `share/xyzservices`
-try:
-    datadir = os.path.join(sys.prefix, "share", "xyzservices")
-    if not os.path.exists(datadir):
-        os.makedirs(datadir)
-
-    shutil.copyfile(
-        "./xyzservices/data/providers.json",
-        os.path.join(datadir, "providers.json"),
-    )
-except Exception:
-    pass
 
 
 with open("README.md", "r", encoding="utf8") as fh:
@@ -43,4 +28,5 @@ setuptools.setup(
     ],
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
+    data_files=[("share/xyzservices", ["xyzservices/data/providers.json"])],
 )
