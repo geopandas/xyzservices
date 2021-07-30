@@ -4,5 +4,5 @@ channels:
 dependencies:
   - python
   # tests
-  - contextily
   - pytest
+  - pytest-cov

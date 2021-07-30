@@ -1,0 +1,23 @@
+{
+    "single_provider_name": {
+        "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        "max_zoom": 19,
+        "attribution": "(C) OpenStreetMap contributors",
+        "name": "OpenStreetMap.Mapnik"
+    },
+    "provider_bunch_name": {
+        "first_provider_name": {
+            "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+            "max_zoom": 19,
+            "attribution": "(C) OpenStreetMap contributors",
+            "name": "OpenStreetMap.Mapnik"
+        },
+        "second_provider_name": {
+            "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?access-token={accessToken}",
+            "max_zoom": 19,
+            "attribution": "(C) OpenStreetMap contributors",
+            "name": "OpenStreetMap.Mapnik",
+            "accessToken": "<insert your access token here>"
+        }
+    }
+}

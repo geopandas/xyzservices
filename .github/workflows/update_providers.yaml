@@ -1,0 +1,46 @@
+name: Update leaflet providers/compress JSON
+
+on:
+  schedule:
+      - cron: '42 23 1,15 * *'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Manual update reason
+        default: refresh
+        required: false
+
+jobs:
+  unittests:
+    name: Update leaflet providers
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      matrix:
+        environment-file: [ci/update_providers.yaml]
+
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v2
+
+      - name: setup micromamba
+        uses: mamba-org/provision-with-micromamba@main
+        with:
+          environment-file: ${{ matrix.environment-file }}
+          micromamba-version: 'latest'
+
+      - name: Parse leaflet providers/compress output
+        shell: bash -l {0}
+        run: |
+          make update-leaflet
+          make compress
+
+      - name: Commit files
+        run: |
+          git config --global user.name 'Martin Fleischmann'
+          git config --global user.email 'martinfleis@users.noreply.github.com'
+          git add provider_sources/leaflet-providers-parsed.json
+          git add xyzservices/data/providers.json
+          git commit -am "Update leaflet providers/compress JSON [automated]"
+          git push
+
