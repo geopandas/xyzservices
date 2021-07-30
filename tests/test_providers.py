@@ -36,6 +36,8 @@ def test_expect_name_url_attribution():
         TileProvider({"name": "myname"})
     with pytest.raises(AttributeError, match=msg + "`attribution`"):
         TileProvider({"url": "my_url", "name": "my_name"})
+    with pytest.raises(AttributeError, match=msg + "`attribution`"):
+        TileProvider(url="my_url", name="my_name"})
 
 
 def test_build_url():
