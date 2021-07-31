@@ -19,14 +19,6 @@ code.
 
 ### Installation
 
-
-```{attention}
-Installation does not currently work as `xyzservices` is not released yet. Install from source
-using:
-
-`pip install git+https://github.com/geopandas/xyzservices.git`.
-```
-
 You can install `xyzservices` from `conda` or `pip`:
 
 ```shell
