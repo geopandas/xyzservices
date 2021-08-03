@@ -189,3 +189,27 @@ def test_callable():
     assert updated_provider["apikey"] == "mykey"
     # check that original provider dict is not modified
     assert xyz.GeoportailFrance.plan["apikey"] == "choisirgeoportail"
+
+
+def test_html_attribution_fallback():
+    # TileProvider.html_attribution falls back to .attribution if the former not present
+    basic = TileProvider(
+        {
+            "url": "https://myserver.com/tiles/{z}/{x}/{y}.png",
+            "attribution": "(C) xyzservices",
+            "name": "my_public_provider",
+        }
+    )
+    html = TileProvider(
+        {
+            "url": "https://myserver.com/tiles/{z}/{x}/{y}.png",
+            "attribution": "(C) xyzservices",
+            "html_attribution": '&copy; <a href="https://xyzservices.readthedocs.io">xyzservices</a>',
+            "name": "my_public_provider",
+        }
+    )
+    assert basic.html_attribution == basic.attribution
+    assert (
+        html.html_attribution
+        == '&copy; <a href="https://xyzservices.readthedocs.io">xyzservices</a>'
+    )
