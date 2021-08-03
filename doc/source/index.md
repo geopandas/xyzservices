@@ -2,6 +2,8 @@
 
 Source of XYZ tiles providers.
 
+![Illustrative tiles. (C) OpenStreetMap, (C) OpenMapTIles, (C) Stadia Maps, (C) OpenTopoMap,  (C) Thunderforest, (C) JawgMaps, (C) Stamen Design, (C) Esri -- Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community](_static/xyzmaps.jpg)
+
 `xyzservices` is a lightweight library providing a repository of available XYZ services
 offering raster basemap tiles. The repository is provided via Python API and as a
 compressed JSON file.
