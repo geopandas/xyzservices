@@ -84,6 +84,10 @@ class Bunch(dict):
     def flatten(self) -> "Bunch":
         """Return the nested :class:`Bunch` collapsed into one level.
 
+        Note: Formerly nested :class:`TileProvider`s cannot be accessed as attributes
+        and have to be accessed via index operator (as in ``flat["OpenStreetMap.Mapnik"]
+        not ``flat.OpenStreetMap.Mapnik``).
+
         Returns
         -------
         flattened : Bunch
