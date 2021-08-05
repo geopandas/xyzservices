@@ -332,11 +332,29 @@ def _load_json(f):
 
 CSS_STYLE = """
 /* CSS stylesheet for displaying xyzservices objects in Jupyter.*/
+.xyz-wrap {
+    --xyz-border-color: var(--jp-border-color2, #ddd);
+    --xyz-font-color0: var(--jp-content-font-color0, rgba(0, 0, 0, 1));
+    --xyz-font-color2: var(--jp-content-font-color2, rgba(0, 0, 0, 0.54));
+    --xyz-background-color-white: var(--jp-layout-color1, white);
+    --xyz-background-color: var(--jp-layout-color2, rgb(244, 244, 244));
+}
+
+html[theme=dark],
+body.vscode-dark {
+    --xyz-border-color: #222;
+    --xyz-font-color0: white;
+    --xyz-font-color2: rgba(255, 255, 255, 0.54);
+    --xyz-background-color-white: rgba(255, 255, 255, 1);
+    --xyz-background-color: black;
+
+}
+
 .xyz-header {
     padding-top: 6px;
     padding-bottom: 6px;
     margin-bottom: 4px;
-    border-bottom: solid 1px #ddd;
+    border-bottom: solid 1px var(--xyz-border-color);
 }
 
 .xyz-header>div {
@@ -352,11 +370,11 @@ CSS_STYLE = """
 }
 
 .xyz-obj {
-    color: #555;
+    color: var(--xyz-font-color2);
 }
 
 .xyz-name {
-    color: #000;
+    color: var(--xyz-font-color0);
 }
 
 .xyz-attrs {
@@ -368,7 +386,7 @@ dl.xyz-attrs {
     margin: 0;
     display: grid;
     grid-template-columns: 125px auto;
-    background-color: rgb(244, 244, 244);
+    background-color: var(--xyz-background-color);
 }
 
 .xyz-attrs dt,
@@ -387,7 +405,7 @@ dd {
 
 .xyz-attrs dt:hover span {
     display: inline-block;
-    background: #fff;
+    background: var(--xyz-background-color-white);
     padding-right: 10px;
 }
 
@@ -398,7 +416,7 @@ dd {
 }
 
 .xyz-details ul>li>label>span {
-    color: #555;
+    color: var(--xyz-font-color2);
     padding-left: 10px;
 }
 
@@ -419,7 +437,7 @@ dd {
 }
 
 .xyz-collapsible>li>label:hover {
-    color: #555;
+    color: var(--xyz-font-color2);
 }
 
 ul.xyz-collapsible {
