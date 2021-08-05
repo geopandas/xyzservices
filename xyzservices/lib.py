@@ -82,7 +82,7 @@ class Bunch(dict):
         return html
 
     def flatten(self) -> "Bunch":
-        """Return a copy of the nested :class:`Bunch` collapsed into one level.
+        """Return the nested :class:`Bunch` collapsed into one level.
 
         Returns
         -------
