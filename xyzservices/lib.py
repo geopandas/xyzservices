@@ -337,16 +337,16 @@ CSS_STYLE = """
     --xyz-font-color0: var(--jp-content-font-color0, rgba(0, 0, 0, 1));
     --xyz-font-color2: var(--jp-content-font-color2, rgba(0, 0, 0, 0.54));
     --xyz-background-color-white: var(--jp-layout-color1, white);
-    --xyz-background-color: var(--jp-layout-color2, rgb(244, 244, 244));
+    --xyz-background-color: var(--jp-layout-color2, rgba(255, 255, 255, 0.05));
 }
 
-html[theme=dark],
-body.vscode-dark {
+html[theme=dark] .xyz-wrap,
+body.vscode-dark .xyz-wrap {
     --xyz-border-color: #222;
     --xyz-font-color0: white;
     --xyz-font-color2: rgba(255, 255, 255, 0.54);
     --xyz-background-color-white: rgba(255, 255, 255, 1);
-    --xyz-background-color: black;
+    --xyz-background-color: rgba(255, 255, 255, 0.05);
 
 }
 
