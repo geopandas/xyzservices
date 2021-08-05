@@ -82,7 +82,7 @@ class Bunch(dict):
         return html
 
     def flatten(self) -> "Bunch":
-        """Return a flat :class:`Bunch` of all the items
+        """Return a copy of the nested :class:`Bunch` collapsed into one level.
 
         Returns
         -------
@@ -100,7 +100,7 @@ class Bunch(dict):
 
         """
 
-        flat = {}
+        flat = Bunch()
 
         def _get_providers(provider):
             if isinstance(provider, TileProvider):
@@ -111,7 +111,7 @@ class Bunch(dict):
 
         _get_providers(self)
 
-        return Bunch(flat)
+        return flat
 
 
 class TileProvider(Bunch):
