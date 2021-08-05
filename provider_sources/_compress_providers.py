@@ -25,4 +25,4 @@ with open("./xyzservices-providers.json", "r") as f:
 leaflet.update(xyz)
 
 with open("../xyzservices/data/providers.json", "w") as f:
-    json.dump(leaflet, f)
+    json.dump(leaflet, f, indent=4)
