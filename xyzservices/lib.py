@@ -341,7 +341,8 @@ CSS_STYLE = """
 }
 
 html[theme=dark] .xyz-wrap,
-body.vscode-dark .xyz-wrap {
+body.vscode-dark .xyz-wrap,
+body.vscode-high-contrast .xyz-wrap {
     --xyz-border-color: #222;
     --xyz-font-color0: white;
     --xyz-font-color2: rgba(255, 255, 255, 0.54);
