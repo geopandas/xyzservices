@@ -189,3 +189,42 @@ def test_callable():
     assert updated_provider["apikey"] == "mykey"
     # check that original provider dict is not modified
     assert xyz.GeoportailFrance.plan["apikey"] == "choisirgeoportail"
+
+
+def test_flatten():
+    provider = TileProvider(
+        {
+            "url": "https://myserver.com/tiles/{z}/{x}/{y}.png",
+            "attribution": "(C) xyzservices",
+            "name": "my_public_provider",
+        }
+    )
+    provider2 = TileProvider(
+        {
+            "url": "https://myserver.com/tiles/{z}/{x}/{y}.png",
+            "attribution": "(C) xyzservices",
+            "name": "my_public_provider2",
+        }
+    )
+    provider3 = TileProvider(
+        {
+            "url": "https://myserver.com/tiles/{z}/{x}/{y}.png",
+            "attribution": "(C) xyzservices",
+            "name": "my_public_provider3",
+        }
+    )
+    provider4 = TileProvider(
+        {
+            "url": "https://myserver.com/tiles/{z}/{x}/{y}.png",
+            "attribution": "(C) xyzservices",
+            "name": "my_public_provider4",
+        }
+    )
+
+    nested_bunch = Bunch(
+        first_bunch=Bunch(first=provider, second=provider2),
+        second_bunch=Bunch(first=provider3, second=provider4),
+    )
+
+    assert len(nested_bunch) == 2
+    assert len(nested_bunch.flatten()) == 4
