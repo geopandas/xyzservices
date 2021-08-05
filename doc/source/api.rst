@@ -20,7 +20,7 @@ Providers JSON
 
 After the installation, you will find the JSON used as a database of providers in
 ``share/xyzservices/providers.json`` if you want to use it outside of a Python ecosystem.
-The JSON is compressed and structured along the following model example:
+The JSON is structured along the following model example:
 
 .. code-block:: json
 
