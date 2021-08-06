@@ -215,12 +215,13 @@ def test_html_attribution_fallback():
     )
 
 
+@pytest.mark.xfail(reason="timeout error")
 def test_from_qms():
     provider = TileProvider.from_qms("OpenStreetMap Standard aka Mapnik")
     assert isinstance(provider, TileProvider)
 
 
+@pytest.mark.xfail(reason="timeout error")
 def test_from_qms_not_found_error():
     with pytest.raises(ValueError):
         provider = TileProvider.from_qms("LolWut")
-
