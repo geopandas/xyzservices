@@ -191,6 +191,42 @@ def test_callable():
     assert xyz.GeoportailFrance.plan["apikey"] == "choisirgeoportail"
 
 
+def test_html_attribution_fallback():
+    # TileProvider.html_attribution falls back to .attribution if the former not present
+    basic = TileProvider(
+        {
+            "url": "https://myserver.com/tiles/{z}/{x}/{y}.png",
+            "attribution": "(C) xyzservices",
+            "name": "my_public_provider",
+        }
+    )
+    html = TileProvider(
+        {
+            "url": "https://myserver.com/tiles/{z}/{x}/{y}.png",
+            "attribution": "(C) xyzservices",
+            "html_attribution": '&copy; <a href="https://xyzservices.readthedocs.io">xyzservices</a>',
+            "name": "my_public_provider",
+        }
+    )
+    assert basic.html_attribution == basic.attribution
+    assert (
+        html.html_attribution
+        == '&copy; <a href="https://xyzservices.readthedocs.io">xyzservices</a>'
+    )
+
+
+@pytest.mark.xfail(reason="timeout error")
+def test_from_qms():
+    provider = TileProvider.from_qms("OpenStreetMap Standard aka Mapnik")
+    assert isinstance(provider, TileProvider)
+
+
+@pytest.mark.xfail(reason="timeout error")
+def test_from_qms_not_found_error():
+    with pytest.raises(ValueError):
+        provider = TileProvider.from_qms("LolWut")
+
+
 def test_flatten():
     provider = TileProvider(
         {

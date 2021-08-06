@@ -3,18 +3,21 @@
         "Mapnik": {
             "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
             "max_zoom": 19,
+            "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) OpenStreetMap contributors",
             "name": "OpenStreetMap.Mapnik"
         },
         "DE": {
             "url": "https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png",
             "max_zoom": 18,
+            "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) OpenStreetMap contributors",
             "name": "OpenStreetMap.DE"
         },
         "CH": {
             "url": "https://tile.osm.ch/switzerland/{z}/{x}/{y}.png",
             "max_zoom": 18,
+            "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) OpenStreetMap contributors",
             "bounds": [
                 [
@@ -31,18 +34,21 @@
         "France": {
             "url": "https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png",
             "max_zoom": 20,
+            "html_attribution": "&copy; OpenStreetMap France | &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) OpenStreetMap France | (C) OpenStreetMap contributors",
             "name": "OpenStreetMap.France"
         },
         "HOT": {
             "url": "https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png",
             "max_zoom": 19,
+            "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors, Tiles style by <a href=\"https://www.hotosm.org/\" target=\"_blank\">Humanitarian OpenStreetMap Team</a> hosted by <a href=\"https://openstreetmap.fr/\" target=\"_blank\">OpenStreetMap France</a>",
             "attribution": "(C) OpenStreetMap contributors, Tiles style by Humanitarian OpenStreetMap Team hosted by OpenStreetMap France",
             "name": "OpenStreetMap.HOT"
         },
         "BZH": {
             "url": "https://tile.openstreetmap.bzh/br/{z}/{x}/{y}.png",
             "max_zoom": 19,
+            "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors, Tiles courtesy of <a href=\"http://www.openstreetmap.bzh/\" target=\"_blank\">Breton OpenStreetMap Team</a>",
             "attribution": "(C) OpenStreetMap contributors, Tiles courtesy of Breton OpenStreetMap Team",
             "bounds": [
                 [
@@ -59,36 +65,42 @@
     },
     "OpenSeaMap": {
         "url": "https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png",
+        "html_attribution": "Map data: &copy; <a href=\"http://www.openseamap.org\">OpenSeaMap</a> contributors",
         "attribution": "Map data: (C) OpenSeaMap contributors",
         "name": "OpenSeaMap"
     },
     "OpenPtMap": {
         "url": "http://openptmap.org/tiles/{z}/{x}/{y}.png",
         "max_zoom": 17,
+        "html_attribution": "Map data: &copy; <a href=\"http://www.openptmap.org\">OpenPtMap</a> contributors",
         "attribution": "Map data: (C) OpenPtMap contributors",
         "name": "OpenPtMap"
     },
     "OpenTopoMap": {
         "url": "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
         "max_zoom": 17,
+        "html_attribution": "Map data: &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors, <a href=\"http://viewfinderpanoramas.org\">SRTM</a> | Map style: &copy; <a href=\"https://opentopomap.org\">OpenTopoMap</a> (<a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">CC-BY-SA</a>)",
         "attribution": "Map data: (C) OpenStreetMap contributors, SRTM | Map style: (C) OpenTopoMap (CC-BY-SA)",
         "name": "OpenTopoMap"
     },
     "OpenRailwayMap": {
         "url": "https://{s}.tiles.openrailwaymap.org/standard/{z}/{x}/{y}.png",
         "max_zoom": 19,
+        "html_attribution": "Map data: &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors | Map style: &copy; <a href=\"https://www.OpenRailwayMap.org\">OpenRailwayMap</a> (<a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">CC-BY-SA</a>)",
         "attribution": "Map data: (C) OpenStreetMap contributors | Map style: (C) OpenRailwayMap (CC-BY-SA)",
         "name": "OpenRailwayMap"
     },
     "OpenFireMap": {
         "url": "http://openfiremap.org/hytiles/{z}/{x}/{y}.png",
         "max_zoom": 19,
+        "html_attribution": "Map data: &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors | Map style: &copy; <a href=\"http://www.openfiremap.org\">OpenFireMap</a> (<a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">CC-BY-SA</a>)",
         "attribution": "Map data: (C) OpenStreetMap contributors | Map style: (C) OpenFireMap (CC-BY-SA)",
         "name": "OpenFireMap"
     },
     "SafeCast": {
         "url": "https://s3.amazonaws.com/te512.safecast.org/{z}/{x}/{y}.png",
         "max_zoom": 16,
+        "html_attribution": "Map data: &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors | Map style: &copy; <a href=\"https://blog.safecast.org/about/\">SafeCast</a> (<a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">CC-BY-SA</a>)",
         "attribution": "Map data: (C) OpenStreetMap contributors | Map style: (C) SafeCast (CC-BY-SA)",
         "name": "SafeCast"
     },
@@ -96,24 +108,28 @@
         "AlidadeSmooth": {
             "url": "https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png",
             "max_zoom": 20,
+            "html_attribution": "&copy; <a href=\"https://stadiamaps.com/\">Stadia Maps</a>, &copy; <a href=\"https://openmaptiles.org/\">OpenMapTiles</a> &copy; <a href=\"http://openstreetmap.org\">OpenStreetMap</a> contributors",
             "attribution": "(C) Stadia Maps, (C) OpenMapTiles (C) OpenStreetMap contributors",
             "name": "Stadia.AlidadeSmooth"
         },
         "AlidadeSmoothDark": {
             "url": "https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png",
             "max_zoom": 20,
+            "html_attribution": "&copy; <a href=\"https://stadiamaps.com/\">Stadia Maps</a>, &copy; <a href=\"https://openmaptiles.org/\">OpenMapTiles</a> &copy; <a href=\"http://openstreetmap.org\">OpenStreetMap</a> contributors",
             "attribution": "(C) Stadia Maps, (C) OpenMapTiles (C) OpenStreetMap contributors",
             "name": "Stadia.AlidadeSmoothDark"
         },
         "OSMBright": {
             "url": "https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png",
             "max_zoom": 20,
+            "html_attribution": "&copy; <a href=\"https://stadiamaps.com/\">Stadia Maps</a>, &copy; <a href=\"https://openmaptiles.org/\">OpenMapTiles</a> &copy; <a href=\"http://openstreetmap.org\">OpenStreetMap</a> contributors",
             "attribution": "(C) Stadia Maps, (C) OpenMapTiles (C) OpenStreetMap contributors",
             "name": "Stadia.OSMBright"
         },
         "Outdoors": {
             "url": "https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png",
             "max_zoom": 20,
+            "html_attribution": "&copy; <a href=\"https://stadiamaps.com/\">Stadia Maps</a>, &copy; <a href=\"https://openmaptiles.org/\">OpenMapTiles</a> &copy; <a href=\"http://openstreetmap.org\">OpenStreetMap</a> contributors",
             "attribution": "(C) Stadia Maps, (C) OpenMapTiles (C) OpenStreetMap contributors",
             "name": "Stadia.Outdoors"
         }
@@ -121,6 +137,7 @@
     "Thunderforest": {
         "OpenCycleMap": {
             "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}",
+            "html_attribution": "&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) Thunderforest, (C) OpenStreetMap contributors",
             "variant": "cycle",
             "apikey": "<insert your api key here>",
@@ -129,6 +146,7 @@
         },
         "Transport": {
             "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}",
+            "html_attribution": "&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) Thunderforest, (C) OpenStreetMap contributors",
             "variant": "transport",
             "apikey": "<insert your api key here>",
@@ -137,6 +155,7 @@
         },
         "TransportDark": {
             "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}",
+            "html_attribution": "&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) Thunderforest, (C) OpenStreetMap contributors",
             "variant": "transport-dark",
             "apikey": "<insert your api key here>",
@@ -145,6 +164,7 @@
         },
         "SpinalMap": {
             "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}",
+            "html_attribution": "&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) Thunderforest, (C) OpenStreetMap contributors",
             "variant": "spinal-map",
             "apikey": "<insert your api key here>",
@@ -153,6 +173,7 @@
         },
         "Landscape": {
             "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}",
+            "html_attribution": "&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) Thunderforest, (C) OpenStreetMap contributors",
             "variant": "landscape",
             "apikey": "<insert your api key here>",
@@ -161,6 +182,7 @@
         },
         "Outdoors": {
             "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}",
+            "html_attribution": "&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) Thunderforest, (C) OpenStreetMap contributors",
             "variant": "outdoors",
             "apikey": "<insert your api key here>",
@@ -169,6 +191,7 @@
         },
         "Pioneer": {
             "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}",
+            "html_attribution": "&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) Thunderforest, (C) OpenStreetMap contributors",
             "variant": "pioneer",
             "apikey": "<insert your api key here>",
@@ -177,6 +200,7 @@
         },
         "MobileAtlas": {
             "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}",
+            "html_attribution": "&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) Thunderforest, (C) OpenStreetMap contributors",
             "variant": "mobile-atlas",
             "apikey": "<insert your api key here>",
@@ -185,6 +209,7 @@
         },
         "Neighbourhood": {
             "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}",
+            "html_attribution": "&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) Thunderforest, (C) OpenStreetMap contributors",
             "variant": "neighbourhood",
             "apikey": "<insert your api key here>",
@@ -195,6 +220,7 @@
     "CyclOSM": {
         "url": "https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png",
         "max_zoom": 20,
+        "html_attribution": "<a href=\"https://github.com/cyclosm/cyclosm-cartocss-style/releases\" title=\"CyclOSM - Open Bicycle render\">CyclOSM</a> | Map data: &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
         "attribution": "CyclOSM | Map data: (C) OpenStreetMap contributors",
         "name": "CyclOSM"
     },
@@ -203,6 +229,7 @@
             "url": "https://{s}.tile.openstreetmap.se/hydda/{variant}/{z}/{x}/{y}.png",
             "max_zoom": 20,
             "variant": "full",
+            "html_attribution": "Tiles courtesy of <a href=\"http://openstreetmap.se/\" target=\"_blank\">OpenStreetMap Sweden</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "Tiles courtesy of OpenStreetMap Sweden -- Map data (C) OpenStreetMap contributors",
             "name": "Hydda.Full"
         },
@@ -210,6 +237,7 @@
             "url": "https://{s}.tile.openstreetmap.se/hydda/{variant}/{z}/{x}/{y}.png",
             "max_zoom": 20,
             "variant": "base",
+            "html_attribution": "Tiles courtesy of <a href=\"http://openstreetmap.se/\" target=\"_blank\">OpenStreetMap Sweden</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "Tiles courtesy of OpenStreetMap Sweden -- Map data (C) OpenStreetMap contributors",
             "name": "Hydda.Base"
         },
@@ -217,6 +245,7 @@
             "url": "https://{s}.tile.openstreetmap.se/hydda/{variant}/{z}/{x}/{y}.png",
             "max_zoom": 20,
             "variant": "roads_and_labels",
+            "html_attribution": "Tiles courtesy of <a href=\"http://openstreetmap.se/\" target=\"_blank\">OpenStreetMap Sweden</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "Tiles courtesy of OpenStreetMap Sweden -- Map data (C) OpenStreetMap contributors",
             "name": "Hydda.RoadsAndLabels"
         }
@@ -224,6 +253,7 @@
     "Jawg": {
         "Streets": {
             "url": "https://{s}.tile.jawg.io/{variant}/{z}/{x}/{y}{r}.png?access-token={accessToken}",
+            "html_attribution": "<a href=\"http://jawg.io\" title=\"Tiles Courtesy of Jawg Maps\" target=\"_blank\">&copy; <b>Jawg</b>Maps</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) **Jawg** Maps (C) OpenStreetMap contributors",
             "min_zoom": 0,
             "max_zoom": 22,
@@ -234,6 +264,7 @@
         },
         "Terrain": {
             "url": "https://{s}.tile.jawg.io/{variant}/{z}/{x}/{y}{r}.png?access-token={accessToken}",
+            "html_attribution": "<a href=\"http://jawg.io\" title=\"Tiles Courtesy of Jawg Maps\" target=\"_blank\">&copy; <b>Jawg</b>Maps</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) **Jawg** Maps (C) OpenStreetMap contributors",
             "min_zoom": 0,
             "max_zoom": 22,
@@ -244,6 +275,7 @@
         },
         "Sunny": {
             "url": "https://{s}.tile.jawg.io/{variant}/{z}/{x}/{y}{r}.png?access-token={accessToken}",
+            "html_attribution": "<a href=\"http://jawg.io\" title=\"Tiles Courtesy of Jawg Maps\" target=\"_blank\">&copy; <b>Jawg</b>Maps</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) **Jawg** Maps (C) OpenStreetMap contributors",
             "min_zoom": 0,
             "max_zoom": 22,
@@ -254,6 +286,7 @@
         },
         "Dark": {
             "url": "https://{s}.tile.jawg.io/{variant}/{z}/{x}/{y}{r}.png?access-token={accessToken}",
+            "html_attribution": "<a href=\"http://jawg.io\" title=\"Tiles Courtesy of Jawg Maps\" target=\"_blank\">&copy; <b>Jawg</b>Maps</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) **Jawg** Maps (C) OpenStreetMap contributors",
             "min_zoom": 0,
             "max_zoom": 22,
@@ -264,6 +297,7 @@
         },
         "Light": {
             "url": "https://{s}.tile.jawg.io/{variant}/{z}/{x}/{y}{r}.png?access-token={accessToken}",
+            "html_attribution": "<a href=\"http://jawg.io\" title=\"Tiles Courtesy of Jawg Maps\" target=\"_blank\">&copy; <b>Jawg</b>Maps</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) **Jawg** Maps (C) OpenStreetMap contributors",
             "min_zoom": 0,
             "max_zoom": 22,
@@ -274,6 +308,7 @@
         },
         "Matrix": {
             "url": "https://{s}.tile.jawg.io/{variant}/{z}/{x}/{y}{r}.png?access-token={accessToken}",
+            "html_attribution": "<a href=\"http://jawg.io\" title=\"Tiles Courtesy of Jawg Maps\" target=\"_blank\">&copy; <b>Jawg</b>Maps</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) **Jawg** Maps (C) OpenStreetMap contributors",
             "min_zoom": 0,
             "max_zoom": 22,
@@ -285,6 +320,7 @@
     },
     "MapBox": {
         "url": "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}{r}?access_token={accessToken}",
+        "html_attribution": "&copy; <a href=\"https://www.mapbox.com/about/maps/\" target=\"_blank\">Mapbox</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors <a href=\"https://www.mapbox.com/map-feedback/\" target=\"_blank\">Improve this map</a>",
         "attribution": "(C) Mapbox (C) OpenStreetMap contributors Improve this map",
         "tileSize": 512,
         "max_zoom": 18,
@@ -296,6 +332,7 @@
     "MapTiler": {
         "Streets": {
             "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
             "variant": "streets",
             "ext": "png",
@@ -308,6 +345,7 @@
         },
         "Basic": {
             "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
             "variant": "basic",
             "ext": "png",
@@ -320,6 +358,7 @@
         },
         "Bright": {
             "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
             "variant": "bright",
             "ext": "png",
@@ -332,6 +371,7 @@
         },
         "Pastel": {
             "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
             "variant": "pastel",
             "ext": "png",
@@ -344,6 +384,7 @@
         },
         "Positron": {
             "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
             "variant": "positron",
             "ext": "png",
@@ -356,6 +397,7 @@
         },
         "Hybrid": {
             "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
             "variant": "hybrid",
             "ext": "jpg",
@@ -368,6 +410,7 @@
         },
         "Toner": {
             "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
             "variant": "toner",
             "ext": "png",
@@ -380,6 +423,7 @@
         },
         "Topo": {
             "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
             "variant": "topo",
             "ext": "png",
@@ -392,6 +436,7 @@
         },
         "Voyager": {
             "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
             "variant": "voyager",
             "ext": "png",
@@ -406,6 +451,7 @@
     "Stamen": {
         "Toner": {
             "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
             "subdomains": "abcd",
             "min_zoom": 0,
@@ -416,6 +462,7 @@
         },
         "TonerBackground": {
             "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
             "subdomains": "abcd",
             "min_zoom": 0,
@@ -426,6 +473,7 @@
         },
         "TonerHybrid": {
             "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
             "subdomains": "abcd",
             "min_zoom": 0,
@@ -436,6 +484,7 @@
         },
         "TonerLines": {
             "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
             "subdomains": "abcd",
             "min_zoom": 0,
@@ -446,6 +495,7 @@
         },
         "TonerLabels": {
             "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
             "subdomains": "abcd",
             "min_zoom": 0,
@@ -456,6 +506,7 @@
         },
         "TonerLite": {
             "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
             "subdomains": "abcd",
             "min_zoom": 0,
@@ -466,6 +517,7 @@
         },
         "Watercolor": {
             "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}.{ext}",
+            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
             "subdomains": "abcd",
             "min_zoom": 1,
@@ -476,6 +528,7 @@
         },
         "Terrain": {
             "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
             "subdomains": "abcd",
             "min_zoom": 0,
@@ -486,6 +539,7 @@
         },
         "TerrainBackground": {
             "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
             "subdomains": "abcd",
             "min_zoom": 0,
@@ -496,6 +550,7 @@
         },
         "TerrainLabels": {
             "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
             "subdomains": "abcd",
             "min_zoom": 0,
@@ -506,6 +561,7 @@
         },
         "TopOSMRelief": {
             "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}.{ext}",
+            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
             "subdomains": "abcd",
             "min_zoom": 0,
@@ -526,6 +582,7 @@
         },
         "TopOSMFeatures": {
             "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
             "subdomains": "abcd",
             "min_zoom": 0,
@@ -551,6 +608,7 @@
             "url": "https://{s}.api.tomtom.com/map/1/tile/{variant}/{style}/{z}/{x}/{y}.{ext}?key={apikey}",
             "variant": "basic",
             "max_zoom": 22,
+            "html_attribution": "<a href=\"https://tomtom.com\" target=\"_blank\">&copy;  1992 - 2021 TomTom.</a> ",
             "attribution": "(C) 1992 - 2021 TomTom.",
             "subdomains": "abcd",
             "style": "main",
@@ -562,6 +620,7 @@
             "url": "https://{s}.api.tomtom.com/map/1/tile/{variant}/{style}/{z}/{x}/{y}.{ext}?key={apikey}",
             "variant": "hybrid",
             "max_zoom": 22,
+            "html_attribution": "<a href=\"https://tomtom.com\" target=\"_blank\">&copy;  1992 - 2021 TomTom.</a> ",
             "attribution": "(C) 1992 - 2021 TomTom.",
             "subdomains": "abcd",
             "style": "main",
@@ -573,6 +632,7 @@
             "url": "https://{s}.api.tomtom.com/map/1/tile/{variant}/{style}/{z}/{x}/{y}.{ext}?key={apikey}",
             "variant": "labels",
             "max_zoom": 22,
+            "html_attribution": "<a href=\"https://tomtom.com\" target=\"_blank\">&copy;  1992 - 2021 TomTom.</a> ",
             "attribution": "(C) 1992 - 2021 TomTom.",
             "subdomains": "abcd",
             "style": "main",
@@ -585,12 +645,14 @@
         "WorldStreetMap": {
             "url": "https://server.arcgisonline.com/ArcGIS/rest/services/{variant}/MapServer/tile/{z}/{y}/{x}",
             "variant": "World_Street_Map",
+            "html_attribution": "Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012",
             "attribution": "Tiles (C) Esri -- Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012",
             "name": "Esri.WorldStreetMap"
         },
         "DeLorme": {
             "url": "https://server.arcgisonline.com/ArcGIS/rest/services/{variant}/MapServer/tile/{z}/{y}/{x}",
             "variant": "Specialty/DeLorme_World_Base_Map",
+            "html_attribution": "Tiles &copy; Esri &mdash; Copyright: &copy;2012 DeLorme",
             "attribution": "Tiles (C) Esri -- Copyright: (C)2012 DeLorme",
             "min_zoom": 1,
             "max_zoom": 11,
@@ -599,18 +661,21 @@
         "WorldTopoMap": {
             "url": "https://server.arcgisonline.com/ArcGIS/rest/services/{variant}/MapServer/tile/{z}/{y}/{x}",
             "variant": "World_Topo_Map",
+            "html_attribution": "Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community",
             "attribution": "Tiles (C) Esri -- Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community",
             "name": "Esri.WorldTopoMap"
         },
         "WorldImagery": {
             "url": "https://server.arcgisonline.com/ArcGIS/rest/services/{variant}/MapServer/tile/{z}/{y}/{x}",
             "variant": "World_Imagery",
+            "html_attribution": "Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community",
             "attribution": "Tiles (C) Esri -- Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community",
             "name": "Esri.WorldImagery"
         },
         "WorldTerrain": {
             "url": "https://server.arcgisonline.com/ArcGIS/rest/services/{variant}/MapServer/tile/{z}/{y}/{x}",
             "variant": "World_Terrain_Base",
+            "html_attribution": "Tiles &copy; Esri &mdash; Source: USGS, Esri, TANA, DeLorme, and NPS",
             "attribution": "Tiles (C) Esri -- Source: USGS, Esri, TANA, DeLorme, and NPS",
             "max_zoom": 13,
             "name": "Esri.WorldTerrain"
@@ -618,6 +683,7 @@
         "WorldShadedRelief": {
             "url": "https://server.arcgisonline.com/ArcGIS/rest/services/{variant}/MapServer/tile/{z}/{y}/{x}",
             "variant": "World_Shaded_Relief",
+            "html_attribution": "Tiles &copy; Esri &mdash; Source: Esri",
             "attribution": "Tiles (C) Esri -- Source: Esri",
             "max_zoom": 13,
             "name": "Esri.WorldShadedRelief"
@@ -625,6 +691,7 @@
         "WorldPhysical": {
             "url": "https://server.arcgisonline.com/ArcGIS/rest/services/{variant}/MapServer/tile/{z}/{y}/{x}",
             "variant": "World_Physical_Map",
+            "html_attribution": "Tiles &copy; Esri &mdash; Source: US National Park Service",
             "attribution": "Tiles (C) Esri -- Source: US National Park Service",
             "max_zoom": 8,
             "name": "Esri.WorldPhysical"
@@ -632,6 +699,7 @@
         "OceanBasemap": {
             "url": "https://server.arcgisonline.com/ArcGIS/rest/services/{variant}/MapServer/tile/{z}/{y}/{x}",
             "variant": "Ocean_Basemap",
+            "html_attribution": "Tiles &copy; Esri &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri",
             "attribution": "Tiles (C) Esri -- Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri",
             "max_zoom": 13,
             "name": "Esri.OceanBasemap"
@@ -639,6 +707,7 @@
         "NatGeoWorldMap": {
             "url": "https://server.arcgisonline.com/ArcGIS/rest/services/{variant}/MapServer/tile/{z}/{y}/{x}",
             "variant": "NatGeo_World_Map",
+            "html_attribution": "Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC",
             "attribution": "Tiles (C) Esri -- National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC",
             "max_zoom": 16,
             "name": "Esri.NatGeoWorldMap"
@@ -646,6 +715,7 @@
         "WorldGrayCanvas": {
             "url": "https://server.arcgisonline.com/ArcGIS/rest/services/{variant}/MapServer/tile/{z}/{y}/{x}",
             "variant": "Canvas/World_Light_Gray_Base",
+            "html_attribution": "Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ",
             "attribution": "Tiles (C) Esri -- Esri, DeLorme, NAVTEQ",
             "max_zoom": 16,
             "name": "Esri.WorldGrayCanvas"
@@ -655,6 +725,7 @@
         "Clouds": {
             "url": "http://{s}.tile.openweathermap.org/map/{variant}/{z}/{x}/{y}.png?appid={apiKey}",
             "max_zoom": 19,
+            "html_attribution": "Map data &copy; <a href=\"http://openweathermap.org\">OpenWeatherMap</a>",
             "attribution": "Map data (C) OpenWeatherMap",
             "apiKey": "<insert your api key here>",
             "opacity": 0.5,
@@ -664,6 +735,7 @@
         "CloudsClassic": {
             "url": "http://{s}.tile.openweathermap.org/map/{variant}/{z}/{x}/{y}.png?appid={apiKey}",
             "max_zoom": 19,
+            "html_attribution": "Map data &copy; <a href=\"http://openweathermap.org\">OpenWeatherMap</a>",
             "attribution": "Map data (C) OpenWeatherMap",
             "apiKey": "<insert your api key here>",
             "opacity": 0.5,
@@ -673,6 +745,7 @@
         "Precipitation": {
             "url": "http://{s}.tile.openweathermap.org/map/{variant}/{z}/{x}/{y}.png?appid={apiKey}",
             "max_zoom": 19,
+            "html_attribution": "Map data &copy; <a href=\"http://openweathermap.org\">OpenWeatherMap</a>",
             "attribution": "Map data (C) OpenWeatherMap",
             "apiKey": "<insert your api key here>",
             "opacity": 0.5,
@@ -682,6 +755,7 @@
         "PrecipitationClassic": {
             "url": "http://{s}.tile.openweathermap.org/map/{variant}/{z}/{x}/{y}.png?appid={apiKey}",
             "max_zoom": 19,
+            "html_attribution": "Map data &copy; <a href=\"http://openweathermap.org\">OpenWeatherMap</a>",
             "attribution": "Map data (C) OpenWeatherMap",
             "apiKey": "<insert your api key here>",
             "opacity": 0.5,
@@ -691,6 +765,7 @@
         "Rain": {
             "url": "http://{s}.tile.openweathermap.org/map/{variant}/{z}/{x}/{y}.png?appid={apiKey}",
             "max_zoom": 19,
+            "html_attribution": "Map data &copy; <a href=\"http://openweathermap.org\">OpenWeatherMap</a>",
             "attribution": "Map data (C) OpenWeatherMap",
             "apiKey": "<insert your api key here>",
             "opacity": 0.5,
@@ -700,6 +775,7 @@
         "RainClassic": {
             "url": "http://{s}.tile.openweathermap.org/map/{variant}/{z}/{x}/{y}.png?appid={apiKey}",
             "max_zoom": 19,
+            "html_attribution": "Map data &copy; <a href=\"http://openweathermap.org\">OpenWeatherMap</a>",
             "attribution": "Map data (C) OpenWeatherMap",
             "apiKey": "<insert your api key here>",
             "opacity": 0.5,
@@ -709,6 +785,7 @@
         "Pressure": {
             "url": "http://{s}.tile.openweathermap.org/map/{variant}/{z}/{x}/{y}.png?appid={apiKey}",
             "max_zoom": 19,
+            "html_attribution": "Map data &copy; <a href=\"http://openweathermap.org\">OpenWeatherMap</a>",
             "attribution": "Map data (C) OpenWeatherMap",
             "apiKey": "<insert your api key here>",
             "opacity": 0.5,
@@ -718,6 +795,7 @@
         "PressureContour": {
             "url": "http://{s}.tile.openweathermap.org/map/{variant}/{z}/{x}/{y}.png?appid={apiKey}",
             "max_zoom": 19,
+            "html_attribution": "Map data &copy; <a href=\"http://openweathermap.org\">OpenWeatherMap</a>",
             "attribution": "Map data (C) OpenWeatherMap",
             "apiKey": "<insert your api key here>",
             "opacity": 0.5,
@@ -727,6 +805,7 @@
         "Wind": {
             "url": "http://{s}.tile.openweathermap.org/map/{variant}/{z}/{x}/{y}.png?appid={apiKey}",
             "max_zoom": 19,
+            "html_attribution": "Map data &copy; <a href=\"http://openweathermap.org\">OpenWeatherMap</a>",
             "attribution": "Map data (C) OpenWeatherMap",
             "apiKey": "<insert your api key here>",
             "opacity": 0.5,
@@ -736,6 +815,7 @@
         "Temperature": {
             "url": "http://{s}.tile.openweathermap.org/map/{variant}/{z}/{x}/{y}.png?appid={apiKey}",
             "max_zoom": 19,
+            "html_attribution": "Map data &copy; <a href=\"http://openweathermap.org\">OpenWeatherMap</a>",
             "attribution": "Map data (C) OpenWeatherMap",
             "apiKey": "<insert your api key here>",
             "opacity": 0.5,
@@ -745,6 +825,7 @@
         "Snow": {
             "url": "http://{s}.tile.openweathermap.org/map/{variant}/{z}/{x}/{y}.png?appid={apiKey}",
             "max_zoom": 19,
+            "html_attribution": "Map data &copy; <a href=\"http://openweathermap.org\">OpenWeatherMap</a>",
             "attribution": "Map data (C) OpenWeatherMap",
             "apiKey": "<insert your api key here>",
             "opacity": 0.5,
@@ -755,6 +836,7 @@
     "HERE": {
         "normalDay": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -771,6 +853,7 @@
         },
         "normalDayCustom": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -787,6 +870,7 @@
         },
         "normalDayGrey": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -803,6 +887,7 @@
         },
         "normalDayMobile": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -819,6 +904,7 @@
         },
         "normalDayGreyMobile": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -835,6 +921,7 @@
         },
         "normalDayTransit": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -851,6 +938,7 @@
         },
         "normalDayTransitMobile": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -867,6 +955,7 @@
         },
         "normalDayTraffic": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -883,6 +972,7 @@
         },
         "normalNight": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -899,6 +989,7 @@
         },
         "normalNightMobile": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -915,6 +1006,7 @@
         },
         "normalNightGrey": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -931,6 +1023,7 @@
         },
         "normalNightGreyMobile": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -947,6 +1040,7 @@
         },
         "normalNightTransit": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -963,6 +1057,7 @@
         },
         "normalNightTransitMobile": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -979,6 +1074,7 @@
         },
         "reducedDay": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -995,6 +1091,7 @@
         },
         "reducedNight": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1011,6 +1108,7 @@
         },
         "basicMap": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1027,6 +1125,7 @@
         },
         "mapLabels": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1043,6 +1142,7 @@
         },
         "trafficFlow": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1059,6 +1159,7 @@
         },
         "carnavDayGrey": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1075,6 +1176,7 @@
         },
         "hybridDay": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1091,6 +1193,7 @@
         },
         "hybridDayMobile": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1107,6 +1210,7 @@
         },
         "hybridDayTransit": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1123,6 +1227,7 @@
         },
         "hybridDayGrey": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1139,6 +1244,7 @@
         },
         "hybridDayTraffic": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1155,6 +1261,7 @@
         },
         "pedestrianDay": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1171,6 +1278,7 @@
         },
         "pedestrianNight": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1187,6 +1295,7 @@
         },
         "satelliteDay": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1203,6 +1312,7 @@
         },
         "terrainDay": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1219,6 +1329,7 @@
         },
         "terrainDayMobile": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1237,6 +1348,7 @@
     "HEREv3": {
         "normalDay": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1252,6 +1364,7 @@
         },
         "normalDayCustom": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1267,6 +1380,7 @@
         },
         "normalDayGrey": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1282,6 +1396,7 @@
         },
         "normalDayMobile": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1297,6 +1412,7 @@
         },
         "normalDayGreyMobile": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1312,6 +1428,7 @@
         },
         "normalDayTransit": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1327,6 +1444,7 @@
         },
         "normalDayTransitMobile": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1342,6 +1460,7 @@
         },
         "normalNight": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1357,6 +1476,7 @@
         },
         "normalNightMobile": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1372,6 +1492,7 @@
         },
         "normalNightGrey": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1387,6 +1508,7 @@
         },
         "normalNightGreyMobile": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1402,6 +1524,7 @@
         },
         "normalNightTransit": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1417,6 +1540,7 @@
         },
         "normalNightTransitMobile": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1432,6 +1556,7 @@
         },
         "reducedDay": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1447,6 +1572,7 @@
         },
         "reducedNight": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1462,6 +1588,7 @@
         },
         "basicMap": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1477,6 +1604,7 @@
         },
         "mapLabels": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1492,6 +1620,7 @@
         },
         "trafficFlow": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1507,6 +1636,7 @@
         },
         "carnavDayGrey": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1522,6 +1652,7 @@
         },
         "hybridDay": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1537,6 +1668,7 @@
         },
         "hybridDayMobile": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1552,6 +1684,7 @@
         },
         "hybridDayTransit": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1567,6 +1700,7 @@
         },
         "hybridDayGrey": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1582,6 +1716,7 @@
         },
         "pedestrianDay": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1597,6 +1732,7 @@
         },
         "pedestrianNight": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1612,6 +1748,7 @@
         },
         "satelliteDay": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1627,6 +1764,7 @@
         },
         "terrainDay": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1642,6 +1780,7 @@
         },
         "terrainDayMobile": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2021 <a href=\"http://developer.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2021 HERE",
             "subdomains": "1234",
             "mapID": "newest",
@@ -1671,17 +1810,20 @@
                 22.576904
             ]
         ],
+        "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors, vizualization CC-By-SA 2.0 <a href=\"http://freemap.sk\">Freemap.sk</a>",
         "attribution": "(C) OpenStreetMap contributors, vizualization CC-By-SA 2.0 Freemap.sk",
         "name": "FreeMapSK"
     },
     "MtbMap": {
         "url": "http://tile.mtbmap.cz/mtbmap_tiles/{z}/{x}/{y}.png",
+        "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &amp; USGS",
         "attribution": "(C) OpenStreetMap contributors & USGS",
         "name": "MtbMap"
     },
     "CartoDB": {
         "Positron": {
             "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png",
+            "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
             "max_zoom": 19,
@@ -1690,6 +1832,7 @@
         },
         "PositronNoLabels": {
             "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png",
+            "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
             "max_zoom": 19,
@@ -1698,6 +1841,7 @@
         },
         "PositronOnlyLabels": {
             "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png",
+            "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
             "max_zoom": 19,
@@ -1706,6 +1850,7 @@
         },
         "DarkMatter": {
             "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png",
+            "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
             "max_zoom": 19,
@@ -1714,6 +1859,7 @@
         },
         "DarkMatterNoLabels": {
             "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png",
+            "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
             "max_zoom": 19,
@@ -1722,6 +1868,7 @@
         },
         "DarkMatterOnlyLabels": {
             "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png",
+            "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
             "max_zoom": 19,
@@ -1730,6 +1877,7 @@
         },
         "Voyager": {
             "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png",
+            "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
             "max_zoom": 19,
@@ -1738,6 +1886,7 @@
         },
         "VoyagerNoLabels": {
             "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png",
+            "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
             "max_zoom": 19,
@@ -1746,6 +1895,7 @@
         },
         "VoyagerOnlyLabels": {
             "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png",
+            "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
             "max_zoom": 19,
@@ -1754,6 +1904,7 @@
         },
         "VoyagerLabelsUnder": {
             "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png",
+            "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
             "max_zoom": 19,
@@ -1765,6 +1916,7 @@
         "HikeBike": {
             "url": "https://tiles.wmflabs.org/{variant}/{z}/{x}/{y}.png",
             "max_zoom": 19,
+            "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) OpenStreetMap contributors",
             "variant": "hikebike",
             "name": "HikeBike.HikeBike"
@@ -1772,6 +1924,7 @@
         "HillShading": {
             "url": "https://tiles.wmflabs.org/{variant}/{z}/{x}/{y}.png",
             "max_zoom": 15,
+            "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) OpenStreetMap contributors",
             "variant": "hillshading",
             "name": "HikeBike.HillShading"
@@ -1781,6 +1934,7 @@
         "basemap": {
             "url": "https://maps{s}.wien.gv.at/basemap/{variant}/{type}/google3857/{z}/{y}/{x}.{format}",
             "max_zoom": 20,
+            "html_attribution": "Datenquelle: <a href=\"https://www.basemap.at\">basemap.at</a>",
             "attribution": "Datenquelle: basemap.at",
             "subdomains": [
                 "",
@@ -1807,6 +1961,7 @@
         "grau": {
             "url": "https://maps{s}.wien.gv.at/basemap/{variant}/{type}/google3857/{z}/{y}/{x}.{format}",
             "max_zoom": 19,
+            "html_attribution": "Datenquelle: <a href=\"https://www.basemap.at\">basemap.at</a>",
             "attribution": "Datenquelle: basemap.at",
             "subdomains": [
                 "",
@@ -1833,6 +1988,7 @@
         "overlay": {
             "url": "https://maps{s}.wien.gv.at/basemap/{variant}/{type}/google3857/{z}/{y}/{x}.{format}",
             "max_zoom": 19,
+            "html_attribution": "Datenquelle: <a href=\"https://www.basemap.at\">basemap.at</a>",
             "attribution": "Datenquelle: basemap.at",
             "subdomains": [
                 "",
@@ -1859,6 +2015,7 @@
         "terrain": {
             "url": "https://maps{s}.wien.gv.at/basemap/{variant}/{type}/google3857/{z}/{y}/{x}.{format}",
             "max_zoom": 19,
+            "html_attribution": "Datenquelle: <a href=\"https://www.basemap.at\">basemap.at</a>",
             "attribution": "Datenquelle: basemap.at",
             "subdomains": [
                 "",
@@ -1885,6 +2042,7 @@
         "surface": {
             "url": "https://maps{s}.wien.gv.at/basemap/{variant}/{type}/google3857/{z}/{y}/{x}.{format}",
             "max_zoom": 19,
+            "html_attribution": "Datenquelle: <a href=\"https://www.basemap.at\">basemap.at</a>",
             "attribution": "Datenquelle: basemap.at",
             "subdomains": [
                 "",
@@ -1911,6 +2069,7 @@
         "highdpi": {
             "url": "https://maps{s}.wien.gv.at/basemap/{variant}/{type}/google3857/{z}/{y}/{x}.{format}",
             "max_zoom": 19,
+            "html_attribution": "Datenquelle: <a href=\"https://www.basemap.at\">basemap.at</a>",
             "attribution": "Datenquelle: basemap.at",
             "subdomains": [
                 "",
@@ -1937,6 +2096,7 @@
         "orthofoto": {
             "url": "https://maps{s}.wien.gv.at/basemap/{variant}/{type}/google3857/{z}/{y}/{x}.{format}",
             "max_zoom": 20,
+            "html_attribution": "Datenquelle: <a href=\"https://www.basemap.at\">basemap.at</a>",
             "attribution": "Datenquelle: basemap.at",
             "subdomains": [
                 "",
@@ -1976,6 +2136,7 @@
                     7.6
                 ]
             ],
+            "html_attribution": "Kaartgegevens &copy; <a href=\"https://www.kadaster.nl\">Kadaster</a>",
             "attribution": "Kaartgegevens (C) Kadaster",
             "variant": "brtachtergrondkaart",
             "name": "nlmaps.standaard"
@@ -1994,6 +2155,7 @@
                     7.6
                 ]
             ],
+            "html_attribution": "Kaartgegevens &copy; <a href=\"https://www.kadaster.nl\">Kadaster</a>",
             "attribution": "Kaartgegevens (C) Kadaster",
             "variant": "brtachtergrondkaartpastel",
             "name": "nlmaps.pastel"
@@ -2012,6 +2174,7 @@
                     7.6
                 ]
             ],
+            "html_attribution": "Kaartgegevens &copy; <a href=\"https://www.kadaster.nl\">Kadaster</a>",
             "attribution": "Kaartgegevens (C) Kadaster",
             "variant": "brtachtergrondkaartgrijs",
             "name": "nlmaps.grijs"
@@ -2030,6 +2193,7 @@
                     7.6
                 ]
             ],
+            "html_attribution": "Kaartgegevens &copy; <a href=\"https://www.kadaster.nl\">Kadaster</a>",
             "attribution": "Kaartgegevens (C) Kadaster",
             "name": "nlmaps.luchtfoto"
         }
@@ -2037,6 +2201,7 @@
     "NASAGIBS": {
         "ModisTerraTrueColorCR": {
             "url": "https://map1.vis.earthdata.nasa.gov/wmts-webmerc/{variant}/default/{time}/{tilematrixset}{max_zoom}/{z}/{y}/{x}.{format}",
+            "html_attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.",
             "attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (ESDIS) with funding provided by NASA/HQ.",
             "bounds": [
                 [
@@ -2058,6 +2223,7 @@
         },
         "ModisTerraBands367CR": {
             "url": "https://map1.vis.earthdata.nasa.gov/wmts-webmerc/{variant}/default/{time}/{tilematrixset}{max_zoom}/{z}/{y}/{x}.{format}",
+            "html_attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.",
             "attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (ESDIS) with funding provided by NASA/HQ.",
             "bounds": [
                 [
@@ -2079,6 +2245,7 @@
         },
         "ViirsEarthAtNight2012": {
             "url": "https://map1.vis.earthdata.nasa.gov/wmts-webmerc/{variant}/default/{time}/{tilematrixset}{max_zoom}/{z}/{y}/{x}.{format}",
+            "html_attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.",
             "attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (ESDIS) with funding provided by NASA/HQ.",
             "bounds": [
                 [
@@ -2100,6 +2267,7 @@
         },
         "ModisTerraLSTDay": {
             "url": "https://map1.vis.earthdata.nasa.gov/wmts-webmerc/{variant}/default/{time}/{tilematrixset}{max_zoom}/{z}/{y}/{x}.{format}",
+            "html_attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.",
             "attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (ESDIS) with funding provided by NASA/HQ.",
             "bounds": [
                 [
@@ -2122,6 +2290,7 @@
         },
         "ModisTerraSnowCover": {
             "url": "https://map1.vis.earthdata.nasa.gov/wmts-webmerc/{variant}/default/{time}/{tilematrixset}{max_zoom}/{z}/{y}/{x}.{format}",
+            "html_attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.",
             "attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (ESDIS) with funding provided by NASA/HQ.",
             "bounds": [
                 [
@@ -2144,6 +2313,7 @@
         },
         "ModisTerraAOD": {
             "url": "https://map1.vis.earthdata.nasa.gov/wmts-webmerc/{variant}/default/{time}/{tilematrixset}{max_zoom}/{z}/{y}/{x}.{format}",
+            "html_attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.",
             "attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (ESDIS) with funding provided by NASA/HQ.",
             "bounds": [
                 [
@@ -2166,6 +2336,7 @@
         },
         "ModisTerraChlorophyll": {
             "url": "https://map1.vis.earthdata.nasa.gov/wmts-webmerc/{variant}/default/{time}/{tilematrixset}{max_zoom}/{z}/{y}/{x}.{format}",
+            "html_attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.",
             "attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (ESDIS) with funding provided by NASA/HQ.",
             "bounds": [
                 [
@@ -2189,6 +2360,7 @@
     },
     "NLS": {
         "url": "https://nls-{s}.tileserver.com/nls/{z}/{x}/{y}.jpg",
+        "html_attribution": "<a href=\"http://geo.nls.uk/maps/\">National Library of Scotland Historic Maps</a>",
         "attribution": "National Library of Scotland Historic Maps",
         "bounds": [
             [
@@ -2208,6 +2380,7 @@
     "JusticeMap": {
         "income": {
             "url": "http://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
+            "html_attribution": "<a href=\"http://www.justicemap.org/terms.php\">Justice Map</a>",
             "attribution": "Justice Map",
             "size": "county",
             "bounds": [
@@ -2225,6 +2398,7 @@
         },
         "americanIndian": {
             "url": "http://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
+            "html_attribution": "<a href=\"http://www.justicemap.org/terms.php\">Justice Map</a>",
             "attribution": "Justice Map",
             "size": "county",
             "bounds": [
@@ -2242,6 +2416,7 @@
         },
         "asian": {
             "url": "http://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
+            "html_attribution": "<a href=\"http://www.justicemap.org/terms.php\">Justice Map</a>",
             "attribution": "Justice Map",
             "size": "county",
             "bounds": [
@@ -2259,6 +2434,7 @@
         },
         "black": {
             "url": "http://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
+            "html_attribution": "<a href=\"http://www.justicemap.org/terms.php\">Justice Map</a>",
             "attribution": "Justice Map",
             "size": "county",
             "bounds": [
@@ -2276,6 +2452,7 @@
         },
         "hispanic": {
             "url": "http://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
+            "html_attribution": "<a href=\"http://www.justicemap.org/terms.php\">Justice Map</a>",
             "attribution": "Justice Map",
             "size": "county",
             "bounds": [
@@ -2293,6 +2470,7 @@
         },
         "multi": {
             "url": "http://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
+            "html_attribution": "<a href=\"http://www.justicemap.org/terms.php\">Justice Map</a>",
             "attribution": "Justice Map",
             "size": "county",
             "bounds": [
@@ -2310,6 +2488,7 @@
         },
         "nonWhite": {
             "url": "http://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
+            "html_attribution": "<a href=\"http://www.justicemap.org/terms.php\">Justice Map</a>",
             "attribution": "Justice Map",
             "size": "county",
             "bounds": [
@@ -2327,6 +2506,7 @@
         },
         "white": {
             "url": "http://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
+            "html_attribution": "<a href=\"http://www.justicemap.org/terms.php\">Justice Map</a>",
             "attribution": "Justice Map",
             "size": "county",
             "bounds": [
@@ -2344,6 +2524,7 @@
         },
         "plurality": {
             "url": "http://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
+            "html_attribution": "<a href=\"http://www.justicemap.org/terms.php\">Justice Map</a>",
             "attribution": "Justice Map",
             "size": "county",
             "bounds": [
@@ -2363,6 +2544,7 @@
     "GeoportailFrance": {
         "plan": {
             "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET=PM&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\" href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
             "bounds": [
                 [
@@ -2384,6 +2566,7 @@
         },
         "parcels": {
             "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET=PM&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\" href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
             "bounds": [
                 [
@@ -2405,6 +2588,7 @@
         },
         "orthos": {
             "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET=PM&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\" href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
             "bounds": [
                 [
@@ -2441,6 +2625,7 @@
                     103.502
                 ]
             ],
+            "html_attribution": "<img src=\"https://docs.onemap.sg/maps/images/oneMap64-01.png\" style=\"height:20px;width:20px;\"/> New OneMap | Map data &copy; contributors, <a href=\"http://SLA.gov.sg\">Singapore Land Authority</a>",
             "attribution": "![](https://docs.onemap.sg/maps/images/oneMap64-01.png) New OneMap | Map data (C) contributors, Singapore Land Authority",
             "name": "OneMapSG.Default"
         },
@@ -2459,6 +2644,7 @@
                     103.502
                 ]
             ],
+            "html_attribution": "<img src=\"https://docs.onemap.sg/maps/images/oneMap64-01.png\" style=\"height:20px;width:20px;\"/> New OneMap | Map data &copy; contributors, <a href=\"http://SLA.gov.sg\">Singapore Land Authority</a>",
             "attribution": "![](https://docs.onemap.sg/maps/images/oneMap64-01.png) New OneMap | Map data (C) contributors, Singapore Land Authority",
             "name": "OneMapSG.Night"
         },
@@ -2477,6 +2663,7 @@
                     103.502
                 ]
             ],
+            "html_attribution": "<img src=\"https://docs.onemap.sg/maps/images/oneMap64-01.png\" style=\"height:20px;width:20px;\"/> New OneMap | Map data &copy; contributors, <a href=\"http://SLA.gov.sg\">Singapore Land Authority</a>",
             "attribution": "![](https://docs.onemap.sg/maps/images/oneMap64-01.png) New OneMap | Map data (C) contributors, Singapore Land Authority",
             "name": "OneMapSG.Original"
         },
@@ -2495,6 +2682,7 @@
                     103.502
                 ]
             ],
+            "html_attribution": "<img src=\"https://docs.onemap.sg/maps/images/oneMap64-01.png\" style=\"height:20px;width:20px;\"/> New OneMap | Map data &copy; contributors, <a href=\"http://SLA.gov.sg\">Singapore Land Authority</a>",
             "attribution": "![](https://docs.onemap.sg/maps/images/oneMap64-01.png) New OneMap | Map data (C) contributors, Singapore Land Authority",
             "name": "OneMapSG.Grey"
         },
@@ -2513,6 +2701,7 @@
                     103.502
                 ]
             ],
+            "html_attribution": "<img src=\"https://docs.onemap.sg/maps/images/oneMap64-01.png\" style=\"height:20px;width:20px;\"/> New OneMap | Map data &copy; contributors, <a href=\"http://SLA.gov.sg\">Singapore Land Authority</a>",
             "attribution": "![](https://docs.onemap.sg/maps/images/oneMap64-01.png) New OneMap | Map data (C) contributors, Singapore Land Authority",
             "name": "OneMapSG.LandLot"
         }
@@ -2521,18 +2710,21 @@
         "USTopo": {
             "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer/tile/{z}/{y}/{x}",
             "max_zoom": 20,
+            "html_attribution": "Tiles courtesy of the <a href=\"https://usgs.gov/\">U.S. Geological Survey</a>",
             "attribution": "Tiles courtesy of the U.S. Geological Survey",
             "name": "USGS.USTopo"
         },
         "USImagery": {
             "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}",
             "max_zoom": 20,
+            "html_attribution": "Tiles courtesy of the <a href=\"https://usgs.gov/\">U.S. Geological Survey</a>",
             "attribution": "Tiles courtesy of the U.S. Geological Survey",
             "name": "USGS.USImagery"
         },
         "USImageryTopo": {
             "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryTopo/MapServer/tile/{z}/{y}/{x}",
             "max_zoom": 20,
+            "html_attribution": "Tiles courtesy of the <a href=\"https://usgs.gov/\">U.S. Geological Survey</a>",
             "attribution": "Tiles courtesy of the U.S. Geological Survey",
             "name": "USGS.USImageryTopo"
         }
@@ -2541,6 +2733,7 @@
         "hiking": {
             "url": "https://tile.waymarkedtrails.org/{variant}/{z}/{x}/{y}.png",
             "max_zoom": 18,
+            "html_attribution": "Map data: &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors | Map style: &copy; <a href=\"https://waymarkedtrails.org\">waymarkedtrails.org</a> (<a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">CC-BY-SA</a>)",
             "attribution": "Map data: (C) OpenStreetMap contributors | Map style: (C) waymarkedtrails.org (CC-BY-SA)",
             "variant": "hiking",
             "name": "WaymarkedTrails.hiking"
@@ -2548,6 +2741,7 @@
         "cycling": {
             "url": "https://tile.waymarkedtrails.org/{variant}/{z}/{x}/{y}.png",
             "max_zoom": 18,
+            "html_attribution": "Map data: &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors | Map style: &copy; <a href=\"https://waymarkedtrails.org\">waymarkedtrails.org</a> (<a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">CC-BY-SA</a>)",
             "attribution": "Map data: (C) OpenStreetMap contributors | Map style: (C) waymarkedtrails.org (CC-BY-SA)",
             "variant": "cycling",
             "name": "WaymarkedTrails.cycling"
@@ -2555,6 +2749,7 @@
         "mtb": {
             "url": "https://tile.waymarkedtrails.org/{variant}/{z}/{x}/{y}.png",
             "max_zoom": 18,
+            "html_attribution": "Map data: &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors | Map style: &copy; <a href=\"https://waymarkedtrails.org\">waymarkedtrails.org</a> (<a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">CC-BY-SA</a>)",
             "attribution": "Map data: (C) OpenStreetMap contributors | Map style: (C) waymarkedtrails.org (CC-BY-SA)",
             "variant": "mtb",
             "name": "WaymarkedTrails.mtb"
@@ -2562,6 +2757,7 @@
         "slopes": {
             "url": "https://tile.waymarkedtrails.org/{variant}/{z}/{x}/{y}.png",
             "max_zoom": 18,
+            "html_attribution": "Map data: &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors | Map style: &copy; <a href=\"https://waymarkedtrails.org\">waymarkedtrails.org</a> (<a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">CC-BY-SA</a>)",
             "attribution": "Map data: (C) OpenStreetMap contributors | Map style: (C) waymarkedtrails.org (CC-BY-SA)",
             "variant": "slopes",
             "name": "WaymarkedTrails.slopes"
@@ -2569,6 +2765,7 @@
         "riding": {
             "url": "https://tile.waymarkedtrails.org/{variant}/{z}/{x}/{y}.png",
             "max_zoom": 18,
+            "html_attribution": "Map data: &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors | Map style: &copy; <a href=\"https://waymarkedtrails.org\">waymarkedtrails.org</a> (<a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">CC-BY-SA</a>)",
             "attribution": "Map data: (C) OpenStreetMap contributors | Map style: (C) waymarkedtrails.org (CC-BY-SA)",
             "variant": "riding",
             "name": "WaymarkedTrails.riding"
@@ -2576,6 +2773,7 @@
         "skating": {
             "url": "https://tile.waymarkedtrails.org/{variant}/{z}/{x}/{y}.png",
             "max_zoom": 18,
+            "html_attribution": "Map data: &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors | Map style: &copy; <a href=\"https://waymarkedtrails.org\">waymarkedtrails.org</a> (<a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">CC-BY-SA</a>)",
             "attribution": "Map data: (C) OpenStreetMap contributors | Map style: (C) waymarkedtrails.org (CC-BY-SA)",
             "variant": "skating",
             "name": "WaymarkedTrails.skating"
@@ -2583,6 +2781,7 @@
     },
     "OpenAIP": {
         "url": "http://{s}.tile.maps.openaip.net/geowebcache/service/tms/1.0.0/openaip_basemap@EPSG%3A900913@png/{z}/{x}/{y}.{ext}",
+        "html_attribution": "<a href=\"https://www.openaip.net/\">openAIP Data</a> (<a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">CC-BY-NC-SA</a>)",
         "attribution": "openAIP Data (CC-BY-NC-SA)",
         "ext": "png",
         "min_zoom": 4,
@@ -2597,6 +2796,7 @@
             "url": "https://tiles.opensnowmap.org/{variant}/{z}/{x}/{y}.png",
             "min_zoom": 9,
             "max_zoom": 18,
+            "html_attribution": "Map data: &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors & ODbL, &copy; <a href=\"https://www.opensnowmap.org/iframes/data.html\">www.opensnowmap.org</a> <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>",
             "attribution": "Map data: (C) OpenStreetMap contributors & ODbL, (C) www.opensnowmap.org CC-BY-SA",
             "variant": "pistes",
             "name": "OpenSnowMap.pistes"
@@ -2605,6 +2805,7 @@
     "AzureMaps": {
         "MicrosoftImagery": {
             "url": "https://atlas.microsoft.com/map/tile?api-version={apiVersion}&tilesetId={variant}&x={x}&y={y}&zoom={z}&language={language}&subscription-key={subscriptionKey}",
+            "html_attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview for details.",
             "attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview for details.",
             "apiVersion": "2.0",
             "variant": "microsoft.imagery",
@@ -2614,6 +2815,7 @@
         },
         "MicrosoftBaseDarkGrey": {
             "url": "https://atlas.microsoft.com/map/tile?api-version={apiVersion}&tilesetId={variant}&x={x}&y={y}&zoom={z}&language={language}&subscription-key={subscriptionKey}",
+            "html_attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview for details.",
             "attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview for details.",
             "apiVersion": "2.0",
             "variant": "microsoft.base.darkgrey",
@@ -2623,6 +2825,7 @@
         },
         "MicrosoftBaseRoad": {
             "url": "https://atlas.microsoft.com/map/tile?api-version={apiVersion}&tilesetId={variant}&x={x}&y={y}&zoom={z}&language={language}&subscription-key={subscriptionKey}",
+            "html_attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview for details.",
             "attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview for details.",
             "apiVersion": "2.0",
             "variant": "microsoft.base.road",
@@ -2632,6 +2835,7 @@
         },
         "MicrosoftBaseHybridRoad": {
             "url": "https://atlas.microsoft.com/map/tile?api-version={apiVersion}&tilesetId={variant}&x={x}&y={y}&zoom={z}&language={language}&subscription-key={subscriptionKey}",
+            "html_attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview for details.",
             "attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview for details.",
             "apiVersion": "2.0",
             "variant": "microsoft.base.hybrid.road",
@@ -2641,6 +2845,7 @@
         },
         "MicrosoftTerraMain": {
             "url": "https://atlas.microsoft.com/map/tile?api-version={apiVersion}&tilesetId={variant}&x={x}&y={y}&zoom={z}&language={language}&subscription-key={subscriptionKey}",
+            "html_attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview for details.",
             "attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview for details.",
             "apiVersion": "2.0",
             "variant": "microsoft.terra.main",
@@ -2650,6 +2855,7 @@
         },
         "MicrosoftWeatherInfraredMain": {
             "url": "https://atlas.microsoft.com/map/tile?api-version={apiVersion}&tilesetId={variant}&x={x}&y={y}&zoom={z}&timeStamp={timeStamp}&language={language}&subscription-key={subscriptionKey}",
+            "html_attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview#uri-parameters for details.",
             "attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview#uri-parameters for details.",
             "apiVersion": "2.0",
             "variant": "microsoft.weather.infrared.main",
@@ -2660,6 +2866,7 @@
         },
         "MicrosoftWeatherRadarMain": {
             "url": "https://atlas.microsoft.com/map/tile?api-version={apiVersion}&tilesetId={variant}&x={x}&y={y}&zoom={z}&timeStamp={timeStamp}&language={language}&subscription-key={subscriptionKey}",
+            "html_attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview#uri-parameters for details.",
             "attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview#uri-parameters for details.",
             "apiVersion": "2.0",
             "variant": "microsoft.weather.radar.main",
@@ -2671,7 +2878,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2021-08-01",
+        "date_of_creation": "2021-08-03",
         "commit": "commit 8165f55a586a4a8f2003102e662b8ecac2697f35 (Fix attribution link nlmaps)"
     }
 }

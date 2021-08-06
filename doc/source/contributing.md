@@ -16,14 +16,13 @@ schema to add a single provider:
 
 ```json
 {
-   ...
    "single_provider_name": {
       "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
       "max_zoom": 19,
       "attribution": "(C) OpenStreetMap contributors",
+      "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
       "name": "OpenStreetMap.Mapnik"
    },
-   ...
 }
 ```
 
@@ -33,23 +32,23 @@ the following schema:
 
 ```json
 {
-  ...
   "provider_bunch_name": {
       "first_provider_name": {
             "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
             "max_zoom": 19,
             "attribution": "(C) OpenStreetMap contributors",
+            "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "name": "OpenStreetMap.Mapnik"
       },
       "second_provider_name": {
             "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?access-token={accessToken}",
             "max_zoom": 19,
             "attribution": "(C) OpenStreetMap contributors",
+            "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "name": "OpenStreetMap.Mapnik",
             "accessToken": "<insert your access token here>"
       }
    },
-   ...
 }
 ```
 

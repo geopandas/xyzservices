@@ -1,9 +1,13 @@
 """
 Utilities to support XYZservices
 """
+from __future__ import annotations
+
 import json
 import uuid
+import urllib.request
 from typing import Optional
+from urllib.parse import quote
 
 
 class Bunch(dict):
@@ -150,6 +154,10 @@ class TileProvider(Bunch):
     ...        "name": "my_private_provider",
     ...    }
     ... )
+
+    It is customary to include ``html_attribution`` attribute containing HTML string as
+    ``'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>
+    contributors'`` alongisde a plain-text ``attribution``.
 
     You can then fetch all information as attributes:
 
@@ -319,6 +327,12 @@ class TileProvider(Bunch):
                     return True
         return False
 
+    @property
+    def html_attribution(self):
+        if "html_attribution" in self.keys():
+            return self["html_attribution"]
+        return self["attribution"]
+
     def _repr_html_(self, inside=False):
         provider_info = ""
         for key, val in self.items():
@@ -345,6 +359,51 @@ class TileProvider(Bunch):
 
         return html
 
+    @classmethod
+    def from_qms(cls, name: str) -> TileProvider:
+        """
+        Creates a :class:`TileProvider` object based on the definition from
+        the `Quick Map Services <https://qms.nextgis.com/>`__ open catalog.
+
+        Parameters
+        ----------
+        name : str
+            Service name
+
+        Returns
+        -------
+        :class:`TileProvider`
+
+        Examples
+        --------
+        >>> from xyzservices.lib import TileProvider
+        >>> provider = TileProvider.from_qms("OpenTopoMap")
+        """
+        QMS_API_URL = "https://qms.nextgis.com/api/v1/geoservices"
+
+        services = json.load(
+            urllib.request.urlopen(f"{QMS_API_URL}/?search={quote(name)}&type=tms")
+        )
+
+        for service in services:
+            if service["name"] == name:
+                break
+        else:
+            raise ValueError(f"Service '{name}' not found.")
+
+        service_id = service["id"]
+        service_details = json.load(
+            urllib.request.urlopen(f"{QMS_API_URL}/{service_id}")
+        )
+
+        return cls(
+            name=service_details["name"],
+            url=service_details["url"],
+            min_zoom=service_details.get("z_min"),
+            max_zoom=service_details.get("z_max"),
+            attribution=service_details.get("copyright_text"),
+        )
+
 
 def _load_json(f):
 
@@ -368,11 +427,28 @@ def _load_json(f):
 
 CSS_STYLE = """
 /* CSS stylesheet for displaying xyzservices objects in Jupyter.*/
+.xyz-wrap {
+    --xyz-border-color: var(--jp-border-color2, #ddd);
+    --xyz-font-color2: var(--jp-content-font-color2, rgba(128, 128, 128, 1));
+    --xyz-background-color-white: var(--jp-layout-color1, white);
+    --xyz-background-color: var(--jp-layout-color2, rgba(128, 128, 128, 0.1));
+}
+
+html[theme=dark] .xyz-wrap,
+body.vscode-dark .xyz-wrap,
+body.vscode-high-contrast .xyz-wrap {
+    --xyz-border-color: #222;
+    --xyz-font-color2: rgba(255, 255, 255, 0.54);
+    --xyz-background-color-white: rgba(255, 255, 255, 1);
+    --xyz-background-color: rgba(255, 255, 255, 0.05);
+
+}
+
 .xyz-header {
     padding-top: 6px;
     padding-bottom: 6px;
     margin-bottom: 4px;
-    border-bottom: solid 1px #ddd;
+    border-bottom: solid 1px var(--xyz-border-color);
 }
 
 .xyz-header>div {
@@ -388,11 +464,7 @@ CSS_STYLE = """
 }
 
 .xyz-obj {
-    color: #555;
-}
-
-.xyz-name {
-    color: #000;
+    color: var(--xyz-font-color2);
 }
 
 .xyz-attrs {
@@ -400,11 +472,11 @@ CSS_STYLE = """
 }
 
 dl.xyz-attrs {
-    padding: 0;
+    padding: 0 5px 0 5px;
     margin: 0;
     display: grid;
-    grid-template-columns: 125px auto;
-    background-color: rgb(244, 244, 244);
+    grid-template-columns: 135px auto;
+    background-color: var(--xyz-background-color);
 }
 
 .xyz-attrs dt,
@@ -421,12 +493,6 @@ dd {
     grid-column: 1;
 }
 
-.xyz-attrs dt:hover span {
-    display: inline-block;
-    background: #fff;
-    padding-right: 10px;
-}
-
 .xyz-attrs dd {
     grid-column: 2;
     white-space: pre-wrap;
@@ -434,7 +500,7 @@ dd {
 }
 
 .xyz-details ul>li>label>span {
-    color: #555;
+    color: var(--xyz-font-color2);
     padding-left: 10px;
 }
 
@@ -455,7 +521,7 @@ dd {
 }
 
 .xyz-collapsible>li>label:hover {
-    color: #555;
+    color: var(--xyz-font-color2);
 }
 
 ul.xyz-collapsible {

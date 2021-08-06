@@ -10,7 +10,7 @@ Python API
 .. currentmodule:: xyzservices
 
 .. autoclass:: TileProvider
-   :members: build_url, requires_token,
+   :members: build_url, requires_token, from_qms,
 
 .. autoclass:: Bunch
    :exclude-members: clear, copy, fromkeys, get, items, keys, pop, popitem, setdefault, update, values
@@ -30,6 +30,7 @@ The JSON is structured along the following model example:
          "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
          "max_zoom": 19,
          "attribution": "(C) OpenStreetMap contributors",
+         "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
          "name": "OpenStreetMap.Mapnik"
       },
       "provider_bunch_name": {
@@ -37,12 +38,14 @@ The JSON is structured along the following model example:
                "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                "max_zoom": 19,
                "attribution": "(C) OpenStreetMap contributors",
+               "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
                "name": "OpenStreetMap.Mapnik"
          },
          "second_provider_name": {
                "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?access-token={accessToken}",
                "max_zoom": 19,
                "attribution": "(C) OpenStreetMap contributors",
+               "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
                "name": "OpenStreetMap.Mapnik",
                "accessToken": "<insert your access token here>"
          }
