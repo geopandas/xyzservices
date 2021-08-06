@@ -436,7 +436,7 @@ body.vscode-high-contrast .xyz-wrap {
 }
 
 dl.xyz-attrs {
-    padding: 0 2px 0 2px;
+    padding: 0 5px 0 5px;
     margin: 0;
     display: grid;
     grid-template-columns: 135px auto;
@@ -455,12 +455,6 @@ dd {
 .xyz-attrs dt {
     font-weight: normal;
     grid-column: 1;
-}
-
-.xyz-attrs dt:hover span {
-    display: inline-block;
-    background: var(--xyz-background-color-white);
-    padding-right: 10px;
 }
 
 .xyz-attrs dd {
