@@ -119,6 +119,10 @@ class TileProvider(Bunch):
     ...    }
     ... )
 
+    It is customary to include ``html_attribution`` attribute containing HTML string as
+    ``'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>
+    contributors'`` alongisde a plain-text ``attribution``.
+
     You can then fetch all information as attributes:
 
     >>> public_provider.url
@@ -286,6 +290,12 @@ class TileProvider(Bunch):
                 if key in self.url:
                     return True
         return False
+
+    @property
+    def html_attribution(self):
+        if "html_attribution" in self.keys():
+            return self["html_attribution"]
+        return self["attribution"]
 
     def _repr_html_(self, inside=False):
         provider_info = ""
