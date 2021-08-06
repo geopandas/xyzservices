@@ -85,16 +85,16 @@ class Bunch(dict):
 
         return html
 
-    def flatten(self) -> "Bunch":
-        """Return the nested :class:`Bunch` collapsed into one level.
+    def flatten(self) -> dict:
+        """Return the nested :class:`Bunch` collapsed into the one level dictionary.
 
-        Note: Formerly nested :class:`TileProvider`s cannot be accessed as attributes
-        and have to be accessed via index operator (as in ``flat["OpenStreetMap.Mapnik"]
-        not ``flat.OpenStreetMap.Mapnik``).
+        Dictionary keys are :class:`TileProvider` names (e.g. ``OpenStreetMap.Mapnik``)
+        and its values are :class:`TileProvider` objects.
 
         Returns
         -------
-        flattened : Bunch
+        flattened : dict
+            dictionary of :class:`TileProvider` objects
 
         Examples
         --------
@@ -108,7 +108,7 @@ class Bunch(dict):
 
         """
 
-        flat = Bunch()
+        flat = {}
 
         def _get_providers(provider):
             if isinstance(provider, TileProvider):
