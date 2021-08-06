@@ -85,6 +85,42 @@ class Bunch(dict):
 
         return html
 
+    def flatten(self) -> dict:
+        """Return the nested :class:`Bunch` collapsed into the one level dictionary.
+
+        Dictionary keys are :class:`TileProvider` names (e.g. ``OpenStreetMap.Mapnik``)
+        and its values are :class:`TileProvider` objects.
+
+        Returns
+        -------
+        flattened : dict
+            dictionary of :class:`TileProvider` objects
+
+        Examples
+        --------
+        >>> import xyzservices.providers as xyz
+        >>> len(xyz)
+        36
+
+        >>> flat = xyz.flatten()
+        >>> len(xyz)
+        207
+
+        """
+
+        flat = {}
+
+        def _get_providers(provider):
+            if isinstance(provider, TileProvider):
+                flat[provider.name] = provider
+            else:
+                for prov in provider.values():
+                    _get_providers(prov)
+
+        _get_providers(self)
+
+        return flat
+
 
 class TileProvider(Bunch):
     """
