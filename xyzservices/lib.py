@@ -393,17 +393,15 @@ CSS_STYLE = """
 /* CSS stylesheet for displaying xyzservices objects in Jupyter.*/
 .xyz-wrap {
     --xyz-border-color: var(--jp-border-color2, #ddd);
-    --xyz-font-color0: var(--jp-content-font-color0, rgba(0, 0, 0, 1));
-    --xyz-font-color2: var(--jp-content-font-color2, rgba(0, 0, 0, 0.54));
+    --xyz-font-color2: var(--jp-content-font-color2, rgba(128, 128, 128, 1));
     --xyz-background-color-white: var(--jp-layout-color1, white);
-    --xyz-background-color: var(--jp-layout-color2, rgba(255, 255, 255, 0.05));
+    --xyz-background-color: var(--jp-layout-color2, rgba(128, 128, 128, 0.1));
 }
 
 html[theme=dark] .xyz-wrap,
 body.vscode-dark .xyz-wrap,
 body.vscode-high-contrast .xyz-wrap {
     --xyz-border-color: #222;
-    --xyz-font-color0: white;
     --xyz-font-color2: rgba(255, 255, 255, 0.54);
     --xyz-background-color-white: rgba(255, 255, 255, 1);
     --xyz-background-color: rgba(255, 255, 255, 0.05);
@@ -433,19 +431,15 @@ body.vscode-high-contrast .xyz-wrap {
     color: var(--xyz-font-color2);
 }
 
-.xyz-name {
-    color: var(--xyz-font-color0);
-}
-
 .xyz-attrs {
     grid-column: 1 / -1;
 }
 
 dl.xyz-attrs {
-    padding: 0;
+    padding: 0 2px 0 2px;
     margin: 0;
     display: grid;
-    grid-template-columns: 125px auto;
+    grid-template-columns: 135px auto;
     background-color: var(--xyz-background-color);
 }
 
