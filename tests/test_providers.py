@@ -213,3 +213,14 @@ def test_html_attribution_fallback():
         html.html_attribution
         == '&copy; <a href="https://xyzservices.readthedocs.io">xyzservices</a>'
     )
+
+
+def test_from_qms():
+    provider = TileProvider.from_qms("OpenStreetMap Standard aka Mapnik")
+    assert isinstance(provider, TileProvider)
+
+
+def test_from_qms_not_found_error():
+    with pytest.raises(ValueError):
+        provider = TileProvider.from_qms("LolWut")
+

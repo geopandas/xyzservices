@@ -10,7 +10,7 @@ Python API
 .. currentmodule:: xyzservices
 
 .. autoclass:: TileProvider
-   :members: build_url, requires_token,
+   :members: build_url, requires_token, from_qms,
 
 .. autoclass:: Bunch
    :exclude-members: clear, copy, fromkeys, get, items, keys, pop, popitem, setdefault, update, values
