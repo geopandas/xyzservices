@@ -120,6 +120,7 @@ def pythonize_data(data):
                             break
                 else:
                     raise ValueError("Attribution not known: {}".format(value))
+            new_data.append(("html_attribution", value))
             # convert html text to plain text
             converter = html2text.HTML2Text(bodywidth=1000)
             converter.ignore_links = True
