@@ -189,3 +189,13 @@ def test_callable():
     assert updated_provider["apikey"] == "mykey"
     # check that original provider dict is not modified
     assert xyz.GeoportailFrance.plan["apikey"] == "choisirgeoportail"
+
+
+def test_from_qms():
+    provider = TileProvider.from_qms("OpenStreetMap Standard aka Mapnik")
+    assert isinstance(provider, TileProvider)
+
+
+def test_from_qms_not_found_error():
+    with pytest.raises(ValueError):
+        provider = TileProvider.from_qms("LolWut")
