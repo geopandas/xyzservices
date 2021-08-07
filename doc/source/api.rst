@@ -14,7 +14,7 @@ Python API
 
 .. autoclass:: Bunch
    :exclude-members: clear, copy, fromkeys, get, items, keys, pop, popitem, setdefault, update, values
-   :members: flatten
+   :members: filter, flatten
 
 Providers JSON
 --------------
