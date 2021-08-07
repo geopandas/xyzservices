@@ -4,6 +4,76 @@ import xyzservices.providers as xyz
 from xyzservices import TileProvider, Bunch
 
 
+@pytest.fixture
+def basic_provider():
+    return TileProvider(
+        {
+            "url": "https://myserver.com/tiles/{z}/{x}/{y}.png",
+            "attribution": "(C) xyzservices",
+            "name": "my_public_provider",
+        }
+    )
+
+
+@pytest.fixture
+def retina_provider():
+    return TileProvider(
+        {
+            "url": "https://myserver.com/tiles/{z}/{x}/{y}{r}.png",
+            "attribution": "(C) xyzservices",
+            "name": "my_public_provider2",
+            "r": "@2x",
+        }
+    )
+
+
+@pytest.fixture
+def silent_retina_provider():
+    return TileProvider(
+        {
+            "url": "https://myserver.com/tiles/{z}/{x}/{y}{r}.png",
+            "attribution": "(C) xyzservices",
+            "name": "my_public_provider3",
+        }
+    )
+
+
+@pytest.fixture
+def private_provider():
+    return TileProvider(
+        {
+            "url": "https://myserver.com/tiles/{z}/{x}/{y}?access_token={accessToken}",
+            "attribution": "(C) xyzservices",
+            "accessToken": "<insert your access token here>",
+            "name": "my_private_provider",
+        }
+    )
+
+
+@pytest.fixture
+def html_attr_provider():
+    return TileProvider(
+        {
+            "url": "https://myserver.com/tiles/{z}/{x}/{y}.png",
+            "attribution": "(C) xyzservices",
+            "html_attribution": '&copy; <a href="https://xyzservices.readthedocs.io">xyzservices</a>',
+            "name": "my_public_provider",
+        }
+    )
+
+
+@pytest.fixture
+def subdomain_provider():
+    return TileProvider(
+        {
+            "url": "https://{s}.myserver.com/tiles/{z}/{x}/{y}.png",
+            "attribution": "(C) xyzservices",
+            "subdomains": "abcd",
+            "name": "my_subdomain_provider",
+        }
+    )
+
+
 def check_provider(provider):
     for key in ["attribution", "name"]:
         assert key in provider.keys()
@@ -40,101 +110,47 @@ def test_expect_name_url_attribution():
         TileProvider(url="my_url", name="my_name")
 
 
-def test_build_url():
-    basic = TileProvider(
-        {
-            "url": "https://myserver.com/tiles/{z}/{x}/{y}.png",
-            "attribution": "(C) xyzservices",
-            "name": "my_public_provider",
-        }
-    )
-
-    retina = TileProvider(
-        {
-            "url": "https://myserver.com/tiles/{z}/{x}/{y}{r}.png",
-            "attribution": "(C) xyzservices",
-            "name": "my_public_provider",
-            "r": "@2x",
-        }
-    )
-
-    silent_retina = TileProvider(
-        {
-            "url": "https://myserver.com/tiles/{z}/{x}/{y}{r}.png",
-            "attribution": "(C) xyzservices",
-            "name": "my_public_provider",
-        }
-    )
-
-    required_token = TileProvider(
-        {
-            "url": "https://myserver.com/tiles/{z}/{x}/{y}_{api_token}.png",
-            "attribution": "(C) xyzservices",
-            "name": "my_private_provider",
-            "api_token": "<insert your API token here>",
-        }
-    )
-
+def test_build_url(
+    basic_provider,
+    retina_provider,
+    silent_retina_provider,
+    private_provider,
+    subdomain_provider,
+):
     expected = "https://myserver.com/tiles/{z}/{x}/{y}.png"
-    assert basic.build_url() == expected
+    assert basic_provider.build_url() == expected
 
     expected = "https://myserver.com/tiles/3/1/2.png"
-    assert basic.build_url(1, 2, 3) == expected
-    assert basic.build_url(1, 2, 3, scale_factor="@2x") == expected
-    assert silent_retina.build_url(1, 2, 3) == expected
+    assert basic_provider.build_url(1, 2, 3) == expected
+    assert basic_provider.build_url(1, 2, 3, scale_factor="@2x") == expected
+    assert silent_retina_provider.build_url(1, 2, 3) == expected
 
     expected = "https://myserver.com/tiles/3/1/2@2x.png"
-    assert retina.build_url(1, 2, 3) == expected
-    assert silent_retina.build_url(1, 2, 3, scale_factor="@2x") == expected
+    assert retina_provider.build_url(1, 2, 3) == expected
+    assert silent_retina_provider.build_url(1, 2, 3, scale_factor="@2x") == expected
 
     expected = "https://myserver.com/tiles/3/1/2@5x.png"
-    assert retina.build_url(1, 2, 3, scale_factor="@5x") == expected
+    assert retina_provider.build_url(1, 2, 3, scale_factor="@5x") == expected
 
-    expected = "https://myserver.com/tiles/{z}/{x}/{y}_my_token.png"
-    assert required_token.build_url(api_token="my_token") == expected
+    expected = "https://myserver.com/tiles/{z}/{x}/{y}?access_token=my_token"
+    assert private_provider.build_url(accessToken="my_token") == expected
 
     with pytest.raises(ValueError, match="Token is required for this provider"):
-        required_token.build_url()
+        private_provider.build_url()
+
+    expected = "https://{s}.myserver.com/tiles/{z}/{x}/{y}.png"
+    assert subdomain_provider.build_url(fill_subdomain=False)
+
+    expected = "https://a.myserver.com/tiles/{z}/{x}/{y}.png"
+    assert subdomain_provider.build_url()
 
 
-def test_requires_token():
-    private_provider = TileProvider(
-        {
-            "url": "https://myserver.com/tiles/{z}/{x}/{y}?access_token={accessToken}",
-            "attribution": "(C) xyzservices",
-            "accessToken": "<insert your access token here>",
-            "name": "my_private_provider",
-        }
-    )
-
-    public_provider = TileProvider(
-        {
-            "url": "https://myserver.com/tiles/{z}/{x}/{y}",
-            "attribution": "(C) xyzservices",
-            "name": "my_public_provider",
-        }
-    )
-
+def test_requires_token(private_provider, basic_provider):
     assert private_provider.requires_token() == True
-    assert public_provider.requires_token() == False
+    assert basic_provider.requires_token() == False
 
 
-def test_html_repr():
-    provider = TileProvider(
-        {
-            "url": "https://myserver.com/tiles/{z}/{x}/{y}.png",
-            "attribution": "(C) xyzservices",
-            "name": "my_public_provider",
-        }
-    )
-    provider2 = TileProvider(
-        {
-            "url": "https://myserver.com/tiles2/{z}/{x}/{y}.png",
-            "attribution": "(C) xyzservices",
-            "name": "my_public_provider2",
-        }
-    )
-
+def test_html_repr(basic_provider, retina_provider):
     provider_strings = [
         '<div class="xyz-wrap">',
         '<div class="xyz-header">',
@@ -147,9 +163,9 @@ def test_html_repr():
     ]
 
     for html_string in provider_strings:
-        assert html_string in provider._repr_html_()
+        assert html_string in basic_provider._repr_html_()
 
-    bunch = Bunch({"first": provider, "second": provider2})
+    bunch = Bunch({"first": basic_provider, "second": retina_provider})
 
     bunch_strings = [
         '<div class="xyz-obj">xyzservices.Bunch</div>',
@@ -168,15 +184,8 @@ def test_html_repr():
     assert bunch_repr.count('<div class="xyz-header">') == 3
 
 
-def test_copy():
-    basic = TileProvider(
-        {
-            "url": "https://myserver.com/tiles/{z}/{x}/{y}.png",
-            "attribution": "(C) xyzservices",
-            "name": "my_public_provider",
-        }
-    )
-    basic2 = basic.copy()
+def test_copy(basic_provider):
+    basic2 = basic_provider.copy()
     assert isinstance(basic2, TileProvider)
 
 
@@ -191,26 +200,11 @@ def test_callable():
     assert xyz.GeoportailFrance.plan["apikey"] == "choisirgeoportail"
 
 
-def test_html_attribution_fallback():
+def test_html_attribution_fallback(basic_provider, html_attr_provider):
     # TileProvider.html_attribution falls back to .attribution if the former not present
-    basic = TileProvider(
-        {
-            "url": "https://myserver.com/tiles/{z}/{x}/{y}.png",
-            "attribution": "(C) xyzservices",
-            "name": "my_public_provider",
-        }
-    )
-    html = TileProvider(
-        {
-            "url": "https://myserver.com/tiles/{z}/{x}/{y}.png",
-            "attribution": "(C) xyzservices",
-            "html_attribution": '&copy; <a href="https://xyzservices.readthedocs.io">xyzservices</a>',
-            "name": "my_public_provider",
-        }
-    )
-    assert basic.html_attribution == basic.attribution
+    assert basic_provider.html_attribution == basic_provider.attribution
     assert (
-        html.html_attribution
+        html_attr_provider.html_attribution
         == '&copy; <a href="https://xyzservices.readthedocs.io">xyzservices</a>'
     )
 
@@ -227,39 +221,12 @@ def test_from_qms_not_found_error():
         provider = TileProvider.from_qms("LolWut")
 
 
-def test_flatten():
-    provider = TileProvider(
-        {
-            "url": "https://myserver.com/tiles/{z}/{x}/{y}.png",
-            "attribution": "(C) xyzservices",
-            "name": "my_public_provider",
-        }
-    )
-    provider2 = TileProvider(
-        {
-            "url": "https://myserver.com/tiles/{z}/{x}/{y}.png",
-            "attribution": "(C) xyzservices",
-            "name": "my_public_provider2",
-        }
-    )
-    provider3 = TileProvider(
-        {
-            "url": "https://myserver.com/tiles/{z}/{x}/{y}.png",
-            "attribution": "(C) xyzservices",
-            "name": "my_public_provider3",
-        }
-    )
-    provider4 = TileProvider(
-        {
-            "url": "https://myserver.com/tiles/{z}/{x}/{y}.png",
-            "attribution": "(C) xyzservices",
-            "name": "my_public_provider4",
-        }
-    )
-
+def test_flatten(
+    basic_provider, retina_provider, silent_retina_provider, private_provider
+):
     nested_bunch = Bunch(
-        first_bunch=Bunch(first=provider, second=provider2),
-        second_bunch=Bunch(first=provider3, second=provider4),
+        first_bunch=Bunch(first=basic_provider, second=retina_provider),
+        second_bunch=Bunch(first=silent_retina_provider, second=private_provider),
     )
 
     assert len(nested_bunch) == 2
