@@ -345,6 +345,7 @@ class TileProvider(Bunch):
         y: Optional[Union[int, str]] = None,
         z: Optional[Union[int, str]] = None,
         scale_factor: Optional[str] = None,
+        fill_subdomain: Optional[bool] = True,
         **kwargs,
     ) -> str:
         """
@@ -361,6 +362,9 @@ class TileProvider(Bunch):
             Scale factor (where supported). For example, you can get double resolution
             (512 x 512) instead of standard one (256 x 256) with ``"@2x"``. If you want
             to keep a placeholder, pass `"{r}"`.
+        fill_subdomain : bool (optional, default True)
+            Fill subdomain placeholder with the first available subdomain. If False, the
+            URL will contain ``{s}`` placeholder for subdomain.
 
         **kwargs
             Other potential attributes updating the :class:`TileProvider`.
@@ -407,14 +411,20 @@ class TileProvider(Bunch):
             )
 
         url = provider.pop("url")
-        subdomains = provider.pop("subdomains", "abc")
+
         if scale_factor:
             r = scale_factor
             provider.pop("r", None)
         else:
             r = provider.pop("r", "")
 
-        return url.format(x=x, y=y, z=z, s=subdomains[0], r=r, **provider)
+        if fill_subdomain:
+            subdomains = provider.pop("subdomains", "abc")
+            s = subdomains[0]
+        else:
+            s = "{s}"
+
+        return url.format(x=x, y=y, z=z, s=s, r=r, **provider)
 
     def requires_token(self) -> bool:
         """
