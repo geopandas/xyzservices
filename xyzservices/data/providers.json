@@ -74,7 +74,8 @@
         "max_zoom": 17,
         "html_attribution": "Map data: &copy; <a href=\"http://www.openptmap.org\">OpenPtMap</a> contributors",
         "attribution": "Map data: (C) OpenPtMap contributors",
-        "name": "OpenPtMap"
+        "name": "OpenPtMap",
+        "status": "broken"
     },
     "OpenTopoMap": {
         "url": "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
@@ -231,7 +232,8 @@
             "variant": "full",
             "html_attribution": "Tiles courtesy of <a href=\"http://openstreetmap.se/\" target=\"_blank\">OpenStreetMap Sweden</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "Tiles courtesy of OpenStreetMap Sweden -- Map data (C) OpenStreetMap contributors",
-            "name": "Hydda.Full"
+            "name": "Hydda.Full",
+            "status": "broken"
         },
         "Base": {
             "url": "https://{s}.tile.openstreetmap.se/hydda/{variant}/{z}/{x}/{y}.png",
@@ -239,7 +241,8 @@
             "variant": "base",
             "html_attribution": "Tiles courtesy of <a href=\"http://openstreetmap.se/\" target=\"_blank\">OpenStreetMap Sweden</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "Tiles courtesy of OpenStreetMap Sweden -- Map data (C) OpenStreetMap contributors",
-            "name": "Hydda.Base"
+            "name": "Hydda.Base",
+            "status": "broken"
         },
         "RoadsAndLabels": {
             "url": "https://{s}.tile.openstreetmap.se/hydda/{variant}/{z}/{x}/{y}.png",
@@ -247,7 +250,8 @@
             "variant": "roads_and_labels",
             "html_attribution": "Tiles courtesy of <a href=\"http://openstreetmap.se/\" target=\"_blank\">OpenStreetMap Sweden</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "Tiles courtesy of OpenStreetMap Sweden -- Map data (C) OpenStreetMap contributors",
-            "name": "Hydda.RoadsAndLabels"
+            "name": "Hydda.RoadsAndLabels",
+            "status": "broken"
         }
     },
     "Jawg": {
@@ -2195,7 +2199,8 @@
             ],
             "html_attribution": "Kaartgegevens &copy; <a href=\"https://www.kadaster.nl\">Kadaster</a>",
             "attribution": "Kaartgegevens (C) Kadaster",
-            "name": "nlmaps.luchtfoto"
+            "name": "nlmaps.luchtfoto",
+            "status": "broken"
         }
     },
     "NASAGIBS": {
@@ -2309,7 +2314,8 @@
             "tilematrixset": "GoogleMapsCompatible_Level",
             "variant": "MODIS_Terra_Snow_Cover",
             "opacity": 0.75,
-            "name": "NASAGIBS.ModisTerraSnowCover"
+            "name": "NASAGIBS.ModisTerraSnowCover",
+            "status": "broken"
         },
         "ModisTerraAOD": {
             "url": "https://map1.vis.earthdata.nasa.gov/wmts-webmerc/{variant}/default/{time}/{tilematrixset}{max_zoom}/{z}/{y}/{x}.{format}",

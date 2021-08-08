@@ -8,11 +8,24 @@ The compressed JSON is shipped with the package.
 """
 
 import json
+import warnings
+
+# list of providers known to be broken and should be marked as broken in the JSON
+# last update: 8 Aug 2021
+BROKEN_PROVIDERS = [
+    "OpenPtMap",  # service doesn't exist anymore
+    "Hydda.Full",  # down https://github.com/leaflet-extras/leaflet-providers/issues/351
+    "Hydda.Base",
+    "Hydda.RoadsAndLabels",
+    "nlmaps.luchtfoto",  # service phased out
+    "NASAGIBS.ModisTerraSnowCover",  # not sure why but doesn't work
+]
 
 with open("./leaflet-providers-parsed.json", "r") as f:
     leaflet = json.load(f)
     # remove meta data
     leaflet.pop("_meta", None)
+
 
 with open("./xyzservices-providers.json", "r") as f:
     xyz = json.load(f)
@@ -20,6 +33,20 @@ with open("./xyzservices-providers.json", "r") as f:
     xyz.pop("single_provider_name")
     xyz.pop("provider_bunch_name")
 
+
+for provider in BROKEN_PROVIDERS:
+    provider = provider.replace(".", " ").split()
+    try:
+        if len(provider) == 1:
+            leaflet[provider[0]]["status"] = "broken"
+        else:
+            leaflet[provider[0]][provider[1]]["status"] = "broken"
+    except:
+        warnings.warn(
+            f"Attempt to mark {provider} as broken failed. "
+            "The provider does not exist in leaflet-providers JSON.",
+            UserWarning,
+        )
 
 # combine both
 leaflet.update(xyz)

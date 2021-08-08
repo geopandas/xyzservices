@@ -44,6 +44,10 @@ def test_minimal_provider_metadata(provider_name):
 @pytest.mark.parametrize("name", flat_free)
 def test_free_providers(name):
     provider = flat_free[name]
+
+    if provider.get("status"):
+        pytest.xfail("Provider is known to be broken.")
+
     z, x, y = get_tile(provider)
 
     try:
@@ -52,6 +56,9 @@ def test_free_providers(name):
     except AssertionError as e:
         if r == 403:
             pytest.xfail("Provider not available due to API restrictions (Error 403).")
+
+        elif r == 503:
+            pytest.xfail("Service temporarily unavailable (Error 503).")
 
         # check another tiles
         elif r in [404, 502]:
