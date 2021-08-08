@@ -95,6 +95,10 @@ If you would like to contribute to the project, have a look at the list of
 
 BSD 3-Clause License
 
+Resources coming from the [`leaflet-providers`
+project](https://github.com/leaflet-extras/leaflet-providers) are licensed under BSD
+2-Clause License (© 2013 Leaflet Providers)
+
 
 ```{toctree}
 ---
