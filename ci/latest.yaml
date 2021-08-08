@@ -4,6 +4,7 @@ channels:
 dependencies:
   - python
   - mercantile
+  - requests
   # tests
   - pytest
   - pytest-cov
