@@ -2,7 +2,7 @@
 
 The main group of providers is retrieved from the [`leaflet-providers` project](https://github.com/leaflet-extras/leaflet-providers) that contains both openly accessible providers as well as those requiring registration. All of them are considered [free](https://github.com/leaflet-extras/leaflet-providers/blob/master/README.md#what-do-we-mean-by-free).
 
-Below is (potentially incomplete) list of providers requiring registration.
+Below is the (potentially incomplete) list of providers requiring registration.
 
 ```{note}
 This page is largely taken directly from the [`leaflet-providers` project](https://github.com/leaflet-extras/leaflet-providers/blob/master/README.md).
@@ -10,7 +10,7 @@ This page is largely taken directly from the [`leaflet-providers` project](https
 
 ## HERE and HEREv3 (formerly Nokia).
 
-In order to use HEREv3 layers, you must [register](http://developer.here.com/). Once registered, you can create an `apiKey` which you have to pass to `TileProvider`:
+In order to use HEREv3 layers, you must [register](http://developer.here.com/). Once registered, you can create an `apiKey` which you have to pass to the `TileProvider`:
 
 ```py
 # Overriding the attribute will alter the existing object
@@ -28,7 +28,7 @@ xyz.HEREv3.terrainDay(app_id="my-private-app-id", app_code="my-app-code")
 
 ## Jawg Maps
 
-In order to use Jawg Maps, you must [register](https://www.jawg.io/lab). Once registered, your access token will be located [here](https://www.jawg.io/lab/access-tokens) and you will access to all Jawg default maps (variants) and your own customized maps :
+In order to use Jawg Maps, you must [register](https://www.jawg.io/lab). Once registered, your access token will be located [here](https://www.jawg.io/lab/access-tokens) and you will access to all Jawg default maps (variants) and your own customized maps:
 
 ```py
 xyz.Jawg.Streets(
@@ -49,14 +49,14 @@ The currently-valid Mapbox map styles, to use for map_IDs, [are listed in the Ma
 
 ## MapTiler Cloud
 
-In order to use MapTiler maps, you must [register](https://cloud.maptiler.com/). Once registered, get your API key from Account/Keys, which you have to pass to `TileProvider`:
+In order to use MapTiler maps, you must [register](https://cloud.maptiler.com/). Once registered, get your API key from Account/Keys, which you have to pass to the `TileProvider`:
 ```py
 xyz.MapTiler.Streets(key="<insert key here>")
 ```
 
 ## Thunderforest
 
-In order to use Thunderforest maps, you must [register](https://thunderforest.com/pricing/). Once registered, you have an `api_key` which you have to pass to `TileProvider`:
+In order to use Thunderforest maps, you must [register](https://thunderforest.com/pricing/). Once registered, you have an `api_key` which you have to pass to the `TileProvider`:
 ```py
 xyz.Thunderforest.Landscape(apikey="<insert api_key here>")
 ```
@@ -67,7 +67,7 @@ In order to use ArcGIS maps, you must [register](https://developers.arcgis.com/e
 
 ## TomTom
 
-In order to use TomTom layers, you must [register](https://developer.tomtom.com/user/register). Once registered, you can create an `apikey` which you have to pass to `TileProvider`:
+In order to use TomTom layers, you must [register](https://developer.tomtom.com/user/register). Once registered, you can create an `apikey` which you have to pass to the `TileProvider`:
 
 ```py
 xyz.TomTom(apikey="<insert api_key here>")
@@ -75,7 +75,7 @@ xyz.TomTom(apikey="<insert api_key here>")
 
 ## Geoportail France
 
-In order to use Geoportail France resources, you need to obtain an [api key](http://professionnels.ign.fr/ign/contrats/) that allows you to access the [resources](https://geoservices.ign.fr/documentation/donnees-ressources-wmts.html#ressources-servies-en-wmts-en-projection-web-mercator) you need. Pass this api key and the ID of the resource to display to `TileProvider`:
+In order to use Geoportail France resources, you need to obtain an [api key](http://professionnels.ign.fr/ign/contrats/) that allows you to access the [resources](https://geoservices.ign.fr/documentation/donnees-ressources-wmts.html#ressources-servies-en-wmts-en-projection-web-mercator) you need. Pass this api key to the `TileProvider`:
 
 ```py
 xyz.GeoportailFrance.plan(apikey="<insert api_key here>")
