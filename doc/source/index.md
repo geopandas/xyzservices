@@ -67,6 +67,10 @@ True
 False
 ```
 
+```{important}
+You should always check the license and terms and conditions of XYZ tiles you want to use. Not all of them can be used in all circumstances.
+```
+
 ### Providers JSON
 
 After the installation, you will find the JSON used as a database of providers in
@@ -77,6 +81,11 @@ After the installation, you will find the JSON used as a database of providers i
 `xyzservices` is developed by a community of enthusiastic volunteers and lives under
 [`geopandas`](https://github.com/geopandas) GitHub organization. You can see a full list
 of contributors [here](https://github.com/geopandas/xyzservices/graphs/contributors).
+
+The main group of providers is retrieved from the [`leaflet-providers`
+project](https://github.com/leaflet-extras/leaflet-providers) that contains both openly
+accessible providers as well as those requiring registration. All of them are considered
+[free](https://github.com/leaflet-extras/leaflet-providers/blob/master/README.md#what-do-we-mean-by-free).
 
 If you would like to contribute to the project, have a look at the list of
 [open issues](https://github.com/geopandas/contextily/issues), particularly those labeled as
@@ -94,6 +103,7 @@ caption: Documentation
 hidden: true
 ---
 introduction
+registration
 api
 contributing
 changelog
