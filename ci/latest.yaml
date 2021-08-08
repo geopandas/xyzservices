@@ -3,6 +3,7 @@ channels:
   - conda-forge
 dependencies:
   - python
+  - mercantile
   # tests
   - pytest
   - pytest-cov
