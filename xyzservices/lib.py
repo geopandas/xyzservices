@@ -6,7 +6,7 @@ from __future__ import annotations
 import json
 import uuid
 import urllib.request
-from typing import Optional
+from typing import Optional, Callable, Union
 from urllib.parse import quote
 
 
@@ -121,6 +121,137 @@ class Bunch(dict):
 
         return flat
 
+    def filter(
+        self,
+        keyword: Optional[str] = None,
+        name: Optional[str] = None,
+        requires_token: Optional[bool] = None,
+        function: Callable[[TileProvider], bool] = None,
+    ) -> Bunch:
+        """Return a subset of the :class:`Bunch` matching the filter conditions
+
+        Each :class:`TileProvider` within a :class:`Bunch` is checked against one or
+        more specified conditions and kept if they are satisfied or removed if at least
+        one condition is not met.
+
+        Parameters
+        ----------
+        keyword : str (optional)
+            Condition returns ``True`` if ``keyword`` string is present in any string
+            value in a :class:`TileProvider` object.
+            The comparison is not case sensitive.
+        name : str (optional)
+            Condition returns ``True`` if ``name`` string is present in
+            the name attribute of :class:`TileProvider` object.
+            The comparison is not case sensitive.
+        requires_token : bool (optional)
+            Condition returns ``True`` if :meth:`TileProvider.requires_token` returns
+            ``True`` (i.e. if the object requires specification of API token).
+        function : callable (optional)
+            Custom function taking :class:`TileProvider` as an argument and returns
+            bool. If ``function`` is given, other parameters are ignored.
+
+        Returns
+        -------
+        filtered : Bunch
+
+        Examples
+        --------
+        >>> import xyzservices.providers as xyz
+
+        You can filter all free providers (not requiring API token):
+
+        >>> free_providers = xyz.filter(requires_token=False)
+
+        Or all providers with ``open`` in the name:
+
+        >>> open_providers = xyz.filter(name="open")
+
+        You can use keyword search to find all providers based on OpenStreetMap data:
+
+        >>> osm_providers = xyz.filter(keyword="openstreetmap")
+
+        You can combine multiple conditions to find providers based on OpenStreetMap
+        data that require API token:
+
+        >>> osm_locked = xyz.filter(keyword="openstreetmap", requires_token=True)
+
+        You can also pass custom function that takes :class:`TileProvider` and returns
+        boolean value. You can then find all providers with ``max_zoom`` smaller than
+        18:
+
+        >>> def zoom18(provider):
+        ...    if hasattr(provider, "max_zoom") and provider.max_zoom < 18:
+        ...        return True
+        ...    return False
+        >>> small_zoom = xyz.filter(function=zoom18)
+        """
+
+        def _validate(provider, keyword, name, requires_token):
+
+            cond = []
+
+            if keyword is not None:
+                keyword_match = False
+                for v in provider.values():
+                    if isinstance(v, str):
+                        if keyword.lower() in v.lower():
+                            keyword_match = True
+                            break
+                cond.append(keyword_match)
+
+            if name is not None:
+                name_match = False
+                if name.lower() in provider.name.lower():
+                    name_match = True
+                cond.append(name_match)
+
+            if requires_token is not None:
+                token_match = False
+                if provider.requires_token() is requires_token:
+                    token_match = True
+                cond.append(token_match)
+
+            return all(cond)
+
+        def _filter_bunch(bunch, keyword, name, requires_token, function):
+            new = Bunch()
+            for key, value in bunch.items():
+                if isinstance(value, TileProvider):
+
+                    if function is None:
+                        if _validate(
+                            value,
+                            keyword=keyword,
+                            name=name,
+                            requires_token=requires_token,
+                        ):
+                            new[key] = value
+                    else:
+                        if function(value):
+                            new[key] = value
+
+                else:
+                    filtered = _filter_bunch(
+                        value,
+                        keyword=keyword,
+                        name=name,
+                        requires_token=requires_token,
+                        function=function,
+                    )
+                    if filtered:
+                        new[key] = filtered
+
+            return new
+
+        return _filter_bunch(
+            self,
+            keyword=keyword,
+            name=name,
+            requires_token=requires_token,
+            function=function,
+        )
+
 
 class TileProvider(Bunch):
     """
@@ -199,20 +330,20 @@ class TileProvider(Bunch):
             )
             raise AttributeError(msg)
 
-    def __call__(self, **kwargs):
+    def __call__(self, **kwargs) -> TileProvider:
         new = TileProvider(self)  # takes a copy preserving the class
         new.update(kwargs)
         return new
 
-    def copy(self, **kwargs):
+    def copy(self, **kwargs) -> TileProvider:
         new = TileProvider(self)  # takes a copy preserving the class
         return new
 
     def build_url(
         self,
-        x: Optional[int] = None,
-        y: Optional[int] = None,
-        z: Optional[int] = None,
+        x: Optional[Union[int, str]] = None,
+        y: Optional[Union[int, str]] = None,
+        z: Optional[Union[int, str]] = None,
         scale_factor: Optional[str] = None,
         fill_subdomain: Optional[bool] = True,
         **kwargs,

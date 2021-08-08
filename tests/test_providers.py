@@ -8,70 +8,78 @@ from xyzservices import TileProvider, Bunch
 @pytest.fixture
 def basic_provider():
     return TileProvider(
-        {
-            "url": "https://myserver.com/tiles/{z}/{x}/{y}.png",
-            "attribution": "(C) xyzservices",
-            "name": "my_public_provider",
-        }
+        url="https://myserver.com/tiles/{z}/{x}/{y}.png",
+        attribution="(C) xyzservices",
+        name="my_public_provider",
     )
 
 
 @pytest.fixture
 def retina_provider():
     return TileProvider(
-        {
-            "url": "https://myserver.com/tiles/{z}/{x}/{y}{r}.png",
-            "attribution": "(C) xyzservices",
-            "name": "my_public_provider2",
-            "r": "@2x",
-        }
+        url="https://myserver.com/tiles/{z}/{x}/{y}{r}.png",
+        attribution="(C) xyzservices",
+        name="my_public_provider2",
+        r="@2x",
     )
 
 
 @pytest.fixture
 def silent_retina_provider():
     return TileProvider(
-        {
-            "url": "https://myserver.com/tiles/{z}/{x}/{y}{r}.png",
-            "attribution": "(C) xyzservices",
-            "name": "my_public_provider3",
-        }
+        url="https://myserver.com/tiles/{z}/{x}/{y}{r}.png",
+        attribution="(C) xyzservices",
+        name="my_public_retina_provider3",
     )
 
 
 @pytest.fixture
 def private_provider():
     return TileProvider(
-        {
-            "url": "https://myserver.com/tiles/{z}/{x}/{y}?access_token={accessToken}",
-            "attribution": "(C) xyzservices",
-            "accessToken": "<insert your access token here>",
-            "name": "my_private_provider",
-        }
+        url="https://myserver.com/tiles/{z}/{x}/{y}?access_token={accessToken}",
+        attribution="(C) xyzservices",
+        accessToken="<insert your access token here>",
+        name="my_private_provider",
     )
 
 
 @pytest.fixture
 def html_attr_provider():
     return TileProvider(
-        {
-            "url": "https://myserver.com/tiles/{z}/{x}/{y}.png",
-            "attribution": "(C) xyzservices",
-            "html_attribution": '&copy; <a href="https://xyzservices.readthedocs.io">xyzservices</a>',
-            "name": "my_public_provider",
-        }
+        url="https://myserver.com/tiles/{z}/{x}/{y}.png",
+        attribution="(C) xyzservices",
+        html_attribution='&copy; <a href="https://xyzservices.readthedocs.io">xyzservices</a>',
+        name="my_public_provider_html",
     )
 
 
 @pytest.fixture
 def subdomain_provider():
     return TileProvider(
-        {
-            "url": "https://{s}.myserver.com/tiles/{z}/{x}/{y}.png",
-            "attribution": "(C) xyzservices",
-            "subdomains": "abcd",
-            "name": "my_subdomain_provider",
-        }
+        url="https://{s}.myserver.com/tiles/{z}/{x}/{y}.png",
+        attribution="(C) xyzservices",
+        subdomains="abcd",
+        name="my_subdomain_provider",
+    )
+
+
+@pytest.fixture
+def test_bunch(
+    basic_provider,
+    retina_provider,
+    silent_retina_provider,
+    private_provider,
+    html_attr_provider,
+    subdomain_provider,
+):
+    return Bunch(
+        basic_provider=basic_provider,
+        retina_provider=retina_provider,
+        silent_retina_provider=silent_retina_provider,
+        private_provider=private_provider,
+        bunched=Bunch(
+            html_attr_provider=html_attr_provider, subdomain_provider=subdomain_provider
+        ),
     )
 
 
@@ -232,3 +240,24 @@ def test_flatten(
 
     assert len(nested_bunch) == 2
     assert len(nested_bunch.flatten()) == 4
+
+
+def test_filter(test_bunch):
+    assert len(test_bunch.filter(keyword="private").flatten()) == 1
+    assert len(test_bunch.filter(keyword="public").flatten()) == 4
+    assert len(test_bunch.filter(keyword="{s}").flatten()) == 1
+    assert len(test_bunch.filter(name="retina").flatten()) == 1
+    assert len(test_bunch.filter(requires_token=True).flatten()) == 1
+    assert len(test_bunch.filter(requires_token=False).flatten()) == 5
+    assert len(test_bunch.filter(requires_token=False)) == 4  # check nested structure
+    assert len(test_bunch.filter(keyword="{s}", requires_token=False).flatten()) == 1
+    assert len(test_bunch.filter(name="nonsense").flatten()) == 0
+
+    def custom(provider):
+        if hasattr(provider, "subdomains") and provider.subdomains == "abcd":
+            return True
+        if hasattr(provider, "r"):
+            return True
+        return False
+
+    assert len(test_bunch.filter(function=custom).flatten()) == 2
