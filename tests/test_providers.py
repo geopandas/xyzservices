@@ -60,8 +60,11 @@ def test_free_providers(name):
         elif r == 503:
             pytest.xfail("Service temporarily unavailable (Error 503).")
 
+        elif r == 502:
+            pytest.xfail("Bad Gateway (Error 502).")
+
         # check another tiles
-        elif r in [404, 502]:
+        elif r == 404:
             # in some cases, the computed tile is not availble. trying known tiles.
             options = [(12, 2154, 1363), (6, 13, 21), (16, 33149, 22973)]
             results = []
