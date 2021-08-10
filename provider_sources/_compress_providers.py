@@ -10,6 +10,8 @@ The compressed JSON is shipped with the package.
 import json
 import warnings
 
+from xyzservices import Bunch
+
 # list of providers known to be broken and should be marked as broken in the JSON
 # last update: 8 Aug 2021
 BROKEN_PROVIDERS = [
@@ -52,9 +54,7 @@ for provider in BROKEN_PROVIDERS:
 
 for key, val in xyz.items():
     if key in leaflet:
-        if any(
-            isinstance(i, dict) for i in leaflet[key].values()
-        ):  # for related group of bunch
+        if isinstance(val, Bunch):  # for related group of bunch
             leaflet[key].update(xyz[key])
         else:
             leaflet[key] = xyz[key]

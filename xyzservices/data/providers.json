@@ -2375,28 +2375,32 @@
             "max_zoom": 9,
             "attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.",
             "html_attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.",
-            "name": "NASAGIBS.ModisTerraBands721CR"
+            "name": "NASAGIBS.ModisTerraBands721CR",
+            "time": ""
         },
         "ModisAquaTrueColorCR": {
             "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Aqua_CorrectedReflectance_TrueColor/default/{time}/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg",
             "max_zoom": 9,
             "attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.",
             "html_attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.",
-            "name": "NASAGIBS.ModisAquaTrueColorCR"
+            "name": "NASAGIBS.ModisAquaTrueColorCR",
+            "time": ""
         },
         "ModisAquaBands721CR": {
             "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Aqua_CorrectedReflectance_Bands721/default/{time}/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg",
             "max_zoom": 9,
             "attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.",
             "html_attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.",
-            "name": "NASAGIBS.ModisAquaTrueColorCR"
+            "name": "NASAGIBS.ModisAquaBands721CR",
+            "time": ""
         },
         "ViirsTrueColorCR": {
             "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/VIIRS_SNPP_CorrectedReflectance_TrueColor/default/{time}/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg",
             "max_zoom": 9,
             "attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.",
             "html_attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.",
-            "name": "NASAGIBS.ViirsTrueColorCR"
+            "name": "NASAGIBS.ViirsTrueColorCR",
+            "time": ""
         }
     },
     "NLS": {
@@ -2939,35 +2943,40 @@
             "max_zoom": 15,
             "attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2017</a>",
             "html_attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2017</a>",
-            "name": "Strava.All"
+            "name": "Strava.All",
+            "status": "broken"
         },
         "Ride": {
             "url": "https://heatmap-external-a.strava.com//tiles/ride/hot/{z}/{x}/{y}.png?v=19",
             "max_zoom": 15,
             "attribution": "(C) OpenStreetMap contributors",
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "name": "Strava.Ride"
+            "name": "Strava.Ride",
+            "status": "broken"
         },
         "Run": {
             "url": "https://heatmap-external-a.strava.com//tiles/run/bluered/{z}/{x}/{y}.png?v=19",
             "max_zoom": 15,
             "attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2017</a>",
             "html_attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2017</a>",
-            "name": "Strava.Run"
+            "name": "Strava.Run",
+            "status": "broken"
         },
         "Water": {
             "url": "https://heatmap-external-a.strava.com//tiles/water/blue/{z}/{x}/{y}.png?v=19",
             "max_zoom": 15,
             "attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2017</a>",
             "html_attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2017</a>",
-            "name": "Strava.Water"
+            "name": "Strava.Water",
+            "status": "broken"
         },
         "Winter": {
             "url": "https://heatmap-external-a.strava.com//tiles/winter/hot/{z}/{x}/{y}.png?v=19",
             "max_zoom": 15,
             "attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2017</a>",
             "html_attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2017</a>",
-            "name": "Strava.Winter"
+            "name": "Strava.Winter",
+            "status": "broken"
         }
     }
 }
