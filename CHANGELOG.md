@@ -1,6 +1,17 @@
 Changelog
 =========
 
+Next release
+------------
+
+Providers:
+
+- Added ``OpenStreetMap.BlackAndWhite`` (#83)
+- Added ``Gaode`` tiles (``Normal`` and ``Satellite``) (#83)
+- Expanded ``NASAGIBS`` tiles with ``ModisTerraBands721CR``, ``ModisAquaTrueColorCR``, ``ModisAquaBands721CR`` and ``ViirsTrueColorCR`` (#83)
+- Added metadata to ``Strava`` maps (currently down) (#83)
+
+
 xyzservices 2021.08.0 (August 8, 2021)
 --------------------------------------
 

@@ -29,10 +29,6 @@ with open("./leaflet-providers-parsed.json", "r") as f:
 
 with open("./xyzservices-providers.json", "r") as f:
     xyz = json.load(f)
-    # remove templates
-    xyz.pop("single_provider_name")
-    xyz.pop("provider_bunch_name")
-
 
 for provider in BROKEN_PROVIDERS:
     provider = provider.replace(".", " ").split()
@@ -49,7 +45,18 @@ for provider in BROKEN_PROVIDERS:
         )
 
 # combine both
-leaflet.update(xyz)
+
+for key, val in xyz.items():
+    if key in leaflet:
+        if any(
+             isinstance(i, dict) for i in leaflet[key].values()
+         ):   # for related group of bunch
+            leaflet[key].update(xyz[key])
+        else:
+            leaflet[key] = xyz[key]
+    else:
+        leaflet[key] = xyz[key]
+
 
 with open("../xyzservices/data/providers.json", "w") as f:
     json.dump(leaflet, f, indent=4)
