@@ -1,8 +1,8 @@
 Changelog
 =========
 
-Next release
-------------
+xyzservices 2021.08.1 (August 12, 2021)
+---------------------------------------
 
 Providers:
 
