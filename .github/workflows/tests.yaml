@@ -37,7 +37,6 @@ jobs:
       HEREV3: ${{ secrets.HEREV3 }}
       STADIA: ${{ secrets.STADIA }}
 
-
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
@@ -60,12 +59,17 @@ jobs:
 
       - name: run tests - bash
         shell: bash -l {0}
-        run: pytest -v . --cov=xyzservices --cov-append --cov-report term-missing --cov-report xml --color=yes
+        run: pytest -v . -m "not request" --cov=xyzservices --cov-append --cov-report term-missing --cov-report xml --color=yes
         if: matrix.os != 'windows-latest'
 
       - name: run tests - powershell
         shell: powershell
-        run: pytest -v . --cov=xyzservices --cov-append --cov-report term-missing --cov-report xml --color=yes
+        run: pytest -v . -m "not request" --cov=xyzservices --cov-append --cov-report term-missing --cov-report xml --color=yes
         if: matrix.os == 'windows-latest'
+
+      - name: test providers - bash
+        shell: bash -l {0}
+        run: pytest -v . -m request --cov=xyzservices --cov-append --cov-report term-missing --cov-report xml --color=yes
+        if: matrix.os == 'ubuntu-latest'
 
       - uses: codecov/codecov-action@v2
