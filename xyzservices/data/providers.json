@@ -2939,44 +2939,39 @@
     },
     "Strava": {
         "All": {
-            "url": "https://heatmap-external-a.strava.com//tiles/all/hot/{z}/{x}/{y}.png?v=19",
+            "url": "https://heatmap-external-a.strava.com/tiles/all/hot/{z}/{x}/{y}.png",
             "max_zoom": 15,
-            "attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2017</a>",
-            "html_attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2017</a>",
-            "name": "Strava.All",
-            "status": "broken"
+            "attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
+            "html_attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
+            "name": "Strava.All"
         },
         "Ride": {
-            "url": "https://heatmap-external-a.strava.com//tiles/ride/hot/{z}/{x}/{y}.png?v=19",
+            "url": "https://heatmap-external-a.strava.com/tiles/ride/hot/{z}/{x}/{y}.png",
             "max_zoom": 15,
-            "attribution": "(C) OpenStreetMap contributors",
-            "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "name": "Strava.Ride",
-            "status": "broken"
+            "attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
+            "html_attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
+            "name": "Strava.Ride"
         },
         "Run": {
-            "url": "https://heatmap-external-a.strava.com//tiles/run/bluered/{z}/{x}/{y}.png?v=19",
+            "url": "https://heatmap-external-a.strava.com/tiles/run/bluered/{z}/{x}/{y}.png",
             "max_zoom": 15,
-            "attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2017</a>",
-            "html_attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2017</a>",
-            "name": "Strava.Run",
-            "status": "broken"
+            "attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
+            "html_attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
+            "name": "Strava.Run"
         },
         "Water": {
-            "url": "https://heatmap-external-a.strava.com//tiles/water/blue/{z}/{x}/{y}.png?v=19",
+            "url": "https://heatmap-external-a.strava.com/tiles/water/blue/{z}/{x}/{y}.png",
             "max_zoom": 15,
-            "attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2017</a>",
-            "html_attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2017</a>",
-            "name": "Strava.Water",
-            "status": "broken"
+            "attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
+            "html_attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
+            "name": "Strava.Water"
         },
         "Winter": {
-            "url": "https://heatmap-external-a.strava.com//tiles/winter/hot/{z}/{x}/{y}.png?v=19",
+            "url": "https://heatmap-external-a.strava.com/tiles/winter/hot/{z}/{x}/{y}.png",
             "max_zoom": 15,
-            "attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2017</a>",
-            "html_attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2017</a>",
-            "name": "Strava.Winter",
-            "status": "broken"
+            "attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
+            "html_attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
+            "name": "Strava.Winter"
         }
     }
 }
