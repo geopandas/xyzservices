@@ -48,7 +48,7 @@ xyz.HEREv3.terrainDay(apiKey="my-private-api-key")
 You can still pass `app_id` and `app_code` in legacy projects:
 
 ```py
-xyz.HEREv3.terrainDay(app_id="my-private-app-id", app_code="my-app-code")
+xyz.HERE.terrainDay(app_id="my-private-app-id", app_code="my-app-code")
 ```
 
 ## Jawg Maps
@@ -111,3 +111,11 @@ xyz.TomTom(apikey="<insert api_key here>")
 
 In order to use Stadia maps, you must [register](https://client.stadiamaps.com/signup/).
 Once registered, you can whitelist your domain within your account settings.
+
+Alternatively, you can use Stadia maps with an API token but you need to adapt a
+provider object to correct form.
+
+```py
+provider = xyz.Stadia.AlidadeSmooth(api_key="<insert api_key here>")
+provider["url"] = provider["url"] + "?api_key={api_key}"  # adding API key placeholder
+```
