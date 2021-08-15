@@ -37,7 +37,7 @@ def get_response(url):
     return r.status_code
 
 
-def get_test_result(provider):
+def get_test_result(provider, allow_403=True):
     if provider.get("status"):
         pytest.xfail("Provider is known to be broken.")
 
@@ -47,7 +47,7 @@ def get_test_result(provider):
         r = get_response(provider.build_url(z=z, x=x, y=y))
         assert r == requests.codes.ok
     except AssertionError as e:
-        if r == 403:
+        if r == 403 and allow_403:
             pytest.xfail("Provider not available due to API restrictions (Error 403).")
 
         elif r == 503:
@@ -91,8 +91,9 @@ def test_free_providers(name):
 def test_thunderforest(provider_name):
     try:
         token = os.environ["THUNDERFOREST"]
+        print(token, type(token))
     except KeyError:
         pytest.xfail("Mising API token.")
 
     provider = xyz.Thunderforest[provider_name](apikey=token)
-    get_test_result(provider)
+    get_test_result(provider, allow_403=False)
