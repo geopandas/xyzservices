@@ -33,7 +33,10 @@ def get_response(url):
     a = requests.adapters.HTTPAdapter(max_retries=3)
     s.mount("http://", a)
     s.mount("https://", a)
-    r = s.get(url)
+    try:
+        r = s.get(url, timeout=30)
+    except requests.ConnectionError:
+        pytest.xfail("Timeout.")
     return r.status_code
 
 
