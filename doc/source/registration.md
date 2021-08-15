@@ -48,7 +48,7 @@ xyz.HEREv3.terrainDay(apiKey="my-private-api-key")
 You can still pass `app_id` and `app_code` in legacy projects:
 
 ```py
-xyz.HEREv3.terrainDay(app_id="my-private-app-id", app_code="my-app-code")
+xyz.HERE.terrainDay(app_id="my-private-app-id", app_code="my-app-code")
 ```
 
 ## Jawg Maps

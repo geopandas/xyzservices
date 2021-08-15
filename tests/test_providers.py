@@ -99,3 +99,83 @@ def test_thunderforest(provider_name):
 
     provider = xyz.Thunderforest[provider_name](apikey=token)
     get_test_result(provider, allow_403=False)
+
+
+@pytest.mark.parametrize("provider_name", xyz.Jawg)
+def test_jawg(provider_name):
+    try:
+        token = os.environ["JAWG"]
+    except KeyError:
+        pytest.xfail("Mising API token.")
+    if token == "":
+        pytest.xfail("Token empty.")
+
+    provider = xyz.Jawg[provider_name](accessToken=token)
+    get_test_result(provider, allow_403=False)
+
+
+def test_mapbox():
+    try:
+        token = os.environ["MAPBOX"]
+    except KeyError:
+        pytest.xfail("Mising API token.")
+    if token == "":
+        pytest.xfail("Token empty.")
+
+    provider = xyz.MapBox(accessToken=token)
+    get_test_result(provider, allow_403=False)
+
+
+@pytest.mark.parametrize("provider_name", xyz.MapTiler)
+def test_maptiler(provider_name):
+    try:
+        token = os.environ["MAPTILER"]
+    except KeyError:
+        pytest.xfail("Mising API token.")
+    if token == "":
+        pytest.xfail("Token empty.")
+
+    provider = xyz.MapTiler[provider_name](key=token)
+    get_test_result(provider, allow_403=False)
+
+
+@pytest.mark.parametrize("provider_name", xyz.TomTom)
+def test_tomtom(provider_name):
+    try:
+        token = os.environ["TOMTOM"]
+    except KeyError:
+        pytest.xfail("Mising API token.")
+    if token == "":
+        pytest.xfail("Token empty.")
+
+    provider = xyz.TomTom[provider_name](apikey=token)
+    get_test_result(provider, allow_403=False)
+
+
+@pytest.mark.parametrize("provider_name", xyz.OpenWeatherMap)
+def test_openweathermap(provider_name):
+    try:
+        token = os.environ["OPENWEATHERMAP"]
+    except KeyError:
+        pytest.xfail("Mising API token.")
+    if token == "":
+        pytest.xfail("Token empty.")
+
+    provider = xyz.OpenWeatherMap[provider_name](apiKey=token)
+    get_test_result(provider, allow_403=False)
+
+
+@pytest.mark.parametrize("provider_name", xyz.HEREv3)
+def test_herev3(provider_name):
+    try:
+        token = os.environ["HEREV3"]
+    except KeyError:
+        pytest.xfail("Mising API token.")
+    if token == "":
+        pytest.xfail("Token empty.")
+
+    provider = xyz.HEREv3[provider_name](apiKey=token)
+    get_test_result(provider, allow_403=False)
+
+# NOTE: AzureMaps are not tested as their free account is limited to
+# 5000 downloads (total, not per month)

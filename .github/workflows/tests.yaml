@@ -29,6 +29,13 @@ jobs:
         environment-file: [ci/latest.yaml]
     env:
       THUNDERFOREST: ${{ secrets.THUNDERFOREST }}
+      JAWG: ${{ secrets.JAWG }}
+      MAPBOX: ${{ secrets.MAPBOX }}
+      MAPTILER: ${{ secrets.MAPTILER }}
+      TOMTOM: ${{ secrets.TOMTOM }}
+      OPENWEATHERMAP: ${{ secrets.OPENWEATHERMAP }}
+      HEREV3: ${{ secrets.HEREV3 }}
+
 
     steps:
       - name: checkout repo
