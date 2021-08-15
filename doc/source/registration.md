@@ -111,3 +111,11 @@ xyz.TomTom(apikey="<insert api_key here>")
 
 In order to use Stadia maps, you must [register](https://client.stadiamaps.com/signup/).
 Once registered, you can whitelist your domain within your account settings.
+
+Alternatively, you can use Stadia maps with an API token but you need to adapt a
+provider object to correct form.
+
+```py
+provider = xyz.Stadia.AlidadeSmooth(api_key="<insert api_key here>")
+provider["url"] = provider["url"] + "?api_key={api_key}"  # adding API key placeholder
+```

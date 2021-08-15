@@ -35,6 +35,7 @@ jobs:
       TOMTOM: ${{ secrets.TOMTOM }}
       OPENWEATHERMAP: ${{ secrets.OPENWEATHERMAP }}
       HEREV3: ${{ secrets.HEREV3 }}
+      STADIA: ${{ secrets.STADIA }}
 
 
     steps:

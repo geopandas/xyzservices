@@ -177,5 +177,19 @@ def test_herev3(provider_name):
     provider = xyz.HEREv3[provider_name](apiKey=token)
     get_test_result(provider, allow_403=False)
 
+
+@pytest.mark.parametrize("provider_name", xyz.Stadia)
+def test_stadia(provider_name):
+    try:
+        token = os.environ["STADIA"]
+    except KeyError:
+        pytest.xfail("Mising API token.")
+    if token == "":
+        pytest.xfail("Token empty.")
+
+    provider = xyz.Stadia[provider_name](api_key=token)
+    provider["url"] = provider["url"] + "?api_key={api_key}"
+    get_test_result(provider, allow_403=False)
+
 # NOTE: AzureMaps are not tested as their free account is limited to
 # 5000 downloads (total, not per month)
