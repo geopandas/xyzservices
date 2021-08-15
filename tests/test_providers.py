@@ -79,7 +79,7 @@ def test_minimal_provider_metadata(provider_name):
     provider = xyz.flatten()[provider_name]
     check_provider(provider)
 
-
+@pytest.mark.request
 @pytest.mark.parametrize("name", flat_free)
 def test_free_providers(name):
     provider = flat_free[name]
@@ -90,7 +90,7 @@ def test_free_providers(name):
 # environment variables in CI Action. Note that env variable is loaded as empty on PRs
 # from a fork.
 
-
+@pytest.mark.request
 @pytest.mark.parametrize("provider_name", xyz.Thunderforest)
 def test_thunderforest(provider_name):
     try:
@@ -103,7 +103,7 @@ def test_thunderforest(provider_name):
     provider = xyz.Thunderforest[provider_name](apikey=token)
     get_test_result(provider, allow_403=False)
 
-
+@pytest.mark.request
 @pytest.mark.parametrize("provider_name", xyz.Jawg)
 def test_jawg(provider_name):
     try:
@@ -116,7 +116,7 @@ def test_jawg(provider_name):
     provider = xyz.Jawg[provider_name](accessToken=token)
     get_test_result(provider, allow_403=False)
 
-
+@pytest.mark.request
 def test_mapbox():
     try:
         token = os.environ["MAPBOX"]
@@ -128,7 +128,7 @@ def test_mapbox():
     provider = xyz.MapBox(accessToken=token)
     get_test_result(provider, allow_403=False)
 
-
+@pytest.mark.request
 @pytest.mark.parametrize("provider_name", xyz.MapTiler)
 def test_maptiler(provider_name):
     try:
@@ -141,7 +141,7 @@ def test_maptiler(provider_name):
     provider = xyz.MapTiler[provider_name](key=token)
     get_test_result(provider, allow_403=False)
 
-
+@pytest.mark.request
 @pytest.mark.parametrize("provider_name", xyz.TomTom)
 def test_tomtom(provider_name):
     try:
@@ -154,7 +154,7 @@ def test_tomtom(provider_name):
     provider = xyz.TomTom[provider_name](apikey=token)
     get_test_result(provider, allow_403=False)
 
-
+@pytest.mark.request
 @pytest.mark.parametrize("provider_name", xyz.OpenWeatherMap)
 def test_openweathermap(provider_name):
     try:
@@ -167,7 +167,7 @@ def test_openweathermap(provider_name):
     provider = xyz.OpenWeatherMap[provider_name](apiKey=token)
     get_test_result(provider, allow_403=False)
 
-
+@pytest.mark.request
 @pytest.mark.parametrize("provider_name", xyz.HEREv3)
 def test_herev3(provider_name):
     try:
@@ -180,7 +180,7 @@ def test_herev3(provider_name):
     provider = xyz.HEREv3[provider_name](apiKey=token)
     get_test_result(provider, allow_403=False)
 
-
+@pytest.mark.request
 @pytest.mark.parametrize("provider_name", xyz.Stadia)
 def test_stadia(provider_name):
     try:
