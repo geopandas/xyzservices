@@ -1,3 +1,5 @@
+import os
+
 import pytest
 import xyzservices.providers as xyz
 import requests
@@ -34,17 +36,7 @@ def get_response(url):
     r = s.get(url)
     return r.status_code
 
-
-@pytest.mark.parametrize("provider_name", xyz.flatten())
-def test_minimal_provider_metadata(provider_name):
-    provider = xyz.flatten()[provider_name]
-    check_provider(provider)
-
-
-@pytest.mark.parametrize("name", flat_free)
-def test_free_providers(name):
-    provider = flat_free[name]
-
+def get_test_result(provider):
     if provider.get("status"):
         pytest.xfail("Provider is known to be broken.")
 
@@ -76,3 +68,29 @@ def test_free_providers(name):
                 raise ValueError(f"Response code: {r}")
         else:
             raise ValueError(f"Response code: {r}")
+
+@pytest.mark.parametrize("provider_name", xyz.flatten())
+def test_minimal_provider_metadata(provider_name):
+    provider = xyz.flatten()[provider_name]
+    check_provider(provider)
+
+
+@pytest.mark.parametrize("name", flat_free)
+def test_free_providers(name):
+    provider = flat_free[name]
+    get_test_result(provider)
+
+
+# test providers requiring API keys. Store API keys in GitHub secrets and load them as
+# environment variables in CI Action
+
+@pytest.mark.parametrize("provider_name", xyz.Thunderforest)
+def test_thunderforest(provider_name):
+    try:
+        token = os.environ["THUNDERFOREST"]
+    except KeyError:
+        pytest.xfail("Mising API token.")
+
+    provider = xyz.Thunderforest[provider_name](apikey=token)
+    get_test_result(provider)
+

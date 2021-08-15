@@ -28,6 +28,8 @@ jobs:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
         environment-file: [ci/latest.yaml]
+    env:
+      THUNDERFOREST: ${{ secrets.THUNDERFOREST }}
 
     steps:
       - name: checkout repo
