@@ -36,6 +36,7 @@ def get_response(url):
     r = s.get(url)
     return r.status_code
 
+
 def get_test_result(provider):
     if provider.get("status"):
         pytest.xfail("Provider is known to be broken.")
@@ -69,6 +70,7 @@ def get_test_result(provider):
         else:
             raise ValueError(f"Response code: {r}")
 
+
 @pytest.mark.parametrize("provider_name", xyz.flatten())
 def test_minimal_provider_metadata(provider_name):
     provider = xyz.flatten()[provider_name]
@@ -84,6 +86,7 @@ def test_free_providers(name):
 # test providers requiring API keys. Store API keys in GitHub secrets and load them as
 # environment variables in CI Action
 
+
 @pytest.mark.parametrize("provider_name", xyz.Thunderforest)
 def test_thunderforest(provider_name):
     try:
@@ -93,4 +96,3 @@ def test_thunderforest(provider_name):
 
     provider = xyz.Thunderforest[provider_name](apikey=token)
     get_test_result(provider)
-
