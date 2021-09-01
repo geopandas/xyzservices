@@ -2180,7 +2180,7 @@
             "name": "nlmaps.grijs"
         },
         "luchtfoto": {
-            "url": "https://geodata.nationaalgeoregister.nl/luchtfoto/rgb/wmts/2018_ortho25/EPSG:3857/{z}/{x}/{y}.png",
+            "url": "https://service.pdok.nl/hwh/luchtfotorgb/wmts/v1_0/Actueel_ortho25/EPSG:3857/{z}/{x}/{y}.jpeg",
             "min_zoom": 6,
             "max_zoom": 19,
             "bounds": [
@@ -2307,7 +2307,7 @@
             "format": "png",
             "time": "",
             "tilematrixset": "GoogleMapsCompatible_Level",
-            "variant": "MODIS_Terra_Snow_Cover",
+            "variant": "MODIS_Terra_NDSI_Snow_Cover",
             "opacity": 0.75,
             "name": "NASAGIBS.ModisTerraSnowCover"
         },
@@ -2379,7 +2379,7 @@
     },
     "JusticeMap": {
         "income": {
-            "url": "http://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
+            "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
             "html_attribution": "<a href=\"http://www.justicemap.org/terms.php\">Justice Map</a>",
             "attribution": "Justice Map",
             "size": "county",
@@ -2397,7 +2397,7 @@
             "name": "JusticeMap.income"
         },
         "americanIndian": {
-            "url": "http://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
+            "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
             "html_attribution": "<a href=\"http://www.justicemap.org/terms.php\">Justice Map</a>",
             "attribution": "Justice Map",
             "size": "county",
@@ -2415,7 +2415,7 @@
             "name": "JusticeMap.americanIndian"
         },
         "asian": {
-            "url": "http://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
+            "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
             "html_attribution": "<a href=\"http://www.justicemap.org/terms.php\">Justice Map</a>",
             "attribution": "Justice Map",
             "size": "county",
@@ -2433,7 +2433,7 @@
             "name": "JusticeMap.asian"
         },
         "black": {
-            "url": "http://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
+            "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
             "html_attribution": "<a href=\"http://www.justicemap.org/terms.php\">Justice Map</a>",
             "attribution": "Justice Map",
             "size": "county",
@@ -2451,7 +2451,7 @@
             "name": "JusticeMap.black"
         },
         "hispanic": {
-            "url": "http://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
+            "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
             "html_attribution": "<a href=\"http://www.justicemap.org/terms.php\">Justice Map</a>",
             "attribution": "Justice Map",
             "size": "county",
@@ -2469,7 +2469,7 @@
             "name": "JusticeMap.hispanic"
         },
         "multi": {
-            "url": "http://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
+            "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
             "html_attribution": "<a href=\"http://www.justicemap.org/terms.php\">Justice Map</a>",
             "attribution": "Justice Map",
             "size": "county",
@@ -2487,7 +2487,7 @@
             "name": "JusticeMap.multi"
         },
         "nonWhite": {
-            "url": "http://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
+            "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
             "html_attribution": "<a href=\"http://www.justicemap.org/terms.php\">Justice Map</a>",
             "attribution": "Justice Map",
             "size": "county",
@@ -2505,7 +2505,7 @@
             "name": "JusticeMap.nonWhite"
         },
         "white": {
-            "url": "http://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
+            "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
             "html_attribution": "<a href=\"http://www.justicemap.org/terms.php\">Justice Map</a>",
             "attribution": "Justice Map",
             "size": "county",
@@ -2523,7 +2523,7 @@
             "name": "JusticeMap.white"
         },
         "plurality": {
-            "url": "http://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
+            "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
             "html_attribution": "<a href=\"http://www.justicemap.org/terms.php\">Justice Map</a>",
             "attribution": "Justice Map",
             "size": "county",
@@ -2780,7 +2780,7 @@
         }
     },
     "OpenAIP": {
-        "url": "http://{s}.tile.maps.openaip.net/geowebcache/service/tms/1.0.0/openaip_basemap@EPSG%3A900913@png/{z}/{x}/{y}.{ext}",
+        "url": "https://{s}.tile.maps.openaip.net/geowebcache/service/tms/1.0.0/openaip_basemap@EPSG%3A900913@png/{z}/{x}/{y}.{ext}",
         "html_attribution": "<a href=\"https://www.openaip.net/\">openAIP Data</a> (<a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">CC-BY-NC-SA</a>)",
         "attribution": "openAIP Data (CC-BY-NC-SA)",
         "ext": "png",
@@ -2878,7 +2878,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2021-08-15",
-        "commit": "commit 8165f55a586a4a8f2003102e662b8ecac2697f35 (Fix attribution link nlmaps)"
+        "date_of_creation": "2021-09-01",
+        "commit": "commit 9d37658943a56a2e3c04be7557d6afb7027cbd22 (Move JusticeMap and OpenAIP to https, remove GeoportailFrance.ignMaps from index.html (#393))"
     }
 }
