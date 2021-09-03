@@ -1,6 +1,17 @@
 Changelog
 =========
 
+xyzservices 2021.09.0 (September 3, 2021)
+-----------------------------------------
+
+Providers:
+
+- Fixed ``Strava`` maps (#85)
+- Fixed ``nlmaps.luchtfoto`` (#90)
+- Fixed ``NASAGIBS.ModisTerraSnowCover`` (#90)
+- ``JusticeMap`` and ``OpenAIP`` now use https instead of http
+
+
 xyzservices 2021.08.1 (August 12, 2021)
 ---------------------------------------
 
