@@ -241,3 +241,20 @@ def test_filter(test_bunch):
         return False
 
     assert len(test_bunch.filter(function=custom).flatten()) == 2
+
+
+def test_query_name():
+    options = [
+        "CartoDB Positron",
+        "cartodbpositron",
+        "cartodb-positron",
+        "carto db/positron",
+        "CARTO_DB_POSITRON",
+        "CartoDB.Positron",
+        "Carto,db,positron",
+    ]
+
+    for option in options:
+        queried = xyz.query_name(option)
+        assert isinstance(queried, TileProvider)
+        assert queried.name == "CartoDB.Positron"

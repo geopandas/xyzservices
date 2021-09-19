@@ -252,6 +252,49 @@ class Bunch(dict):
             function=function,
         )
 
+    def query_name(self, name: str) -> TileProvider:
+        """Return :class:`TileProvider` based on the name query
+
+        Returns a matching :class:`TileProvider` from the :class:`Bunch` if the ``name``
+        can be parsed into the string matchinch provider's name. See examples for
+        details.
+
+        Parameters
+        ----------
+        name : str
+            Name of the tile provider. Formatting does not matter.
+
+        Returns
+        -------
+        match: TileProvider
+
+        Examples
+        --------
+        >>> import xyzservices.providers as xyz
+
+        All these queries return the same ``CartoDB.Positron`` TileProvider:
+
+        >>> xyz.query_name("CartoDB Positron")
+        >>> xyz.query_name("cartodbpositron")
+        >>> xyz.query_name("cartodb-positron")
+        >>> xyz.query_name("carto db/positron")
+        >>> xyz.query_name("CARTO_DB_POSITRON")
+        >>> xyz.query_name("CartoDB.Positron")
+
+        """
+        xyz_flat_lower = {
+            k.replace(".", "").lower(): v for k, v in self.flatten().items()
+        }
+        name_clean = name
+        remove = "., -_/"
+        for string in remove:
+            name_clean = name_clean.replace(string, "")
+        name_clean = name_clean.lower()
+        if name_clean in xyz_flat_lower:
+            return xyz_flat_lower[name_clean]
+
+        raise ValueError(f"No matching provider found for the query '{name}'.")
+
 
 class TileProvider(Bunch):
     """
