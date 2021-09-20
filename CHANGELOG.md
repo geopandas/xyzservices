@@ -1,6 +1,14 @@
 Changelog
 =========
 
+xyzservices 2021.09.1 (September ??, 2021)
+-----------------------------------------
+
+New functionality:
+
+- Added ``Bunch.query_name()`` method allowing to fetch the ``TileProvider`` object based on the name with flexible formatting. (#93)
+
+
 xyzservices 2021.09.0 (September 3, 2021)
 -----------------------------------------
 
