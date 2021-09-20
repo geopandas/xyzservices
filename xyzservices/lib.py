@@ -256,7 +256,7 @@ class Bunch(dict):
         """Return :class:`TileProvider` based on the name query
 
         Returns a matching :class:`TileProvider` from the :class:`Bunch` if the ``name``
-        can be parsed into the string matchinch provider's name. See examples for
+        can be parsed into the string matching the provider's name. See examples for
         details.
 
         Parameters
