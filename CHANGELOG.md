@@ -1,8 +1,8 @@
 Changelog
 =========
 
-xyzservices 2021.09.1 (September ??, 2021)
------------------------------------------
+xyzservices 2021.09.1 (September 20, 2021)
+------------------------------------------
 
 New functionality:
 
