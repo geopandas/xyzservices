@@ -256,8 +256,9 @@ class Bunch(dict):
         """Return :class:`TileProvider` based on the name query
 
         Returns a matching :class:`TileProvider` from the :class:`Bunch` if the ``name``
-        can be parsed into the string matching the provider's name. See examples for
-        details.
+        contains the same letters in the same order as the provider's name irrespective
+        of the letter case, spaces, dashes and other characters.
+        See examples for details.
 
         Parameters
         ----------
