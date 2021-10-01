@@ -2878,7 +2878,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2021-09-20",
-        "commit": "commit 83fbac74745bea4cc3e07197febcf9815db8cede (Bump uglify-js from 3.14.1 to 3.14.2\n\nBumps [uglify-js](https://github.com/mishoo/UglifyJS) from 3.14.1 to 3.14.2.\n- [Release notes](https://github.com/mishoo/UglifyJS/releases)\n- [Commits](https://github.com/mishoo/UglifyJS/compare/v3.14.1...v3.14.2)\n\n---\nupdated-dependencies:\n- dependency-name: uglify-js\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
+        "date_of_creation": "2021-10-01",
+        "commit": "commit b7017bfbbe75c6a1cba076bcceb7d81e8bfc2f31 (Bump actions/setup-node from 2.4.0 to 2.4.1\n\nBumps [actions/setup-node](https://github.com/actions/setup-node) from 2.4.0 to 2.4.1.\n- [Release notes](https://github.com/actions/setup-node/releases)\n- [Commits](https://github.com/actions/setup-node/compare/v2.4.0...v2.4.1)\n\n---\nupdated-dependencies:\n- dependency-name: actions/setup-node\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }
