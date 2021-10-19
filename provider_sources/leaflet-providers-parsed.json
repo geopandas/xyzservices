@@ -69,12 +69,12 @@
         "attribution": "Map data: (C) OpenSeaMap contributors",
         "name": "OpenSeaMap"
     },
-    "OpenPtMap": {
-        "url": "http://openptmap.org/tiles/{z}/{x}/{y}.png",
-        "max_zoom": 17,
-        "html_attribution": "Map data: &copy; <a href=\"http://www.openptmap.org\">OpenPtMap</a> contributors",
-        "attribution": "Map data: (C) OpenPtMap contributors",
-        "name": "OpenPtMap"
+    "OPNVKarte": {
+        "url": "https://tileserver.memomaps.de/tilegen/{z}/{x}/{y}.png",
+        "max_zoom": 18,
+        "html_attribution": "Map <a href=\"https://memomaps.de/\">memomaps.de</a> <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+        "attribution": "Map memomaps.de CC-BY-SA, map data (C) OpenStreetMap contributors",
+        "name": "OPNVKarte"
     },
     "OpenTopoMap": {
         "url": "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
@@ -1826,7 +1826,7 @@
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
-            "max_zoom": 19,
+            "max_zoom": 20,
             "variant": "light_all",
             "name": "CartoDB.Positron"
         },
@@ -1835,7 +1835,7 @@
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
-            "max_zoom": 19,
+            "max_zoom": 20,
             "variant": "light_nolabels",
             "name": "CartoDB.PositronNoLabels"
         },
@@ -1844,7 +1844,7 @@
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
-            "max_zoom": 19,
+            "max_zoom": 20,
             "variant": "light_only_labels",
             "name": "CartoDB.PositronOnlyLabels"
         },
@@ -1853,7 +1853,7 @@
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
-            "max_zoom": 19,
+            "max_zoom": 20,
             "variant": "dark_all",
             "name": "CartoDB.DarkMatter"
         },
@@ -1862,7 +1862,7 @@
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
-            "max_zoom": 19,
+            "max_zoom": 20,
             "variant": "dark_nolabels",
             "name": "CartoDB.DarkMatterNoLabels"
         },
@@ -1871,7 +1871,7 @@
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
-            "max_zoom": 19,
+            "max_zoom": 20,
             "variant": "dark_only_labels",
             "name": "CartoDB.DarkMatterOnlyLabels"
         },
@@ -1880,7 +1880,7 @@
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
-            "max_zoom": 19,
+            "max_zoom": 20,
             "variant": "rastertiles/voyager",
             "name": "CartoDB.Voyager"
         },
@@ -1889,7 +1889,7 @@
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
-            "max_zoom": 19,
+            "max_zoom": 20,
             "variant": "rastertiles/voyager_nolabels",
             "name": "CartoDB.VoyagerNoLabels"
         },
@@ -1898,7 +1898,7 @@
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
-            "max_zoom": 19,
+            "max_zoom": 20,
             "variant": "rastertiles/voyager_only_labels",
             "name": "CartoDB.VoyagerOnlyLabels"
         },
@@ -1907,7 +1907,7 @@
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
-            "max_zoom": 19,
+            "max_zoom": 20,
             "variant": "rastertiles/voyager_labels_under",
             "name": "CartoDB.VoyagerLabelsUnder"
         }
@@ -2878,7 +2878,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2021-10-15",
-        "commit": "commit 9830e169d0bcb8cb3d3f81569843a31b08a0b4a9 (Bump eslint from 7.32.0 to 8.0.0\n\nBumps [eslint](https://github.com/eslint/eslint) from 7.32.0 to 8.0.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/compare/v7.32.0...v8.0.0)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
+        "date_of_creation": "2021-10-19",
+        "commit": "commit 57d69ea6e75834235c607eab72cbb4da862ddc96 (Bumped version to 1.13.0)"
     }
 }

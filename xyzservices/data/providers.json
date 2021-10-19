@@ -76,13 +76,12 @@
         "attribution": "Map data: (C) OpenSeaMap contributors",
         "name": "OpenSeaMap"
     },
-    "OpenPtMap": {
-        "url": "http://openptmap.org/tiles/{z}/{x}/{y}.png",
-        "max_zoom": 17,
-        "html_attribution": "Map data: &copy; <a href=\"http://www.openptmap.org\">OpenPtMap</a> contributors",
-        "attribution": "Map data: (C) OpenPtMap contributors",
-        "name": "OpenPtMap",
-        "status": "broken"
+    "OPNVKarte": {
+        "url": "https://tileserver.memomaps.de/tilegen/{z}/{x}/{y}.png",
+        "max_zoom": 18,
+        "html_attribution": "Map <a href=\"https://memomaps.de/\">memomaps.de</a> <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+        "attribution": "Map memomaps.de CC-BY-SA, map data (C) OpenStreetMap contributors",
+        "name": "OPNVKarte"
     },
     "OpenTopoMap": {
         "url": "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
@@ -1837,7 +1836,7 @@
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
-            "max_zoom": 19,
+            "max_zoom": 20,
             "variant": "light_all",
             "name": "CartoDB.Positron"
         },
@@ -1846,7 +1845,7 @@
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
-            "max_zoom": 19,
+            "max_zoom": 20,
             "variant": "light_nolabels",
             "name": "CartoDB.PositronNoLabels"
         },
@@ -1855,7 +1854,7 @@
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
-            "max_zoom": 19,
+            "max_zoom": 20,
             "variant": "light_only_labels",
             "name": "CartoDB.PositronOnlyLabels"
         },
@@ -1864,7 +1863,7 @@
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
-            "max_zoom": 19,
+            "max_zoom": 20,
             "variant": "dark_all",
             "name": "CartoDB.DarkMatter"
         },
@@ -1873,7 +1872,7 @@
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
-            "max_zoom": 19,
+            "max_zoom": 20,
             "variant": "dark_nolabels",
             "name": "CartoDB.DarkMatterNoLabels"
         },
@@ -1882,7 +1881,7 @@
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
-            "max_zoom": 19,
+            "max_zoom": 20,
             "variant": "dark_only_labels",
             "name": "CartoDB.DarkMatterOnlyLabels"
         },
@@ -1891,7 +1890,7 @@
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
-            "max_zoom": 19,
+            "max_zoom": 20,
             "variant": "rastertiles/voyager",
             "name": "CartoDB.Voyager"
         },
@@ -1900,7 +1899,7 @@
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
-            "max_zoom": 19,
+            "max_zoom": 20,
             "variant": "rastertiles/voyager_nolabels",
             "name": "CartoDB.VoyagerNoLabels"
         },
@@ -1909,7 +1908,7 @@
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
-            "max_zoom": 19,
+            "max_zoom": 20,
             "variant": "rastertiles/voyager_only_labels",
             "name": "CartoDB.VoyagerOnlyLabels"
         },
@@ -1918,7 +1917,7 @@
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
-            "max_zoom": 19,
+            "max_zoom": 20,
             "variant": "rastertiles/voyager_labels_under",
             "name": "CartoDB.VoyagerLabelsUnder"
         }
