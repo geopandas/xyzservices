@@ -11,9 +11,8 @@ import json
 import warnings
 
 # list of providers known to be broken and should be marked as broken in the JSON
-# last update: 3 Sep 2021
+# last update: 19 Oct 2021
 BROKEN_PROVIDERS = [
-    "OpenPtMap",  # service doesn't exist anymore
     "Hydda.Full",  # down https://github.com/leaflet-extras/leaflet-providers/issues/351
     "Hydda.Base",
     "Hydda.RoadsAndLabels",

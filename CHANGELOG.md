@@ -1,6 +1,16 @@
 Changelog
 =========
 
+xyzservices 2021.10.0 (October 19, 2021)
+----------------------------------------
+
+Providers:
+
+- Added ``OPNVKarte`` map
+- Removed discontinued ``OpenPtMap``
+- Max zoom of ``CartoDB`` tiles changed from 19 to 20
+
+
 xyzservices 2021.09.1 (September 20, 2021)
 ------------------------------------------
 
