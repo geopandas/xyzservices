@@ -2123,7 +2123,7 @@
     },
     "nlmaps": {
         "standaard": {
-            "url": "https://geodata.nationaalgeoregister.nl/tiles/service/wmts/{variant}/EPSG:3857/{z}/{x}/{y}.png",
+            "url": "https://service.pdok.nl/brt/achtergrondkaart/wmts/v2_0/{variant}/EPSG:3857/{z}/{x}/{y}.png",
             "min_zoom": 6,
             "max_zoom": 19,
             "bounds": [
@@ -2138,11 +2138,11 @@
             ],
             "html_attribution": "Kaartgegevens &copy; <a href=\"https://www.kadaster.nl\">Kadaster</a>",
             "attribution": "Kaartgegevens (C) Kadaster",
-            "variant": "brtachtergrondkaart",
+            "variant": "standaard",
             "name": "nlmaps.standaard"
         },
         "pastel": {
-            "url": "https://geodata.nationaalgeoregister.nl/tiles/service/wmts/{variant}/EPSG:3857/{z}/{x}/{y}.png",
+            "url": "https://service.pdok.nl/brt/achtergrondkaart/wmts/v2_0/{variant}/EPSG:3857/{z}/{x}/{y}.png",
             "min_zoom": 6,
             "max_zoom": 19,
             "bounds": [
@@ -2157,11 +2157,11 @@
             ],
             "html_attribution": "Kaartgegevens &copy; <a href=\"https://www.kadaster.nl\">Kadaster</a>",
             "attribution": "Kaartgegevens (C) Kadaster",
-            "variant": "brtachtergrondkaartpastel",
+            "variant": "pastel",
             "name": "nlmaps.pastel"
         },
         "grijs": {
-            "url": "https://geodata.nationaalgeoregister.nl/tiles/service/wmts/{variant}/EPSG:3857/{z}/{x}/{y}.png",
+            "url": "https://service.pdok.nl/brt/achtergrondkaart/wmts/v2_0/{variant}/EPSG:3857/{z}/{x}/{y}.png",
             "min_zoom": 6,
             "max_zoom": 19,
             "bounds": [
@@ -2176,8 +2176,27 @@
             ],
             "html_attribution": "Kaartgegevens &copy; <a href=\"https://www.kadaster.nl\">Kadaster</a>",
             "attribution": "Kaartgegevens (C) Kadaster",
-            "variant": "brtachtergrondkaartgrijs",
+            "variant": "grijs",
             "name": "nlmaps.grijs"
+        },
+        "water": {
+            "url": "https://service.pdok.nl/brt/achtergrondkaart/wmts/v2_0/{variant}/EPSG:3857/{z}/{x}/{y}.png",
+            "min_zoom": 6,
+            "max_zoom": 19,
+            "bounds": [
+                [
+                    50.5,
+                    3.25
+                ],
+                [
+                    54,
+                    7.6
+                ]
+            ],
+            "html_attribution": "Kaartgegevens &copy; <a href=\"https://www.kadaster.nl\">Kadaster</a>",
+            "attribution": "Kaartgegevens (C) Kadaster",
+            "variant": "water",
+            "name": "nlmaps.water"
         },
         "luchtfoto": {
             "url": "https://service.pdok.nl/hwh/luchtfotorgb/wmts/v1_0/Actueel_ortho25/EPSG:3857/{z}/{x}/{y}.jpeg",
@@ -2878,7 +2897,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2021-11-01",
-        "commit": "commit f4bc200b474642cd9e2ee39eb2d733c41ab36497 (Bump eslint from 8.0.1 to 8.1.0\n\nBumps [eslint](https://github.com/eslint/eslint) from 8.0.1 to 8.1.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/compare/v8.0.1...v8.1.0)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
+        "date_of_creation": "2021-11-05",
+        "commit": "commit 6b53e4715d9bf34d243d0be737cc91b672039d73 (Update NL Maps URL and variants (#410))"
     }
 }

@@ -2133,7 +2133,7 @@
     },
     "nlmaps": {
         "standaard": {
-            "url": "https://geodata.nationaalgeoregister.nl/tiles/service/wmts/{variant}/EPSG:3857/{z}/{x}/{y}.png",
+            "url": "https://service.pdok.nl/brt/achtergrondkaart/wmts/v2_0/{variant}/EPSG:3857/{z}/{x}/{y}.png",
             "min_zoom": 6,
             "max_zoom": 19,
             "bounds": [
@@ -2148,11 +2148,11 @@
             ],
             "html_attribution": "Kaartgegevens &copy; <a href=\"https://www.kadaster.nl\">Kadaster</a>",
             "attribution": "Kaartgegevens (C) Kadaster",
-            "variant": "brtachtergrondkaart",
+            "variant": "standaard",
             "name": "nlmaps.standaard"
         },
         "pastel": {
-            "url": "https://geodata.nationaalgeoregister.nl/tiles/service/wmts/{variant}/EPSG:3857/{z}/{x}/{y}.png",
+            "url": "https://service.pdok.nl/brt/achtergrondkaart/wmts/v2_0/{variant}/EPSG:3857/{z}/{x}/{y}.png",
             "min_zoom": 6,
             "max_zoom": 19,
             "bounds": [
@@ -2167,11 +2167,11 @@
             ],
             "html_attribution": "Kaartgegevens &copy; <a href=\"https://www.kadaster.nl\">Kadaster</a>",
             "attribution": "Kaartgegevens (C) Kadaster",
-            "variant": "brtachtergrondkaartpastel",
+            "variant": "pastel",
             "name": "nlmaps.pastel"
         },
         "grijs": {
-            "url": "https://geodata.nationaalgeoregister.nl/tiles/service/wmts/{variant}/EPSG:3857/{z}/{x}/{y}.png",
+            "url": "https://service.pdok.nl/brt/achtergrondkaart/wmts/v2_0/{variant}/EPSG:3857/{z}/{x}/{y}.png",
             "min_zoom": 6,
             "max_zoom": 19,
             "bounds": [
@@ -2186,8 +2186,27 @@
             ],
             "html_attribution": "Kaartgegevens &copy; <a href=\"https://www.kadaster.nl\">Kadaster</a>",
             "attribution": "Kaartgegevens (C) Kadaster",
-            "variant": "brtachtergrondkaartgrijs",
+            "variant": "grijs",
             "name": "nlmaps.grijs"
+        },
+        "water": {
+            "url": "https://service.pdok.nl/brt/achtergrondkaart/wmts/v2_0/{variant}/EPSG:3857/{z}/{x}/{y}.png",
+            "min_zoom": 6,
+            "max_zoom": 19,
+            "bounds": [
+                [
+                    50.5,
+                    3.25
+                ],
+                [
+                    54,
+                    7.6
+                ]
+            ],
+            "html_attribution": "Kaartgegevens &copy; <a href=\"https://www.kadaster.nl\">Kadaster</a>",
+            "attribution": "Kaartgegevens (C) Kadaster",
+            "variant": "water",
+            "name": "nlmaps.water"
         },
         "luchtfoto": {
             "url": "https://service.pdok.nl/hwh/luchtfotorgb/wmts/v1_0/Actueel_ortho25/EPSG:3857/{z}/{x}/{y}.jpeg",
