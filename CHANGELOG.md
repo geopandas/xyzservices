@@ -1,6 +1,15 @@
 Changelog
 =========
 
+xyzservices 2021.11.0 (November 06, 2021)
+----------------------------------------
+
+Providers:
+
+- Updated deprecated links to ``nlmaps`` providers
+- Added ``nlmaps.water``
+
+
 xyzservices 2021.10.0 (October 19, 2021)
 ----------------------------------------
 
