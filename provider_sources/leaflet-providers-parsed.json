@@ -2897,7 +2897,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2021-11-15",
-        "commit": "commit f88919f84c3611880590ca9b240157fdf8ae42be (Bump eslint from 8.1.0 to 8.2.0\n\nBumps [eslint](https://github.com/eslint/eslint) from 8.1.0 to 8.2.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/compare/v8.1.0...v8.2.0)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
+        "date_of_creation": "2021-12-01",
+        "commit": "commit c77b3d15afd407c05cce8b0b96d5edc3b06206c2 (Bump eslint from 8.2.0 to 8.3.0\n\nBumps [eslint](https://github.com/eslint/eslint) from 8.2.0 to 8.3.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/compare/v8.2.0...v8.3.0)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }
