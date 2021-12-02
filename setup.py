@@ -14,7 +14,7 @@ setuptools.setup(
     author="Dani Arribas-Bel, Martin Fleischmann",
     author_email="daniel.arribas.bel@gmail.com, martin@martinfleischmann.net",
     license="3-Clause BSD",
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages(exclude=["tests"]),
     python_requires=">=3.7",
     include_package_data=True,
     package_data={
