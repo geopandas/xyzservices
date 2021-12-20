@@ -49,7 +49,7 @@ def get_test_result(provider, allow_403=True):
     try:
         r = get_response(provider.build_url(z=z, x=x, y=y))
         assert r == requests.codes.ok
-    except AssertionError as e:
+    except AssertionError:
         if r == 403 and allow_403:
             pytest.xfail("Provider not available due to API restrictions (Error 403).")
 
@@ -79,6 +79,7 @@ def test_minimal_provider_metadata(provider_name):
     provider = xyz.flatten()[provider_name]
     check_provider(provider)
 
+
 @pytest.mark.request
 @pytest.mark.parametrize("name", flat_free)
 def test_free_providers(name):
@@ -89,6 +90,7 @@ def test_free_providers(name):
 # test providers requiring API keys. Store API keys in GitHub secrets and load them as
 # environment variables in CI Action. Note that env variable is loaded as empty on PRs
 # from a fork.
+
 
 @pytest.mark.request
 @pytest.mark.parametrize("provider_name", xyz.Thunderforest)
@@ -103,6 +105,7 @@ def test_thunderforest(provider_name):
     provider = xyz.Thunderforest[provider_name](apikey=token)
     get_test_result(provider, allow_403=False)
 
+
 @pytest.mark.request
 @pytest.mark.parametrize("provider_name", xyz.Jawg)
 def test_jawg(provider_name):
@@ -116,6 +119,7 @@ def test_jawg(provider_name):
     provider = xyz.Jawg[provider_name](accessToken=token)
     get_test_result(provider, allow_403=False)
 
+
 @pytest.mark.request
 def test_mapbox():
     try:
@@ -127,6 +131,7 @@ def test_mapbox():
 
     provider = xyz.MapBox(accessToken=token)
     get_test_result(provider, allow_403=False)
+
 
 @pytest.mark.request
 @pytest.mark.parametrize("provider_name", xyz.MapTiler)
@@ -141,6 +146,7 @@ def test_maptiler(provider_name):
     provider = xyz.MapTiler[provider_name](key=token)
     get_test_result(provider, allow_403=False)
 
+
 @pytest.mark.request
 @pytest.mark.parametrize("provider_name", xyz.TomTom)
 def test_tomtom(provider_name):
@@ -153,6 +159,7 @@ def test_tomtom(provider_name):
 
     provider = xyz.TomTom[provider_name](apikey=token)
     get_test_result(provider, allow_403=False)
+
 
 @pytest.mark.request
 @pytest.mark.parametrize("provider_name", xyz.OpenWeatherMap)
@@ -167,6 +174,7 @@ def test_openweathermap(provider_name):
     provider = xyz.OpenWeatherMap[provider_name](apiKey=token)
     get_test_result(provider, allow_403=False)
 
+
 @pytest.mark.request
 @pytest.mark.parametrize("provider_name", xyz.HEREv3)
 def test_herev3(provider_name):
@@ -179,6 +187,7 @@ def test_herev3(provider_name):
 
     provider = xyz.HEREv3[provider_name](apiKey=token)
     get_test_result(provider, allow_403=False)
+
 
 @pytest.mark.request
 @pytest.mark.parametrize("provider_name", xyz.Stadia)
@@ -193,6 +202,7 @@ def test_stadia(provider_name):
     provider = xyz.Stadia[provider_name](api_key=token)
     provider["url"] = provider["url"] + "?api_key={api_key}"
     get_test_result(provider, allow_403=False)
+
 
 # NOTE: AzureMaps are not tested as their free account is limited to
 # 5000 downloads (total, not per month)

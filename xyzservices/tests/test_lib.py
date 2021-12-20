@@ -48,7 +48,7 @@ def html_attr_provider():
     return TileProvider(
         url="https://myserver.com/tiles/{z}/{x}/{y}.png",
         attribution="(C) xyzservices",
-        html_attribution='&copy; <a href="https://xyzservices.readthedocs.io">xyzservices</a>',
+        html_attribution='&copy; <a href="https://xyzservices.readthedocs.io">xyzservices</a>',  # noqa
         name="my_public_provider_html",
     )
 
@@ -135,8 +135,8 @@ def test_build_url(
 
 
 def test_requires_token(private_provider, basic_provider):
-    assert private_provider.requires_token() == True
-    assert basic_provider.requires_token() == False
+    assert private_provider.requires_token() is True
+    assert basic_provider.requires_token() is False
 
 
 def test_html_repr(basic_provider, retina_provider):
@@ -207,7 +207,7 @@ def test_from_qms():
 @pytest.mark.xfail(reason="timeout error", raises=URLError)
 def test_from_qms_not_found_error():
     with pytest.raises(ValueError):
-        provider = TileProvider.from_qms("LolWut")
+        TileProvider.from_qms("LolWut")
 
 
 def test_flatten(
