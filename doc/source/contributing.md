@@ -56,7 +56,24 @@ It is mandatory to always specify at least `name`, `url`, and `attribution`.
 Don't forget to add any other custom attribute
 required by the provider. When specifying a placeholder for the access token, please use
 the `"<insert your access token here>"` string to ensure that `requires_token()` method
-works properly.
+works properly. You can also specify the extent of the tile coverage using the `bounds`
+keyword and the format `[[lat_min, lon_min], [lat_max, lon_max]]`. See the example for the area
+surrounding Switzerland:
+
+```json
+{
+  "bounds": [
+      [
+          45,
+          5
+      ],
+      [
+          48,
+          11
+      ]
+  ],
+}
+```
 
 Once updated, you can (optionally) compress the provider sources by executing `make compress` from the
 repository root.
