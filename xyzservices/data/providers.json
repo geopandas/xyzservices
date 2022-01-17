@@ -2994,7 +2994,7 @@
         "NationalMapColor": {
             "url": "https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg",
             "html_attribution": "<a target=\"_blank\" href=\"https://www.swisstopo.admin.ch/\">swisstopo</a>",
-            "attribution": "© swisstopo",
+            "attribution": "\u00a9 swisstopo",
             "bounds": [
                 [
                     45.398181,
@@ -3007,12 +3007,12 @@
             ],
             "min_zoom": 2,
             "max_zoom": 18,
-	    "name": "SwissFederalGeoportal.NationalMapColor"
+            "name": "SwissFederalGeoportal.NationalMapColor"
         },
         "NationalMapGrey": {
             "url": "https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-grau/default/current/3857/{z}/{x}/{y}.jpeg",
             "html_attribution": "<a target=\"_blank\" href=\"https://www.swisstopo.admin.ch/\">swisstopo</a>",
-            "attribution": "© swisstopo",
+            "attribution": "\u00a9 swisstopo",
             "bounds": [
                 [
                     45.398181,
@@ -3025,12 +3025,12 @@
             ],
             "min_zoom": 2,
             "max_zoom": 18,
-	    "name": "SwissFederalGeoportal.NationalMapGrey"
+            "name": "SwissFederalGeoportal.NationalMapGrey"
         },
         "SWISSIMAGE": {
             "url": "https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.swissimage/default/current/3857/{z}/{x}/{y}.jpeg",
             "html_attribution": "<a target=\"_blank\" href=\"https://www.swisstopo.admin.ch/\">swisstopo</a>",
-            "attribution": "© swisstopo",
+            "attribution": "\u00a9 swisstopo",
             "bounds": [
                 [
                     45.398181,
@@ -3048,7 +3048,7 @@
         "JourneyThroughTime": {
             "url": "https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.zeitreihen/default/{time}/3857/{z}/{x}/{y}.png",
             "html_attribution": "<a target=\"_blank\" href=\"https://www.swisstopo.admin.ch/\">swisstopo</a>",
-            "attribution": "© swisstopo",
+            "attribution": "\u00a9 swisstopo",
             "bounds": [
                 [
                     45.398181,
