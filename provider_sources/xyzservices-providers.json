@@ -94,5 +94,80 @@
             "html_attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
             "name": "Strava.Winter"
         }
+    },
+    "SwissFederalGeoportal": {
+        "NationalMapColor": {
+            "url": "https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg",
+            "html_attribution": "<a target=\"_blank\" href=\"https://www.swisstopo.admin.ch/\">swisstopo</a>",
+            "attribution": "© swisstopo",
+            "bounds": [
+                [
+                    45.398181,
+                    5.140242
+                ],
+                [
+                    48.230651,
+                    11.47757
+                ]
+            ],
+            "min_zoom": 2,
+            "max_zoom": 18,
+            "name": "SwissFederalGeoportal.NationalMapColor"
+        },
+        "NationalMapGrey": {
+            "url": "https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-grau/default/current/3857/{z}/{x}/{y}.jpeg",
+            "html_attribution": "<a target=\"_blank\" href=\"https://www.swisstopo.admin.ch/\">swisstopo</a>",
+            "attribution": "© swisstopo",
+            "bounds": [
+                [
+                    45.398181,
+                    5.140242
+                ],
+                [
+                    48.230651,
+                    11.47757
+                ]
+            ],
+            "min_zoom": 2,
+            "max_zoom": 18,
+            "name": "SwissFederalGeoportal.NationalMapGrey"
+        },
+        "SWISSIMAGE": {
+            "url": "https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.swissimage/default/current/3857/{z}/{x}/{y}.jpeg",
+            "html_attribution": "<a target=\"_blank\" href=\"https://www.swisstopo.admin.ch/\">swisstopo</a>",
+            "attribution": "© swisstopo",
+            "bounds": [
+                [
+                    45.398181,
+                    5.140242
+                ],
+                [
+                    48.230651,
+                    11.47757
+                ]
+            ],
+            "min_zoom": 2,
+            "max_zoom": 19,
+            "name": "SwissFederalGeoportal.SWISSIMAGE"
+        },
+        "JourneyThroughTime": {
+            "url": "https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.zeitreihen/default/{time}/3857/{z}/{x}/{y}.png",
+            "html_attribution": "<a target=\"_blank\" href=\"https://www.swisstopo.admin.ch/\">swisstopo</a>",
+            "attribution": "© swisstopo",
+            "bounds": [
+                [
+                    45.398181,
+                    5.140242
+                ],
+                [
+                    48.230651,
+                    11.47757
+                ]
+            ],
+            "min_zoom": 2,
+            "max_zoom": 18,
+            "time": 18641231,
+            "name": "SwissFederalGeoportal.JourneyThroughTime"
+        }
     }
 }
