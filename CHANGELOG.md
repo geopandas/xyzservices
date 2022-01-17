@@ -1,6 +1,14 @@
 Changelog
 =========
 
+xyzservices 2022.01.0 (January 17, 2022)
+----------------------------------------
+
+Providers:
+
+- Added ``SwissFederalGeoportal`` providers (``NationalMapColor``, ``NationalMapGrey``, ``SWISSIMAGE``, ``JourneyThroughTime``)
+
+
 xyzservices 2021.11.0 (November 06, 2021)
 ----------------------------------------
 
