@@ -502,7 +502,7 @@
             "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
             "variant": "winter",
-            "ext": "png",
+            "ext": "jpg",
             "key": "<insert your MapTiler Cloud API key here>",
             "tileSize": 512,
             "zoomOffset": -1,
@@ -511,7 +511,7 @@
             "name": "MapTiler.Winter"
         },
         "Satellite": {
-            "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}.{ext}?key={key}",
+            "url": "https://api.maptiler.com/tiles/{variant}/{z}/{x}/{y}.{ext}?key={key}",
             "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
             "variant": "satellite-v2",
@@ -522,7 +522,7 @@
             "name": "MapTiler.Satellite"
         },
         "Terrain": {
-            "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}.{ext}?key={key}",
+            "url": "https://api.maptiler.com/tiles/{variant}/{z}/{x}/{y}.{ext}?key={key}",
             "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
             "variant": "terrain-rgb",
