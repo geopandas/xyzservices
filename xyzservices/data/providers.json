@@ -456,6 +456,81 @@
             "min_zoom": 0,
             "max_zoom": 21,
             "name": "MapTiler.Voyager"
+        },
+        "Basic4326": {
+            "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
+            "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
+            "variant": "basic-4326",
+            "ext": "png",
+            "key": "<insert your MapTiler Cloud API key here>",
+            "tileSize": 512,
+            "zoomOffset": -1,
+            "min_zoom": 0,
+            "max_zoom": 21,
+            "name": "MapTiler.Basic4326",
+            "crs": "EPSG:4326"
+        },
+        "Outdoor": {
+            "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
+            "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
+            "variant": "outdoor",
+            "ext": "png",
+            "key": "<insert your MapTiler Cloud API key here>",
+            "tileSize": 512,
+            "zoomOffset": -1,
+            "min_zoom": 0,
+            "max_zoom": 21,
+            "name": "MapTiler.Outdoor"
+        },
+        "Topographique": {
+            "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
+            "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
+            "variant": "topographique",
+            "ext": "png",
+            "key": "<insert your MapTiler Cloud API key here>",
+            "tileSize": 512,
+            "zoomOffset": -1,
+            "min_zoom": 0,
+            "max_zoom": 21,
+            "name": "MapTiler.Topographique"
+        },
+        "Winter": {
+            "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
+            "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
+            "variant": "winter",
+            "ext": "png",
+            "key": "<insert your MapTiler Cloud API key here>",
+            "tileSize": 512,
+            "zoomOffset": -1,
+            "min_zoom": 0,
+            "max_zoom": 21,
+            "name": "MapTiler.Winter"
+        },
+        "Satellite": {
+            "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
+            "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
+            "variant": "satellite-v2",
+            "ext": "jpg",
+            "key": "<insert your MapTiler Cloud API key here>",
+            "min_zoom": 0,
+            "max_zoom": 20,
+            "name": "MapTiler.Satellite"
+        },
+        "Terrain": {
+            "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
+            "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
+            "variant": "terrain-rgb",
+            "ext": "png",
+            "key": "<insert your MapTiler Cloud API key here>",
+            "min_zoom": 0,
+            "max_zoom": 12,
+            "name": "MapTiler.Terrain"
         }
     },
     "Stamen": {
