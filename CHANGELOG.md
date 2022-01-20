@@ -1,6 +1,15 @@
 Changelog
 =========
 
+xyzservices 2022.01.1 (January 20, 2022)
+----------------------------------------
+
+Providers:
+
+- Added ``NASAGIBS.BlueMarble`` datasets in EPSG 3857 (default), 3413, and 3031
+- Added more ``MapTiler`` providers (``Outdoor``, ``Topographique``, ``Winter``, ``Satellite``, ``Terrain``, and ``Basic4326`` in ESPG 4326).
+
+
 xyzservices 2022.01.0 (January 17, 2022)
 ----------------------------------------
 
