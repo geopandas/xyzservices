@@ -2895,9 +2895,68 @@
             "name": "AzureMaps.MicrosoftWeatherRadarMain"
         }
     },
+    "SwissFederalGeoportal": {
+        "NationalMapColor": {
+            "url": "https://wmts.geo.admin.ch/1.0.0/{variant}/default/current/3857/{z}/{x}/{y}.jpeg",
+            "html_attribution": "&copy; <a href=\"https://www.swisstopo.admin.ch/\">swisstopo</a>",
+            "attribution": "(C) swisstopo",
+            "min_zoom": 2,
+            "max_zoom": 18,
+            "bounds": [
+                [
+                    45.398181,
+                    5.140242
+                ],
+                [
+                    48.230651,
+                    11.47757
+                ]
+            ],
+            "variant": "ch.swisstopo.pixelkarte-farbe",
+            "name": "SwissFederalGeoportal.NationalMapColor"
+        },
+        "NationalMapGrey": {
+            "url": "https://wmts.geo.admin.ch/1.0.0/{variant}/default/current/3857/{z}/{x}/{y}.jpeg",
+            "html_attribution": "&copy; <a href=\"https://www.swisstopo.admin.ch/\">swisstopo</a>",
+            "attribution": "(C) swisstopo",
+            "min_zoom": 2,
+            "max_zoom": 18,
+            "bounds": [
+                [
+                    45.398181,
+                    5.140242
+                ],
+                [
+                    48.230651,
+                    11.47757
+                ]
+            ],
+            "variant": "ch.swisstopo.pixelkarte-grau",
+            "name": "SwissFederalGeoportal.NationalMapGrey"
+        },
+        "SWISSIMAGE": {
+            "url": "https://wmts.geo.admin.ch/1.0.0/{variant}/default/current/3857/{z}/{x}/{y}.jpeg",
+            "html_attribution": "&copy; <a href=\"https://www.swisstopo.admin.ch/\">swisstopo</a>",
+            "attribution": "(C) swisstopo",
+            "min_zoom": 2,
+            "max_zoom": 19,
+            "bounds": [
+                [
+                    45.398181,
+                    5.140242
+                ],
+                [
+                    48.230651,
+                    11.47757
+                ]
+            ],
+            "variant": "ch.swisstopo.swissimage",
+            "name": "SwissFederalGeoportal.SWISSIMAGE"
+        }
+    },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2022-01-17",
-        "commit": "commit 253588b52a0a2da91fc4c885874663a0be76719d (Bump actions/setup-node from 2.5.0 to 2.5.1\n\nBumps [actions/setup-node](https://github.com/actions/setup-node) from 2.5.0 to 2.5.1.\n- [Release notes](https://github.com/actions/setup-node/releases)\n- [Commits](https://github.com/actions/setup-node/compare/v2.5.0...v2.5.1)\n\n---\nupdated-dependencies:\n- dependency-name: actions/setup-node\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
+        "date_of_creation": "2022-02-01",
+        "commit": "commit d9c4e91f0b8eca034691819db075efc68c91def1 (Bump uglify-js from 3.14.5 to 3.15.0\n\nBumps [uglify-js](https://github.com/mishoo/UglifyJS) from 3.14.5 to 3.15.0.\n- [Release notes](https://github.com/mishoo/UglifyJS/releases)\n- [Commits](https://github.com/mishoo/UglifyJS/compare/v3.14.5...v3.15.0)\n\n---\nupdated-dependencies:\n- dependency-name: uglify-js\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }

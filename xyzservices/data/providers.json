@@ -3035,59 +3035,6 @@
             "name": "AzureMaps.MicrosoftWeatherRadarMain"
         }
     },
-    "Gaode": {
-        "Normal": {
-            "url": "http://webrd01.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=7&x={x}&y={y}&z={z}",
-            "max_zoom": 19,
-            "attribution": "&copy; <a href=\"http://www.gaode.com/\">Gaode.com</a>",
-            "html_attribution": "&copy; <a href=\"http://www.gaode.com/\">Gaode.com</a>",
-            "name": "Gaode.Normal"
-        },
-        "Satellite": {
-            "url": "http://webst01.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}",
-            "max_zoom": 19,
-            "attribution": "&copy; <a href=\"http://www.gaode.com/\">Gaode.com</a>",
-            "html_attribution": "&copy; <a href=\"http://www.gaode.com/\">Gaode.com</a>",
-            "name": "Gaode.Satellite"
-        }
-    },
-    "Strava": {
-        "All": {
-            "url": "https://heatmap-external-a.strava.com/tiles/all/hot/{z}/{x}/{y}.png",
-            "max_zoom": 15,
-            "attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
-            "html_attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
-            "name": "Strava.All"
-        },
-        "Ride": {
-            "url": "https://heatmap-external-a.strava.com/tiles/ride/hot/{z}/{x}/{y}.png",
-            "max_zoom": 15,
-            "attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
-            "html_attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
-            "name": "Strava.Ride"
-        },
-        "Run": {
-            "url": "https://heatmap-external-a.strava.com/tiles/run/bluered/{z}/{x}/{y}.png",
-            "max_zoom": 15,
-            "attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
-            "html_attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
-            "name": "Strava.Run"
-        },
-        "Water": {
-            "url": "https://heatmap-external-a.strava.com/tiles/water/blue/{z}/{x}/{y}.png",
-            "max_zoom": 15,
-            "attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
-            "html_attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
-            "name": "Strava.Water"
-        },
-        "Winter": {
-            "url": "https://heatmap-external-a.strava.com/tiles/winter/hot/{z}/{x}/{y}.png",
-            "max_zoom": 15,
-            "attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
-            "html_attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
-            "name": "Strava.Winter"
-        }
-    },
     "SwissFederalGeoportal": {
         "NationalMapColor": {
             "url": "https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg",
@@ -3161,6 +3108,59 @@
             "max_zoom": 18,
             "time": 18641231,
             "name": "SwissFederalGeoportal.JourneyThroughTime"
+        }
+    },
+    "Gaode": {
+        "Normal": {
+            "url": "http://webrd01.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=7&x={x}&y={y}&z={z}",
+            "max_zoom": 19,
+            "attribution": "&copy; <a href=\"http://www.gaode.com/\">Gaode.com</a>",
+            "html_attribution": "&copy; <a href=\"http://www.gaode.com/\">Gaode.com</a>",
+            "name": "Gaode.Normal"
+        },
+        "Satellite": {
+            "url": "http://webst01.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}",
+            "max_zoom": 19,
+            "attribution": "&copy; <a href=\"http://www.gaode.com/\">Gaode.com</a>",
+            "html_attribution": "&copy; <a href=\"http://www.gaode.com/\">Gaode.com</a>",
+            "name": "Gaode.Satellite"
+        }
+    },
+    "Strava": {
+        "All": {
+            "url": "https://heatmap-external-a.strava.com/tiles/all/hot/{z}/{x}/{y}.png",
+            "max_zoom": 15,
+            "attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
+            "html_attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
+            "name": "Strava.All"
+        },
+        "Ride": {
+            "url": "https://heatmap-external-a.strava.com/tiles/ride/hot/{z}/{x}/{y}.png",
+            "max_zoom": 15,
+            "attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
+            "html_attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
+            "name": "Strava.Ride"
+        },
+        "Run": {
+            "url": "https://heatmap-external-a.strava.com/tiles/run/bluered/{z}/{x}/{y}.png",
+            "max_zoom": 15,
+            "attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
+            "html_attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
+            "name": "Strava.Run"
+        },
+        "Water": {
+            "url": "https://heatmap-external-a.strava.com/tiles/water/blue/{z}/{x}/{y}.png",
+            "max_zoom": 15,
+            "attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
+            "html_attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
+            "name": "Strava.Water"
+        },
+        "Winter": {
+            "url": "https://heatmap-external-a.strava.com/tiles/winter/hot/{z}/{x}/{y}.png",
+            "max_zoom": 15,
+            "attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
+            "html_attribution": "Map tiles by <a href=\"https://labs.strava.com/heatmap\">Strava 2021</a>",
+            "name": "Strava.Winter"
         }
     }
 }
