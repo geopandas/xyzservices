@@ -2824,8 +2824,8 @@
     "AzureMaps": {
         "MicrosoftImagery": {
             "url": "https://atlas.microsoft.com/map/tile?api-version={apiVersion}&tilesetId={variant}&x={x}&y={y}&zoom={z}&language={language}&subscription-key={subscriptionKey}",
-            "html_attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview for details.",
-            "attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview for details.",
+            "html_attribution": "See https://docs.microsoft.com/en-us/rest/api/maps/render-v2/get-map-tile for details.",
+            "attribution": "See https://docs.microsoft.com/en-us/rest/api/maps/render-v2/get-map-tile for details.",
             "apiVersion": "2.0",
             "variant": "microsoft.imagery",
             "subscriptionKey": "<insert your subscription key here>",
@@ -2834,8 +2834,8 @@
         },
         "MicrosoftBaseDarkGrey": {
             "url": "https://atlas.microsoft.com/map/tile?api-version={apiVersion}&tilesetId={variant}&x={x}&y={y}&zoom={z}&language={language}&subscription-key={subscriptionKey}",
-            "html_attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview for details.",
-            "attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview for details.",
+            "html_attribution": "See https://docs.microsoft.com/en-us/rest/api/maps/render-v2/get-map-tile for details.",
+            "attribution": "See https://docs.microsoft.com/en-us/rest/api/maps/render-v2/get-map-tile for details.",
             "apiVersion": "2.0",
             "variant": "microsoft.base.darkgrey",
             "subscriptionKey": "<insert your subscription key here>",
@@ -2844,8 +2844,8 @@
         },
         "MicrosoftBaseRoad": {
             "url": "https://atlas.microsoft.com/map/tile?api-version={apiVersion}&tilesetId={variant}&x={x}&y={y}&zoom={z}&language={language}&subscription-key={subscriptionKey}",
-            "html_attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview for details.",
-            "attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview for details.",
+            "html_attribution": "See https://docs.microsoft.com/en-us/rest/api/maps/render-v2/get-map-tile for details.",
+            "attribution": "See https://docs.microsoft.com/en-us/rest/api/maps/render-v2/get-map-tile for details.",
             "apiVersion": "2.0",
             "variant": "microsoft.base.road",
             "subscriptionKey": "<insert your subscription key here>",
@@ -2854,8 +2854,8 @@
         },
         "MicrosoftBaseHybridRoad": {
             "url": "https://atlas.microsoft.com/map/tile?api-version={apiVersion}&tilesetId={variant}&x={x}&y={y}&zoom={z}&language={language}&subscription-key={subscriptionKey}",
-            "html_attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview for details.",
-            "attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview for details.",
+            "html_attribution": "See https://docs.microsoft.com/en-us/rest/api/maps/render-v2/get-map-tile for details.",
+            "attribution": "See https://docs.microsoft.com/en-us/rest/api/maps/render-v2/get-map-tile for details.",
             "apiVersion": "2.0",
             "variant": "microsoft.base.hybrid.road",
             "subscriptionKey": "<insert your subscription key here>",
@@ -2864,8 +2864,8 @@
         },
         "MicrosoftTerraMain": {
             "url": "https://atlas.microsoft.com/map/tile?api-version={apiVersion}&tilesetId={variant}&x={x}&y={y}&zoom={z}&language={language}&subscription-key={subscriptionKey}",
-            "html_attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview for details.",
-            "attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview for details.",
+            "html_attribution": "See https://docs.microsoft.com/en-us/rest/api/maps/render-v2/get-map-tile for details.",
+            "attribution": "See https://docs.microsoft.com/en-us/rest/api/maps/render-v2/get-map-tile for details.",
             "apiVersion": "2.0",
             "variant": "microsoft.terra.main",
             "subscriptionKey": "<insert your subscription key here>",
@@ -2874,8 +2874,8 @@
         },
         "MicrosoftWeatherInfraredMain": {
             "url": "https://atlas.microsoft.com/map/tile?api-version={apiVersion}&tilesetId={variant}&x={x}&y={y}&zoom={z}&timeStamp={timeStamp}&language={language}&subscription-key={subscriptionKey}",
-            "html_attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview#uri-parameters for details.",
-            "attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview#uri-parameters for details.",
+            "html_attribution": "See https://docs.microsoft.com/en-us/rest/api/maps/render-v2/get-map-tile#uri-parameters for details.",
+            "attribution": "See https://docs.microsoft.com/en-us/rest/api/maps/render-v2/get-map-tile#uri-parameters for details.",
             "apiVersion": "2.0",
             "variant": "microsoft.weather.infrared.main",
             "subscriptionKey": "<insert your subscription key here>",
@@ -2885,8 +2885,8 @@
         },
         "MicrosoftWeatherRadarMain": {
             "url": "https://atlas.microsoft.com/map/tile?api-version={apiVersion}&tilesetId={variant}&x={x}&y={y}&zoom={z}&timeStamp={timeStamp}&language={language}&subscription-key={subscriptionKey}",
-            "html_attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview#uri-parameters for details.",
-            "attribution": "See https://docs.microsoft.com/en-US/rest/api/maps/renderv2/getmaptilepreview#uri-parameters for details.",
+            "html_attribution": "See https://docs.microsoft.com/en-us/rest/api/maps/render-v2/get-map-tile#uri-parameters for details.",
+            "attribution": "See https://docs.microsoft.com/en-us/rest/api/maps/render-v2/get-map-tile#uri-parameters for details.",
             "apiVersion": "2.0",
             "variant": "microsoft.weather.radar.main",
             "subscriptionKey": "<insert your subscription key here>",
@@ -2956,7 +2956,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2022-02-01",
-        "commit": "commit d9c4e91f0b8eca034691819db075efc68c91def1 (Bump uglify-js from 3.14.5 to 3.15.0\n\nBumps [uglify-js](https://github.com/mishoo/UglifyJS) from 3.14.5 to 3.15.0.\n- [Release notes](https://github.com/mishoo/UglifyJS/releases)\n- [Commits](https://github.com/mishoo/UglifyJS/compare/v3.14.5...v3.15.0)\n\n---\nupdated-dependencies:\n- dependency-name: uglify-js\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
+        "date_of_creation": "2022-02-10",
+        "commit": "commit 0a9e27f8c6c26956b4e78c26e1945d748e3c2869 (Update links to Azure Maps official docs)"
     }
 }
