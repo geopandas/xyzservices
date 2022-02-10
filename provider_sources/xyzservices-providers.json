@@ -239,7 +239,7 @@
             "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
             "variant": "winter",
-            "ext": "jpg",
+            "ext": "png",
             "key": "<insert your MapTiler Cloud API key here>",
             "tileSize": 512,
             "zoomOffset": -1,
