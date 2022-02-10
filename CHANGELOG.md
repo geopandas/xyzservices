@@ -1,6 +1,14 @@
 Changelog
 =========
 
+xyzservices 2022.02.0 (February 10, 2022)
+----------------------------------------
+
+Providers:
+
+- Fixed ``MapTiler.Winter``
+- Updated ``AzureMaps`` links
+
 xyzservices 2022.01.1 (January 20, 2022)
 ----------------------------------------
 
@@ -9,14 +17,12 @@ Providers:
 - Added ``NASAGIBS.BlueMarble`` datasets in EPSG 3857 (default), 3413, and 3031
 - Added more ``MapTiler`` providers (``Outdoor``, ``Topographique``, ``Winter``, ``Satellite``, ``Terrain``, and ``Basic4326`` in ESPG 4326).
 
-
 xyzservices 2022.01.0 (January 17, 2022)
 ----------------------------------------
 
 Providers:
 
 - Added ``SwissFederalGeoportal`` providers (``NationalMapColor``, ``NationalMapGrey``, ``SWISSIMAGE``, ``JourneyThroughTime``)
-
 
 xyzservices 2021.11.0 (November 06, 2021)
 ----------------------------------------
@@ -25,7 +31,6 @@ Providers:
 
 - Updated deprecated links to ``nlmaps`` providers
 - Added ``nlmaps.water``
-
 
 xyzservices 2021.10.0 (October 19, 2021)
 ----------------------------------------
@@ -36,14 +41,12 @@ Providers:
 - Removed discontinued ``OpenPtMap``
 - Max zoom of ``CartoDB`` tiles changed from 19 to 20
 
-
 xyzservices 2021.09.1 (September 20, 2021)
 ------------------------------------------
 
 New functionality:
 
 - Added ``Bunch.query_name()`` method allowing to fetch the ``TileProvider`` object based on the name with flexible formatting. (#93)
-
 
 xyzservices 2021.09.0 (September 3, 2021)
 -----------------------------------------
@@ -55,7 +58,6 @@ Providers:
 - Fixed ``NASAGIBS.ModisTerraSnowCover`` (#90)
 - ``JusticeMap`` and ``OpenAIP`` now use https instead of http
 
-
 xyzservices 2021.08.1 (August 12, 2021)
 ---------------------------------------
 
@@ -65,7 +67,6 @@ Providers:
 - Added ``Gaode`` tiles (``Normal`` and ``Satellite``) (#83)
 - Expanded ``NASAGIBS`` tiles with ``ModisTerraBands721CR``, ``ModisAquaTrueColorCR``, ``ModisAquaBands721CR`` and ``ViirsTrueColorCR`` (#83)
 - Added metadata to ``Strava`` maps (currently down) (#83)
-
 
 xyzservices 2021.08.0 (August 8, 2021)
 --------------------------------------
@@ -84,7 +85,6 @@ Minor enhancements:
 - Support dark themes in HTML repr (#70)
 - Mark broken providers with ``status="broken"`` attribute (#78)
 - Document providers requiring registrations (#79)
-
 
 xyzservices 2021.07 (July 30, 2021)
 -----------------------------------
