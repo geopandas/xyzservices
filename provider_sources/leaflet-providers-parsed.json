@@ -2956,7 +2956,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2022-02-10",
+        "date_of_creation": "2022-02-15",
         "commit": "commit 0a9e27f8c6c26956b4e78c26e1945d748e3c2869 (Update links to Azure Maps official docs)"
     }
 }
