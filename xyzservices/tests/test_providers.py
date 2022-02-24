@@ -62,7 +62,13 @@ def get_test_result(provider, allow_403=True):
         # check another tiles
         elif r == 404:
             # in some cases, the computed tile is not availble. trying known tiles.
-            options = [(12, 2154, 1363), (6, 13, 21), (16, 33149, 22973)]
+            options = [
+                (12, 2154, 1363),
+                (6, 13, 21),
+                (16, 33149, 22973),
+                (0, 0, 0),
+                (2, 6, 7),
+            ]
             results = []
             for o in options:
                 z, x, y = o
