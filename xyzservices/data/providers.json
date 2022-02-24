@@ -804,6 +804,63 @@
             "attribution": "Tiles (C) Esri -- Esri, DeLorme, NAVTEQ",
             "max_zoom": 16,
             "name": "Esri.WorldGrayCanvas"
+        },
+        "ArcticOceanBase": {
+            "url": "http://server.arcgisonline.com/ArcGIS/rest/services/Polar/Arctic_Ocean_Base/MapServer/tile/{z}/{y}/{x}",
+            "variant": "Arctic_Ocean_Base",
+            "html_attribution": "Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community",
+            "attribution": "Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community",
+            "max_zoom": 24,
+            "name": "Esri.ArcticOceanBase",
+            "crs": "EPSG:5936",
+            "bounds": [
+                [
+                    -2623285.8808999993,
+                    -2623285.8808999993
+                ],
+                [
+                    6623285.8803,
+                    6623285.8803
+                ]
+            ]
+        },
+        "ArcticOceanReference": {
+            "url": "http://server.arcgisonline.com/ArcGIS/rest/services/Polar/Arctic_Ocean_Reference/MapServer/tile/{z}/{y}/{x}",
+            "variant": "Arctic_Ocean_Reference",
+            "html_attribution": "Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community",
+            "attribution": "Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community",
+            "max_zoom": 24,
+            "name": "Esri.ArcticOceanReference",
+            "crs": "EPSG:5936",
+            "bounds": [
+                [
+                    -2623285.8808999993,
+                    -2623285.8808999993
+                ],
+                [
+                    6623285.8803,
+                    6623285.8803
+                ]
+            ]
+        },
+        "AntarcticBasemap": {
+            "url": "https://tiles.arcgis.com/tiles/C8EMgrsFcRFL6LrL/arcgis/rest/services/Antarctic_Basemap/MapServer/tile/{z}/{y}/{x}",
+            "variant": "Antarctic_Basemap",
+            "html_attribution": "Imagery provided by NOAA National Centers for Environmental Information (NCEI); International Bathymetric Chart of the Southern Ocean (IBCSO); General Bathymetric Chart of the Oceans (GEBCO).",
+            "attribution": "Imagery provided by NOAA National Centers for Environmental Information (NCEI); International Bathymetric Chart of the Southern Ocean (IBCSO); General Bathymetric Chart of the Oceans (GEBCO).",
+            "max_zoom": 9,
+            "name": "Esri.AntarcticBasemap",
+            "crs": "EPSG:3031",
+            "bounds": [
+                [
+                    -4524583.19363305,
+                    -4524449.487765655
+                ],
+                [
+                    4524449.4877656475,
+                    4524583.193633042
+                ]
+            ]
         }
     },
     "OpenWeatherMap": {
