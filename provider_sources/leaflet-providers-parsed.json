@@ -2956,7 +2956,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2022-02-15",
-        "commit": "commit 0a9e27f8c6c26956b4e78c26e1945d748e3c2869 (Update links to Azure Maps official docs)"
+        "date_of_creation": "2022-03-01",
+        "commit": "commit a2559dd10eb5b3367d15328857883d3b661b5063 (Bump actions/setup-node from 2.5.1 to 3\n\nBumps [actions/setup-node](https://github.com/actions/setup-node) from 2.5.1 to 3.\n- [Release notes](https://github.com/actions/setup-node/releases)\n- [Commits](https://github.com/actions/setup-node/compare/v2.5.1...v3)\n\n---\nupdated-dependencies:\n- dependency-name: actions/setup-node\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }
