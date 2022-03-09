@@ -1,6 +1,13 @@
 Changelog
 =========
 
+xyzservices 2022.03.0 (March 9, 2022)
+-------------------------------------
+
+Providers:
+
+- Added ``Esri`` ``ArcticOceanBase``, ``ArcticOceanReference`` and ``AntarcticBasemap``
+
 xyzservices 2022.02.0 (February 10, 2022)
 ----------------------------------------
 
