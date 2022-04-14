@@ -231,35 +231,6 @@
         "attribution": "CyclOSM | Map data: (C) OpenStreetMap contributors",
         "name": "CyclOSM"
     },
-    "Hydda": {
-        "Full": {
-            "url": "https://{s}.tile.openstreetmap.se/hydda/{variant}/{z}/{x}/{y}.png",
-            "max_zoom": 20,
-            "variant": "full",
-            "html_attribution": "Tiles courtesy of <a href=\"http://openstreetmap.se/\" target=\"_blank\">OpenStreetMap Sweden</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "attribution": "Tiles courtesy of OpenStreetMap Sweden -- Map data (C) OpenStreetMap contributors",
-            "name": "Hydda.Full",
-            "status": "broken"
-        },
-        "Base": {
-            "url": "https://{s}.tile.openstreetmap.se/hydda/{variant}/{z}/{x}/{y}.png",
-            "max_zoom": 20,
-            "variant": "base",
-            "html_attribution": "Tiles courtesy of <a href=\"http://openstreetmap.se/\" target=\"_blank\">OpenStreetMap Sweden</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "attribution": "Tiles courtesy of OpenStreetMap Sweden -- Map data (C) OpenStreetMap contributors",
-            "name": "Hydda.Base",
-            "status": "broken"
-        },
-        "RoadsAndLabels": {
-            "url": "https://{s}.tile.openstreetmap.se/hydda/{variant}/{z}/{x}/{y}.png",
-            "max_zoom": 20,
-            "variant": "roads_and_labels",
-            "html_attribution": "Tiles courtesy of <a href=\"http://openstreetmap.se/\" target=\"_blank\">OpenStreetMap Sweden</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "attribution": "Tiles courtesy of OpenStreetMap Sweden -- Map data (C) OpenStreetMap contributors",
-            "name": "Hydda.RoadsAndLabels",
-            "status": "broken"
-        }
-    },
     "Jawg": {
         "Streets": {
             "url": "https://{s}.tile.jawg.io/{variant}/{z}/{x}/{y}{r}.png?access-token={accessToken}",
