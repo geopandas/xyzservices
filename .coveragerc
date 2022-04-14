@@ -1,3 +1,4 @@
 [report]
 omit =
     xyzservices/_version.py
+    xyzservices/tests/*

@@ -1,6 +1,14 @@
 Changelog
 =========
 
+xyzservices 2022.04.0 (April 14, 2022)
+--------------------------------------
+
+Providers:
+
+- Update ``OpenStreetMap.DE`` URL
+- Remove broken Hydda tiles
+
 xyzservices 2022.03.0 (March 9, 2022)
 -------------------------------------
 

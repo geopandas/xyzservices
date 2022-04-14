@@ -11,12 +11,8 @@ import json
 import warnings
 
 # list of providers known to be broken and should be marked as broken in the JSON
-# last update: 19 Oct 2021
-BROKEN_PROVIDERS = [
-    "Hydda.Full",  # down https://github.com/leaflet-extras/leaflet-providers/issues/351
-    "Hydda.Base",
-    "Hydda.RoadsAndLabels",
-]
+# last update: 14 Apr 2022
+BROKEN_PROVIDERS = []
 
 with open("./leaflet-providers-parsed.json", "r") as f:
     leaflet = json.load(f)
