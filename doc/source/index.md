@@ -109,6 +109,7 @@ hidden: true
 introduction
 registration
 api
+gallery
 contributing
 changelog
 GitHub <https://github.com/geopandas/xyzservices>
