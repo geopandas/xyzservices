@@ -285,7 +285,7 @@ function initMap(data, accessData) {
 }
 
 getJSON(
-  "https://raw.githubusercontent.com/geopandas/xyzservices/main/xyzservices/data/providers.json",
+  "../../../xyzservices/data/providers.json",
   (err, data) => {
     var dataList = [];
     for ([key, val] of Object.entries(data)) {
