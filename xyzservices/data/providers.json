@@ -776,6 +776,25 @@
             "max_zoom": 16,
             "name": "Esri.WorldGrayCanvas"
         },
+        "ArcticImagery": {
+            "url": "http://server.arcgisonline.com/ArcGIS/rest/services/Polar/{variant}/MapServer/tile/{z}/{y}/{x}",
+            "variant": "Arctic_Imagery",
+            "html_attribution": "Earthstar Geographics",
+            "attribution": "Earthstar Geographics",
+            "max_zoom": 24,
+            "name": "Esri.ArcticImagery",
+            "crs": "EPSG:5936",
+            "bounds": [
+                [
+                    -2623285.8808999993,
+                    -2623285.8808999993
+                ],
+                [
+                    6623285.8803,
+                    6623285.8803
+                ]
+            ]
+        },
         "ArcticOceanBase": {
             "url": "http://server.arcgisonline.com/ArcGIS/rest/services/Polar/Arctic_Ocean_Base/MapServer/tile/{z}/{y}/{x}",
             "variant": "Arctic_Ocean_Base",
@@ -2543,6 +2562,13 @@
             "attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.",
             "html_attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.",
             "name": "NASAGIBS.BlueMarble"
+        },
+        "ASTER_GDEM_Greyscale_Shaded_Relief": {
+            "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/ASTER_GDEM_Greyscale_Shaded_Relief/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.jpg",
+            "max_zoom": 12,
+            "attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.",
+            "html_attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.",
+            "name": "NASAGIBS.ASTER_GDEM_Greyscale_Shaded_Relief"
         }
     },
     "NLS": {
