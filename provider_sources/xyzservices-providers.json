@@ -74,7 +74,7 @@
     },
     "Esri": {
         "ArcticImagery": {
-            "url": "http://server.arcgisonline.com/ArcGIS/rest/services/Polar/{variant}/MapServer/tile/{z}/{y}/{x}",
+            "url": "http://server.arcgisonline.com/ArcGIS/rest/services/Polar/Arctic_Imagery/MapServer/tile/{z}/{y}/{x}",
             "variant": "Arctic_Imagery",
             "html_attribution": "Earthstar Geographics",
             "attribution": "Earthstar Geographics",
@@ -127,6 +127,25 @@
                 [
                     6623285.8803000003099442,
                     6623285.8803000003099442
+                ]
+            ]
+        },
+        "AntarcticImagery": {
+            "url": "http://server.arcgisonline.com/ArcGIS/rest/services/Polar/Antarctic_Imagery/MapServer/tile/{z}/{y}/{x}",
+            "variant": "Antarctic_Imagery",
+            "html_attribution": "Earthstar Geographics",
+            "attribution": "Earthstar Geographics",
+            "max_zoom": 24,
+            "name": "Esri.AntarcticImagery",
+            "crs": "EPSG:3031",
+            "bounds": [
+                [
+                    -9913957.327914657,
+                    -5730886.461772691
+                ],
+                [
+                    9913957.327914657,
+                    5730886.461773157
                 ]
             ]
         },
