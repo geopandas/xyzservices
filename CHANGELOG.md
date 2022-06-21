@@ -1,6 +1,14 @@
 Changelog
 =========
 
+xyzservices 2022.06.0 (June 21, 2022)
+-------------------------------------
+
+Providers:
+
+- Added ``NASAGIBS.ASTER_GDEM_Greyscale_Shaded_Relief``
+- Added ``Esri.ArcticImagery`` (EPSG:5936) and ``Esri.AntarcticImagery`` (EPSG:3031)
+
 xyzservices 2022.04.0 (April 14, 2022)
 --------------------------------------
 
