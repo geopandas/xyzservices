@@ -61,7 +61,7 @@ def get_test_result(provider, allow_403=True):
 
         # check another tiles
         elif r == 404:
-            # in some cases, the computed tile is not availble. trying known tiles.
+            # in some cases, the computed tile is not available. trying known tiles.
             options = [
                 (12, 2154, 1363),
                 (6, 13, 21),
@@ -104,7 +104,7 @@ def test_thunderforest(provider_name):
     try:
         token = os.environ["THUNDERFOREST"]
     except KeyError:
-        pytest.xfail("Mising API token.")
+        pytest.xfail("Missing API token.")
     if token == "":
         pytest.xfail("Token empty.")
 
@@ -118,7 +118,7 @@ def test_jawg(provider_name):
     try:
         token = os.environ["JAWG"]
     except KeyError:
-        pytest.xfail("Mising API token.")
+        pytest.xfail("Missing API token.")
     if token == "":
         pytest.xfail("Token empty.")
 
@@ -131,7 +131,7 @@ def test_mapbox():
     try:
         token = os.environ["MAPBOX"]
     except KeyError:
-        pytest.xfail("Mising API token.")
+        pytest.xfail("Missing API token.")
     if token == "":
         pytest.xfail("Token empty.")
 
@@ -145,7 +145,7 @@ def test_maptiler(provider_name):
     try:
         token = os.environ["MAPTILER"]
     except KeyError:
-        pytest.xfail("Mising API token.")
+        pytest.xfail("Missing API token.")
     if token == "":
         pytest.xfail("Token empty.")
 
@@ -159,7 +159,7 @@ def test_tomtom(provider_name):
     try:
         token = os.environ["TOMTOM"]
     except KeyError:
-        pytest.xfail("Mising API token.")
+        pytest.xfail("Missing API token.")
     if token == "":
         pytest.xfail("Token empty.")
 
@@ -173,7 +173,7 @@ def test_openweathermap(provider_name):
     try:
         token = os.environ["OPENWEATHERMAP"]
     except KeyError:
-        pytest.xfail("Mising API token.")
+        pytest.xfail("Missing API token.")
     if token == "":
         pytest.xfail("Token empty.")
 
@@ -187,7 +187,7 @@ def test_herev3(provider_name):
     try:
         token = os.environ["HEREV3"]
     except KeyError:
-        pytest.xfail("Mising API token.")
+        pytest.xfail("Missing API token.")
     if token == "":
         pytest.xfail("Token empty.")
 
@@ -201,7 +201,7 @@ def test_stadia(provider_name):
     try:
         token = os.environ["STADIA"]
     except KeyError:
-        pytest.xfail("Mising API token.")
+        pytest.xfail("Missing API token.")
     if token == "":
         pytest.xfail("Token empty.")
 

@@ -4,7 +4,7 @@ Contributions to `xyzservices` are very welcome. They are likely to be accepted 
 quickly if they follow these guidelines.
 
 There are two main groups of contributions - adding new provider sources and
-contributions to the codebase and documentaion.
+contributions to the codebase and documentation.
 
 ## Providers
 
