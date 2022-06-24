@@ -11,7 +11,9 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
 import os
+import shutil
 import sys
+from pathlib import Path
 sys.path.insert(0, os.path.abspath("../.."))
 import xyzservices  # noqa
 
@@ -72,3 +74,6 @@ html_css_files = [
 #     "**": ["docs-sidebar.html"],
 # }
 # html_logo = "_static/logo.svg"
+
+p = Path().absolute()
+shutil.copy(p.parents[1] / "xyzservices" / "data" / "providers.json", p / "_static")
