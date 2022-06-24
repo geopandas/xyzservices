@@ -18,20 +18,6 @@
 </head>
 <body>
 <script>
-var getJSON = function (url, callback) {
-  var xhr = new XMLHttpRequest();
-  xhr.open("GET", url, true);
-  xhr.responseType = "json";
-  xhr.onload = function () {
-    var status = xhr.status;
-    if (status === 200) {
-      callback(null, xhr.response);
-    } else {
-      callback(status, xhr.response);
-    }
-  };
-  xhr.send();
-};
 
 function getBaseMapName(data) {
   var name = data["name"];
@@ -284,9 +270,9 @@ function initMap(data, accessData) {
   } catch {}
 }
 
-getJSON(
-  "../../../xyzservices/data/providers.json",
-  (err, data) => {
+fetch('providers.json')
+  .then(response => response.json())
+  .then(data => {
     var dataList = [];
     for ([key, val] of Object.entries(data)) {
       if (val["url"] === undefined) {
@@ -308,7 +294,6 @@ getJSON(
     });
   }
 );
-
 
 </script>
 </body>
