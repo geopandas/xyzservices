@@ -1,24 +1,3 @@
-<html>
-<head>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leaflet tile maps</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
-
- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-   crossorigin=""/>
-
- <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-   crossorigin=""></script>
-
-</head>
-<body>
-<script>
-
 function getBaseMapName(data) {
   var name = data["name"];
   if (name.includes(".")) {
@@ -78,12 +57,12 @@ var accessData = {
   },
 };
 
-function initMap(data, accessData) {
+function initMap(el, data, accessData) {
   basemap = getBaseMapName(data);
 
   const mainContainer = document.createElement("div");
   mainContainer.className = "main-container";
-  document.body.append(mainContainer);
+  el.append(mainContainer);
 
   var titleDiv = document.createElement("div");
   titleDiv.className = "title-container";
@@ -270,13 +249,14 @@ function initMap(data, accessData) {
   } catch {}
 }
 
-fetch('providers.json')
+function initLeafletGallery(el) {
+  fetch('_static/providers.json')
   .then(response => response.json())
   .then(data => {
     var dataList = [];
     for ([key, val] of Object.entries(data)) {
       if (val["url"] === undefined) {
-        // check if url is a key of the json object, if not go one level deeper and define the val as the new object
+        // check if url is a key of the JSON object, if not go one level deeper and define the val as the new object
         newData = val;
 
         for ([newKey, newVal] of Object.entries(newData)) {
@@ -290,11 +270,8 @@ fetch('providers.json')
       }
     }
     dataList.forEach((baseMapData) => {
-      initMap(baseMapData, accessData);
+      initMap(el, baseMapData, accessData);
     });
   }
-);
-
-</script>
-</body>
-</html>
+  );
+}
