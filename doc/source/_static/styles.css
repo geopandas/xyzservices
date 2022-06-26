@@ -1,11 +1,3 @@
-
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
-
-* {
-    font-family: 'Montserrat';
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -15,8 +7,7 @@ body {
 }
 
 .title-container {
-    font-size:  28px;
-    font-family: 'Arial';
+    font-size: 28px;
     margin-right: auto;
     width: 50%;
     padding: '20px';
@@ -28,7 +19,7 @@ body {
 .main-container {
     position: relative;
     margin-left: auto;
-    margin-right: auto ;
+    margin-right: auto;
     margin-top: 50px;
     margin-bottom: 10px;
     border: 1px;
@@ -38,18 +29,16 @@ body {
 }
 
 .title-container {
-    font-size:  18px;
-    font-family: 'Arial';
+    font-size: 18px;
     color: rgb(53, 111, 220);
     text-decoration: underline;
 }
 
 .table-container {
     font-size: 18px;
-    font-family: 'Arial';
     width: 60%;
     margin-left: auto;
-    margin-right: auto ;
+    margin-right: auto;
     margin-top: 30px;
     margin-bottom: 30px;
     background-color: white;
@@ -58,36 +47,35 @@ body {
 .map-container {
     height: 250px;
     margin-left: auto;
-    margin-right: auto ;
+    margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
     box-shadow: 2px 2px 2px rgb(178, 178, 178);
 }
+
 .key-container {
-    font-size:  16px;
-    font-family: 'Arial';
+    font-size: 16px;
 }
+
 .button-container {
-    font-size:  16px;
-    font-family: 'Arial';
+    font-size: 16px;
     color: white;
     background-color: rgb(53, 111, 220);
 }
+
 .key-cell {
-    font-size:  16px;
-    font-family: 'Arial';
+    font-size: 16px;
     line-height: 22px;
     vertical-align: top;
     width: 200px;
     color: rgb(119, 99, 99);
     align-items: top;
 }
+
 .val-cell {
-    font-size:  16px;
+    font-size: 16px;
     width: 200px;
     margin-right: 50px;
     line-height: 22px;
-    font-family: 'Monospace';
-
 }
