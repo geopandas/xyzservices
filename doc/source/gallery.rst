@@ -3,7 +3,7 @@ Gallery
 
 This page shows the different basemaps available in xyzservices. Some providers require
 an API key which you need to provide yourself and then validate it using the
-``validate``button to load the tiles. Other providers (e.g. Stadia) may require
+``validate`` button to load the tiles. Other providers (e.g. Stadia) may require
 white-listing of a domain which may not have been done.
 
 .. raw:: html
