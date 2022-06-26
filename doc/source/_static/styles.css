@@ -1,40 +1,14 @@
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0 auto;
-}
-
-
-/* .title-container {
-    font-size: 28px;
-    margin-right: auto;
-    width: 50%;
-    padding: '20px';
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: rgb(53, 111, 220);
-} */
-
 .main-container {
     position: relative;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
     margin-bottom: 10px;
-    border: 1px;
+    /* border: 1px;
     border-style: solid;
     border-color: rgb(220, 220, 220);
-    box-shadow: 2px 2px 2px rgb(220, 220, 220);
+    box-shadow: 2px 2px 2px rgb(220, 220, 220); */
 }
-
-
-/* .title-container {
-    font-size: 18px;
-    color: rgb(53, 111, 220);
-    text-decoration: underline;
-} */
 
 .table-container {
     font-size: 18px;
@@ -43,7 +17,7 @@ body {
     margin-right: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    background-color: white;
+    background-color: var(--xyz-background-color);
 }
 
 .map-container {
@@ -53,7 +27,7 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
-    box-shadow: 2px 2px 2px rgb(178, 178, 178);
+    /* box-shadow: 2px 2px 2px rgb(178, 178, 178); */
 }
 
 .key-container {
