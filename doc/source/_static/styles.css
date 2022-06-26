@@ -6,7 +6,8 @@ body {
     margin: 0 auto;
 }
 
-.title-container {
+
+/* .title-container {
     font-size: 28px;
     margin-right: auto;
     width: 50%;
@@ -14,7 +15,7 @@ body {
     margin-top: 20px;
     margin-bottom: 10px;
     color: rgb(53, 111, 220);
-}
+} */
 
 .main-container {
     position: relative;
@@ -28,11 +29,12 @@ body {
     box-shadow: 2px 2px 2px rgb(220, 220, 220);
 }
 
-.title-container {
+
+/* .title-container {
     font-size: 18px;
     color: rgb(53, 111, 220);
     text-decoration: underline;
-}
+} */
 
 .table-container {
     font-size: 18px;
