@@ -222,7 +222,7 @@ function initMap(el, data, accessData) {
                             if (key[i] === keyString) {
                                 var keyInput = document.createElement("input");
                                 keyInput.type = "password";
-                                keyInput.placeholder = "Enter your APIkey please";
+                                keyInput.placeholder = "Enter your API key please";
                                 keyInput.className = "key-container";
                                 td2.append(keyInput);
 
