@@ -12,12 +12,11 @@ span#release {
 
 .table-container {
     font-size: 18px;
-    width: 60%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgb(242, 242, 242);
 }
 
 .map-container {
