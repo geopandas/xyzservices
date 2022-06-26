@@ -16,7 +16,7 @@ span#release {
     margin-right: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    background-color: rgb(242, 242, 242);
+    background-color: rgba(128, 128, 128, 0.1);
 }
 
 .map-container {
@@ -43,7 +43,7 @@ span#release {
     line-height: 22px;
     vertical-align: top;
     width: 200px;
-    color: rgb(119, 99, 99);
+    color: rgba(128, 128, 128, 1);
     align-items: top;
 }
 
