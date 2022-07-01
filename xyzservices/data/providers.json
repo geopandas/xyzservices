@@ -1961,8 +1961,8 @@
                 22.576904
             ]
         ],
-        "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors, vizualization CC-By-SA 2.0 <a href=\"http://freemap.sk\">Freemap.sk</a>",
-        "attribution": "(C) OpenStreetMap contributors, vizualization CC-By-SA 2.0 Freemap.sk",
+        "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors, visualization CC-By-SA 2.0 <a href=\"http://freemap.sk\">Freemap.sk</a>",
+        "attribution": "(C) OpenStreetMap contributors, visualization CC-By-SA 2.0 Freemap.sk",
         "name": "FreeMapSK"
     },
     "MtbMap": {
