@@ -261,3 +261,9 @@ def test_query_name():
 
     with pytest.raises(ValueError, match="No matching provider found"):
         xyz.query_name("i don't exist")
+
+    # Name with underscore GH124
+    option_with_underscore = "NASAGIBS.ASTER_GDEM_Greyscale_Shaded_Relief"
+    queried = xyz.query_name(option_with_underscore)
+    assert isinstance(queried, TileProvider)
+    assert queried.name == option_with_underscore

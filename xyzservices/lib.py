@@ -9,6 +9,8 @@ import urllib.request
 from typing import Optional, Callable, Union
 from urllib.parse import quote
 
+QUERY_NAME_TRANSLATION = str.maketrans({x: "" for x in "., -_/"})
+
 
 class Bunch(dict):
     """A dict with attribute-access
@@ -284,13 +286,10 @@ class Bunch(dict):
 
         """
         xyz_flat_lower = {
-            k.replace(".", "").lower(): v for k, v in self.flatten().items()
+            k.translate(QUERY_NAME_TRANSLATION).lower(): v
+            for k, v in self.flatten().items()
         }
-        name_clean = name
-        remove = "., -_/"
-        for string in remove:
-            name_clean = name_clean.replace(string, "")
-        name_clean = name_clean.lower()
+        name_clean = name.translate(QUERY_NAME_TRANSLATION).lower()
         if name_clean in xyz_flat_lower:
             return xyz_flat_lower[name_clean]
 
