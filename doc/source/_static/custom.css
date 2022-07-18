@@ -1,3 +1,48 @@
 span#release {
     font-size: x-small;
 }
+
+.main-container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.table-container {
+    font-size: 18px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+.map-container {
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.key-container {
+    font-size: 16px;
+}
+
+.key-cell {
+    font-size: 16px;
+    line-height: 22px;
+    vertical-align: top;
+    width: 200px;
+    color: rgba(128, 128, 128, 1);
+    align-items: top;
+}
+
+.val-cell {
+    font-size: 16px;
+    width: 200px;
+    margin-right: 50px;
+    line-height: 22px;
+}
