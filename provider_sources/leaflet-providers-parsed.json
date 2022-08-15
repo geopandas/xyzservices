@@ -2930,7 +2930,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2022-08-01",
-        "commit": "commit 1f57ae7e43bea43aca6f2cd4d0a3434fdc58a753 (Bump uglify-js from 3.16.2 to 3.16.3\n\nBumps [uglify-js](https://github.com/mishoo/UglifyJS) from 3.16.2 to 3.16.3.\n- [Release notes](https://github.com/mishoo/UglifyJS/releases)\n- [Commits](https://github.com/mishoo/UglifyJS/compare/v3.16.2...v3.16.3)\n\n---\nupdated-dependencies:\n- dependency-name: uglify-js\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
+        "date_of_creation": "2022-08-15",
+        "commit": "commit 4bad1cfe44723aec14ebae26c07869a116cded5a (Bump eslint from 8.20.0 to 8.21.0\n\nBumps [eslint](https://github.com/eslint/eslint) from 8.20.0 to 8.21.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/compare/v8.20.0...v8.21.0)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }
