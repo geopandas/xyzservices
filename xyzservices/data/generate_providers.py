@@ -2,7 +2,7 @@ import requests
 import xmltodict
 import json
 
-with open('initial_providers.json') as json_file:
+with open('providers.json') as json_file:
     data = json.load(json_file)
 
 data['GeoportailFrance']['plan'] = {}
@@ -83,5 +83,5 @@ for j in range(0, len(apikey_list)):
                 "TileMatrixSet": TileMatrixSet
             }
 
-with open('providers.json', 'w') as fp:
+with open('new_providers.json', 'w') as fp:
     json.dump(data, fp, indent=2)
