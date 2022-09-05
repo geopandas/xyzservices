@@ -11,3 +11,5 @@ dependencies:
   - firefox
   - gitpython
   - html2text
+  - xmltodict
+  - requests
