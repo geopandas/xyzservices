@@ -6615,6 +6615,7 @@
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_express_2022",
             "TileMatrixSet": "PM"
         },
+<<<<<<< HEAD
         "Orthoimagery_Orthophotos_Irc_2020": {
             "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -6638,6 +6639,8 @@
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_2020",
             "TileMatrixSet": "PM"
         },
+=======
+>>>>>>> 8c4921e (Include the content of xyzservices/data/generate_providers.py for IGN tile layers in provider_sources/_compress_providers.py)
         "Orthoimagery_Orthophotos_Ortho_asp_pac2022": {
             "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -6707,6 +6710,7 @@
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Ortho_express_2022",
             "TileMatrixSet": "PM"
         },
+<<<<<<< HEAD
         "Orthoimagery_Orthophotos2020": {
             "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -6730,6 +6734,8 @@
             "name": "GeoportailFrance.Orthoimagery_Orthophotos2020",
             "TileMatrixSet": "PM"
         },
+=======
+>>>>>>> 8c4921e (Include the content of xyzservices/data/generate_providers.py for IGN tile layers in provider_sources/_compress_providers.py)
         "Pcrs_Lamb93": {
             "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
