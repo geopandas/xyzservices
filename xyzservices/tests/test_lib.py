@@ -186,7 +186,7 @@ def test_callable():
     assert "url" in updated_provider
     assert updated_provider["apikey"] == "mykey"
     # check that original provider dict is not modified
-    assert xyz.GeoportailFrance.plan["apikey"] == "choisirgeoportail"
+    assert xyz.GeoportailFrance.plan["apikey"] == "essentiels"
 
 
 def test_html_attribution_fallback(basic_provider, html_attr_provider):
