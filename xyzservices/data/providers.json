@@ -8409,6 +8409,29 @@
             "name": "GeoportailFrance.Hydrography_Hydrography",
             "TileMatrixSet": "PM"
         },
+        "Transportnetwork_Commontransportelements_Markerpost": {
+            "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.3252,
+                    -5.15047
+                ],
+                [
+                    51.0991,
+                    9.57054
+                ]
+            ],
+            "min_zoom": 10,
+            "max_zoom": 18,
+            "apikey": "topographie",
+            "format": "image/png",
+            "style": "normal",
+            "variant": "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST",
+            "name": "GeoportailFrance.Transportnetwork_Commontransportelements_Markerpost",
+            "TileMatrixSet": "PM"
+        },
         "Transportnetworks_Railways": {
             "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
