@@ -123,11 +123,11 @@ for j in range(0, len(apikey_list)):
         max_zoom = int((TileMatrixSetLimits[-1]["TileMatrix"]))
         TileMatrixSet = layer["TileMatrixSetLink"]["TileMatrixSet"]
         format = layer["Format"]
-        bounding_lower_corner = layer["ows:WGS84BoundingBox"]["ows:LowerCorner"]
-        bounding_upper_corner = layer["ows:WGS84BoundingBox"]["ows:UpperCorner"]
-        lower1, lower2 = bounding_lower_corner.split(" ")
-        upper1, upper2 = bounding_upper_corner.split(" ")
-        bounds = [[float(lower1), float(lower2)], [float(upper1), float(upper2)]]
+        bounding_lowerleft_corner = layer["ows:WGS84BoundingBox"]["ows:LowerCorner"]# given with lon/lat order
+        bounding_upperright_corner = layer["ows:WGS84BoundingBox"]["ows:UpperCorner"]# given with lon/lat order
+        lowerleft_corner_lon, lowerleft_corner_lat = bounding_lowerleft_corner.split(" ")
+        upperright_corner_lon, upperright_corner_lat = bounding_upperright_corner.split(" ")
+        bounds = [[float(lowerleft_corner_lat), float(lowerleft_corner_lon)], [float(upperright_corner_lat), float(upperright_corner_lon)]]
 
         if format == "application/x-protobuf":
             pass
