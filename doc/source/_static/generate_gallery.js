@@ -111,9 +111,9 @@ function initMap(el, data, accessData) {
             longitude = 19.146192;
             zoom = 14;
         } else if (basemap === "JusticeMap") {
-            latitude = 32.7766642; // Dallas
-            longitude = -96.7969879;
-            zoom = 10;
+            latitude = 39.7392358; // Denver
+            longitude = -104.990251;
+            zoom = 3;
         } else if (
             basemap === "OpenWeatherMap" ||
             basemap === "Esri" ||
