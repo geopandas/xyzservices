@@ -70,6 +70,35 @@
             "name": "OpenStreetMap.BlackAndWhite"
         }
     },
+    "MapTilesAPI": {
+        "OSMEnglish": {
+            "url": "https://maptiles.p.rapidapi.com/{variant}/{z}/{x}/{y}.png?rapidapi-key={apikey}",
+            "html_attribution": "&copy; <a href=\"http://www.maptilesapi.com/\">MapTiles API</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) MapTiles API, (C) OpenStreetMap contributors",
+            "variant": "en/map/v1",
+            "apikey": "<insert your api key here>",
+            "max_zoom": 19,
+            "name": "MapTilesAPI.OSMEnglish"
+        },
+        "OSMFrancais": {
+            "url": "https://maptiles.p.rapidapi.com/{variant}/{z}/{x}/{y}.png?rapidapi-key={apikey}",
+            "html_attribution": "&copy; <a href=\"http://www.maptilesapi.com/\">MapTiles API</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) MapTiles API, (C) OpenStreetMap contributors",
+            "variant": "fr/map/v1",
+            "apikey": "<insert your api key here>",
+            "max_zoom": 19,
+            "name": "MapTilesAPI.OSMFrancais"
+        },
+        "OSMEspagnol": {
+            "url": "https://maptiles.p.rapidapi.com/{variant}/{z}/{x}/{y}.png?rapidapi-key={apikey}",
+            "html_attribution": "&copy; <a href=\"http://www.maptilesapi.com/\">MapTiles API</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) MapTiles API, (C) OpenStreetMap contributors",
+            "variant": "es/map/v1",
+            "apikey": "<insert your api key here>",
+            "max_zoom": 19,
+            "name": "MapTilesAPI.OSMEspagnol"
+        }
+    },
     "OpenSeaMap": {
         "url": "https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png",
         "html_attribution": "Map data: &copy; <a href=\"http://www.openseamap.org\">OpenSeaMap</a> contributors",

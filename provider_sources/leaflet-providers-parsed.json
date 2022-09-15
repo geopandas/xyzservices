@@ -63,6 +63,35 @@
             "name": "OpenStreetMap.BZH"
         }
     },
+    "MapTilesAPI": {
+        "OSMEnglish": {
+            "url": "https://maptiles.p.rapidapi.com/{variant}/{z}/{x}/{y}.png?rapidapi-key={apikey}",
+            "html_attribution": "&copy; <a href=\"http://www.maptilesapi.com/\">MapTiles API</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) MapTiles API, (C) OpenStreetMap contributors",
+            "variant": "en/map/v1",
+            "apikey": "<insert your api key here>",
+            "max_zoom": 19,
+            "name": "MapTilesAPI.OSMEnglish"
+        },
+        "OSMFrancais": {
+            "url": "https://maptiles.p.rapidapi.com/{variant}/{z}/{x}/{y}.png?rapidapi-key={apikey}",
+            "html_attribution": "&copy; <a href=\"http://www.maptilesapi.com/\">MapTiles API</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) MapTiles API, (C) OpenStreetMap contributors",
+            "variant": "fr/map/v1",
+            "apikey": "<insert your api key here>",
+            "max_zoom": 19,
+            "name": "MapTilesAPI.OSMFrancais"
+        },
+        "OSMEspagnol": {
+            "url": "https://maptiles.p.rapidapi.com/{variant}/{z}/{x}/{y}.png?rapidapi-key={apikey}",
+            "html_attribution": "&copy; <a href=\"http://www.maptilesapi.com/\">MapTiles API</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) MapTiles API, (C) OpenStreetMap contributors",
+            "variant": "es/map/v1",
+            "apikey": "<insert your api key here>",
+            "max_zoom": 19,
+            "name": "MapTilesAPI.OSMEspagnol"
+        }
+    },
     "OpenSeaMap": {
         "url": "https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png",
         "html_attribution": "Map data: &copy; <a href=\"http://www.openseamap.org\">OpenSeaMap</a> contributors",
@@ -2930,7 +2959,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2022-09-02",
-        "commit": "commit 4e6e9c11d1e04d654bf899fff0a083a330e5d183 (chore: update dependencies)"
+        "date_of_creation": "2022-09-15",
+        "commit": "commit c6ba0d7f06a5ed55505ff97c3872f527959c8cf3 (Bump eslint from 8.23.0 to 8.23.1\n\nBumps [eslint](https://github.com/eslint/eslint) from 8.23.0 to 8.23.1.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/compare/v8.23.0...v8.23.1)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }
