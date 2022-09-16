@@ -1,7 +1,7 @@
 {
     "OpenStreetMap": {
         "Mapnik": {
-            "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+            "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
             "max_zoom": 19,
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) OpenStreetMap contributors",
@@ -68,6 +68,35 @@
             "attribution": "(C) OpenStreetMap contributors",
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "name": "OpenStreetMap.BlackAndWhite"
+        }
+    },
+    "MapTilesAPI": {
+        "OSMEnglish": {
+            "url": "https://maptiles.p.rapidapi.com/{variant}/{z}/{x}/{y}.png?rapidapi-key={apikey}",
+            "html_attribution": "&copy; <a href=\"http://www.maptilesapi.com/\">MapTiles API</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) MapTiles API, (C) OpenStreetMap contributors",
+            "variant": "en/map/v1",
+            "apikey": "<insert your api key here>",
+            "max_zoom": 19,
+            "name": "MapTilesAPI.OSMEnglish"
+        },
+        "OSMFrancais": {
+            "url": "https://maptiles.p.rapidapi.com/{variant}/{z}/{x}/{y}.png?rapidapi-key={apikey}",
+            "html_attribution": "&copy; <a href=\"http://www.maptilesapi.com/\">MapTiles API</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) MapTiles API, (C) OpenStreetMap contributors",
+            "variant": "fr/map/v1",
+            "apikey": "<insert your api key here>",
+            "max_zoom": 19,
+            "name": "MapTilesAPI.OSMFrancais"
+        },
+        "OSMEspagnol": {
+            "url": "https://maptiles.p.rapidapi.com/{variant}/{z}/{x}/{y}.png?rapidapi-key={apikey}",
+            "html_attribution": "&copy; <a href=\"http://www.maptilesapi.com/\">MapTiles API</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) MapTiles API, (C) OpenStreetMap contributors",
+            "variant": "es/map/v1",
+            "apikey": "<insert your api key here>",
+            "max_zoom": 19,
+            "name": "MapTilesAPI.OSMEspagnol"
         }
     },
     "OpenSeaMap": {
@@ -6084,7 +6113,8 @@
             "style": "nolegend",
             "variant": "OCSGE.CONSTRUCTIONS.2002",
             "name": "GeoportailFrance.Ocsge_Constructions_2002",
-            "TileMatrixSet": "PM"
+            "TileMatrixSet": "PM",
+            "status": "broken"
         },
         "Ocsge_Constructions_2014": {
             "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
@@ -6107,7 +6137,8 @@
             "style": "nolegend",
             "variant": "OCSGE.CONSTRUCTIONS.2014",
             "name": "GeoportailFrance.Ocsge_Constructions_2014",
-            "TileMatrixSet": "PM"
+            "TileMatrixSet": "PM",
+            "status": "broken"
         },
         "Ocsge_Constructions_2016": {
             "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
@@ -6199,7 +6230,8 @@
             "style": "normal",
             "variant": "OCSGE.COUVERTURE.2002",
             "name": "GeoportailFrance.Ocsge_Couverture_2002",
-            "TileMatrixSet": "PM"
+            "TileMatrixSet": "PM",
+            "status": "broken"
         },
         "Ocsge_Couverture_2014": {
             "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
@@ -6222,7 +6254,8 @@
             "style": "nolegend",
             "variant": "OCSGE.COUVERTURE.2014",
             "name": "GeoportailFrance.Ocsge_Couverture_2014",
-            "TileMatrixSet": "PM"
+            "TileMatrixSet": "PM",
+            "status": "broken"
         },
         "Ocsge_Couverture_2016": {
             "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
@@ -6314,7 +6347,8 @@
             "style": "normal",
             "variant": "OCSGE.USAGE.2002",
             "name": "GeoportailFrance.Ocsge_Usage_2002",
-            "TileMatrixSet": "PM"
+            "TileMatrixSet": "PM",
+            "status": "broken"
         },
         "Ocsge_Usage_2014": {
             "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
@@ -6337,7 +6371,8 @@
             "style": "normal",
             "variant": "OCSGE.USAGE.2014",
             "name": "GeoportailFrance.Ocsge_Usage_2014",
-            "TileMatrixSet": "PM"
+            "TileMatrixSet": "PM",
+            "status": "broken"
         },
         "Ocsge_Usage_2016": {
             "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
@@ -6521,7 +6556,8 @@
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS.COAST2000",
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Coast2000",
-            "TileMatrixSet": "PM"
+            "TileMatrixSet": "PM",
+            "status": "broken"
         },
         "Orthoimagery_Orthophotos_Ilesdunord": {
             "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
@@ -6751,7 +6787,8 @@
             "style": "normal",
             "variant": "PCRS.LAMB93",
             "name": "GeoportailFrance.Pcrs_Lamb93",
-            "TileMatrixSet": "LAMB93_5cm"
+            "TileMatrixSet": "LAMB93_5cm",
+            "status": "broken"
         },
         "Thr_Orthoimagery_Orthophotos": {
             "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
@@ -8108,7 +8145,8 @@
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHO-SAT.SPOT.2013",
             "name": "GeoportailFrance.Orthoimagery_Ortho_sat_Spot_2013",
-            "TileMatrixSet": "PM"
+            "TileMatrixSet": "PM",
+            "status": "broken"
         },
         "Orthoimagery_Ortho_sat_Spot_2014": {
             "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",

@@ -139,34 +139,13 @@ for j in range(0, len(apikey_list)):
             [float(lowerleft_corner_lat), float(lowerleft_corner_lon)],
             [float(upperright_corner_lat), float(upperright_corner_lon)],
         ]
-        #excluded_list = [
-            #"PROTECTEDAREAS.APG",
-            #"PROTECTEDAREAS.GP",
-            #"PROTECTEDAREAS.PRSF",
-            #"PROTECTEDAREAS.RIPN",
-            #"PROTECTEDAREAS.RNC",
-            #"OCSGE.CONSTRUCTIONS.2002",
-            #"OCSGE.CONSTRUCTIONS.2014",
-            #"OCSGE.COUVERTURE.2002",
-            #"OCSGE.COUVERTURE.2014",
-            #"OCSGE.USAGE.2002",
-            #"OCSGE.USAGE.2014",
-            #"ORTHOIMAGERY.ORTHOPHOTOS.COAST2000",
-            #"PCRS.LAMB93",
-            #"ORTHOIMAGERY.ORTHO-SAT.SPOT.2013",
-            #"SECUROUTE.TE.ALL",
-            #"SECUROUTE.TE.OA",
-            #"SECUROUTE.TE.PN",
-            #"SECUROUTE.TE.PND",
-        #]
+
         if format == "application/x-protobuf":
             pass
         elif format == "image/x-bil;bits=32":
             pass
         elif apikey == "lambert93":
             pass
-        #elif variant in excluded_list:
-            #pass
         else:
             tilelayers_list.append("GeoportailFrance." + name)
             leaflet["GeoportailFrance"][name] = {
@@ -183,6 +162,21 @@ for j in range(0, len(apikey_list)):
                 "name": "GeoportailFrance." + name,
                 "TileMatrixSet": TileMatrixSet,
             }
+
+            possibly_broken = [
+                "Ocsge_Constructions_2002",
+                "Ocsge_Constructions_2014",
+                "Ocsge_Couverture_2002",
+                "Ocsge_Couverture_2014",
+                "Ocsge_Usage_2002",
+                "Ocsge_Usage_2014",
+                "Orthoimagery_Orthophotos_Coast2000",
+                "Pcrs_Lamb93",
+                "Orthoimagery_Ortho_sat_Spot_2013",
+            ]
+
+            if name in possibly_broken:
+                leaflet["GeoportailFrance"][name]["status"] = "broken"
 
 with open("../xyzservices/data/providers.json", "w") as f:
     json.dump(leaflet, f, indent=4)

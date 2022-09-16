@@ -77,6 +77,8 @@ def get_test_result(provider, allow_403=True):
                 (6, 23, 31),
                 (6, 23, 32),
                 (6, 23, 33),
+                (9, 259, 181),
+                (12, 2074, 1410),
             ]
             results = []
             for o in options:
