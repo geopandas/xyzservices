@@ -1,6 +1,21 @@
 Changelog
 =========
 
+xyzservices 2022.09.0 (September 19, 2022)
+------------------------------------------
+
+Providers:
+
+- Added ``GeoportailFrance`` tile layers (#126)
+
+Enhancements:
+
+- Better cleaning of names in ``query_name`` method
+
+Documentation:
+
+- Added a gallery of included tiles to the documentation (#114)
+
 xyzservices 2022.06.0 (June 21, 2022)
 -------------------------------------
 
