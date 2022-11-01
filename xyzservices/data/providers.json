@@ -3010,6 +3010,29 @@
             "name": "GeoportailFrance.Hydrography_Bcae_Latest",
             "TileMatrixSet": "PM"
         },
+        "Landuse_Agriculture_Latest": {
+            "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.4756,
+                    -63.3725
+                ],
+                [
+                    51.3121,
+                    55.9259
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "apikey": "agriculture",
+            "format": "image/png",
+            "style": "normal",
+            "variant": "LANDUSE.AGRICULTURE.LATEST",
+            "name": "GeoportailFrance.Landuse_Agriculture_Latest",
+            "TileMatrixSet": "PM"
+        },
         "Landuse_Agriculture2007": {
             "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -6651,29 +6674,6 @@
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_express_2022",
             "TileMatrixSet": "PM"
         },
-        "Orthoimagery_Orthophotos_Irc_2020": {
-            "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    42.9454,
-                    -2.68142
-                ],
-                [
-                    49.4512,
-                    7.74363
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 19,
-            "apikey": "ortho",
-            "format": "image/jpeg",
-            "style": "normal",
-            "variant": "ORTHOIMAGERY.ORTHOPHOTOS.IRC.2020",
-            "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_2020",
-            "TileMatrixSet": "PM"
-        },
         "Orthoimagery_Orthophotos_Ortho_asp_pac2022": {
             "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -6718,29 +6718,6 @@
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2022",
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Ortho_express_2022",
-            "TileMatrixSet": "PM"
-        },
-        "Orthoimagery_Orthophotos2020": {
-            "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    42.9454,
-                    -2.68142
-                ],
-                [
-                    49.4512,
-                    7.74363
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 19,
-            "apikey": "ortho",
-            "format": "image/jpeg",
-            "style": "normal",
-            "variant": "ORTHOIMAGERY.ORTHOPHOTOS2020",
-            "name": "GeoportailFrance.Orthoimagery_Orthophotos2020",
             "TileMatrixSet": "PM"
         },
         "Pcrs_Lamb93": {
@@ -7018,6 +6995,29 @@
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS.IRC.2019",
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_2019",
+            "TileMatrixSet": "PM"
+        },
+        "Orthoimagery_Orthophotos_Irc_2020": {
+            "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    42.9454,
+                    -2.68142
+                ],
+                [
+                    49.4512,
+                    7.74363
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 19,
+            "apikey": "orthohisto",
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "ORTHOIMAGERY.ORTHOPHOTOS.IRC.2020",
+            "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_2020",
             "TileMatrixSet": "PM"
         },
         "Orthoimagery_Orthophotos_Ortho_asp_pac2020": {
@@ -7662,6 +7662,29 @@
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS2019",
             "name": "GeoportailFrance.Orthoimagery_Orthophotos2019",
+            "TileMatrixSet": "PM"
+        },
+        "Orthoimagery_Orthophotos2020": {
+            "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    42.9454,
+                    -2.68142
+                ],
+                [
+                    49.4512,
+                    7.74363
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 19,
+            "apikey": "orthohisto",
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "ORTHOIMAGERY.ORTHOPHOTOS2020",
+            "name": "GeoportailFrance.Orthoimagery_Orthophotos2020",
             "TileMatrixSet": "PM"
         },
         "Orthoimagery_Ortho_sat_Pleiades_2012": {
