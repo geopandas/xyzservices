@@ -72,4 +72,4 @@ jobs:
         run: pytest -v . -m request --cov=xyzservices --cov-append --cov-report term-missing --cov-report xml --color=yes
         if: matrix.os == 'ubuntu-latest'
 
-      - uses: codecov/codecov-action@v2
+      - uses: codecov/codecov-action@v3
