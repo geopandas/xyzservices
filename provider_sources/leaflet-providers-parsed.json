@@ -701,7 +701,7 @@
         },
         "OceanBasemap": {
             "url": "https://server.arcgisonline.com/ArcGIS/rest/services/{variant}/MapServer/tile/{z}/{y}/{x}",
-            "variant": "Ocean_Basemap",
+            "variant": "Ocean/World_Ocean_Base",
             "html_attribution": "Tiles &copy; Esri &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri",
             "attribution": "Tiles (C) Esri -- Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri",
             "max_zoom": 13,
@@ -2959,7 +2959,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2023-02-01",
-        "commit": "commit 3c9967702c862e37a511b2f976bdbc94aa5d8a0d (Bump eslint from 8.32.0 to 8.33.0\n\nBumps [eslint](https://github.com/eslint/eslint) from 8.32.0 to 8.33.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/compare/v8.32.0...v8.33.0)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
+        "date_of_creation": "2023-02-15",
+        "commit": "commit b4df8469896c29cfa21576d1222f6dff74f20d90 (Bump eslint from 8.33.0 to 8.34.0\n\nBumps [eslint](https://github.com/eslint/eslint) from 8.33.0 to 8.34.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/compare/v8.33.0...v8.34.0)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }
