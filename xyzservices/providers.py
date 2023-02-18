@@ -2,7 +2,6 @@ import os
 import pkgutil
 import sys
 
-from . import data
 from .lib import _load_json
 
 data_path = os.path.join(sys.prefix, "share", "xyzservices", "providers.json")
