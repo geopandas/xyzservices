@@ -77,6 +77,6 @@ jobs:
         run: |
           python -c 'import os, sys; os.remove(os.path.join(sys.prefix, "share", "xyzservices", "providers.json"))'
           pytest -v . -m "not request" --cov=xyzservices --cov-append --cov-report term-missing --cov-report xml --color=yes
-        if: matrix.os == 'ubuntu-latest'
+        if: matrix.os != 'windows-latest'
 
       - uses: codecov/codecov-action@v3
