@@ -1,6 +1,18 @@
 Changelog
 =========
 
+xyzservices 2023.2.0 (February 19, 2023)
+----------------------------------------
+
+Providers:
+
+- Updated available layers of ``GeoportailFrance``
+
+Bug fixes:
+
+- Use ``pkgutil`` instead of ``importlib`` to fetch the JSON if the default in ``share``
+  is not available. Fixes this fallback for Python 3.8.
+
 xyzservices 2022.09.0 (September 19, 2022)
 ------------------------------------------
 
