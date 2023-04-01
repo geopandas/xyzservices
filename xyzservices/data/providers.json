@@ -2964,29 +2964,6 @@
             "name": "GeoportailFrance.Geographicalgridsystems_Slopes_Pac",
             "TileMatrixSet": "PM"
         },
-        "Hydrography_Bcae_2022": {
-            "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    41.3252,
-                    -5.15047
-                ],
-                [
-                    51.0991,
-                    9.57054
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 17,
-            "apikey": "agriculture",
-            "format": "image/png",
-            "style": "normal",
-            "variant": "HYDROGRAPHY.BCAE.2022",
-            "name": "GeoportailFrance.Hydrography_Bcae_2022",
-            "TileMatrixSet": "PM"
-        },
         "Hydrography_Bcae_Latest": {
             "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -3376,6 +3353,29 @@
             "style": "normal",
             "variant": "LANDUSE.AGRICULTURE2021",
             "name": "GeoportailFrance.Landuse_Agriculture2021",
+            "TileMatrixSet": "PM"
+        },
+        "Prairies_Sensibles_Bcae": {
+            "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.3252,
+                    -5.15047
+                ],
+                [
+                    51.0991,
+                    9.57054
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "apikey": "agriculture",
+            "format": "image/png",
+            "style": "nolegend",
+            "variant": "PRAIRIES.SENSIBLES.BCAE",
+            "name": "GeoportailFrance.Prairies_Sensibles_Bcae",
             "TileMatrixSet": "PM"
         },
         "Elevation_Contour_Line": {
@@ -6713,11 +6713,34 @@
             ],
             "min_zoom": 0,
             "max_zoom": 18,
-            "apikey": "ortho",
+            "apikey": "orthohisto",
             "format": "image/jpeg",
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-ASP_PAC2022",
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Ortho_asp_pac2022",
+            "TileMatrixSet": "PM"
+        },
+        "Orthoimagery_Orthophotos_Ortho_asp_pac2023": {
+            "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -75.0,
+                    -179.5
+                ],
+                [
+                    75.0,
+                    179.5
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 18,
+            "apikey": "ortho",
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-ASP_PAC2023",
+            "name": "GeoportailFrance.Orthoimagery_Orthophotos_Ortho_asp_pac2023",
             "TileMatrixSet": "PM"
         },
         "Orthoimagery_Orthophotos_Ortho_express_2022": {
@@ -8223,12 +8246,12 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    41.3252,
-                    -5.15047
+                    43.151,
+                    -5.15012
                 ],
                 [
-                    51.0991,
-                    9.57054
+                    51.0938,
+                    7.19384
                 ]
             ],
             "min_zoom": 6,
