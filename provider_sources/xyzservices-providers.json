@@ -373,5 +373,98 @@
             "max_zoom": 12,
             "name": "MapTiler.Terrain"
         }
+    },
+    "OrdnanceSurvey": {
+        "Road_3857": {
+            "url": "https://api.os.uk/maps/raster/v1/zxy/Road_3857/{z}/{x}/{y}.png?key={key}",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right {year}",
+            "attribution": "Contains OS data (C) Crown copyright and database right {year}",
+            "key": "<A valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
+            "crs": "EPSG:3857",
+            "min_zoom": 7,
+            "max_zoom": 16,
+            "max_zoom_premium": 20,
+            "bounds": [[-841264.4659119569, 6405988.404624734], [404617.877362011, 8733428.658192052]],
+            "year": 2023,
+            "name": "OS.Road_3857"
+        },
+        "Road_27700": {
+            "url": "https://api.os.uk/maps/raster/v1/zxy/Road_27700/{z}/{x}/{y}.png?key={key}",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right {year}",
+            "attribution": "Contains OS data (C) Crown copyright and database right {year}",
+            "key": "<A valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
+            "crs": "EPSG:27700",
+            "min_zoom": 0,
+            "max_zoom": 9,
+            "max_zoom_premium": 13,
+            "bounds": [[0, 0], [700000, 1300000]],
+            "year": 2023,
+            "name": "OS.Road_27700"
+        },
+        "Outdoor_3857": {
+            "url": "https://api.os.uk/maps/raster/v1/zxy/Outdoor_3857/{z}/{x}/{y}.png?key={key}",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right {year}",
+            "attribution": "Contains OS data (C) Crown copyright and database right {year}",
+            "key": "<A valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
+            "crs": "EPSG:3857",
+            "min_zoom": 7,
+            "max_zoom": 16,
+            "max_zoom_premium": 20,
+            "bounds": [[-841264.4659119569, 6405988.404624734], [404617.877362011, 8733428.658192052]],
+            "year": 2023,
+            "name": "OS.Outdoor_3857"
+        },
+        "Outdoor_27700": {
+            "url": "https://api.os.uk/maps/raster/v1/zxy/Outdoor_27700/{z}/{x}/{y}.png?key={key}",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right {year}",
+            "attribution": "Contains OS data (C) Crown copyright and database right {year}",
+            "key": "<A valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
+            "crs": "EPSG:27700",
+            "min_zoom": 0,
+            "max_zoom": 9,
+            "max_zoom_premium": 13,
+            "bounds": [[0, 0], [700000, 1300000]],
+            "year": 2023,
+            "name": "OS.Outdoor_27700"
+        },
+        "Light_3857": {
+            "url": "https://api.os.uk/maps/raster/v1/zxy/Light_3857/{z}/{x}/{y}.png?key={key}",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right {year}",
+            "attribution": "Contains OS data (C) Crown copyright and database right {year}",
+            "key": "<A valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
+            "crs": "EPSG:3857",
+            "min_zoom": 7,
+            "max_zoom": 16,
+            "max_zoom_premium": 20,
+            "bounds": [[-841264.4659119569, 6405988.404624734], [404617.877362011, 8733428.658192052]],
+            "year": 2023,
+            "name": "OS.Light_3857"
+        },
+        "Light_27700": {
+            "url": "https://api.os.uk/maps/raster/v1/zxy/Light_27700/{z}/{x}/{y}.png?key={key}",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right {year}",
+            "attribution": "Contains OS data (C) Crown copyright and database right {year}",
+            "key": "<A valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
+            "crs": "EPSG:27700",
+            "min_zoom": 0,
+            "max_zoom": 9,
+            "max_zoom_premium": 13,
+            "bounds": [[0, 0], [700000, 1300000]],
+            "year": 2023,
+            "name": "OS.Light_27700"
+        },
+        "Leisure_27700": {
+            "url": "https://api.os.uk/maps/raster/v1/zxy/Leisure_27700/{z}/{x}/{y}.png?key={key}",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right {year}",
+            "attribution": "Contains OS data (C) Crown copyright and database right {year}",
+            "key": "<A valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
+            "crs": "EPSG:27700",
+            "min_zoom": 0,
+            "max_zoom": 5,
+            "max_zoom_premium": 9,
+            "bounds": [[0, 0], [700000, 1300000]],
+            "year": 2023,
+            "name": "OS.Leisure_27700"
+        }
     }
 }
