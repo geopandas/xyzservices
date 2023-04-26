@@ -9,22 +9,22 @@ The compressed JSON is shipped with the package.
 
 import json
 import warnings
-import requests
-import xmltodict
 from datetime import date
 
+import requests
+import xmltodict
 
 # list of providers known to be broken and should be marked as broken in the JSON
 # last update: 14 Apr 2022
 BROKEN_PROVIDERS = []
 
-with open("./leaflet-providers-parsed.json", "r") as f:
+with open("./leaflet-providers-parsed.json") as f:
     leaflet = json.load(f)
     # remove meta data
     leaflet.pop("_meta", None)
 
 
-with open("./xyzservices-providers.json", "r") as f:
+with open("./xyzservices-providers.json") as f:
     xyz = json.load(f)
 
 for provider in BROKEN_PROVIDERS:
@@ -60,7 +60,7 @@ update_year(xyz)
 
 # combine both
 
-for key, val in xyz.items():
+for key, _val in xyz.items():
     if key in leaflet:
         if any(
             isinstance(i, dict) for i in leaflet[key].values()
@@ -126,7 +126,7 @@ for j in range(0, len(apikey_list)):
         if variant == "CADASTRALPARCELS.PARCELLAIRE_EXPRESS":
             name = "parcels"
 
-        if "Style" in layer.keys():
+        if "Style" in layer:
             if type(layer["Style"]) is dict:
                 style = layer["Style"]["ows:Identifier"]
 
@@ -138,8 +138,8 @@ for j in range(0, len(apikey_list)):
         TileMatrixSetLimits = layer["TileMatrixSetLink"]["TileMatrixSetLimits"][
             "TileMatrixLimits"
         ]
-        min_zoom = int((TileMatrixSetLimits[0]["TileMatrix"]))
-        max_zoom = int((TileMatrixSetLimits[-1]["TileMatrix"]))
+        min_zoom = int(TileMatrixSetLimits[0]["TileMatrix"])
+        max_zoom = int(TileMatrixSetLimits[-1]["TileMatrix"])
         TileMatrixSet = layer["TileMatrixSetLink"]["TileMatrixSet"]
         format = layer["Format"]
         bounding_lowerleft_corner = layer["ows:WGS84BoundingBox"][

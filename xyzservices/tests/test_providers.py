@@ -1,16 +1,17 @@
 import os
 
-import pytest
-import xyzservices.providers as xyz
-import requests
 import mercantile
+import pytest
+import requests
+
+import xyzservices.providers as xyz
 
 flat_free = xyz.filter(requires_token=False).flatten()
 
 
 def check_provider(provider):
     for key in ["attribution", "name"]:
-        assert key in provider.keys()
+        assert key in provider
     assert provider.url.startswith("http")
     for option in ["{z}", "{y}", "{x}"]:
         assert option in provider.url
@@ -85,7 +86,7 @@ def get_test_result(provider, allow_403=True):
                 z, x, y = o
                 r = get_response(provider.build_url(z=z, x=x, y=y))
                 results.append(r)
-            if not any([x == requests.codes.ok for x in results]):
+            if not any(x == requests.codes.ok for x in results):
                 raise ValueError(f"Response code: {r}")
         else:
             raise ValueError(f"Response code: {r}")

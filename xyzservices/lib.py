@@ -4,9 +4,9 @@ Utilities to support XYZservices
 from __future__ import annotations
 
 import json
-import uuid
 import urllib.request
-from typing import Optional, Callable, Union
+import uuid
+from typing import Callable
 from urllib.parse import quote
 
 QUERY_NAME_TRANSLATION = str.maketrans({x: "" for x in "., -_/"})
@@ -42,16 +42,15 @@ class Bunch(dict):
     def __getattr__(self, key):
         try:
             return self.__getitem__(key)
-        except KeyError:
-            raise AttributeError(key)
+        except KeyError as err:
+            raise AttributeError(key) from err
 
     def __dir__(self):
         return self.keys()
 
     def _repr_html_(self, inside=False):
-
         children = ""
-        for key in self.keys():
+        for key in self:
             if isinstance(self[key], TileProvider):
                 obj = "xyzservices.TileProvider"
             else:
@@ -125,9 +124,9 @@ class Bunch(dict):
 
     def filter(
         self,
-        keyword: Optional[str] = None,
-        name: Optional[str] = None,
-        requires_token: Optional[bool] = None,
+        keyword: str | None = None,
+        name: str | None = None,
+        requires_token: bool | None = None,
         function: Callable[[TileProvider], bool] = None,
     ) -> Bunch:
         """Return a subset of the :class:`Bunch` matching the filter conditions
@@ -190,16 +189,14 @@ class Bunch(dict):
         """
 
         def _validate(provider, keyword, name, requires_token):
-
             cond = []
 
             if keyword is not None:
                 keyword_match = False
                 for v in provider.values():
-                    if isinstance(v, str):
-                        if keyword.lower() in v.lower():
-                            keyword_match = True
-                            break
+                    if isinstance(v, str) and keyword.lower() in v.lower():
+                        keyword_match = True
+                        break
                 cond.append(keyword_match)
 
             if name is not None:
@@ -220,7 +217,6 @@ class Bunch(dict):
             new = Bunch()
             for key, value in bunch.items():
                 if isinstance(value, TileProvider):
-
                     if function is None:
                         if _validate(
                             value,
@@ -378,17 +374,17 @@ class TileProvider(Bunch):
         new.update(kwargs)
         return new
 
-    def copy(self, **kwargs) -> TileProvider:
+    def copy(self) -> TileProvider:
         new = TileProvider(self)  # takes a copy preserving the class
         return new
 
     def build_url(
         self,
-        x: Optional[Union[int, str]] = None,
-        y: Optional[Union[int, str]] = None,
-        z: Optional[Union[int, str]] = None,
-        scale_factor: Optional[str] = None,
-        fill_subdomain: Optional[bool] = True,
+        x: int | str | None = None,
+        y: int | str | None = None,
+        z: int | str | None = None,
+        scale_factor: str | None = None,
+        fill_subdomain: bool | None = True,
         **kwargs,
     ) -> str:
         """
@@ -506,14 +502,13 @@ class TileProvider(Bunch):
         """
         # both attribute and placeholder in url are required to make it work
         for key, val in self.items():
-            if isinstance(val, str) and "<insert your" in val:
-                if key in self.url:
-                    return True
+            if isinstance(val, str) and "<insert your" in val and key in self.url:
+                return True
         return False
 
     @property
     def html_attribution(self):
-        if "html_attribution" in self.keys():
+        if "html_attribution" in self:
             return self["html_attribution"]
         return self["attribution"]
 
@@ -563,10 +558,10 @@ class TileProvider(Bunch):
         >>> from xyzservices.lib import TileProvider
         >>> provider = TileProvider.from_qms("OpenTopoMap")
         """
-        QMS_API_URL = "https://qms.nextgis.com/api/v1/geoservices"
+        qms_api_url = "https://qms.nextgis.com/api/v1/geoservices"
 
         services = json.load(
-            urllib.request.urlopen(f"{QMS_API_URL}/?search={quote(name)}&type=tms")
+            urllib.request.urlopen(f"{qms_api_url}/?search={quote(name)}&type=tms")
         )
 
         for service in services:
@@ -577,7 +572,7 @@ class TileProvider(Bunch):
 
         service_id = service["id"]
         service_details = json.load(
-            urllib.request.urlopen(f"{QMS_API_URL}/{service_id}")
+            urllib.request.urlopen(f"{qms_api_url}/{service_id}")
         )
 
         return cls(
@@ -590,15 +585,14 @@ class TileProvider(Bunch):
 
 
 def _load_json(f):
-
     data = json.loads(f)
 
     providers = Bunch()
 
-    for provider_name in data.keys():
+    for provider_name in data:
         provider = data[provider_name]
 
-        if "url" in provider.keys():
+        if "url" in provider:
             providers[provider_name] = TileProvider(provider)
 
         else:

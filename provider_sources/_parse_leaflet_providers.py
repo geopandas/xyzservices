@@ -46,7 +46,7 @@ def get_json_data():
         driver.close()
 
     data = json.loads(data)
-    description = "commit {0} ({1})".format(commit_hexsha, commit_message.strip())
+    description = f"commit {commit_hexsha} ({commit_message.strip()})"
 
     return data, description
 
@@ -119,7 +119,7 @@ def pythonize_data(data):
                             # replaced last attribution
                             break
                 else:
-                    raise ValueError("Attribution not known: {}".format(value))
+                    raise ValueError(f"Attribution not known: {value}")
             new_data.append(("html_attribution", value))
             # convert html text to plain text
             converter = html2text.HTML2Text(bodywidth=1000)
