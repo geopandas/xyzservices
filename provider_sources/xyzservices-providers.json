@@ -360,12 +360,11 @@
         }
     },
     "OrdnanceSurvey": {
-        "Road_3857": {
+        "Road": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Road_3857/{z}/{x}/{y}.png?key={key}",
             "html_attribution": "Contains OS data &copy Crown copyright and database right {year}",
             "attribution": "Contains OS data (C) Crown copyright and database right {year}",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
-            "crs": "EPSG:3857",
             "min_zoom": 7,
             "max_zoom": 16,
             "max_zoom_premium": 20,
@@ -373,7 +372,7 @@
                 [49.766807, -9.496386],
                 [61.465189, 3.634745]
             ],
-            "name": "OrdnanceSurvey.Road_3857"
+            "name": "OrdnanceSurvey.Road"
         },
         "Road_27700": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Road_27700/{z}/{x}/{y}.png?key={key}",
@@ -390,12 +389,11 @@
             ],
             "name": "OrdnanceSurvey.Road_27700"
         },
-        "Outdoor_3857": {
+        "Outdoor": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Outdoor_3857/{z}/{x}/{y}.png?key={key}",
             "html_attribution": "Contains OS data &copy Crown copyright and database right {year}",
             "attribution": "Contains OS data (C) Crown copyright and database right {year}",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
-            "crs": "EPSG:3857",
             "min_zoom": 7,
             "max_zoom": 16,
             "max_zoom_premium": 20,
@@ -403,7 +401,7 @@
                 [49.766807, -9.496386],
                 [61.465189, 3.634745]
             ],
-            "name": "OrdnanceSurvey.Outdoor_3857"
+            "name": "OrdnanceSurvey.Outdoor"
         },
         "Outdoor_27700": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Outdoor_27700/{z}/{x}/{y}.png?key={key}",
@@ -420,12 +418,11 @@
             ],
             "name": "OrdnanceSurvey.Outdoor_27700"
         },
-        "Light_3857": {
+        "Light": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Light_3857/{z}/{x}/{y}.png?key={key}",
             "html_attribution": "Contains OS data &copy Crown copyright and database right {year}",
             "attribution": "Contains OS data (C) Crown copyright and database right {year}",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
-            "crs": "EPSG:3857",
             "min_zoom": 7,
             "max_zoom": 16,
             "max_zoom_premium": 20,
@@ -433,7 +430,7 @@
                 [49.766807, -9.496386],
                 [61.465189, 3.634745]
             ],
-            "name": "OrdnanceSurvey.Light_3857"
+            "name": "OrdnanceSurvey.Light"
         },
         "Light_27700": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Light_27700/{z}/{x}/{y}.png?key={key}",
