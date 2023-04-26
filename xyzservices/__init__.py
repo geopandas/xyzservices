@@ -1,6 +1,8 @@
-from ._version import get_versions
 from .lib import Bunch, TileProvider  # noqa
 from .providers import providers  # noqa
 
-__version__ = get_versions()["version"]
-del get_versions
+from importlib.metadata import version, PackageNotFoundError
+import contextlib
+
+with contextlib.suppress(PackageNotFoundError):
+    __version__ = version("xyzservices")

@@ -7,7 +7,7 @@ from .lib import _load_json
 data_path = os.path.join(sys.prefix, "share", "xyzservices", "providers.json")
 
 if os.path.exists(data_path):
-    with open(data_path, "r") as f:
+    with open(data_path) as f:
         json = f.read()
 else:
     json = pkgutil.get_data("xyzservices", "data/providers.json")

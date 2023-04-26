@@ -1,8 +1,6 @@
 import setuptools
-import versioneer
 
-
-with open("README.md", "r", encoding="utf8") as fh:
+with open("README.md", encoding="utf8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
@@ -15,7 +13,7 @@ setuptools.setup(
     author_email="daniel.arribas.bel@gmail.com, martin@martinfleischmann.net",
     license="3-Clause BSD",
     packages=setuptools.find_packages(exclude=["tests"]),
-    python_requires=">=3.7",
+    python_requires=">=3.8",
     include_package_data=True,
     package_data={
         "xyzservices": ["data/providers.json"],
@@ -23,10 +21,10 @@ setuptools.setup(
     classifiers=[
         "License :: OSI Approved :: BSD License",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3 :: Only",
     ],
-    version=versioneer.get_version(),
-    cmdclass=versioneer.get_cmdclass(),
+    use_scm_version=True,
+    setup_requires=["setuptools_scm"],
     data_files=[("share/xyzservices", ["xyzservices/data/providers.json"])],
 )

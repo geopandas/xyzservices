@@ -1,8 +1,9 @@
-import pytest
 from urllib.error import URLError
 
+import pytest
+
 import xyzservices.providers as xyz
-from xyzservices import TileProvider, Bunch
+from xyzservices import Bunch, TileProvider
 
 
 @pytest.fixture
