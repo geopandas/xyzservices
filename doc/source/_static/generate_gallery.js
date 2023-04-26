@@ -140,7 +140,7 @@ function initMap(el, data, accessData) {
             latitude = 52.370216; // Amsterdam
             longitude = 4.895168;
             zoom = 14;
-        } else if (basemap === "NLS") {
+        } else if (basemap === "NLS" || basemap === "OrdnanceSurvey") {
             latitude = 53.381129; // Sheffield
             longitude = -1.470085;
             zoom = 12;
