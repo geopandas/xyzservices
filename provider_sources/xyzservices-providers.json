@@ -377,8 +377,8 @@
     "OrdnanceSurvey": {
         "Road_3857": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Road_3857/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right {year}",
-            "attribution": "Contains OS data (C) Crown copyright and database right {year}",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2023",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2023",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "crs": "EPSG:3857",
             "min_zoom": 7,
@@ -390,8 +390,8 @@
         },
         "Road_27700": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Road_27700/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right {year}",
-            "attribution": "Contains OS data (C) Crown copyright and database right {year}",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2023",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2023",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "crs": "EPSG:27700",
             "min_zoom": 0,
@@ -403,8 +403,8 @@
         },
         "Outdoor_3857": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Outdoor_3857/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right {year}",
-            "attribution": "Contains OS data (C) Crown copyright and database right {year}",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2023",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2023",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "crs": "EPSG:3857",
             "min_zoom": 7,
@@ -416,8 +416,8 @@
         },
         "Outdoor_27700": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Outdoor_27700/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right {year}",
-            "attribution": "Contains OS data (C) Crown copyright and database right {year}",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2023",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2023",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "crs": "EPSG:27700",
             "min_zoom": 0,
@@ -429,8 +429,8 @@
         },
         "Light_3857": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Light_3857/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right {year}",
-            "attribution": "Contains OS data (C) Crown copyright and database right {year}",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2023",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2023",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "crs": "EPSG:3857",
             "min_zoom": 7,
@@ -442,8 +442,8 @@
         },
         "Light_27700": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Light_27700/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right {year}",
-            "attribution": "Contains OS data (C) Crown copyright and database right {year}",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2023",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2023",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "crs": "EPSG:27700",
             "min_zoom": 0,
@@ -455,8 +455,8 @@
         },
         "Leisure_27700": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Leisure_27700/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right {year}",
-            "attribution": "Contains OS data (C) Crown copyright and database right {year}",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2023",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2023",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "crs": "EPSG:27700",
             "min_zoom": 0,
