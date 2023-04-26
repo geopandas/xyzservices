@@ -31,8 +31,7 @@ xyz.GeoportailFrance.plan(apikey="<insert api_key here>")
 Please note that a public api key (`choisirgeoportail`) is used by default and comes
 with no guarantee.
 
-
-## HERE and HEREv3 (formerly Nokia).
+## HERE and HEREv3 (formerly Nokia)
 
 In order to use HEREv3 layers, you must [register](http://developer.here.com/). Once
 registered, you can create an `apiKey` which you have to pass to the `TileProvider`:
@@ -84,6 +83,7 @@ each is required, e.g. `"mapbox/light-v10"`.
 In order to use MapTiler maps, you must [register](https://cloud.maptiler.com/). Once
 registered, get your API key from Account/Keys, which you have to pass to the
 `TileProvider`:
+
 ```py
 xyz.MapTiler.Streets(key="<insert key here>")
 ```
@@ -93,6 +93,7 @@ xyz.MapTiler.Streets(key="<insert key here>")
 In order to use Thunderforest maps, you must
 [register](https://thunderforest.com/pricing/). Once registered, you have an `api_key`
 which you have to pass to the `TileProvider`:
+
 ```py
 xyz.Thunderforest.Landscape(apikey="<insert api_key here>")
 ```
@@ -118,4 +119,14 @@ provider object to correct form.
 ```py
 provider = xyz.Stadia.AlidadeSmooth(api_key="<insert api_key here>")
 provider["url"] = provider["url"] + "?api_key={api_key}"  # adding API key placeholder
+```
+
+## Ordnance Survey
+
+In order to use Ordnance Survey layers, you must
+[register](https://osdatahub.os.uk/). Once registered, you can create
+a project, assign OS Maps API product to a project and retrieve the `key` which you have to pass to the `TileProvider`:
+
+```py
+xyz.OrdnanceSurvey.Light(key="<insert api_key here>")
 ```

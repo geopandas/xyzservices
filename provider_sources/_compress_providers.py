@@ -11,6 +11,8 @@ import json
 import warnings
 import requests
 import xmltodict
+from datetime import date
+
 
 # list of providers known to be broken and should be marked as broken in the JSON
 # last update: 14 Apr 2022
@@ -38,6 +40,23 @@ for provider in BROKEN_PROVIDERS:
             "The provider does not exist in leaflet-providers JSON.",
             UserWarning,
         )
+
+
+# update year
+def update_year(provider_or_tile):
+    if "attribution" in provider_or_tile:
+        provider_or_tile["attribution"] = provider_or_tile["attribution"].replace(
+            "{year}", str(date.today().year)
+        )
+        provider_or_tile["html_attribution"] = provider_or_tile[
+            "html_attribution"
+        ].replace("{year}", str(date.today().year))
+    else:
+        for tile in provider_or_tile.values():
+            update_year(tile)
+
+
+update_year(xyz)
 
 # combine both
 

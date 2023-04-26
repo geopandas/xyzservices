@@ -55,6 +55,11 @@ var accessData = {
         idString: "",
         name: "AzureMaps",
     },
+    OrdnanceSurvey: {
+        keyString: "key",
+        idString: "",
+        name: "OrdnanceSurvey",
+    },
 };
 
 function initMap(el, data, accessData) {
@@ -94,7 +99,7 @@ function initMap(el, data, accessData) {
             latitude = 82.8628; // Antarctic ocean
             longitude = 135.0;
             zoom = 6;
-        } else if (basemap == 'GeoportailFrance'){
+        } else if (basemap == 'GeoportailFrance') {
             latitude = 46.749998;
             longitude = 1.85;
             zoom = 6
@@ -135,7 +140,7 @@ function initMap(el, data, accessData) {
             latitude = 52.370216; // Amsterdam
             longitude = 4.895168;
             zoom = 14;
-        } else if (basemap === "NLS") {
+        } else if (basemap === "NLS" || basemap === "OrdnanceSurvey") {
             latitude = 53.381129; // Sheffield
             longitude = -1.470085;
             zoom = 12;
