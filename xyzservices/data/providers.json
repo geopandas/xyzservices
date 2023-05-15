@@ -5586,6 +5586,29 @@
             "name": "GeoportailFrance.Protectedareas_Aphn",
             "TileMatrixSet": "PM"
         },
+        "Protectedareas_Aplg": {
+            "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -53.6279,
+                    -63.3725
+                ],
+                [
+                    51.3121,
+                    82.645
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "apikey": "environnement",
+            "format": "image/png",
+            "style": "nolegend",
+            "variant": "PROTECTEDAREAS.APLG",
+            "name": "GeoportailFrance.Protectedareas_Aplg",
+            "TileMatrixSet": "PM"
+        },
         "Protectedareas_Bios": {
             "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -6090,6 +6113,29 @@
             "style": "normal",
             "variant": "PROTECTEDAREAS.ZNIEFF2.SEA",
             "name": "GeoportailFrance.Protectedareas_Znieff2_Sea",
+            "TileMatrixSet": "PM"
+        },
+        "Protectedareas_Zpr": {
+            "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -53.6279,
+                    -63.3725
+                ],
+                [
+                    51.3121,
+                    82.645
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "apikey": "environnement",
+            "format": "image/png",
+            "style": "nolegend",
+            "variant": "PROTECTEDAREAS.ZPR",
+            "name": "GeoportailFrance.Protectedareas_Zpr",
             "TileMatrixSet": "PM"
         },
         "Protectedareas_Zps": {
