@@ -1,6 +1,13 @@
 Changelog
 =========
 
+xyzservices 2023.5.0 (May 19, 2023)
+-----------------------------------
+
+Providers:
+
+- Added ``OrdnanceSurvey`` layers
+
 xyzservices 2023.2.0 (February 19, 2023)
 ----------------------------------------
 
