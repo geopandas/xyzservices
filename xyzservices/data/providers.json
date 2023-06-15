@@ -8223,15 +8223,15 @@
             "bounds": [
                 [
                     -21.3733,
-                    -61.6648
+                    -67.7132
                 ],
                 [
-                    51.1117,
+                    69.3108,
                     55.7216
                 ]
             ],
             "min_zoom": 0,
-            "max_zoom": 19,
+            "max_zoom": 18,
             "apikey": "satellite",
             "format": "image/png",
             "style": "normal",
