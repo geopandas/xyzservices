@@ -8,7 +8,7 @@
             "name": "OpenStreetMap.Mapnik"
         },
         "DE": {
-            "url": "https://{s}.tile.openstreetmap.de/{z}/{x}/{y}.png",
+            "url": "https://tile.openstreetmap.de/{z}/{x}/{y}.png",
             "max_zoom": 18,
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) OpenStreetMap contributors",
@@ -6943,11 +6943,34 @@
             ],
             "min_zoom": 0,
             "max_zoom": 19,
-            "apikey": "ortho",
+            "apikey": "orthohisto",
             "format": "image/jpeg",
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2022",
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_express_2022",
+            "TileMatrixSet": "PM"
+        },
+        "Orthoimagery_Orthophotos_Irc_express_2023": {
+            "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    47.4719,
+                    1.48832
+                ],
+                [
+                    48.3543,
+                    3.13499
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 19,
+            "apikey": "ortho",
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2023",
+            "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_express_2023",
             "TileMatrixSet": "PM"
         },
         "Orthoimagery_Orthophotos_Ortho_asp_pac2022": {
@@ -7012,11 +7035,34 @@
             ],
             "min_zoom": 0,
             "max_zoom": 19,
-            "apikey": "ortho",
+            "apikey": "orthohisto",
             "format": "image/jpeg",
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2022",
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Ortho_express_2022",
+            "TileMatrixSet": "PM"
+        },
+        "Orthoimagery_Orthophotos_Ortho_express_2023": {
+            "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    47.4719,
+                    1.48832
+                ],
+                [
+                    48.3543,
+                    3.13499
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 19,
+            "apikey": "ortho",
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2023",
+            "name": "GeoportailFrance.Orthoimagery_Orthophotos_Ortho_express_2023",
             "TileMatrixSet": "PM"
         },
         "Pcrs_Lamb93": {
@@ -7099,7 +7145,7 @@
                     -2.37153
                 ],
                 [
-                    48.7528,
+                    49.7785,
                     9.67536
                 ]
             ],
@@ -7107,7 +7153,7 @@
             "max_zoom": 18,
             "apikey": "orthohisto",
             "format": "image/png",
-            "style": "normal",
+            "style": "BDORTHOHISTORIQUE",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS.1980-1995",
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_1980_1995",
             "TileMatrixSet": "PM"
@@ -8499,7 +8545,7 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    43.151,
+                    42.6423,
                     -5.15012
                 ],
                 [
