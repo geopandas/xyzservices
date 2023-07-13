@@ -1,6 +1,16 @@
 Changelog
 =========
 
+xyzservices 2023.7.0 (July 13, 2023)
+------------------------------------
+
+Providers:
+
+- Added ``GeoportailFrance`` ``Orthoimagery_Orthophotos_Irc_express_2023`` and
+  ``Orthoimagery_Orthophotos_Ortho_express_2023`` layers
+- Updated domain for ``OpenStreetMap.DE``
+- Marked ``GeoportailFrance.Orthoimagery_Orthophotos_1980_1995`` as possibly broken
+
 xyzservices 2023.5.0 (May 19, 2023)
 -----------------------------------
 
