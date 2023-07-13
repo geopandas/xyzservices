@@ -192,6 +192,7 @@ for j in range(0, len(apikey_list)):
                 "Orthoimagery_Orthophotos_Coast2000",
                 "Pcrs_Lamb93",
                 "Orthoimagery_Ortho_sat_Spot_2013",
+                "Orthoimagery_Orthophotos_1980_1995",
             ]
 
             if name in possibly_broken:
