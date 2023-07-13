@@ -7156,7 +7156,8 @@
             "style": "BDORTHOHISTORIQUE",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS.1980-1995",
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_1980_1995",
-            "TileMatrixSet": "PM"
+            "TileMatrixSet": "PM",
+            "status": "broken"
         },
         "Orthoimagery_Orthophotos_Irc_express_2021": {
             "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
