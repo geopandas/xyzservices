@@ -2959,7 +2959,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2023-07-13",
+        "date_of_creation": "2023-07-15",
         "commit": "commit 15b5c38a104a6e71f69b4ab48ea5b0b13835d5d2 (openstreetmap.de)"
     }
 }
