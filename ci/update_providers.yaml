@@ -6,7 +6,7 @@ dependencies:
   # tests
   - pytest
   - pytest-cov
-  - selenium
+  - selenium==4.10
   - geckodriver
   - firefox
   - gitpython
