@@ -142,32 +142,144 @@
     },
     "Stadia": {
         "AlidadeSmooth": {
-            "url": "https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png",
+            "url": "https://tiles.stadiamaps.com/tiles/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "min_zoom": 0,
             "max_zoom": 20,
-            "html_attribution": "&copy; <a href=\"https://stadiamaps.com/\">Stadia Maps</a>, &copy; <a href=\"https://openmaptiles.org/\">OpenMapTiles</a> &copy; <a href=\"http://openstreetmap.org\">OpenStreetMap</a> contributors",
-            "attribution": "(C) Stadia Maps, (C) OpenMapTiles (C) OpenStreetMap contributors",
+            "html_attribution": "&copy; <a href=\"https://www.stadiamaps.com/\" target=\"_blank\">Stadia Maps</a> &copy; <a href=\"https://openmaptiles.org/\" target=\"_blank\">OpenMapTiles</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) Stadia Maps (C) OpenMapTiles (C) OpenStreetMap contributors",
+            "variant": "alidade_smooth",
+            "ext": "png",
             "name": "Stadia.AlidadeSmooth"
         },
         "AlidadeSmoothDark": {
-            "url": "https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png",
+            "url": "https://tiles.stadiamaps.com/tiles/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "min_zoom": 0,
             "max_zoom": 20,
-            "html_attribution": "&copy; <a href=\"https://stadiamaps.com/\">Stadia Maps</a>, &copy; <a href=\"https://openmaptiles.org/\">OpenMapTiles</a> &copy; <a href=\"http://openstreetmap.org\">OpenStreetMap</a> contributors",
-            "attribution": "(C) Stadia Maps, (C) OpenMapTiles (C) OpenStreetMap contributors",
+            "html_attribution": "&copy; <a href=\"https://www.stadiamaps.com/\" target=\"_blank\">Stadia Maps</a> &copy; <a href=\"https://openmaptiles.org/\" target=\"_blank\">OpenMapTiles</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) Stadia Maps (C) OpenMapTiles (C) OpenStreetMap contributors",
+            "variant": "alidade_smooth_dark",
+            "ext": "png",
             "name": "Stadia.AlidadeSmoothDark"
         },
         "OSMBright": {
-            "url": "https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png",
+            "url": "https://tiles.stadiamaps.com/tiles/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "min_zoom": 0,
             "max_zoom": 20,
-            "html_attribution": "&copy; <a href=\"https://stadiamaps.com/\">Stadia Maps</a>, &copy; <a href=\"https://openmaptiles.org/\">OpenMapTiles</a> &copy; <a href=\"http://openstreetmap.org\">OpenStreetMap</a> contributors",
-            "attribution": "(C) Stadia Maps, (C) OpenMapTiles (C) OpenStreetMap contributors",
+            "html_attribution": "&copy; <a href=\"https://www.stadiamaps.com/\" target=\"_blank\">Stadia Maps</a> &copy; <a href=\"https://openmaptiles.org/\" target=\"_blank\">OpenMapTiles</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) Stadia Maps (C) OpenMapTiles (C) OpenStreetMap contributors",
+            "variant": "osm_bright",
+            "ext": "png",
             "name": "Stadia.OSMBright"
         },
         "Outdoors": {
-            "url": "https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png",
+            "url": "https://tiles.stadiamaps.com/tiles/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "min_zoom": 0,
             "max_zoom": 20,
-            "html_attribution": "&copy; <a href=\"https://stadiamaps.com/\">Stadia Maps</a>, &copy; <a href=\"https://openmaptiles.org/\">OpenMapTiles</a> &copy; <a href=\"http://openstreetmap.org\">OpenStreetMap</a> contributors",
-            "attribution": "(C) Stadia Maps, (C) OpenMapTiles (C) OpenStreetMap contributors",
+            "html_attribution": "&copy; <a href=\"https://www.stadiamaps.com/\" target=\"_blank\">Stadia Maps</a> &copy; <a href=\"https://openmaptiles.org/\" target=\"_blank\">OpenMapTiles</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) Stadia Maps (C) OpenMapTiles (C) OpenStreetMap contributors",
+            "variant": "outdoors",
+            "ext": "png",
             "name": "Stadia.Outdoors"
+        },
+        "StamenToner": {
+            "url": "https://tiles.stadiamaps.com/tiles/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "min_zoom": 0,
+            "max_zoom": 20,
+            "html_attribution": "&copy; <a href=\"https://www.stadiamaps.com/\" target=\"_blank\">Stadia Maps</a> &copy; <a href=\"https://www.stamen.com/\" target=\"_blank\">Stamen Design</a> &copy; <a href=\"https://openmaptiles.org/\" target=\"_blank\">OpenMapTiles</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) Stadia Maps (C) Stamen Design (C) OpenMapTiles (C) OpenStreetMap contributors",
+            "variant": "stamen_toner",
+            "ext": "png",
+            "name": "Stadia.StamenToner"
+        },
+        "StamenTonerBackground": {
+            "url": "https://tiles.stadiamaps.com/tiles/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "min_zoom": 0,
+            "max_zoom": 20,
+            "html_attribution": "&copy; <a href=\"https://www.stadiamaps.com/\" target=\"_blank\">Stadia Maps</a> &copy; <a href=\"https://www.stamen.com/\" target=\"_blank\">Stamen Design</a> &copy; <a href=\"https://openmaptiles.org/\" target=\"_blank\">OpenMapTiles</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) Stadia Maps (C) Stamen Design (C) OpenMapTiles (C) OpenStreetMap contributors",
+            "variant": "stamen_toner_background",
+            "ext": "png",
+            "name": "Stadia.StamenTonerBackground"
+        },
+        "StamenTonerLines": {
+            "url": "https://tiles.stadiamaps.com/tiles/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "min_zoom": 0,
+            "max_zoom": 20,
+            "html_attribution": "&copy; <a href=\"https://www.stadiamaps.com/\" target=\"_blank\">Stadia Maps</a> &copy; <a href=\"https://www.stamen.com/\" target=\"_blank\">Stamen Design</a> &copy; <a href=\"https://openmaptiles.org/\" target=\"_blank\">OpenMapTiles</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) Stadia Maps (C) Stamen Design (C) OpenMapTiles (C) OpenStreetMap contributors",
+            "variant": "stamen_toner_lines",
+            "ext": "png",
+            "name": "Stadia.StamenTonerLines"
+        },
+        "StamenTonerLabels": {
+            "url": "https://tiles.stadiamaps.com/tiles/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "min_zoom": 0,
+            "max_zoom": 20,
+            "html_attribution": "&copy; <a href=\"https://www.stadiamaps.com/\" target=\"_blank\">Stadia Maps</a> &copy; <a href=\"https://www.stamen.com/\" target=\"_blank\">Stamen Design</a> &copy; <a href=\"https://openmaptiles.org/\" target=\"_blank\">OpenMapTiles</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) Stadia Maps (C) Stamen Design (C) OpenMapTiles (C) OpenStreetMap contributors",
+            "variant": "stamen_toner_labels",
+            "ext": "png",
+            "name": "Stadia.StamenTonerLabels"
+        },
+        "StamenTonerLite": {
+            "url": "https://tiles.stadiamaps.com/tiles/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "min_zoom": 0,
+            "max_zoom": 20,
+            "html_attribution": "&copy; <a href=\"https://www.stadiamaps.com/\" target=\"_blank\">Stadia Maps</a> &copy; <a href=\"https://www.stamen.com/\" target=\"_blank\">Stamen Design</a> &copy; <a href=\"https://openmaptiles.org/\" target=\"_blank\">OpenMapTiles</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) Stadia Maps (C) Stamen Design (C) OpenMapTiles (C) OpenStreetMap contributors",
+            "variant": "stamen_toner_lite",
+            "ext": "png",
+            "name": "Stadia.StamenTonerLite"
+        },
+        "StamenWatercolor": {
+            "url": "https://tiles.stadiamaps.com/tiles/{variant}/{z}/{x}/{y}.{ext}",
+            "min_zoom": 1,
+            "max_zoom": 16,
+            "html_attribution": "&copy; <a href=\"https://www.stadiamaps.com/\" target=\"_blank\">Stadia Maps</a> &copy; <a href=\"https://www.stamen.com/\" target=\"_blank\">Stamen Design</a> &copy; <a href=\"https://openmaptiles.org/\" target=\"_blank\">OpenMapTiles</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) Stadia Maps (C) Stamen Design (C) OpenMapTiles (C) OpenStreetMap contributors",
+            "variant": "stamen_watercolor",
+            "ext": "jpg",
+            "name": "Stadia.StamenWatercolor"
+        },
+        "StamenTerrain": {
+            "url": "https://tiles.stadiamaps.com/tiles/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "min_zoom": 0,
+            "max_zoom": 18,
+            "html_attribution": "&copy; <a href=\"https://www.stadiamaps.com/\" target=\"_blank\">Stadia Maps</a> &copy; <a href=\"https://www.stamen.com/\" target=\"_blank\">Stamen Design</a> &copy; <a href=\"https://openmaptiles.org/\" target=\"_blank\">OpenMapTiles</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) Stadia Maps (C) Stamen Design (C) OpenMapTiles (C) OpenStreetMap contributors",
+            "variant": "stamen_terrain",
+            "ext": "png",
+            "name": "Stadia.StamenTerrain"
+        },
+        "StamenTerrainBackground": {
+            "url": "https://tiles.stadiamaps.com/tiles/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "min_zoom": 0,
+            "max_zoom": 18,
+            "html_attribution": "&copy; <a href=\"https://www.stadiamaps.com/\" target=\"_blank\">Stadia Maps</a> &copy; <a href=\"https://www.stamen.com/\" target=\"_blank\">Stamen Design</a> &copy; <a href=\"https://openmaptiles.org/\" target=\"_blank\">OpenMapTiles</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) Stadia Maps (C) Stamen Design (C) OpenMapTiles (C) OpenStreetMap contributors",
+            "variant": "stamen_terrain_background",
+            "ext": "png",
+            "name": "Stadia.StamenTerrainBackground"
+        },
+        "StamenTerrainLabels": {
+            "url": "https://tiles.stadiamaps.com/tiles/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "min_zoom": 0,
+            "max_zoom": 18,
+            "html_attribution": "&copy; <a href=\"https://www.stadiamaps.com/\" target=\"_blank\">Stadia Maps</a> &copy; <a href=\"https://www.stamen.com/\" target=\"_blank\">Stamen Design</a> &copy; <a href=\"https://openmaptiles.org/\" target=\"_blank\">OpenMapTiles</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) Stadia Maps (C) Stamen Design (C) OpenMapTiles (C) OpenStreetMap contributors",
+            "variant": "stamen_terrain_labels",
+            "ext": "png",
+            "name": "Stadia.StamenTerrainLabels"
+        },
+        "StamenTerrainLines": {
+            "url": "https://tiles.stadiamaps.com/tiles/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "min_zoom": 0,
+            "max_zoom": 18,
+            "html_attribution": "&copy; <a href=\"https://www.stadiamaps.com/\" target=\"_blank\">Stadia Maps</a> &copy; <a href=\"https://www.stamen.com/\" target=\"_blank\">Stamen Design</a> &copy; <a href=\"https://openmaptiles.org/\" target=\"_blank\">OpenMapTiles</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) Stadia Maps (C) Stamen Design (C) OpenMapTiles (C) OpenStreetMap contributors",
+            "variant": "stamen_terrain_lines",
+            "ext": "png",
+            "name": "Stadia.StamenTerrainLines"
         }
     },
     "Thunderforest": {
@@ -531,161 +643,6 @@
             "min_zoom": 0,
             "max_zoom": 12,
             "name": "MapTiler.Terrain"
-        }
-    },
-    "Stamen": {
-        "Toner": {
-            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
-            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
-            "subdomains": "abcd",
-            "min_zoom": 0,
-            "max_zoom": 20,
-            "variant": "toner",
-            "ext": "png",
-            "name": "Stamen.Toner"
-        },
-        "TonerBackground": {
-            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
-            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
-            "subdomains": "abcd",
-            "min_zoom": 0,
-            "max_zoom": 20,
-            "variant": "toner-background",
-            "ext": "png",
-            "name": "Stamen.TonerBackground"
-        },
-        "TonerHybrid": {
-            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
-            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
-            "subdomains": "abcd",
-            "min_zoom": 0,
-            "max_zoom": 20,
-            "variant": "toner-hybrid",
-            "ext": "png",
-            "name": "Stamen.TonerHybrid"
-        },
-        "TonerLines": {
-            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
-            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
-            "subdomains": "abcd",
-            "min_zoom": 0,
-            "max_zoom": 20,
-            "variant": "toner-lines",
-            "ext": "png",
-            "name": "Stamen.TonerLines"
-        },
-        "TonerLabels": {
-            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
-            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
-            "subdomains": "abcd",
-            "min_zoom": 0,
-            "max_zoom": 20,
-            "variant": "toner-labels",
-            "ext": "png",
-            "name": "Stamen.TonerLabels"
-        },
-        "TonerLite": {
-            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
-            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
-            "subdomains": "abcd",
-            "min_zoom": 0,
-            "max_zoom": 20,
-            "variant": "toner-lite",
-            "ext": "png",
-            "name": "Stamen.TonerLite"
-        },
-        "Watercolor": {
-            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}.{ext}",
-            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
-            "subdomains": "abcd",
-            "min_zoom": 1,
-            "max_zoom": 16,
-            "variant": "watercolor",
-            "ext": "jpg",
-            "name": "Stamen.Watercolor"
-        },
-        "Terrain": {
-            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
-            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
-            "subdomains": "abcd",
-            "min_zoom": 0,
-            "max_zoom": 18,
-            "variant": "terrain",
-            "ext": "png",
-            "name": "Stamen.Terrain"
-        },
-        "TerrainBackground": {
-            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
-            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
-            "subdomains": "abcd",
-            "min_zoom": 0,
-            "max_zoom": 18,
-            "variant": "terrain-background",
-            "ext": "png",
-            "name": "Stamen.TerrainBackground"
-        },
-        "TerrainLabels": {
-            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
-            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
-            "subdomains": "abcd",
-            "min_zoom": 0,
-            "max_zoom": 18,
-            "variant": "terrain-labels",
-            "ext": "png",
-            "name": "Stamen.TerrainLabels"
-        },
-        "TopOSMRelief": {
-            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}.{ext}",
-            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
-            "subdomains": "abcd",
-            "min_zoom": 0,
-            "max_zoom": 20,
-            "variant": "toposm-color-relief",
-            "ext": "jpg",
-            "bounds": [
-                [
-                    22,
-                    -132
-                ],
-                [
-                    51,
-                    -56
-                ]
-            ],
-            "name": "Stamen.TopOSMRelief"
-        },
-        "TopOSMFeatures": {
-            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
-            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
-            "subdomains": "abcd",
-            "min_zoom": 0,
-            "max_zoom": 20,
-            "variant": "toposm-features",
-            "ext": "png",
-            "bounds": [
-                [
-                    22,
-                    -132
-                ],
-                [
-                    51,
-                    -56
-                ]
-            ],
-            "opacity": 0.9,
-            "name": "Stamen.TopOSMFeatures"
         }
     },
     "TomTom": {
@@ -2112,17 +2069,10 @@
     },
     "BasemapAT": {
         "basemap": {
-            "url": "https://maps{s}.wien.gv.at/basemap/{variant}/{type}/google3857/{z}/{y}/{x}.{format}",
+            "url": "https://mapsneu.wien.gv.at/basemap/{variant}/{type}/google3857/{z}/{y}/{x}.{format}",
             "max_zoom": 20,
             "html_attribution": "Datenquelle: <a href=\"https://www.basemap.at\">basemap.at</a>",
             "attribution": "Datenquelle: basemap.at",
-            "subdomains": [
-                "",
-                "1",
-                "2",
-                "3",
-                "4"
-            ],
             "type": "normal",
             "format": "png",
             "bounds": [
@@ -2139,17 +2089,10 @@
             "name": "BasemapAT.basemap"
         },
         "grau": {
-            "url": "https://maps{s}.wien.gv.at/basemap/{variant}/{type}/google3857/{z}/{y}/{x}.{format}",
+            "url": "https://mapsneu.wien.gv.at/basemap/{variant}/{type}/google3857/{z}/{y}/{x}.{format}",
             "max_zoom": 19,
             "html_attribution": "Datenquelle: <a href=\"https://www.basemap.at\">basemap.at</a>",
             "attribution": "Datenquelle: basemap.at",
-            "subdomains": [
-                "",
-                "1",
-                "2",
-                "3",
-                "4"
-            ],
             "type": "normal",
             "format": "png",
             "bounds": [
@@ -2166,17 +2109,10 @@
             "name": "BasemapAT.grau"
         },
         "overlay": {
-            "url": "https://maps{s}.wien.gv.at/basemap/{variant}/{type}/google3857/{z}/{y}/{x}.{format}",
+            "url": "https://mapsneu.wien.gv.at/basemap/{variant}/{type}/google3857/{z}/{y}/{x}.{format}",
             "max_zoom": 19,
             "html_attribution": "Datenquelle: <a href=\"https://www.basemap.at\">basemap.at</a>",
             "attribution": "Datenquelle: basemap.at",
-            "subdomains": [
-                "",
-                "1",
-                "2",
-                "3",
-                "4"
-            ],
             "type": "normal",
             "format": "png",
             "bounds": [
@@ -2193,17 +2129,10 @@
             "name": "BasemapAT.overlay"
         },
         "terrain": {
-            "url": "https://maps{s}.wien.gv.at/basemap/{variant}/{type}/google3857/{z}/{y}/{x}.{format}",
+            "url": "https://mapsneu.wien.gv.at/basemap/{variant}/{type}/google3857/{z}/{y}/{x}.{format}",
             "max_zoom": 19,
             "html_attribution": "Datenquelle: <a href=\"https://www.basemap.at\">basemap.at</a>",
             "attribution": "Datenquelle: basemap.at",
-            "subdomains": [
-                "",
-                "1",
-                "2",
-                "3",
-                "4"
-            ],
             "type": "grau",
             "format": "jpeg",
             "bounds": [
@@ -2220,17 +2149,10 @@
             "name": "BasemapAT.terrain"
         },
         "surface": {
-            "url": "https://maps{s}.wien.gv.at/basemap/{variant}/{type}/google3857/{z}/{y}/{x}.{format}",
+            "url": "https://mapsneu.wien.gv.at/basemap/{variant}/{type}/google3857/{z}/{y}/{x}.{format}",
             "max_zoom": 19,
             "html_attribution": "Datenquelle: <a href=\"https://www.basemap.at\">basemap.at</a>",
             "attribution": "Datenquelle: basemap.at",
-            "subdomains": [
-                "",
-                "1",
-                "2",
-                "3",
-                "4"
-            ],
             "type": "grau",
             "format": "jpeg",
             "bounds": [
@@ -2247,17 +2169,10 @@
             "name": "BasemapAT.surface"
         },
         "highdpi": {
-            "url": "https://maps{s}.wien.gv.at/basemap/{variant}/{type}/google3857/{z}/{y}/{x}.{format}",
+            "url": "https://mapsneu.wien.gv.at/basemap/{variant}/{type}/google3857/{z}/{y}/{x}.{format}",
             "max_zoom": 19,
             "html_attribution": "Datenquelle: <a href=\"https://www.basemap.at\">basemap.at</a>",
             "attribution": "Datenquelle: basemap.at",
-            "subdomains": [
-                "",
-                "1",
-                "2",
-                "3",
-                "4"
-            ],
             "type": "normal",
             "format": "jpeg",
             "bounds": [
@@ -2274,17 +2189,10 @@
             "name": "BasemapAT.highdpi"
         },
         "orthofoto": {
-            "url": "https://maps{s}.wien.gv.at/basemap/{variant}/{type}/google3857/{z}/{y}/{x}.{format}",
+            "url": "https://mapsneu.wien.gv.at/basemap/{variant}/{type}/google3857/{z}/{y}/{x}.{format}",
             "max_zoom": 20,
             "html_attribution": "Datenquelle: <a href=\"https://www.basemap.at\">basemap.at</a>",
             "attribution": "Datenquelle: basemap.at",
-            "subdomains": [
-                "",
-                "1",
-                "2",
-                "3",
-                "4"
-            ],
             "type": "normal",
             "format": "jpeg",
             "bounds": [
