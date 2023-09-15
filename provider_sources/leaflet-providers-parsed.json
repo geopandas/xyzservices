@@ -2867,7 +2867,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2023-09-01",
-        "commit": "commit 7e0226334bbbf341fc4eb49dcc70b9f525fecb82 (Bump chai from 4.3.7 to 4.3.8\n\nBumps [chai](https://github.com/chaijs/chai) from 4.3.7 to 4.3.8.\n- [Release notes](https://github.com/chaijs/chai/releases)\n- [Changelog](https://github.com/chaijs/chai/blob/4.x.x/History.md)\n- [Commits](https://github.com/chaijs/chai/compare/v4.3.7...v4.3.8)\n\n---\nupdated-dependencies:\n- dependency-name: chai\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
+        "date_of_creation": "2023-09-15",
+        "commit": "commit e792f47d3d6cb04c3b0b632ffca7dd21b447b0c3 (Bump eslint from 8.48.0 to 8.49.0\n\nBumps [eslint](https://github.com/eslint/eslint) from 8.48.0 to 8.49.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/compare/v8.48.0...v8.49.0)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }
