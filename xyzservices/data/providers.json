@@ -2544,7 +2544,8 @@
         "min_zoom": 1,
         "max_zoom": 18,
         "subdomains": "0123",
-        "name": "NLS"
+        "name": "NLS",
+        "status": "broken"
     },
     "JusticeMap": {
         "income": {
@@ -8454,7 +8455,7 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    42.6423,
+                    42.3263,
                     -5.15012
                 ],
                 [
