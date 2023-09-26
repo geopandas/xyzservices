@@ -15,8 +15,8 @@ import requests
 import xmltodict
 
 # list of providers known to be broken and should be marked as broken in the JSON
-# last update: 14 Apr 2022
-BROKEN_PROVIDERS = []
+# last update: 26 Sep 2023
+BROKEN_PROVIDERS = ["NLS"]
 
 with open("./leaflet-providers-parsed.json") as f:
     leaflet = json.load(f)
