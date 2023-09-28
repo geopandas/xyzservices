@@ -82,7 +82,10 @@
             "name": "Esri.ArcticImagery",
             "crs": "EPSG:5936",
             "bounds": [
-                [-2623285.8808999992907047, -2623285.8808999992907047],
+                [
+                    -2623285.8808999992907047,
+                    -2623285.8808999992907047
+                ],
                 [
                     6623285.8803000003099442,
                     6623285.8803000003099442
@@ -98,7 +101,10 @@
             "name": "Esri.ArcticOceanBase",
             "crs": "EPSG:5936",
             "bounds": [
-                [-2623285.8808999992907047, -2623285.8808999992907047],
+                [
+                    -2623285.8808999992907047,
+                    -2623285.8808999992907047
+                ],
                 [
                     6623285.8803000003099442,
                     6623285.8803000003099442
@@ -114,7 +120,10 @@
             "name": "Esri.ArcticOceanReference",
             "crs": "EPSG:5936",
             "bounds": [
-                [-2623285.8808999992907047, -2623285.8808999992907047],
+                [
+                    -2623285.8808999992907047,
+                    -2623285.8808999992907047
+                ],
                 [
                     6623285.8803000003099442,
                     6623285.8803000003099442
@@ -130,7 +139,10 @@
             "name": "Esri.AntarcticImagery",
             "crs": "EPSG:3031",
             "bounds": [
-                [-9913957.327914657, -5730886.461772691],
+                [
+                    -9913957.327914657,
+                    -5730886.461772691
+                ],
                 [
                     9913957.327914657,
                     5730886.461773157
@@ -146,7 +158,10 @@
             "name": "Esri.AntarcticBasemap",
             "crs": "EPSG:3031",
             "bounds": [
-                [-4524583.19363305, -4524449.487765655],
+                [
+                    -4524583.19363305,
+                    -4524449.487765655
+                ],
                 [
                     4524449.4877656475,
                     4524583.193633042
@@ -369,8 +384,14 @@
             "max_zoom": 16,
             "max_zoom_premium": 20,
             "bounds": [
-                [49.766807, -9.496386],
-                [61.465189, 3.634745]
+                [
+                    49.766807,
+                    -9.496386
+                ],
+                [
+                    61.465189,
+                    3.634745
+                ]
             ],
             "name": "OrdnanceSurvey.Road"
         },
@@ -384,8 +405,14 @@
             "max_zoom": 9,
             "max_zoom_premium": 13,
             "bounds": [
-                [0, 0],
-                [700000, 1300000]
+                [
+                    0,
+                    0
+                ],
+                [
+                    700000,
+                    1300000
+                ]
             ],
             "name": "OrdnanceSurvey.Road_27700"
         },
@@ -398,8 +425,14 @@
             "max_zoom": 16,
             "max_zoom_premium": 20,
             "bounds": [
-                [49.766807, -9.496386],
-                [61.465189, 3.634745]
+                [
+                    49.766807,
+                    -9.496386
+                ],
+                [
+                    61.465189,
+                    3.634745
+                ]
             ],
             "name": "OrdnanceSurvey.Outdoor"
         },
@@ -413,8 +446,14 @@
             "max_zoom": 9,
             "max_zoom_premium": 13,
             "bounds": [
-                [0, 0],
-                [700000, 1300000]
+                [
+                    0,
+                    0
+                ],
+                [
+                    700000,
+                    1300000
+                ]
             ],
             "name": "OrdnanceSurvey.Outdoor_27700"
         },
@@ -427,8 +466,14 @@
             "max_zoom": 16,
             "max_zoom_premium": 20,
             "bounds": [
-                [49.766807, -9.496386],
-                [61.465189, 3.634745]
+                [
+                    49.766807,
+                    -9.496386
+                ],
+                [
+                    61.465189,
+                    3.634745
+                ]
             ],
             "name": "OrdnanceSurvey.Light"
         },
@@ -442,8 +487,14 @@
             "max_zoom": 9,
             "max_zoom_premium": 13,
             "bounds": [
-                [0, 0],
-                [700000, 1300000]
+                [
+                    0,
+                    0
+                ],
+                [
+                    700000,
+                    1300000
+                ]
             ],
             "name": "OrdnanceSurvey.Light_27700"
         },
@@ -457,10 +508,171 @@
             "max_zoom": 5,
             "max_zoom_premium": 9,
             "bounds": [
-                [0, 0],
-                [700000, 1300000]
+                [
+                    0,
+                    0
+                ],
+                [
+                    700000,
+                    1300000
+                ]
             ],
             "name": "OrdnanceSurvey.Leisure_27700"
+        }
+    },
+    "Stamen": {
+        "Toner": {
+            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
+            "subdomains": "abcd",
+            "min_zoom": 0,
+            "max_zoom": 20,
+            "variant": "toner",
+            "ext": "png",
+            "name": "Stamen.Toner"
+        },
+        "TonerBackground": {
+            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
+            "subdomains": "abcd",
+            "min_zoom": 0,
+            "max_zoom": 20,
+            "variant": "toner-background",
+            "ext": "png",
+            "name": "Stamen.TonerBackground"
+        },
+        "TonerHybrid": {
+            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
+            "subdomains": "abcd",
+            "min_zoom": 0,
+            "max_zoom": 20,
+            "variant": "toner-hybrid",
+            "ext": "png",
+            "name": "Stamen.TonerHybrid"
+        },
+        "TonerLines": {
+            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
+            "subdomains": "abcd",
+            "min_zoom": 0,
+            "max_zoom": 20,
+            "variant": "toner-lines",
+            "ext": "png",
+            "name": "Stamen.TonerLines"
+        },
+        "TonerLabels": {
+            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
+            "subdomains": "abcd",
+            "min_zoom": 0,
+            "max_zoom": 20,
+            "variant": "toner-labels",
+            "ext": "png",
+            "name": "Stamen.TonerLabels"
+        },
+        "TonerLite": {
+            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
+            "subdomains": "abcd",
+            "min_zoom": 0,
+            "max_zoom": 20,
+            "variant": "toner-lite",
+            "ext": "png",
+            "name": "Stamen.TonerLite"
+        },
+        "Watercolor": {
+            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}.{ext}",
+            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
+            "subdomains": "abcd",
+            "min_zoom": 1,
+            "max_zoom": 16,
+            "variant": "watercolor",
+            "ext": "jpg",
+            "name": "Stamen.Watercolor"
+        },
+        "Terrain": {
+            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
+            "subdomains": "abcd",
+            "min_zoom": 0,
+            "max_zoom": 18,
+            "variant": "terrain",
+            "ext": "png",
+            "name": "Stamen.Terrain"
+        },
+        "TerrainBackground": {
+            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
+            "subdomains": "abcd",
+            "min_zoom": 0,
+            "max_zoom": 18,
+            "variant": "terrain-background",
+            "ext": "png",
+            "name": "Stamen.TerrainBackground"
+        },
+        "TerrainLabels": {
+            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
+            "subdomains": "abcd",
+            "min_zoom": 0,
+            "max_zoom": 18,
+            "variant": "terrain-labels",
+            "ext": "png",
+            "name": "Stamen.TerrainLabels"
+        },
+        "TopOSMRelief": {
+            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}.{ext}",
+            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
+            "subdomains": "abcd",
+            "min_zoom": 0,
+            "max_zoom": 20,
+            "variant": "toposm-color-relief",
+            "ext": "jpg",
+            "bounds": [
+                [
+                    22,
+                    -132
+                ],
+                [
+                    51,
+                    -56
+                ]
+            ],
+            "name": "Stamen.TopOSMRelief"
+        },
+        "TopOSMFeatures": {
+            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
+            "subdomains": "abcd",
+            "min_zoom": 0,
+            "max_zoom": 20,
+            "variant": "toposm-features",
+            "ext": "png",
+            "bounds": [
+                [
+                    22,
+                    -132
+                ],
+                [
+                    51,
+                    -56
+                ]
+            ],
+            "opacity": 0.9,
+            "name": "Stamen.TopOSMFeatures"
         }
     }
 }
