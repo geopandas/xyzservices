@@ -1,6 +1,13 @@
 Changelog
 =========
 
+xyzservices 2023.10.0 (October 5, 2023)
+---------------------------------------
+
+Providers:
+
+- ``Stamen`` tiles are now available under ``Stadia`` provider.
+
 xyzservices 2023.7.0 (July 13, 2023)
 ------------------------------------
 
