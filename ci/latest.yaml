@@ -8,3 +8,4 @@ dependencies:
   # tests
   - pytest
   - pytest-cov
+  - pytest-xdist
