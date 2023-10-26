@@ -57,7 +57,7 @@ jobs:
         run: pytest -v . -m "not request" --cov=xyzservices --cov-append --cov-report term-missing --cov-report xml --color=yes
 
       - name: test providers - bash
-        run: pytest -v . -m request --cov=xyzservices --cov-append --cov-report term-missing --cov-report xml --color=yes
+        run: pytest -v . -m request --cov=xyzservices --cov-append --cov-report term-missing --cov-report xml --color=yes -n auto
         if: matrix.os == 'ubuntu-latest'
 
       - name: remove JSON from share and test fallback
