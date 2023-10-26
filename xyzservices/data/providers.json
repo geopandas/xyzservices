@@ -2602,7 +2602,8 @@
                 ]
             ],
             "variant": "asian",
-            "name": "JusticeMap.asian"
+            "name": "JusticeMap.asian",
+            "status": "broken"
         },
         "black": {
             "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
@@ -2620,7 +2621,8 @@
                 ]
             ],
             "variant": "black",
-            "name": "JusticeMap.black"
+            "name": "JusticeMap.black",
+            "status": "broken"
         },
         "hispanic": {
             "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
@@ -2638,7 +2640,8 @@
                 ]
             ],
             "variant": "hispanic",
-            "name": "JusticeMap.hispanic"
+            "name": "JusticeMap.hispanic",
+            "status": "broken"
         },
         "multi": {
             "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
@@ -2656,7 +2659,8 @@
                 ]
             ],
             "variant": "multi",
-            "name": "JusticeMap.multi"
+            "name": "JusticeMap.multi",
+            "status": "broken"
         },
         "nonWhite": {
             "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
@@ -2674,7 +2678,8 @@
                 ]
             ],
             "variant": "nonwhite",
-            "name": "JusticeMap.nonWhite"
+            "name": "JusticeMap.nonWhite",
+            "status": "broken"
         },
         "white": {
             "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
@@ -2692,7 +2697,8 @@
                 ]
             ],
             "variant": "white",
-            "name": "JusticeMap.white"
+            "name": "JusticeMap.white",
+            "status": "broken"
         },
         "plurality": {
             "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
@@ -2710,7 +2716,8 @@
                 ]
             ],
             "variant": "plural",
-            "name": "JusticeMap.plurality"
+            "name": "JusticeMap.plurality",
+            "status": "broken"
         }
     },
     "GeoportailFrance": {
