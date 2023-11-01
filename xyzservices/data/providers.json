@@ -569,6 +569,45 @@
             "max_zoom": 21,
             "name": "MapTiler.Voyager"
         },
+        "Ocean": {
+            "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
+            "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
+            "variant": "ocean",
+            "ext": "png",
+            "key": "<insert your MapTiler Cloud API key here>",
+            "tileSize": 512,
+            "zoomOffset": -1,
+            "min_zoom": 0,
+            "max_zoom": 21,
+            "name": "MapTiler.Ocean"
+        },
+        "Backdrop": {
+            "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
+            "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
+            "variant": "backdrop",
+            "ext": "png",
+            "key": "<insert your MapTiler Cloud API key here>",
+            "tileSize": 512,
+            "zoomOffset": -1,
+            "min_zoom": 0,
+            "max_zoom": 21,
+            "name": "MapTiler.Backdrop"
+        },
+        "Dataviz": {
+            "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
+            "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
+            "variant": "dataviz",
+            "ext": "png",
+            "key": "<insert your MapTiler Cloud API key here>",
+            "tileSize": 512,
+            "zoomOffset": -1,
+            "min_zoom": 0,
+            "max_zoom": 21,
+            "name": "MapTiler.Dataviz"
+        },
         "Basic4326": {
             "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
             "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
@@ -5453,7 +5492,7 @@
             "max_zoom": 16,
             "apikey": "environnement",
             "format": "image/png",
-            "style": "normal",
+            "style": "PROTECTEDAREAS.APB",
             "variant": "PROTECTEDAREAS.APB",
             "name": "GeoportailFrance.Protectedareas_Apb",
             "TileMatrixSet": "PM"
@@ -5545,7 +5584,7 @@
             "max_zoom": 16,
             "apikey": "environnement",
             "format": "image/png",
-            "style": "normal",
+            "style": "PROTECTEDAREAS.BIOS",
             "variant": "PROTECTEDAREAS.BIOS",
             "name": "GeoportailFrance.Protectedareas_Bios",
             "TileMatrixSet": "PM"
@@ -5706,7 +5745,7 @@
             "max_zoom": 16,
             "apikey": "environnement",
             "format": "image/png",
-            "style": "normal",
+            "style": "PROTECTEDAREAS.PN",
             "variant": "PROTECTEDAREAS.PN",
             "name": "GeoportailFrance.Protectedareas_Pn",
             "TileMatrixSet": "PM"
@@ -5798,7 +5837,7 @@
             "max_zoom": 16,
             "apikey": "environnement",
             "format": "image/png",
-            "style": "normal",
+            "style": "PROTECTEDAREAS.RAMSAR",
             "variant": "PROTECTEDAREAS.RAMSAR",
             "name": "GeoportailFrance.Protectedareas_Ramsar",
             "TileMatrixSet": "PM"
@@ -5867,7 +5906,7 @@
             "max_zoom": 16,
             "apikey": "environnement",
             "format": "image/png",
-            "style": "normal",
+            "style": "PROTECTEDAREAS.RN",
             "variant": "PROTECTEDAREAS.RN",
             "name": "GeoportailFrance.Protectedareas_Rn",
             "TileMatrixSet": "PM"
@@ -5890,7 +5929,7 @@
             "max_zoom": 16,
             "apikey": "environnement",
             "format": "image/png",
-            "style": "normal",
+            "style": "PROTECTEDAREAS.RNC",
             "variant": "PROTECTEDAREAS.RNC",
             "name": "GeoportailFrance.Protectedareas_Rnc",
             "TileMatrixSet": "PM"
@@ -5936,7 +5975,7 @@
             "max_zoom": 16,
             "apikey": "environnement",
             "format": "image/png",
-            "style": "normal",
+            "style": "PROTECTEDAREAS.SIC",
             "variant": "PROTECTEDAREAS.SIC",
             "name": "GeoportailFrance.Protectedareas_Sic",
             "TileMatrixSet": "PM"
@@ -5959,7 +5998,7 @@
             "max_zoom": 16,
             "apikey": "environnement",
             "format": "image/png",
-            "style": "normal",
+            "style": "PROTECTEDAREAS.ZNIEFF1",
             "variant": "PROTECTEDAREAS.ZNIEFF1",
             "name": "GeoportailFrance.Protectedareas_Znieff1",
             "TileMatrixSet": "PM"
@@ -6005,7 +6044,7 @@
             "max_zoom": 16,
             "apikey": "environnement",
             "format": "image/png",
-            "style": "normal",
+            "style": "PROTECTEDAREAS.ZNIEFF2",
             "variant": "PROTECTEDAREAS.ZNIEFF2",
             "name": "GeoportailFrance.Protectedareas_Znieff2",
             "TileMatrixSet": "PM"
@@ -6074,7 +6113,7 @@
             "max_zoom": 16,
             "apikey": "environnement",
             "format": "image/png",
-            "style": "normal",
+            "style": "PROTECTEDAREAS.ZPS",
             "variant": "PROTECTEDAREAS.ZPS",
             "name": "GeoportailFrance.Protectedareas_Zps",
             "TileMatrixSet": "PM"
@@ -6097,7 +6136,7 @@
             "max_zoom": 16,
             "apikey": "environnement",
             "format": "image/png",
-            "style": "normal",
+            "style": "PROTECTEDSITES.MNHN.RESERVES-REGIONALES",
             "variant": "PROTECTEDSITES.MNHN.RESERVES-REGIONALES",
             "name": "GeoportailFrance.Protectedsites_Mnhn_Reserves_regionales",
             "TileMatrixSet": "PM"
