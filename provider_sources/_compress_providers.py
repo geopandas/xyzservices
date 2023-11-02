@@ -16,7 +16,18 @@ import xmltodict
 
 # list of providers known to be broken and should be marked as broken in the JSON
 # last update: 26 Sep 2023
-BROKEN_PROVIDERS = ["NLS"]
+BROKEN_PROVIDERS = [
+    "NLS",
+    "JusticeMap.income",
+    "JusticeMap.americanIndian",
+    "JusticeMap.asian",
+    "JusticeMap.black",
+    "JusticeMap.hispanic",
+    "JusticeMap.multi",
+    "JusticeMap.nonWhite",
+    "JusticeMap.white",
+    "JusticeMap.plurality",
+]
 
 with open("./leaflet-providers-parsed.json") as f:
     leaflet = json.load(f)
@@ -28,7 +39,7 @@ with open("./xyzservices-providers.json") as f:
     xyz = json.load(f)
 
 for provider in BROKEN_PROVIDERS:
-    provider = provider.replace(".", " ").split()
+    provider = provider.split(".")
     try:
         if len(provider) == 1:
             leaflet[provider[0]]["status"] = "broken"

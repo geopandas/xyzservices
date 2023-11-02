@@ -1,6 +1,15 @@
 Changelog
 =========
 
+xyzservices 2023.10.1 (October 26, 2023)
+----------------------------------------
+
+Providers:
+
+- ``Stamen`` tiles have been removed due to their upstream deprecation.
+  Use ``Stamen`` styles of ``Stadia`` provider instead.
+- ``JusticeMap`` tiles are temporarily marked as broken.
+
 xyzservices 2023.10.0 (October 5, 2023)
 ---------------------------------------
 

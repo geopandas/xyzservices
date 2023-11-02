@@ -2603,7 +2603,8 @@
                 ]
             ],
             "variant": "income",
-            "name": "JusticeMap.income"
+            "name": "JusticeMap.income",
+            "status": "broken"
         },
         "americanIndian": {
             "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
@@ -2621,7 +2622,8 @@
                 ]
             ],
             "variant": "indian",
-            "name": "JusticeMap.americanIndian"
+            "name": "JusticeMap.americanIndian",
+            "status": "broken"
         },
         "asian": {
             "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
@@ -2639,7 +2641,8 @@
                 ]
             ],
             "variant": "asian",
-            "name": "JusticeMap.asian"
+            "name": "JusticeMap.asian",
+            "status": "broken"
         },
         "black": {
             "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
@@ -2657,7 +2660,8 @@
                 ]
             ],
             "variant": "black",
-            "name": "JusticeMap.black"
+            "name": "JusticeMap.black",
+            "status": "broken"
         },
         "hispanic": {
             "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
@@ -2675,7 +2679,8 @@
                 ]
             ],
             "variant": "hispanic",
-            "name": "JusticeMap.hispanic"
+            "name": "JusticeMap.hispanic",
+            "status": "broken"
         },
         "multi": {
             "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
@@ -2693,7 +2698,8 @@
                 ]
             ],
             "variant": "multi",
-            "name": "JusticeMap.multi"
+            "name": "JusticeMap.multi",
+            "status": "broken"
         },
         "nonWhite": {
             "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
@@ -2711,7 +2717,8 @@
                 ]
             ],
             "variant": "nonwhite",
-            "name": "JusticeMap.nonWhite"
+            "name": "JusticeMap.nonWhite",
+            "status": "broken"
         },
         "white": {
             "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
@@ -2729,7 +2736,8 @@
                 ]
             ],
             "variant": "white",
-            "name": "JusticeMap.white"
+            "name": "JusticeMap.white",
+            "status": "broken"
         },
         "plurality": {
             "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
@@ -2747,7 +2755,8 @@
                 ]
             ],
             "variant": "plural",
-            "name": "JusticeMap.plurality"
+            "name": "JusticeMap.plurality",
+            "status": "broken"
         }
     },
     "GeoportailFrance": {
@@ -9534,161 +9543,6 @@
                 ]
             ],
             "name": "OrdnanceSurvey.Leisure_27700"
-        }
-    },
-    "Stamen": {
-        "Toner": {
-            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
-            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
-            "subdomains": "abcd",
-            "min_zoom": 0,
-            "max_zoom": 20,
-            "variant": "toner",
-            "ext": "png",
-            "name": "Stamen.Toner"
-        },
-        "TonerBackground": {
-            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
-            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
-            "subdomains": "abcd",
-            "min_zoom": 0,
-            "max_zoom": 20,
-            "variant": "toner-background",
-            "ext": "png",
-            "name": "Stamen.TonerBackground"
-        },
-        "TonerHybrid": {
-            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
-            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
-            "subdomains": "abcd",
-            "min_zoom": 0,
-            "max_zoom": 20,
-            "variant": "toner-hybrid",
-            "ext": "png",
-            "name": "Stamen.TonerHybrid"
-        },
-        "TonerLines": {
-            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
-            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
-            "subdomains": "abcd",
-            "min_zoom": 0,
-            "max_zoom": 20,
-            "variant": "toner-lines",
-            "ext": "png",
-            "name": "Stamen.TonerLines"
-        },
-        "TonerLabels": {
-            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
-            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
-            "subdomains": "abcd",
-            "min_zoom": 0,
-            "max_zoom": 20,
-            "variant": "toner-labels",
-            "ext": "png",
-            "name": "Stamen.TonerLabels"
-        },
-        "TonerLite": {
-            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
-            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
-            "subdomains": "abcd",
-            "min_zoom": 0,
-            "max_zoom": 20,
-            "variant": "toner-lite",
-            "ext": "png",
-            "name": "Stamen.TonerLite"
-        },
-        "Watercolor": {
-            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}.{ext}",
-            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
-            "subdomains": "abcd",
-            "min_zoom": 1,
-            "max_zoom": 16,
-            "variant": "watercolor",
-            "ext": "jpg",
-            "name": "Stamen.Watercolor"
-        },
-        "Terrain": {
-            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
-            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
-            "subdomains": "abcd",
-            "min_zoom": 0,
-            "max_zoom": 18,
-            "variant": "terrain",
-            "ext": "png",
-            "name": "Stamen.Terrain"
-        },
-        "TerrainBackground": {
-            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
-            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
-            "subdomains": "abcd",
-            "min_zoom": 0,
-            "max_zoom": 18,
-            "variant": "terrain-background",
-            "ext": "png",
-            "name": "Stamen.TerrainBackground"
-        },
-        "TerrainLabels": {
-            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
-            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
-            "subdomains": "abcd",
-            "min_zoom": 0,
-            "max_zoom": 18,
-            "variant": "terrain-labels",
-            "ext": "png",
-            "name": "Stamen.TerrainLabels"
-        },
-        "TopOSMRelief": {
-            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}.{ext}",
-            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
-            "subdomains": "abcd",
-            "min_zoom": 0,
-            "max_zoom": 20,
-            "variant": "toposm-color-relief",
-            "ext": "jpg",
-            "bounds": [
-                [
-                    22,
-                    -132
-                ],
-                [
-                    51,
-                    -56
-                ]
-            ],
-            "name": "Stamen.TopOSMRelief"
-        },
-        "TopOSMFeatures": {
-            "url": "https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}",
-            "html_attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "attribution": "Map tiles by Stamen Design, CC BY 3.0 -- Map data (C) OpenStreetMap contributors",
-            "subdomains": "abcd",
-            "min_zoom": 0,
-            "max_zoom": 20,
-            "variant": "toposm-features",
-            "ext": "png",
-            "bounds": [
-                [
-                    22,
-                    -132
-                ],
-                [
-                    51,
-                    -56
-                ]
-            ],
-            "opacity": 0.9,
-            "name": "Stamen.TopOSMFeatures"
         }
     }
 }
