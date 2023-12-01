@@ -7139,29 +7139,6 @@
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_express_2021",
             "TileMatrixSet": "PM"
         },
-        "Orthoimagery_Orthophotos_Irc_express_2022": {
-            "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    -21.4013,
-                    -62.9717
-                ],
-                [
-                    51.1124,
-                    55.8464
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 19,
-            "apikey": "orthohisto",
-            "format": "image/jpeg",
-            "style": "normal",
-            "variant": "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2022",
-            "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_express_2022",
-            "TileMatrixSet": "PM"
-        },
         "Orthoimagery_Orthophotos_Irc_2013": {
             "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -7413,29 +7390,6 @@
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2021",
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Ortho_express_2021",
-            "TileMatrixSet": "PM"
-        },
-        "Orthoimagery_Orthophotos_Ortho_express_2022": {
-            "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    -21.4013,
-                    -63.1607
-                ],
-                [
-                    51.1124,
-                    55.8464
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 19,
-            "apikey": "orthohisto",
-            "format": "image/jpeg",
-            "style": "normal",
-            "variant": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2022",
-            "name": "GeoportailFrance.Orthoimagery_Orthophotos_Ortho_express_2022",
             "TileMatrixSet": "PM"
         },
         "Orthoimagery_Orthophotos_Socle_asp_2018": {
