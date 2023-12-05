@@ -365,6 +365,22 @@
             "name": "Thunderforest.Neighbourhood"
         }
     },
+    "BaseMapDE": {
+        "Color": {
+            "url": "https://sgx.geodatenzentrum.de/wmts_basemapde/tile/1.0.0/{variant}/default/GLOBAL_WEBMERCATOR/{z}/{y}/{x}.png",
+            "html_attribution": "Map data: &copy; <a href=\"http://www.govdata.de/dl-de/by-2-0\">dl-de/by-2-0</a>",
+            "attribution": "Map data: (C) dl-de/by-2-0",
+            "variant": "de_basemapde_web_raster_farbe",
+            "name": "BaseMapDE.Color"
+        },
+        "Grey": {
+            "url": "https://sgx.geodatenzentrum.de/wmts_basemapde/tile/1.0.0/{variant}/default/GLOBAL_WEBMERCATOR/{z}/{y}/{x}.png",
+            "html_attribution": "Map data: &copy; <a href=\"http://www.govdata.de/dl-de/by-2-0\">dl-de/by-2-0</a>",
+            "attribution": "Map data: (C) dl-de/by-2-0",
+            "variant": "de_basemapde_web_raster_grau",
+            "name": "BaseMapDE.Grey"
+        }
+    },
     "CyclOSM": {
         "url": "https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png",
         "max_zoom": 20,
@@ -9344,6 +9360,24 @@
             "max_zoom": 18,
             "time": 18641231,
             "name": "SwissFederalGeoportal.JourneyThroughTime"
+        }
+    },
+    "TopPlusOpen": {
+        "Color": {
+            "url": "http://sgx.geodatenzentrum.de/wmts_topplus_open/tile/1.0.0/{variant}/default/WEBMERCATOR/{z}/{y}/{x}.png",
+            "max_zoom": 18,
+            "html_attribution": "Map data: &copy; <a href=\"http://www.govdata.de/dl-de/by-2-0\">dl-de/by-2-0</a>",
+            "attribution": "Map data: (C) dl-de/by-2-0",
+            "variant": "web",
+            "name": "TopPlusOpen.Color"
+        },
+        "Grey": {
+            "url": "http://sgx.geodatenzentrum.de/wmts_topplus_open/tile/1.0.0/{variant}/default/WEBMERCATOR/{z}/{y}/{x}.png",
+            "max_zoom": 18,
+            "html_attribution": "Map data: &copy; <a href=\"http://www.govdata.de/dl-de/by-2-0\">dl-de/by-2-0</a>",
+            "attribution": "Map data: (C) dl-de/by-2-0",
+            "variant": "web_grau",
+            "name": "TopPlusOpen.Grey"
         }
     },
     "Gaode": {
