@@ -2940,7 +2940,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2023-12-05",
+        "date_of_creation": "2023-12-15",
         "commit": "commit 63157aa7a0a2fed965b14e68a5ae2538e0e199ee (TopPlusOpen and BaseMapDe added (#541))"
     }
 }
