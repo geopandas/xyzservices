@@ -383,67 +383,71 @@
     },
     "Jawg": {
         "Streets": {
-            "url": "https://{s}.tile.jawg.io/{variant}/{z}/{x}/{y}{r}.png?access-token={accessToken}",
-            "html_attribution": "<a href=\"http://jawg.io\" title=\"Tiles Courtesy of Jawg Maps\" target=\"_blank\">&copy; <b>Jawg</b>Maps</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "url": "https://tile.jawg.io/{variant}/{z}/{x}/{y}{r}.png?access-token={accessToken}",
+            "html_attribution": "<a href=\"https://jawg.io\" title=\"Tiles Courtesy of Jawg Maps\" target=\"_blank\">&copy; <b>Jawg</b>Maps</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) **Jawg** Maps (C) OpenStreetMap contributors",
             "min_zoom": 0,
             "max_zoom": 22,
-            "subdomains": "abcd",
             "variant": "jawg-streets",
             "accessToken": "<insert your access token here>",
             "name": "Jawg.Streets"
         },
         "Terrain": {
-            "url": "https://{s}.tile.jawg.io/{variant}/{z}/{x}/{y}{r}.png?access-token={accessToken}",
-            "html_attribution": "<a href=\"http://jawg.io\" title=\"Tiles Courtesy of Jawg Maps\" target=\"_blank\">&copy; <b>Jawg</b>Maps</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "url": "https://tile.jawg.io/{variant}/{z}/{x}/{y}{r}.png?access-token={accessToken}",
+            "html_attribution": "<a href=\"https://jawg.io\" title=\"Tiles Courtesy of Jawg Maps\" target=\"_blank\">&copy; <b>Jawg</b>Maps</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) **Jawg** Maps (C) OpenStreetMap contributors",
             "min_zoom": 0,
             "max_zoom": 22,
-            "subdomains": "abcd",
             "variant": "jawg-terrain",
             "accessToken": "<insert your access token here>",
             "name": "Jawg.Terrain"
         },
-        "Sunny": {
-            "url": "https://{s}.tile.jawg.io/{variant}/{z}/{x}/{y}{r}.png?access-token={accessToken}",
-            "html_attribution": "<a href=\"http://jawg.io\" title=\"Tiles Courtesy of Jawg Maps\" target=\"_blank\">&copy; <b>Jawg</b>Maps</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+        "Lagoon": {
+            "url": "https://tile.jawg.io/{variant}/{z}/{x}/{y}{r}.png?access-token={accessToken}",
+            "html_attribution": "<a href=\"https://jawg.io\" title=\"Tiles Courtesy of Jawg Maps\" target=\"_blank\">&copy; <b>Jawg</b>Maps</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) **Jawg** Maps (C) OpenStreetMap contributors",
             "min_zoom": 0,
             "max_zoom": 22,
-            "subdomains": "abcd",
+            "variant": "jawg-lagoon",
+            "accessToken": "<insert your access token here>",
+            "name": "Jawg.Lagoon"
+        },
+        "Sunny": {
+            "url": "https://tile.jawg.io/{variant}/{z}/{x}/{y}{r}.png?access-token={accessToken}",
+            "html_attribution": "<a href=\"https://jawg.io\" title=\"Tiles Courtesy of Jawg Maps\" target=\"_blank\">&copy; <b>Jawg</b>Maps</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) **Jawg** Maps (C) OpenStreetMap contributors",
+            "min_zoom": 0,
+            "max_zoom": 22,
             "variant": "jawg-sunny",
             "accessToken": "<insert your access token here>",
             "name": "Jawg.Sunny"
         },
         "Dark": {
-            "url": "https://{s}.tile.jawg.io/{variant}/{z}/{x}/{y}{r}.png?access-token={accessToken}",
-            "html_attribution": "<a href=\"http://jawg.io\" title=\"Tiles Courtesy of Jawg Maps\" target=\"_blank\">&copy; <b>Jawg</b>Maps</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "url": "https://tile.jawg.io/{variant}/{z}/{x}/{y}{r}.png?access-token={accessToken}",
+            "html_attribution": "<a href=\"https://jawg.io\" title=\"Tiles Courtesy of Jawg Maps\" target=\"_blank\">&copy; <b>Jawg</b>Maps</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) **Jawg** Maps (C) OpenStreetMap contributors",
             "min_zoom": 0,
             "max_zoom": 22,
-            "subdomains": "abcd",
             "variant": "jawg-dark",
             "accessToken": "<insert your access token here>",
             "name": "Jawg.Dark"
         },
         "Light": {
-            "url": "https://{s}.tile.jawg.io/{variant}/{z}/{x}/{y}{r}.png?access-token={accessToken}",
-            "html_attribution": "<a href=\"http://jawg.io\" title=\"Tiles Courtesy of Jawg Maps\" target=\"_blank\">&copy; <b>Jawg</b>Maps</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "url": "https://tile.jawg.io/{variant}/{z}/{x}/{y}{r}.png?access-token={accessToken}",
+            "html_attribution": "<a href=\"https://jawg.io\" title=\"Tiles Courtesy of Jawg Maps\" target=\"_blank\">&copy; <b>Jawg</b>Maps</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) **Jawg** Maps (C) OpenStreetMap contributors",
             "min_zoom": 0,
             "max_zoom": 22,
-            "subdomains": "abcd",
             "variant": "jawg-light",
             "accessToken": "<insert your access token here>",
             "name": "Jawg.Light"
         },
         "Matrix": {
-            "url": "https://{s}.tile.jawg.io/{variant}/{z}/{x}/{y}{r}.png?access-token={accessToken}",
-            "html_attribution": "<a href=\"http://jawg.io\" title=\"Tiles Courtesy of Jawg Maps\" target=\"_blank\">&copy; <b>Jawg</b>Maps</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "url": "https://tile.jawg.io/{variant}/{z}/{x}/{y}{r}.png?access-token={accessToken}",
+            "html_attribution": "<a href=\"https://jawg.io\" title=\"Tiles Courtesy of Jawg Maps\" target=\"_blank\">&copy; <b>Jawg</b>Maps</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) **Jawg** Maps (C) OpenStreetMap contributors",
             "min_zoom": 0,
             "max_zoom": 22,
-            "subdomains": "abcd",
             "variant": "jawg-matrix",
             "accessToken": "<insert your access token here>",
             "name": "Jawg.Matrix"
@@ -2344,23 +2348,139 @@
         }
     },
     "NLS": {
-        "url": "https://nls-{s}.tileserver.com/nls/{z}/{x}/{y}.jpg",
-        "html_attribution": "<a href=\"http://geo.nls.uk/maps/\">National Library of Scotland Historic Maps</a>",
-        "attribution": "National Library of Scotland Historic Maps",
-        "bounds": [
-            [
-                49.6,
-                -12
+        "osgb63k1885": {
+            "url": "https://api.maptiler.com/tiles/{variant}/{z}/{x}/{y}.jpg?key={apikey}",
+            "html_attribution": "<a href=\"http://maps.nls.uk/projects/subscription-api\">National Library of Scotland Historic Maps</a>",
+            "attribution": "National Library of Scotland Historic Maps",
+            "bounds": [
+                [
+                    49.6,
+                    -12
+                ],
+                [
+                    61.7,
+                    3
+                ]
             ],
-            [
-                61.7,
-                3
-            ]
-        ],
-        "min_zoom": 1,
-        "max_zoom": 18,
-        "subdomains": "0123",
-        "name": "NLS"
+            "min_zoom": 1,
+            "max_zoom": 18,
+            "variant": "uk-osgb63k1885",
+            "name": "NLS.osgb63k1885"
+        },
+        "osgb1888": {
+            "url": "https://api.maptiler.com/tiles/{variant}/{z}/{x}/{y}.jpg?key={apikey}",
+            "html_attribution": "<a href=\"http://maps.nls.uk/projects/subscription-api\">National Library of Scotland Historic Maps</a>",
+            "attribution": "National Library of Scotland Historic Maps",
+            "bounds": [
+                [
+                    49.6,
+                    -12
+                ],
+                [
+                    61.7,
+                    3
+                ]
+            ],
+            "min_zoom": 1,
+            "max_zoom": 18,
+            "variant": "uk-osgb1888",
+            "name": "NLS.osgb1888"
+        },
+        "osgb10k1888": {
+            "url": "https://api.maptiler.com/tiles/{variant}/{z}/{x}/{y}.jpg?key={apikey}",
+            "html_attribution": "<a href=\"http://maps.nls.uk/projects/subscription-api\">National Library of Scotland Historic Maps</a>",
+            "attribution": "National Library of Scotland Historic Maps",
+            "bounds": [
+                [
+                    49.6,
+                    -12
+                ],
+                [
+                    61.7,
+                    3
+                ]
+            ],
+            "min_zoom": 1,
+            "max_zoom": 18,
+            "variant": "uk-osgb10k1888",
+            "name": "NLS.osgb10k1888"
+        },
+        "osgb1919": {
+            "url": "https://api.maptiler.com/tiles/{variant}/{z}/{x}/{y}.jpg?key={apikey}",
+            "html_attribution": "<a href=\"http://maps.nls.uk/projects/subscription-api\">National Library of Scotland Historic Maps</a>",
+            "attribution": "National Library of Scotland Historic Maps",
+            "bounds": [
+                [
+                    49.6,
+                    -12
+                ],
+                [
+                    61.7,
+                    3
+                ]
+            ],
+            "min_zoom": 1,
+            "max_zoom": 18,
+            "variant": "uk-osgb1919",
+            "name": "NLS.osgb1919"
+        },
+        "osgb25k1937": {
+            "url": "https://api.maptiler.com/tiles/{variant}/{z}/{x}/{y}.jpg?key={apikey}",
+            "html_attribution": "<a href=\"http://maps.nls.uk/projects/subscription-api\">National Library of Scotland Historic Maps</a>",
+            "attribution": "National Library of Scotland Historic Maps",
+            "bounds": [
+                [
+                    49.6,
+                    -12
+                ],
+                [
+                    61.7,
+                    3
+                ]
+            ],
+            "min_zoom": 1,
+            "max_zoom": 18,
+            "variant": "uk-osgb25k1937",
+            "name": "NLS.osgb25k1937"
+        },
+        "osgb63k1955": {
+            "url": "https://api.maptiler.com/tiles/{variant}/{z}/{x}/{y}.jpg?key={apikey}",
+            "html_attribution": "<a href=\"http://maps.nls.uk/projects/subscription-api\">National Library of Scotland Historic Maps</a>",
+            "attribution": "National Library of Scotland Historic Maps",
+            "bounds": [
+                [
+                    49.6,
+                    -12
+                ],
+                [
+                    61.7,
+                    3
+                ]
+            ],
+            "min_zoom": 1,
+            "max_zoom": 18,
+            "variant": "uk-osgb63k1955",
+            "name": "NLS.osgb63k1955"
+        },
+        "oslondon1k1893": {
+            "url": "https://api.maptiler.com/tiles/{variant}/{z}/{x}/{y}.jpg?key={apikey}",
+            "html_attribution": "<a href=\"http://maps.nls.uk/projects/subscription-api\">National Library of Scotland Historic Maps</a>",
+            "attribution": "National Library of Scotland Historic Maps",
+            "bounds": [
+                [
+                    49.6,
+                    -12
+                ],
+                [
+                    61.7,
+                    3
+                ]
+            ],
+            "min_zoom": 1,
+            "max_zoom": 18,
+            "variant": "uk-oslondon1k1893",
+            "name": "NLS.oslondon1k1893"
+        }
     },
     "JusticeMap": {
         "income": {
@@ -2940,7 +3060,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2024-01-15",
-        "commit": "commit d34bebef660cfa29d0dab1ea4d48a6c95621eb75 (Bump chai from 4.3.10 to 5.0.0\n\nBumps [chai](https://github.com/chaijs/chai) from 4.3.10 to 5.0.0.\n- [Release notes](https://github.com/chaijs/chai/releases)\n- [Changelog](https://github.com/chaijs/chai/blob/main/History.md)\n- [Commits](https://github.com/chaijs/chai/compare/v4.3.10...v5.0.0)\n\n---\nupdated-dependencies:\n- dependency-name: chai\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
+        "date_of_creation": "2024-02-01",
+        "commit": "commit b3de09852247b783b63335a1b3f4c6662aac0c05 (Bump chai from 5.0.0 to 5.0.3\n\nBumps [chai](https://github.com/chaijs/chai) from 5.0.0 to 5.0.3.\n- [Release notes](https://github.com/chaijs/chai/releases)\n- [Changelog](https://github.com/chaijs/chai/blob/main/History.md)\n- [Commits](https://github.com/chaijs/chai/compare/v5.0.0...v5.0.3)\n\n---\nupdated-dependencies:\n- dependency-name: chai\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }
