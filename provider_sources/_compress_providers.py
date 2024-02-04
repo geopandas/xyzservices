@@ -15,7 +15,7 @@ import requests
 import xmltodict
 
 # list of providers known to be broken and should be marked as broken in the JSON
-# last update: 26 Sep 2023
+# last update: 4 Feb 2024
 BROKEN_PROVIDERS = [
     "JusticeMap.income",
     "JusticeMap.americanIndian",
@@ -26,6 +26,8 @@ BROKEN_PROVIDERS = [
     "JusticeMap.nonWhite",
     "JusticeMap.white",
     "JusticeMap.plurality",
+    "Esri.DeLorme",
+    "NASAGIBS.ModisTerraChlorophyll"
 ]
 
 with open("./leaflet-providers-parsed.json") as f:

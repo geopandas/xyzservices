@@ -757,7 +757,8 @@
             "attribution": "Tiles (C) Esri -- Copyright: (C)2012 DeLorme",
             "min_zoom": 1,
             "max_zoom": 11,
-            "name": "Esri.DeLorme"
+            "name": "Esri.DeLorme",
+            "status": "broken"
         },
         "WorldTopoMap": {
             "url": "https://server.arcgisonline.com/ArcGIS/rest/services/{variant}/MapServer/tile/{z}/{y}/{x}",
@@ -2521,7 +2522,8 @@
             "tilematrixset": "GoogleMapsCompatible_Level",
             "variant": "MODIS_Terra_Chlorophyll_A",
             "opacity": 0.75,
-            "name": "NASAGIBS.ModisTerraChlorophyll"
+            "name": "NASAGIBS.ModisTerraChlorophyll",
+            "status": "broken"
         },
         "ModisTerraBands721CR": {
             "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_Bands721/default/{time}/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg",
@@ -2570,13 +2572,6 @@
             "html_attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.",
             "name": "NASAGIBS.BlueMarble3031",
             "crs": "EPSG:3031"
-        },
-        "BlueMarble": {
-            "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/BlueMarble_NextGeneration/default/EPSG3857_500m/{z}/{y}/{x}.jpeg",
-            "max_zoom": 8,
-            "attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (ESDIS) with funding provided by NASA/HQ.",
-            "html_attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.",
-            "name": "NASAGIBS.BlueMarble"
         },
         "ASTER_GDEM_Greyscale_Shaded_Relief": {
             "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/ASTER_GDEM_Greyscale_Shaded_Relief/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.jpg",
