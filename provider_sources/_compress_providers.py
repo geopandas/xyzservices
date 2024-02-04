@@ -17,7 +17,6 @@ import xmltodict
 # list of providers known to be broken and should be marked as broken in the JSON
 # last update: 26 Sep 2023
 BROKEN_PROVIDERS = [
-    "NLS",
     "JusticeMap.income",
     "JusticeMap.americanIndian",
     "JusticeMap.asian",
