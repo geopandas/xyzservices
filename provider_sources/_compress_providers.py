@@ -26,6 +26,8 @@ BROKEN_PROVIDERS = [
     "JusticeMap.nonWhite",
     "JusticeMap.white",
     "JusticeMap.plurality",
+    "Esri.DeLorme",
+    "NASAGIBS.ModisTerraChlorophyll"
 ]
 
 with open("./leaflet-providers-parsed.json") as f:
