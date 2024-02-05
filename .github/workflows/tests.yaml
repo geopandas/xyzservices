@@ -66,4 +66,4 @@ jobs:
           pytest -v . -m "not request" --cov=xyzservices --cov-append --cov-report term-missing --cov-report xml --color=yes
         if: matrix.os != 'windows-latest'
 
-      - uses: codecov/codecov-action@v3
+      - uses: codecov/codecov-action@v4
