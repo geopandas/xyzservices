@@ -3060,7 +3060,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2024-02-01",
-        "commit": "commit b3de09852247b783b63335a1b3f4c6662aac0c05 (Bump chai from 5.0.0 to 5.0.3\n\nBumps [chai](https://github.com/chaijs/chai) from 5.0.0 to 5.0.3.\n- [Release notes](https://github.com/chaijs/chai/releases)\n- [Changelog](https://github.com/chaijs/chai/blob/main/History.md)\n- [Commits](https://github.com/chaijs/chai/compare/v5.0.0...v5.0.3)\n\n---\nupdated-dependencies:\n- dependency-name: chai\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
+        "date_of_creation": "2024-02-15",
+        "commit": "commit 519648742ff77dacf5e395c19291c1a1bf0a5132 (Bump mocha from 10.2.0 to 10.3.0\n\nBumps [mocha](https://github.com/mochajs/mocha) from 10.2.0 to 10.3.0.\n- [Release notes](https://github.com/mochajs/mocha/releases)\n- [Changelog](https://github.com/mochajs/mocha/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/mochajs/mocha/compare/v10.2.0...v10.3.0)\n\n---\nupdated-dependencies:\n- dependency-name: mocha\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }
