@@ -3060,7 +3060,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2024-02-15",
-        "commit": "commit 519648742ff77dacf5e395c19291c1a1bf0a5132 (Bump mocha from 10.2.0 to 10.3.0\n\nBumps [mocha](https://github.com/mochajs/mocha) from 10.2.0 to 10.3.0.\n- [Release notes](https://github.com/mochajs/mocha/releases)\n- [Changelog](https://github.com/mochajs/mocha/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/mochajs/mocha/compare/v10.2.0...v10.3.0)\n\n---\nupdated-dependencies:\n- dependency-name: mocha\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
+        "date_of_creation": "2024-03-01",
+        "commit": "commit d279aa29f9bd10ed303c07b5fbf84699720af2a4 (Bump eslint from 8.56.0 to 8.57.0\n\nBumps [eslint](https://github.com/eslint/eslint) from 8.56.0 to 8.57.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/compare/v8.56.0...v8.57.0)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }
