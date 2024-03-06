@@ -134,6 +134,16 @@
         "name": "SafeCast"
     },
     "Stadia": {
+        "AlidadeSatellite": {
+            "url": "https://tiles.stadiamaps.com/tiles/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "min_zoom": 0,
+            "max_zoom": 20,
+            "html_attribution": "&copy; CNES, Distribution Airbus DS, &copy; Airbus DS, &copy; PlanetObserver (Contains Copernicus Data) | &copy; <a href=\"https://stadiamaps.com/\" target=\"_blank\">Stadia Maps</a> &copy; <a href=\"https://openmaptiles.org/\" target=\"_blank\">OpenMapTiles</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a>",
+            "attribution": "(C) CNES, Distribution Airbus DS, (C) Airbus DS, (C) PlanetObserver (Contains Copernicus Data), (C) Stadia Maps (C) OpenMapTiles (C) OpenStreetMap contributors",
+            "variant": "alidade_satellite",
+            "ext": "jpg",
+            "name": "Stadia.AlidadeSatellite"
+        },
         "AlidadeSmooth": {
             "url": "https://tiles.stadiamaps.com/tiles/{variant}/{z}/{x}/{y}{r}.{ext}",
             "min_zoom": 0,
