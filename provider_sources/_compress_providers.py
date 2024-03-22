@@ -84,131 +84,92 @@ for key, _val in xyz.items():
         leaflet[key] = xyz[key]
 
 
-# add the IGN tile layers
+# Add IGN WMTS services (Tile images)
 
-leaflet["GeoportailFrance"]["plan"] = {}
-leaflet["GeoportailFrance"]["orthos"] = {}
-leaflet["GeoportailFrance"]["parcels"] = {}
-tilelayers_list = []
-apikey_list = [
-    "administratif",
-    "agriculture",
-    "altimetrie",
-    "cartes",
-    "clc",
-    "economie",
-    "environnement",
-    "essentiels",
-    "lambert93",
-    "ocsge",
-    "ortho",
-    "orthohisto",
-    "satellite",
-    "sol",
-    "topographie",
-    "transports",
-]
-url_template = (
-    "https://wxs.ign.fr/apikey/geoportail/wmts?REQUEST=GetCapabilities&SERVICE=wmts"
+ign_wmts_url = (
+    "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetCapabilities"
 )
-for j in range(0, len(apikey_list)):
-    apikey = apikey_list[j]
-    url = url_template.replace("apikey", apikey)
-    resp = requests.get(url)
-    resp_dict = xmltodict.parse(resp.content)
-    layer_list = resp_dict["Capabilities"]["Contents"]["Layer"]
-    addictionnal_dict = {}
 
-    for i in range(len(layer_list)):
-        layer = resp_dict["Capabilities"]["Contents"]["Layer"][i]
-        variant = layer["ows:Identifier"]
-        name = ""
-        if "." not in variant:
-            name = variant.lower().capitalize()
-        else:
-            name = variant.split(".")[0].lower().capitalize()
-            for i in range(1, len(variant.split("."))):
-                name = name + "_" + (variant.split(".")[i]).lower().capitalize()
-                name = name.replace("-", "_")
+response = requests.get(ign_wmts_url)
+response_dict = xmltodict.parse(response.content)
+layers_list = response_dict["Capabilities"]["Contents"]["Layer"] # 556 layers
 
-        if variant == "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2":
-            name = "plan"
-        if variant == "ORTHOIMAGERY.ORTHOPHOTOS":
-            name = "orthos"
-        if variant == "CADASTRALPARCELS.PARCELLAIRE_EXPRESS":
-            name = "parcels"
+wmts_layers_list = []
+for i in range(len(layers_list)):
+    layer = response_dict["Capabilities"]["Contents"]["Layer"][i]
+    variant = layer.get("ows:Identifier")
 
-        if "Style" in layer:
-            if type(layer["Style"]) is dict:
-                style = layer["Style"]["ows:Identifier"]
+    # Rename for better readability
+    name_parts = [part.lower().capitalize().replace("-", "_") for part in variant.split(".")]
+    name = "_".join(name_parts)
 
-            elif type(layer["Style"]) is list:
-                style = layer["Style"][1]["ows:Identifier"]
-        else:
-            style = "normal"
+    # Rename for better readability (Frequent cases)
+    variant_to_name = {
+        "CADASTRALPARCELS.PARCELLAIRE_EXPRESS": "parcels",
+        "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2": "plan",
+        "ORTHOIMAGERY.ORTHOPHOTOS": "orthos"
+    }
 
-        TileMatrixSetLimits = layer["TileMatrixSetLink"]["TileMatrixSetLimits"][
-            "TileMatrixLimits"
-        ]
-        min_zoom = int(TileMatrixSetLimits[0]["TileMatrix"])
-        max_zoom = int(TileMatrixSetLimits[-1]["TileMatrix"])
-        TileMatrixSet = layer["TileMatrixSetLink"]["TileMatrixSet"]
-        format = layer["Format"]
-        bounding_lowerleft_corner = layer["ows:WGS84BoundingBox"][
-            "ows:LowerCorner"
-        ]  # given with lon/lat order
-        bounding_upperright_corner = layer["ows:WGS84BoundingBox"][
-            "ows:UpperCorner"
-        ]  # given with lon/lat order
-        lowerleft_corner_lon, lowerleft_corner_lat = bounding_lowerleft_corner.split(
-            " "
-        )
-        upperright_corner_lon, upperright_corner_lat = bounding_upperright_corner.split(
-            " "
-        )
-        bounds = [
-            [float(lowerleft_corner_lat), float(lowerleft_corner_lon)],
-            [float(upperright_corner_lat), float(upperright_corner_lon)],
-        ]
+    if variant in variant_to_name:
+        name = variant_to_name[variant]
 
-        if format == "application/x-protobuf":
-            pass
-        elif format == "image/x-bil;bits=32":
-            pass
-        elif apikey == "lambert93":
-            pass
-        else:
-            tilelayers_list.append("GeoportailFrance." + name)
-            leaflet["GeoportailFrance"][name] = {
-                "url": """https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}""",
-                "html_attribution": """<a target="_blank"href="https://www.geoportail.gouv.fr/">Geoportail France</a>""",
-                "attribution": "Geoportail France",
-                "bounds": bounds,
-                "min_zoom": min_zoom,
-                "max_zoom": max_zoom,
-                "apikey": apikey,
-                "format": format,
-                "style": style,
-                "variant": variant,
-                "name": "GeoportailFrance." + name,
-                "TileMatrixSet": TileMatrixSet,
-            }
+    # Get layer style
+    style = layer.get("Style")
+    if isinstance(style, dict):
+        style = style.get("ows:Identifier")
 
-            possibly_broken = [
-                "Ocsge_Constructions_2002",
-                "Ocsge_Constructions_2014",
-                "Ocsge_Couverture_2002",
-                "Ocsge_Couverture_2014",
-                "Ocsge_Usage_2002",
-                "Ocsge_Usage_2014",
-                "Orthoimagery_Orthophotos_Coast2000",
-                "Pcrs_Lamb93",
-                "Orthoimagery_Ortho_sat_Spot_2013",
-                "Orthoimagery_Orthophotos_1980_1995",
-            ]
+    elif isinstance(style, list):
+        style = style[1].get("ows:Identifier") if len(style) > 1 else None
+    else:
+        style = "normal"
 
-            if name in possibly_broken:
-                leaflet["GeoportailFrance"][name]["status"] = "broken"
+    # Resolution levels (pyramid)
+    TileMatrixSet = layer["TileMatrixSetLink"]["TileMatrixSet"]
+
+    # Zoom levels
+    TileMatrixSetLimits = layer["TileMatrixSetLink"]["TileMatrixSetLimits"][
+        "TileMatrixLimits"
+    ]
+    min_zoom = int(TileMatrixSetLimits[0]["TileMatrix"])
+    max_zoom = int(TileMatrixSetLimits[-1]["TileMatrix"])
+
+    # Tile format
+    output_format = layer.get("Format") # image/png...
+    if output_format == "application/x-protobuf" or output_format == "image/x-bil;bits=32":
+        continue
+
+    # Layer extent
+    bbox_lower_left = layer["ows:WGS84BoundingBox"][
+        "ows:LowerCorner"
+    ]  # given with lon/lat order
+    bbox_upper_right = layer["ows:WGS84BoundingBox"][
+        "ows:UpperCorner"
+    ]  # given with lon/lat order
+    lower_left_corner_lon, lower_left_corner_lat = bbox_lower_left.split(
+        " "
+    )
+    upper_right_corner_lon, upper_right_corner_lat = bbox_upper_right.split(
+        " "
+    )
+    bounds = [
+        [float(lower_left_corner_lat), float(lower_left_corner_lon)],
+        [float(upper_right_corner_lat), float(upper_right_corner_lon)],
+    ]
+
+    wmts_layers_list.append("GeoportailFrance." + name)
+    leaflet["GeoportailFrance"][name] = {
+        "url": """https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}""",
+        "html_attribution": """<a target="_blank"href="https://www.geoportail.gouv.fr/">Geoportail France</a>""",
+        "attribution": "Geoportail France",
+        "bounds": bounds,
+        "min_zoom": min_zoom,
+        "max_zoom": max_zoom,
+        "format": output_format,
+        "style": style,
+        "variant": variant,
+        "name": "GeoportailFrance." + name,
+        "TileMatrixSet": TileMatrixSet,
+    }
 
 with open("../xyzservices/data/providers.json", "w") as f:
     json.dump(leaflet, f, indent=4)
