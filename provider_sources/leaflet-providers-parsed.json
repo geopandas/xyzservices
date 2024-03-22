@@ -2365,7 +2365,8 @@
             "min_zoom": 1,
             "max_zoom": 18,
             "variant": "uk-osgb63k1885",
-            "name": "NLS.osgb63k1885"
+            "name": "NLS.osgb63k1885",
+            "apikey": "<insert your API key here>"
         },
         "osgb1888": {
             "url": "https://api.maptiler.com/tiles/{variant}/{z}/{x}/{y}.jpg?key={apikey}",
@@ -2384,7 +2385,8 @@
             "min_zoom": 1,
             "max_zoom": 18,
             "variant": "uk-osgb1888",
-            "name": "NLS.osgb1888"
+            "name": "NLS.osgb1888",
+            "apikey": "<insert your API key here>"
         },
         "osgb10k1888": {
             "url": "https://api.maptiler.com/tiles/{variant}/{z}/{x}/{y}.jpg?key={apikey}",
@@ -2403,7 +2405,8 @@
             "min_zoom": 1,
             "max_zoom": 18,
             "variant": "uk-osgb10k1888",
-            "name": "NLS.osgb10k1888"
+            "name": "NLS.osgb10k1888",
+            "apikey": "<insert your API key here>"
         },
         "osgb1919": {
             "url": "https://api.maptiler.com/tiles/{variant}/{z}/{x}/{y}.jpg?key={apikey}",
@@ -2422,7 +2425,8 @@
             "min_zoom": 1,
             "max_zoom": 18,
             "variant": "uk-osgb1919",
-            "name": "NLS.osgb1919"
+            "name": "NLS.osgb1919",
+            "apikey": "<insert your API key here>"
         },
         "osgb25k1937": {
             "url": "https://api.maptiler.com/tiles/{variant}/{z}/{x}/{y}.jpg?key={apikey}",
@@ -2441,7 +2445,8 @@
             "min_zoom": 1,
             "max_zoom": 18,
             "variant": "uk-osgb25k1937",
-            "name": "NLS.osgb25k1937"
+            "name": "NLS.osgb25k1937",
+            "apikey": "<insert your API key here>"
         },
         "osgb63k1955": {
             "url": "https://api.maptiler.com/tiles/{variant}/{z}/{x}/{y}.jpg?key={apikey}",
@@ -2460,7 +2465,8 @@
             "min_zoom": 1,
             "max_zoom": 18,
             "variant": "uk-osgb63k1955",
-            "name": "NLS.osgb63k1955"
+            "name": "NLS.osgb63k1955",
+            "apikey": "<insert your API key here>"
         },
         "oslondon1k1893": {
             "url": "https://api.maptiler.com/tiles/{variant}/{z}/{x}/{y}.jpg?key={apikey}",
@@ -2479,7 +2485,8 @@
             "min_zoom": 1,
             "max_zoom": 18,
             "variant": "uk-oslondon1k1893",
-            "name": "NLS.oslondon1k1893"
+            "name": "NLS.oslondon1k1893",
+            "apikey": "<insert your API key here>"
         }
     },
     "JusticeMap": {
@@ -2648,70 +2655,70 @@
     },
     "GeoportailFrance": {
         "plan": {
-            "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET=PM&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\" href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    -75,
-                    -180
+                    -85.0,
+                    -175.0
                 ],
                 [
-                    81,
-                    180
+                    85.0,
+                    175.0
                 ]
             ],
-            "min_zoom": 2,
-            "max_zoom": 18,
-            "apikey": "choisirgeoportail",
+            "min_zoom": 0,
+            "max_zoom": 19,
             "format": "image/png",
             "style": "normal",
             "variant": "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2",
-            "name": "GeoportailFrance.plan"
+            "name": "GeoportailFrance.plan",
+            "TileMatrixSet": "PM"
         },
         "parcels": {
-            "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET=PM&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\" href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    -75,
-                    -180
+                    -21.4756,
+                    -63.3725
                 ],
                 [
-                    81,
-                    180
+                    51.3121,
+                    55.9259
                 ]
             ],
-            "min_zoom": 2,
-            "max_zoom": 20,
-            "apikey": "choisirgeoportail",
+            "min_zoom": 0,
+            "max_zoom": 19,
             "format": "image/png",
             "style": "PCI vecteur",
             "variant": "CADASTRALPARCELS.PARCELLAIRE_EXPRESS",
-            "name": "GeoportailFrance.parcels"
+            "name": "GeoportailFrance.parcels",
+            "TileMatrixSet": "PM"
         },
         "orthos": {
-            "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET=PM&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\" href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    -75,
-                    -180
+                    -89.0,
+                    -180.0
                 ],
                 [
-                    81,
-                    180
+                    89.0,
+                    180.0
                 ]
             ],
-            "min_zoom": 2,
-            "max_zoom": 19,
-            "apikey": "choisirgeoportail",
+            "min_zoom": 0,
+            "max_zoom": 20,
             "format": "image/jpeg",
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS",
-            "name": "GeoportailFrance.orthos"
+            "name": "GeoportailFrance.orthos",
+            "TileMatrixSet": "PM"
         }
     },
     "OneMapSG": {
