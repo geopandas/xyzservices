@@ -169,6 +169,7 @@ for i in range(len(layers_list)):
         "variant": variant,
         "name": "GeoportailFrance." + name,
         "TileMatrixSet": TileMatrixSet,
+        "apikey": "your_api_key_here",
     }
 
     # Handle broken providers
