@@ -186,7 +186,10 @@ for i in range(len(layers_list)):
         "Ocsge_Constructions_2016",
         "Ocsge_Constructions_2014",
         "Ocsge_Constructions_2011",
-        "Ocsge_Constructions_2002"
+        "Ocsge_Constructions_2002",
+        "Ocsge_Usage_2002",
+        "Ocsge_Usage_2014",
+        "Pcrs_Lamb93"
     ]
 
     if name in possibly_broken_providers:
