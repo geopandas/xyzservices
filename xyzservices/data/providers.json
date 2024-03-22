@@ -2719,7 +2719,8 @@
             "min_zoom": 1,
             "max_zoom": 18,
             "variant": "uk-oslondon1k1893",
-            "name": "NLS.oslondon1k1893"
+            "name": "NLS.oslondon1k1893",
+            "apikey": "<insert your API key here>"
         }
     },
     "JusticeMap": {
