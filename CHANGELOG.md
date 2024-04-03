@@ -1,6 +1,21 @@
 Changelog
 =========
 
+xyzservices 2024.4.0 (April 3, 2024)
+------------------------------------
+
+Providers:
+
+- ``GeoportailFrance`` tiles are now using the new ``data.geopf.fr`` domain instead
+  of deprecated ``wxs.ign.fr`` (#166)
+- ``NASAGIBS.BlueMarble3413`` and ``NASAGIBS.BlueMarble3031`` URLs are now fixed (#162)
+- ```NASAGIBS.BlueMarble`` was removed as the URL no longer works.
+- ``Esri.DeLorme`` and ``NASAGIBS.ModisTerraChlorophyll`` are marked as broken.
+- Added ``BaseMapDE`` and ``TopPlusOpen`` providers.
+- Addded ``Jawg.Lagoon``, ``MapTiler.Ocean``, ``MapTiler.Backdrop``, ``MapTiler.Dataviz`` tiles.
+- Updated ``NLS`` to use their new ``MapTiler`` service.
+
+
 xyzservices 2023.10.1 (October 26, 2023)
 ----------------------------------------
 
