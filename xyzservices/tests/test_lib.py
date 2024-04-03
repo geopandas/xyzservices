@@ -182,13 +182,13 @@ def test_copy(basic_provider):
 def test_callable():
     # only testing the callable functionality to override a keyword, as we
     # cannot test the actual providers that need an API key
-    original_key = str(xyz.GeoportailFrance.plan["apikey"])
-    updated_provider = xyz.GeoportailFrance.plan(apikey="mykey")
+    original_key = str(xyz.OpenWeatherMap.CloudsClassic["apiKey"])
+    updated_provider = xyz.OpenWeatherMap.CloudsClassic(apiKey="mykey")
     assert isinstance(updated_provider, TileProvider)
     assert "url" in updated_provider
-    assert updated_provider["apikey"] == "mykey"
+    assert updated_provider["apiKey"] == "mykey"
     # check that original provider dict is not modified
-    assert xyz.GeoportailFrance.plan["apikey"] == original_key
+    assert xyz.OpenWeatherMap.CloudsClassic["apiKey"] == original_key
 
 
 def test_html_attribution_fallback(basic_provider, html_attr_provider):
