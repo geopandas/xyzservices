@@ -100,8 +100,14 @@ for i in range(len(layers_list)):
     variant = layer.get("ows:Identifier")
 
     # Rename for better readability
-    name_parts = [part.lower().capitalize().replace("-", "_") for part in variant.split(".")]
-    name = "_".join(name_parts)
+    name = ""
+    if "." not in variant:
+        name = variant.lower().capitalize()
+    else:
+        name = variant.split(".")[0].lower().capitalize()
+        for i in range(1, len(variant.split("."))):
+            name = name + "_" + (variant.split(".")[i]).lower().capitalize()
+            name = name.replace("-", "_")
 
     # Rename for better readability (Frequent cases)
     variant_to_name = {
