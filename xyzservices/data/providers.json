@@ -2958,7 +2958,7 @@
                 ]
             ],
             "min_zoom": 0,
-            "max_zoom": 20,
+            "max_zoom": 21,
             "format": "image/jpeg",
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS",
@@ -8852,8 +8852,7 @@
             "variant": "OCSGE.CONSTRUCTIONS.2002",
             "name": "GeoportailFrance.Ocsge_Constructions_2002",
             "TileMatrixSet": "PM",
-            "apikey": "your_api_key_here",
-            "status": "broken"
+            "apikey": "your_api_key_here"
         },
         "Ocsge_Constructions_2011": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
@@ -8876,8 +8875,7 @@
             "variant": "OCSGE.CONSTRUCTIONS.2011",
             "name": "GeoportailFrance.Ocsge_Constructions_2011",
             "TileMatrixSet": "PM",
-            "apikey": "your_api_key_here",
-            "status": "broken"
+            "apikey": "your_api_key_here"
         },
         "Ocsge_Constructions_2014": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
@@ -8900,8 +8898,7 @@
             "variant": "OCSGE.CONSTRUCTIONS.2014",
             "name": "GeoportailFrance.Ocsge_Constructions_2014",
             "TileMatrixSet": "PM",
-            "apikey": "your_api_key_here",
-            "status": "broken"
+            "apikey": "your_api_key_here"
         },
         "Ocsge_Constructions_2016": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
@@ -8924,8 +8921,7 @@
             "variant": "OCSGE.CONSTRUCTIONS.2016",
             "name": "GeoportailFrance.Ocsge_Constructions_2016",
             "TileMatrixSet": "PM",
-            "apikey": "your_api_key_here",
-            "status": "broken"
+            "apikey": "your_api_key_here"
         },
         "Ocsge_Constructions_2017": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
@@ -9017,8 +9013,7 @@
             "variant": "OCSGE.COUVERTURE.2002",
             "name": "GeoportailFrance.Ocsge_Couverture_2002",
             "TileMatrixSet": "PM",
-            "apikey": "your_api_key_here",
-            "status": "broken"
+            "apikey": "your_api_key_here"
         },
         "Ocsge_Couverture_2011": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
@@ -9041,8 +9036,7 @@
             "variant": "OCSGE.COUVERTURE.2011",
             "name": "GeoportailFrance.Ocsge_Couverture_2011",
             "TileMatrixSet": "PM",
-            "apikey": "your_api_key_here",
-            "status": "broken"
+            "apikey": "your_api_key_here"
         },
         "Ocsge_Couverture_2014": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
@@ -9065,8 +9059,7 @@
             "variant": "OCSGE.COUVERTURE.2014",
             "name": "GeoportailFrance.Ocsge_Couverture_2014",
             "TileMatrixSet": "PM",
-            "apikey": "your_api_key_here",
-            "status": "broken"
+            "apikey": "your_api_key_here"
         },
         "Ocsge_Couverture_2016": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
@@ -9089,8 +9082,7 @@
             "variant": "OCSGE.COUVERTURE.2016",
             "name": "GeoportailFrance.Ocsge_Couverture_2016",
             "TileMatrixSet": "PM",
-            "apikey": "your_api_key_here",
-            "status": "broken"
+            "apikey": "your_api_key_here"
         },
         "Ocsge_Couverture_2017": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
@@ -9182,8 +9174,7 @@
             "variant": "OCSGE.USAGE.2002",
             "name": "GeoportailFrance.Ocsge_Usage_2002",
             "TileMatrixSet": "PM",
-            "apikey": "your_api_key_here",
-            "status": "broken"
+            "apikey": "your_api_key_here"
         },
         "Ocsge_Usage_2011": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
@@ -9206,8 +9197,7 @@
             "variant": "OCSGE.USAGE.2011",
             "name": "GeoportailFrance.Ocsge_Usage_2011",
             "TileMatrixSet": "PM",
-            "apikey": "your_api_key_here",
-            "status": "broken"
+            "apikey": "your_api_key_here"
         },
         "Ocsge_Usage_2014": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
@@ -9230,8 +9220,7 @@
             "variant": "OCSGE.USAGE.2014",
             "name": "GeoportailFrance.Ocsge_Usage_2014",
             "TileMatrixSet": "PM",
-            "apikey": "your_api_key_here",
-            "status": "broken"
+            "apikey": "your_api_key_here"
         },
         "Ocsge_Usage_2016": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
@@ -9254,8 +9243,7 @@
             "variant": "OCSGE.USAGE.2016",
             "name": "GeoportailFrance.Ocsge_Usage_2016",
             "TileMatrixSet": "PM",
-            "apikey": "your_api_key_here",
-            "status": "broken"
+            "apikey": "your_api_key_here"
         },
         "Ocsge_Usage_2017": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
@@ -11670,8 +11658,7 @@
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS.COAST2000",
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Coast2000",
             "TileMatrixSet": "PM",
-            "apikey": "your_api_key_here",
-            "status": "broken"
+            "apikey": "your_api_key_here"
         },
         "Orthoimagery_Orthophotos_Geneve": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
@@ -11694,8 +11681,7 @@
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS.GENEVE",
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Geneve",
             "TileMatrixSet": "PM",
-            "apikey": "your_api_key_here",
-            "status": "broken"
+            "apikey": "your_api_key_here"
         },
         "Orthoimagery_Orthophotos_Ilesdunord": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
@@ -13052,8 +13038,7 @@
             "variant": "PCRS.LAMB93",
             "name": "GeoportailFrance.Pcrs_Lamb93",
             "TileMatrixSet": "LAMB93_5cm",
-            "apikey": "your_api_key_here",
-            "status": "broken"
+            "apikey": "your_api_key_here"
         },
         "Points_Injection_Biomethane": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
@@ -13076,8 +13061,7 @@
             "variant": "POINTS.INJECTION.BIOMETHANE",
             "name": "GeoportailFrance.Points_Injection_Biomethane",
             "TileMatrixSet": "PM",
-            "apikey": "your_api_key_here",
-            "status": "broken"
+            "apikey": "your_api_key_here"
         },
         "Potentiel_Eolien_Reglementaire": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
