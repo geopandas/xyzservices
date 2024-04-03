@@ -180,22 +180,14 @@ for i in range(len(layers_list)):
 
     # Handle broken providers
     possibly_broken_providers = [
-        # "Points_Injection_Biomethane",
-        # "Ocsge_Usage_2016",
-        # "Ocsge_Usage_2011",
-        # "Ocsge_Couverture_2016",
-        # "Ocsge_Couverture_2014",
-        # "Orthoimagery_Orthophotos_Geneve",
-        # "Orthoimagery_Orthophotos_Coast2000",
-        # "Ocsge_Couverture_2011",
-        # "Ocsge_Couverture_2002",
-        # "Ocsge_Constructions_2016",
-        # "Ocsge_Constructions_2014",
-        # "Ocsge_Constructions_2011",
-        # "Ocsge_Constructions_2002",
-        # "Ocsge_Usage_2002",
-        # "Ocsge_Usage_2014",
-        # "Pcrs_Lamb93"
+        "Ocsge_Constructions_2002",
+        "Ocsge_Constructions_2014",
+        "Orthoimagery_Orthophotos_Coast2000",
+        "Ocsge_Couverture_2002",
+        "Ocsge_Couverture_2014",
+        "Ocsge_Usage_2002",
+        "Ocsge_Usage_2014",
+        "Pcrs_Lamb93",
     ]
 
     if name in possibly_broken_providers:
