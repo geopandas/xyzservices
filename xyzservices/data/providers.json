@@ -3035,29 +3035,6 @@
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
-        "Adminexpress_2023_11_15": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    -21.4756,
-                    -63.3725
-                ],
-                [
-                    51.3121,
-                    55.9259
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "ADMINEXPRESS_2023-11-15",
-            "name": "GeoportailFrance.Adminexpress_2023_11_15",
-            "TileMatrixSet": "PM",
-            "apikey": "your_api_key_here"
-        },
         "Adminexpress_cog_2020": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -3127,7 +3104,7 @@
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
-        "Aire_parcellaire": {
+        "Aire-parcellaire": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -3146,7 +3123,7 @@
             "format": "image/png",
             "style": "normal",
             "variant": "Aire-Parcellaire",
-            "name": "GeoportailFrance.Aire_parcellaire",
+            "name": "GeoportailFrance.Aire-parcellaire",
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
@@ -3495,7 +3472,7 @@
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
-        "Cartes_14_18_edugeo_pyr_png_fxx_wm": {
+        "Cartes-14-18-edugeo_pyr-png_fxx_wm": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -3514,7 +3491,7 @@
             "format": "image/png",
             "style": "normal",
             "variant": "CARTES-14-18-EDUGEO_PYR-PNG_FXX_WM",
-            "name": "GeoportailFrance.Cartes_14_18_edugeo_pyr_png_fxx_wm",
+            "name": "GeoportailFrance.Cartes-14-18-edugeo_pyr-png_fxx_wm",
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
@@ -3653,6 +3630,29 @@
             "style": "CONSO.GAZ.COMMUNE",
             "variant": "CONSO.GAZ.COMMUNE",
             "name": "GeoportailFrance.Conso_Gaz_Commune",
+            "TileMatrixSet": "PM",
+            "apikey": "your_api_key_here"
+        },
+        "Cosia": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    47.8392,
+                    -1.99328
+                ],
+                [
+                    48.3882,
+                    -1.42008
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "COSIA",
+            "name": "GeoportailFrance.Cosia",
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
@@ -4300,7 +4300,7 @@
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
-        "Evol_surface_forestiere_1980_2011_edugeo_pyr_png_fxx_lamb93_20150918": {
+        "Evol-surface-forestiere-1980-2011_edugeo_pyr-png_fxx_lamb93_20150918": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -4319,7 +4319,7 @@
             "format": "image/png",
             "style": "normal",
             "variant": "EVOL-SURFACE-FORESTIERE-1980-2011_EDUGEO_PYR-PNG_FXX_LAMB93_20150918",
-            "name": "GeoportailFrance.Evol_surface_forestiere_1980_2011_edugeo_pyr_png_fxx_lamb93_20150918",
+            "name": "GeoportailFrance.Evol-surface-forestiere-1980-2011_edugeo_pyr-png_fxx_lamb93_20150918",
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
@@ -6091,6 +6091,29 @@
             "style": "normal",
             "variant": "HYDROGRAPHY.BCAE.2022",
             "name": "GeoportailFrance.Hydrography_Bcae_2022",
+            "TileMatrixSet": "PM",
+            "apikey": "your_api_key_here"
+        },
+        "Hydrography_Bcae_2023": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.3252,
+                    -5.15047
+                ],
+                [
+                    51.0991,
+                    9.57054
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 17,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "HYDROGRAPHY.BCAE.2023",
+            "name": "GeoportailFrance.Hydrography_Bcae_2023",
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
@@ -8578,7 +8601,7 @@
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
-        "Lgv_edugeo_archeologie_pyr_png_fxx_wm_20170210": {
+        "Lgv_edugeo_archeologie_pyr-png_fxx_wm_20170210": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -8597,11 +8620,11 @@
             "format": "image/png",
             "style": "normal",
             "variant": "LGV_EDUGEO_ARCHEOLOGIE_PYR-PNG_FXX_WM_20170210",
-            "name": "GeoportailFrance.Lgv_edugeo_archeologie_pyr_png_fxx_wm_20170210",
+            "name": "GeoportailFrance.Lgv_edugeo_archeologie_pyr-png_fxx_wm_20170210",
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
-        "Lgv_edugeo_faune_pyr_png_fxx_wm_20170215": {
+        "Lgv_edugeo_faune_pyr-png_fxx_wm_20170215": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -8620,11 +8643,11 @@
             "format": "image/png",
             "style": "normal",
             "variant": "LGV_EDUGEO_FAUNE_PYR-PNG_FXX_WM_20170215",
-            "name": "GeoportailFrance.Lgv_edugeo_faune_pyr_png_fxx_wm_20170215",
+            "name": "GeoportailFrance.Lgv_edugeo_faune_pyr-png_fxx_wm_20170215",
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
-        "Lgv_edugeo_flore_pyr_png_fxx_wm_20170213": {
+        "Lgv_edugeo_flore_pyr-png_fxx_wm_20170213": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -8643,11 +8666,11 @@
             "format": "image/png",
             "style": "normal",
             "variant": "LGV_EDUGEO_FLORE_PYR-PNG_FXX_WM_20170213",
-            "name": "GeoportailFrance.Lgv_edugeo_flore_pyr_png_fxx_wm_20170213",
+            "name": "GeoportailFrance.Lgv_edugeo_flore_pyr-png_fxx_wm_20170213",
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
-        "Lgv_edugeo_technique_pyr_png_fxx_wm_20170215": {
+        "Lgv_edugeo_technique_pyr-png_fxx_wm_20170215": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -8666,7 +8689,7 @@
             "format": "image/png",
             "style": "normal",
             "variant": "LGV_EDUGEO_TECHNIQUE_PYR-PNG_FXX_WM_20170215",
-            "name": "GeoportailFrance.Lgv_edugeo_technique_pyr_png_fxx_wm_20170215",
+            "name": "GeoportailFrance.Lgv_edugeo_technique_pyr-png_fxx_wm_20170215",
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
@@ -8739,7 +8762,7 @@
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
-        "Lsep_crue_pyr_png_wld_wm_edugeo_20130128": {
+        "Lsep-crue_pyr-png_wld_wm_edugeo_20130128": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -8758,7 +8781,7 @@
             "format": "image/png",
             "style": "normal",
             "variant": "LSEP-CRUE_PYR-PNG_WLD_WM_EDUGEO_20130128",
-            "name": "GeoportailFrance.Lsep_crue_pyr_png_wld_wm_edugeo_20130128",
+            "name": "GeoportailFrance.Lsep-crue_pyr-png_wld_wm_edugeo_20130128",
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
@@ -9372,7 +9395,7 @@
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
-        "Ortho_edugeo_pyr_png_wld_wm": {
+        "Ortho-edugeo_pyr-png_wld_wm": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -9391,11 +9414,11 @@
             "format": "image/png",
             "style": "normal",
             "variant": "ORTHO-EDUGEO_PYR-PNG_WLD_WM",
-            "name": "GeoportailFrance.Ortho_edugeo_pyr_png_wld_wm",
+            "name": "GeoportailFrance.Ortho-edugeo_pyr-png_wld_wm",
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
-        "Ortho_express_2020_pyr_jpg_wld_wm_wmts2": {
+        "Ortho-express-2020_pyr-jpg_wld_wm_wmts2": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -9414,7 +9437,7 @@
             "format": "image/jpeg",
             "style": "normal",
             "variant": "ORTHO-EXPRESS-2020_PYR-JPG_WLD_WM_WMTS2",
-            "name": "GeoportailFrance.Ortho_express_2020_pyr_jpg_wld_wm_wmts2",
+            "name": "GeoportailFrance.Ortho-express-2020_pyr-jpg_wld_wm_wmts2",
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
@@ -11503,7 +11526,7 @@
                 ]
             ],
             "min_zoom": 0,
-            "max_zoom": 16,
+            "max_zoom": 17,
             "format": "image/jpeg",
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHO-SAT.SPOT.2023",
@@ -14206,7 +14229,7 @@
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
-        "Pva_ign_zone_marais_de_virvee_1945": {
+        "Pva_ign_zone-marais-de-virvee_1945": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -14225,11 +14248,11 @@
             "format": "image/png",
             "style": "BDORTHOHISTORIQUE",
             "variant": "PVA_IGN_zone-marais-de-Virvee_1945",
-            "name": "GeoportailFrance.Pva_ign_zone_marais_de_virvee_1945",
+            "name": "GeoportailFrance.Pva_ign_zone-marais-de-virvee_1945",
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
-        "Pva_ign_zone_marais_de_virvee_1956": {
+        "Pva_ign_zone-marais-de-virvee_1956": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -14248,11 +14271,11 @@
             "format": "image/png",
             "style": "BDORTHOHISTORIQUE",
             "variant": "PVA_IGN_zone-marais-de-Virvee_1956",
-            "name": "GeoportailFrance.Pva_ign_zone_marais_de_virvee_1956",
+            "name": "GeoportailFrance.Pva_ign_zone-marais-de-virvee_1956",
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
-        "Pva_ign_zone_marais_de_virvee_1976": {
+        "Pva_ign_zone-marais-de-virvee_1976": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -14271,11 +14294,11 @@
             "format": "image/png",
             "style": "normal",
             "variant": "PVA_IGN_zone-marais-de-Virvee_1976",
-            "name": "GeoportailFrance.Pva_ign_zone_marais_de_virvee_1976",
+            "name": "GeoportailFrance.Pva_ign_zone-marais-de-virvee_1976",
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
-        "Pva_ign_zone_marais_de_virvee_1984": {
+        "Pva_ign_zone-marais-de-virvee_1984": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -14294,11 +14317,11 @@
             "format": "image/png",
             "style": "normal",
             "variant": "PVA_IGN_zone-marais-de-Virvee_1984",
-            "name": "GeoportailFrance.Pva_ign_zone_marais_de_virvee_1984",
+            "name": "GeoportailFrance.Pva_ign_zone-marais-de-virvee_1984",
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
-        "Rapideye_pyr_jpeg_wld_wm_2010": {
+        "Rapideye_pyr-jpeg_wld_wm_2010": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -14317,11 +14340,11 @@
             "format": "image/jpeg",
             "style": "normal",
             "variant": "RAPIDEYE_PYR-JPEG_WLD_WM_2010",
-            "name": "GeoportailFrance.Rapideye_pyr_jpeg_wld_wm_2010",
+            "name": "GeoportailFrance.Rapideye_pyr-jpeg_wld_wm_2010",
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
-        "Rapideye_pyr_jpeg_wld_wm_2011": {
+        "Rapideye_pyr-jpeg_wld_wm_2011": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -14340,7 +14363,7 @@
             "format": "image/jpeg",
             "style": "normal",
             "variant": "RAPIDEYE_PYR-JPEG_WLD_WM_2011",
-            "name": "GeoportailFrance.Rapideye_pyr_jpeg_wld_wm_2011",
+            "name": "GeoportailFrance.Rapideye_pyr-jpeg_wld_wm_2011",
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
@@ -14367,7 +14390,7 @@
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
-        "Rpg2012_pyr_png_wld_edugeo_20170126": {
+        "Rpg2012_pyr-png_wld_edugeo_20170126": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -14386,11 +14409,11 @@
             "format": "image/png",
             "style": "normal",
             "variant": "RPG2012_PYR-PNG_WLD_EDUGEO_20170126",
-            "name": "GeoportailFrance.Rpg2012_pyr_png_wld_edugeo_20170126",
+            "name": "GeoportailFrance.Rpg2012_pyr-png_wld_edugeo_20170126",
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
-        "Scan_edugeo_pyr_png_fxx_wm": {
+        "Scan-edugeo_pyr-png_fxx_wm": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -14409,11 +14432,11 @@
             "format": "image/png",
             "style": "normal",
             "variant": "SCAN-EDUGEO_PYR-PNG_FXX_WM",
-            "name": "GeoportailFrance.Scan_edugeo_pyr_png_fxx_wm",
+            "name": "GeoportailFrance.Scan-edugeo_pyr-png_fxx_wm",
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
-        "Scan1000_pyr_jpeg_wld_wm_wmts_3d": {
+        "Scan1000_pyr-jpeg_wld_wm_wmts_3d": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -14432,7 +14455,7 @@
             "format": "image/jpeg",
             "style": "normal",
             "variant": "SCAN1000_PYR-JPEG_WLD_WM_WMTS_3D",
-            "name": "GeoportailFrance.Scan1000_pyr_jpeg_wld_wm_wmts_3d",
+            "name": "GeoportailFrance.Scan1000_pyr-jpeg_wld_wm_wmts_3d",
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
@@ -14850,7 +14873,7 @@
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
-        "Spot_edugeo_pyr_png_wld_wm": {
+        "Spot-edugeo_pyr-png_wld_wm": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -14869,11 +14892,11 @@
             "format": "image/png",
             "style": "normal",
             "variant": "SPOT-EDUGEO_PYR-PNG_WLD_WM",
-            "name": "GeoportailFrance.Spot_edugeo_pyr_png_wld_wm",
+            "name": "GeoportailFrance.Spot-edugeo_pyr-png_wld_wm",
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
-        "Spot5_pyr_jpeg_wld_wm": {
+        "Spot5_pyr-jpeg_wld_wm": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -14892,7 +14915,7 @@
             "format": "image/png",
             "style": "normal",
             "variant": "SPOT5_PYR-JPEG_WLD_WM",
-            "name": "GeoportailFrance.Spot5_pyr_jpeg_wld_wm",
+            "name": "GeoportailFrance.Spot5_pyr-jpeg_wld_wm",
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
@@ -14934,7 +14957,7 @@
                 ]
             ],
             "min_zoom": 6,
-            "max_zoom": 20,
+            "max_zoom": 21,
             "format": "image/jpeg",
             "style": "normal",
             "variant": "THR.ORTHOIMAGERY.ORTHOPHOTOS",
