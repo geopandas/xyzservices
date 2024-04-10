@@ -2573,6 +2573,38 @@
             "name": "NASAGIBS.BlueMarble3031",
             "crs": "EPSG:3031"
         },
+        "BlueMarbleBathymetry3413": {
+            "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3413/best/BlueMarble_ShadedRelief_Bathymetry/default/500m/{z}/{y}/{x}.jpeg",
+            "max_zoom": 5,
+            "attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (ESDIS) with funding provided by NASA/HQ.",
+            "html_attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.",
+            "name": "NASAGIBS.BlueMarbleBathymetry3413",
+            "crs": "EPSG:3413"
+        },
+        "BlueMarbleBathymetry3031": {
+            "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3031/best/BlueMarble_ShadedRelief_Bathymetry/default/500m/{z}/{y}/{x}.jpeg",
+            "max_zoom": 5,
+            "attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (ESDIS) with funding provided by NASA/HQ.",
+            "html_attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.",
+            "name": "NASAGIBS.BlueMarbleBathymetry3031",
+            "crs": "EPSG:3031"
+        },
+        "MEaSUREsIceVelocity3413": {
+            "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3413/best/MEaSUREs_Ice_Velocity_Greenland/default/500m/{z}/{y}/{x}",
+            "max_zoom": 4,
+            "attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (ESDIS) with funding provided by NASA/HQ.",
+            "html_attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.",
+            "name": "NASAGIBS.MEaSUREsIceVelocity3413",
+            "crs": "EPSG:3413"
+        },
+        "MEaSUREsIceVelocity3031": {
+            "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3031/best/MEaSUREs_Ice_Velocity_Antarctica/default/500m/{z}/{y}/{x}",
+            "max_zoom": 4,
+            "attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (ESDIS) with funding provided by NASA/HQ.",
+            "html_attribution": "Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href=\"https://earthdata.nasa.gov\">ESDIS</a>) with funding provided by NASA/HQ.",
+            "name": "NASAGIBS.MEaSUREsIceVelocity3031",
+            "crs": "EPSG:3031"
+        },
         "ASTER_GDEM_Greyscale_Shaded_Relief": {
             "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/ASTER_GDEM_Greyscale_Shaded_Relief/default/GoogleMapsCompatible_Level12/{z}/{y}/{x}.jpg",
             "max_zoom": 12,
