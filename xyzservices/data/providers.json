@@ -161,6 +161,16 @@
             "ext": "png",
             "name": "Stadia.AlidadeSmoothDark"
         },
+        "AlidadeSatellite": {
+            "url": "https://tiles.stadiamaps.com/tiles/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "min_zoom": 0,
+            "max_zoom": 20,
+            "html_attribution": "&copy; CNES, Distribution Airbus DS, \u00a9 Airbus DS, \u00a9 PlanetObserver (Contains Copernicus Data) | &copy; <a href=\"https://www.stadiamaps.com/\" target=\"_blank\">Stadia Maps</a> &copy; <a href=\"https://openmaptiles.org/\" target=\"_blank\">OpenMapTiles</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) CNES, Distribution Airbus DS, \u00a9 Airbus DS, \u00a9 PlanetObserver (Contains Copernicus Data) | (C) Stadia Maps (C) OpenMapTiles (C) OpenStreetMap contributors",
+            "variant": "alidade_satellite",
+            "ext": "jpg",
+            "name": "Stadia.AlidadeSatellite"
+        },
         "OSMBright": {
             "url": "https://tiles.stadiamaps.com/tiles/{variant}/{z}/{x}/{y}{r}.{ext}",
             "min_zoom": 0,
@@ -2520,7 +2530,7 @@
             "format": "png",
             "time": "",
             "tilematrixset": "GoogleMapsCompatible_Level",
-            "variant": "MODIS_Terra_Chlorophyll_A",
+            "variant": "MODIS_Terra_L2_Chlorophyll_A",
             "opacity": 0.75,
             "name": "NASAGIBS.ModisTerraChlorophyll",
             "status": "broken"
@@ -2630,9 +2640,9 @@
             ],
             "min_zoom": 1,
             "max_zoom": 18,
+            "apikey": "<insert your api key here>",
             "variant": "uk-osgb63k1885",
-            "name": "NLS.osgb63k1885",
-            "apikey": "<insert your API key here>"
+            "name": "NLS.osgb63k1885"
         },
         "osgb1888": {
             "url": "https://api.maptiler.com/tiles/{variant}/{z}/{x}/{y}.jpg?key={apikey}",
@@ -2650,9 +2660,9 @@
             ],
             "min_zoom": 1,
             "max_zoom": 18,
+            "apikey": "<insert your api key here>",
             "variant": "uk-osgb1888",
-            "name": "NLS.osgb1888",
-            "apikey": "<insert your API key here>"
+            "name": "NLS.osgb1888"
         },
         "osgb10k1888": {
             "url": "https://api.maptiler.com/tiles/{variant}/{z}/{x}/{y}.jpg?key={apikey}",
@@ -2670,9 +2680,9 @@
             ],
             "min_zoom": 1,
             "max_zoom": 18,
+            "apikey": "<insert your api key here>",
             "variant": "uk-osgb10k1888",
-            "name": "NLS.osgb10k1888",
-            "apikey": "<insert your API key here>"
+            "name": "NLS.osgb10k1888"
         },
         "osgb1919": {
             "url": "https://api.maptiler.com/tiles/{variant}/{z}/{x}/{y}.jpg?key={apikey}",
@@ -2690,9 +2700,9 @@
             ],
             "min_zoom": 1,
             "max_zoom": 18,
+            "apikey": "<insert your api key here>",
             "variant": "uk-osgb1919",
-            "name": "NLS.osgb1919",
-            "apikey": "<insert your API key here>"
+            "name": "NLS.osgb1919"
         },
         "osgb25k1937": {
             "url": "https://api.maptiler.com/tiles/{variant}/{z}/{x}/{y}.jpg?key={apikey}",
@@ -2710,9 +2720,9 @@
             ],
             "min_zoom": 1,
             "max_zoom": 18,
+            "apikey": "<insert your api key here>",
             "variant": "uk-osgb25k1937",
-            "name": "NLS.osgb25k1937",
-            "apikey": "<insert your API key here>"
+            "name": "NLS.osgb25k1937"
         },
         "osgb63k1955": {
             "url": "https://api.maptiler.com/tiles/{variant}/{z}/{x}/{y}.jpg?key={apikey}",
@@ -2730,9 +2740,9 @@
             ],
             "min_zoom": 1,
             "max_zoom": 18,
+            "apikey": "<insert your api key here>",
             "variant": "uk-osgb63k1955",
-            "name": "NLS.osgb63k1955",
-            "apikey": "<insert your API key here>"
+            "name": "NLS.osgb63k1955"
         },
         "oslondon1k1893": {
             "url": "https://api.maptiler.com/tiles/{variant}/{z}/{x}/{y}.jpg?key={apikey}",
@@ -2750,9 +2760,9 @@
             ],
             "min_zoom": 1,
             "max_zoom": 18,
+            "apikey": "<insert your api key here>",
             "variant": "uk-oslondon1k1893",
-            "name": "NLS.oslondon1k1893",
-            "apikey": "<insert your API key here>"
+            "name": "NLS.oslondon1k1893"
         }
     },
     "JusticeMap": {
@@ -8763,7 +8773,7 @@
                 ]
             ],
             "min_zoom": 6,
-            "max_zoom": 18,
+            "max_zoom": 16,
             "format": "image/png",
             "style": "LOCALISATION.MATS.EOLIEN",
             "variant": "LOCALISATION.MATS.EOLIEN",
@@ -11537,6 +11547,29 @@
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
+        "Orthoimagery_Ortho_sat_Spot_2022": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.2593,
+                    -5.57103
+                ],
+                [
+                    51.1123,
+                    10.7394
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 17,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "ORTHOIMAGERY.ORTHO-SAT.SPOT.2022",
+            "name": "GeoportailFrance.Orthoimagery_Ortho_sat_Spot_2022",
+            "TileMatrixSet": "PM",
+            "apikey": "your_api_key_here"
+        },
         "Orthoimagery_Ortho_sat_Spot_2023": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -13945,7 +13978,7 @@
                     82.645
                 ]
             ],
-            "min_zoom": 0,
+            "min_zoom": 6,
             "max_zoom": 16,
             "format": "image/png",
             "style": "PROTECTEDAREAS.RN",
