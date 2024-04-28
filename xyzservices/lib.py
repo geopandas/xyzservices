@@ -45,10 +45,7 @@ class Bunch(dict):
 
     @classmethod
     def from_json(cls, f):
-        data = json.loads(f)
-        providers = Bunch()
-        providers.update(**data)
-        return providers
+        return cls(**json.loads(f))
 
     def __getattr__(self, key):
         try:
