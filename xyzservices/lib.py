@@ -39,11 +39,35 @@ class Bunch(dict):
     'https://myserver.com/bw/{z}/{x}/{y}'
     """
 
+    def __init__(self, *args, **kwargs):
+        super().__init__()
+        self.update(*args, **kwargs)
+
+    @classmethod
+    def from_json(cls, f):
+        data = json.loads(f)
+        providers = Bunch()
+        providers.update(**data)
+        return providers
+
     def __getattr__(self, key):
         try:
             return self.__getitem__(key)
         except KeyError as err:
             raise AttributeError(key) from err
+
+    def __setitem__(self, provider_name: str, provider: dict | TileProvider | Bunch) -> None:
+        if "url" in provider:
+            super().__setitem__(provider_name, TileProvider(provider))
+        else:
+            sub_providers = Bunch(
+                {i: TileProvider(provider[i]) for i in provider}
+            )
+            super().__setitem__(provider_name, sub_providers)
+
+    def update(self, *args, **kwargs):
+        for k, v in dict(*args, **kwargs).items():
+            self[k] = v
 
     def __dir__(self):
         return self.keys()
@@ -108,7 +132,6 @@ class Bunch(dict):
         207
 
         """
-
         flat = {}
 
         def _get_providers(provider):
@@ -292,7 +315,7 @@ class Bunch(dict):
         raise ValueError(f"No matching provider found for the query '{name}'.")
 
 
-class TileProvider(Bunch):
+class TileProvider(dict):
     """
     A dict with attribute-access and that
     can be called to update keys
@@ -368,6 +391,12 @@ class TileProvider(Bunch):
                 f'`{"`, `".join(missing)}`'
             )
             raise AttributeError(msg)
+
+    def __getattr__(self, key):
+        try:
+            return self.__getitem__(key)
+        except KeyError as err:
+            raise AttributeError(key) from err
 
     def __call__(self, **kwargs) -> TileProvider:
         new = TileProvider(self)  # takes a copy preserving the class
@@ -582,25 +611,6 @@ class TileProvider(Bunch):
             max_zoom=service_details.get("z_max"),
             attribution=service_details.get("copyright_text"),
         )
-
-
-def _load_json(f):
-    data = json.loads(f)
-
-    providers = Bunch()
-
-    for provider_name in data:
-        provider = data[provider_name]
-
-        if "url" in provider:
-            providers[provider_name] = TileProvider(provider)
-
-        else:
-            providers[provider_name] = Bunch(
-                {i: TileProvider(provider[i]) for i in provider}
-            )
-
-    return providers
 
 
 CSS_STYLE = """

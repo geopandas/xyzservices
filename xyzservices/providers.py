@@ -2,7 +2,7 @@ import os
 import pkgutil
 import sys
 
-from .lib import _load_json
+from .lib import Bunch
 
 data_path = os.path.join(sys.prefix, "share", "xyzservices", "providers.json")
 
@@ -12,4 +12,4 @@ if os.path.exists(data_path):
 else:
     json = pkgutil.get_data("xyzservices", "data/providers.json")
 
-providers = _load_json(json)
+providers = Bunch.from_json(json)
