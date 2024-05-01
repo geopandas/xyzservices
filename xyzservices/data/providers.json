@@ -9408,6 +9408,29 @@
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
+        "Ofb_Zones_Exclues_Sauf_Toiture": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.3252,
+                    -5.15047
+                ],
+                [
+                    51.0991,
+                    9.57054
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "OFB.ZONES.EXCLUES.SAUF.TOITURE",
+            "variant": "OFB.ZONES.EXCLUES.SAUF.TOITURE",
+            "name": "GeoportailFrance.Ofb_Zones_Exclues_Sauf_Toiture",
+            "TileMatrixSet": "PM",
+            "apikey": "your_api_key_here"
+        },
         "Ofb_Zones_Necessitant_Avis_Gestionnaire": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -13343,6 +13366,29 @@
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
+        "Potentiel_Solaire_Rrn": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.3252,
+                    -5.15047
+                ],
+                [
+                    51.0991,
+                    9.57054
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "POTENTIEL.SOLAIRE.RRN",
+            "variant": "POTENTIEL.SOLAIRE.RRN",
+            "name": "GeoportailFrance.Potentiel_Solaire_Rrn",
+            "TileMatrixSet": "PM",
+            "apikey": "your_api_key_here"
+        },
         "Potentiel_Solaire_Sol": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -15229,29 +15275,6 @@
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
-        "Zonage_Ofb": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    -21.4756,
-                    -63.3725
-                ],
-                [
-                    51.3121,
-                    55.9259
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "ZONAGE.OFB",
-            "variant": "ZONAGE.OFB",
-            "name": "GeoportailFrance.Zonage_Ofb",
-            "TileMatrixSet": "PM",
-            "apikey": "your_api_key_here"
-        },
         "Hedge_Hedge": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -15272,6 +15295,29 @@
             "style": "normal",
             "variant": "hedge.hedge",
             "name": "GeoportailFrance.Hedge_Hedge",
+            "TileMatrixSet": "PM",
+            "apikey": "your_api_key_here"
+        },
+        "Testsrd-pcrs86-poitiers": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    46.5758,
+                    0.30613
+                ],
+                [
+                    46.5907,
+                    0.32753
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 10,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "testSRD-PCRS86-Poitiers",
+            "name": "GeoportailFrance.Testsrd-pcrs86-poitiers",
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
