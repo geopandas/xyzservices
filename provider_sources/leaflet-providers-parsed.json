@@ -3077,7 +3077,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2024-05-01",
-        "commit": "commit f1c97a0c97acbf212f1374820c467188c043cb29 (Add Alidade Satellite style (#554)\n\nAdd Stadia.AlidadeSatellite layer)"
+        "date_of_creation": "2024-05-15",
+        "commit": "commit 7dcc07f164582c230dab163d59b26b18e4850bdc (Bump chai from 5.1.0 to 5.1.1\n\nBumps [chai](https://github.com/chaijs/chai) from 5.1.0 to 5.1.1.\n- [Release notes](https://github.com/chaijs/chai/releases)\n- [Changelog](https://github.com/chaijs/chai/blob/main/History.md)\n- [Commits](https://github.com/chaijs/chai/compare/v5.1.0...v5.1.1)\n\n---\nupdated-dependencies:\n- dependency-name: chai\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }
