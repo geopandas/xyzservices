@@ -4411,52 +4411,6 @@
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
-        "Gaz_Corridor_Distribution": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    41.3252,
-                    -5.15047
-                ],
-                [
-                    51.0991,
-                    9.57054
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "GAZ.CORRIDOR.DISTRIBUTION",
-            "variant": "GAZ.CORRIDOR.DISTRIBUTION",
-            "name": "GeoportailFrance.Gaz_Corridor_Distribution",
-            "TileMatrixSet": "PM",
-            "apikey": "your_api_key_here"
-        },
-        "Gaz_Corridor_Transport": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    41.3252,
-                    -5.15047
-                ],
-                [
-                    51.0991,
-                    9.57054
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "GAZ.CORRIDOR.TRANSPORT",
-            "variant": "GAZ.CORRIDOR.TRANSPORT",
-            "name": "GeoportailFrance.Gaz_Corridor_Transport",
-            "TileMatrixSet": "PM",
-            "apikey": "your_api_key_here"
-        },
         "Gaz_Reseau_Distribution": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -12281,6 +12235,29 @@
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-ASP_PAC2022",
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Ortho_asp_pac2022",
+            "TileMatrixSet": "PM",
+            "apikey": "your_api_key_here"
+        },
+        "Orthoimagery_Orthophotos_Ortho_asp_pac2024": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    3.73601,
+                    -54.4984
+                ],
+                [
+                    50.1839,
+                    7.72339
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 18,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-ASP_PAC2024",
+            "name": "GeoportailFrance.Orthoimagery_Orthophotos_Ortho_asp_pac2024",
             "TileMatrixSet": "PM",
             "apikey": "your_api_key_here"
         },
