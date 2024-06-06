@@ -1,0 +1,53 @@
+name: Tests
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "59 23 * * 3"
+
+jobs:
+  Linting:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+      - uses: pre-commit/action@v3.0.1
+
+  provider_testing:
+    name: Test providers
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      THUNDERFOREST: ${{ secrets.THUNDERFOREST }}
+      JAWG: ${{ secrets.JAWG }}
+      MAPBOX: ${{ secrets.MAPBOX }}
+      MAPTILER: ${{ secrets.MAPTILER }}
+      TOMTOM: ${{ secrets.TOMTOM }}
+      OPENWEATHERMAP: ${{ secrets.OPENWEATHERMAP }}
+      HEREV3: ${{ secrets.HEREV3 }}
+      STADIA: ${{ secrets.STADIA }}
+    defaults:
+      run:
+        shell: bash -l {0}
+
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v4
+
+      - name: setup micromamba
+        uses: mamba-org/setup-micromamba@v1
+        with:
+          environment-file: ci/latest.yaml
+          micromamba-version: "latest"
+
+      - name: Install xyzservices
+        run: pip install .
+
+
+      - name: test providers - bash
+        run: pytest -v . -m request --cov=xyzservices --cov-append --cov-report term-missing --cov-report xml --color=yes -n auto
+
+      - uses: codecov/codecov-action@v4
