@@ -1,11 +1,14 @@
-name: Tests
+name: Test providers
 
 on:
-  push:
-    branches:
-      - main
-  schedule:
-    - cron: "59 23 * * 3"
+    push:
+      branches:
+        - "*"
+    pull_request:
+      branches:
+        - "*"
+    schedule:
+      - cron: "59 23 * * 3"
 
 jobs:
   Linting:
