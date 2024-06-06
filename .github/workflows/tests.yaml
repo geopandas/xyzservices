@@ -27,15 +27,6 @@ jobs:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
         environment-file: [ci/latest.yaml]
-    env:
-      THUNDERFOREST: ${{ secrets.THUNDERFOREST }}
-      JAWG: ${{ secrets.JAWG }}
-      MAPBOX: ${{ secrets.MAPBOX }}
-      MAPTILER: ${{ secrets.MAPTILER }}
-      TOMTOM: ${{ secrets.TOMTOM }}
-      OPENWEATHERMAP: ${{ secrets.OPENWEATHERMAP }}
-      HEREV3: ${{ secrets.HEREV3 }}
-      STADIA: ${{ secrets.STADIA }}
     defaults:
       run:
         shell: bash -l {0}
@@ -55,10 +46,6 @@ jobs:
 
       - name: run tests - bash
         run: pytest -v . -m "not request" --cov=xyzservices --cov-append --cov-report term-missing --cov-report xml --color=yes
-
-      - name: test providers - bash
-        run: pytest -v . -m request --cov=xyzservices --cov-append --cov-report term-missing --cov-report xml --color=yes -n auto
-        if: matrix.os == 'ubuntu-latest'
 
       - name: remove JSON from share and test fallback
         run: |
