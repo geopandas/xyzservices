@@ -1,6 +1,15 @@
 Changelog
 =========
 
+xyzservices 2024.6.0 (June 6, 2024)
+------------------------------------
+
+Providers:
+
+- Added ``BlueMarbleBathymetry`` and ``MEaSUREsIceVelocity`` tiles to the ``NASAGIBS``
+  provider (#168)
+- Updated ``GeoportailFrance`` TileMatrixSet information.
+
 xyzservices 2024.4.0 (April 3, 2024)
 ------------------------------------
 
