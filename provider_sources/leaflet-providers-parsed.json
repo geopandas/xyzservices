@@ -3077,7 +3077,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2024-06-01",
-        "commit": "commit 7dcc07f164582c230dab163d59b26b18e4850bdc (Bump chai from 5.1.0 to 5.1.1\n\nBumps [chai](https://github.com/chaijs/chai) from 5.1.0 to 5.1.1.\n- [Release notes](https://github.com/chaijs/chai/releases)\n- [Changelog](https://github.com/chaijs/chai/blob/main/History.md)\n- [Commits](https://github.com/chaijs/chai/compare/v5.1.0...v5.1.1)\n\n---\nupdated-dependencies:\n- dependency-name: chai\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
+        "date_of_creation": "2024-06-15",
+        "commit": "commit d573004e8ec7e9cb1d4e1164b1f6f8137e4c983e (Bump uglify-js from 3.17.4 to 3.18.0\n\nBumps [uglify-js](https://github.com/mishoo/UglifyJS) from 3.17.4 to 3.18.0.\n- [Release notes](https://github.com/mishoo/UglifyJS/releases)\n- [Commits](https://github.com/mishoo/UglifyJS/compare/v3.17.4...v3.18.0)\n\n---\nupdated-dependencies:\n- dependency-name: uglify-js\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }
