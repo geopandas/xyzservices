@@ -106,15 +106,6 @@
         }
     },
     "Esri": {
-        "WorldImagery": {
-          "url": "https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
-          "variant": "World_Imagery",
-          "html_attribution": "Esri, USGS, NOAA, Maxar, TomTom, METI/NASA, USGS, EPA, NPS, USDA | Earthstar Geographics",
-          "attribution": "Esri, USGS, NOAA, Maxar, TomTom, METI/NASA, USGS, EPA, NPS, USDA | Earthstar Geographics",
-          "max_zoom": 24,
-          "name": "Esri.WorldImagery",
-          "crs": "EPSG:3857"
-        },
         "ArcticImagery": {
             "url": "http://server.arcgisonline.com/ArcGIS/rest/services/Polar/Arctic_Imagery/MapServer/tile/{z}/{y}/{x}",
             "variant": "Arctic_Imagery",
