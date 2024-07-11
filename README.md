@@ -8,7 +8,7 @@ XYZ tiles can be used as background for your maps to provide necessary spatial c
 `xyzservices` offer specifications of many tile services and provide an easy-to-use
 tools to plug them into your work, no matter if interactive or static.
 
-[![Tests](https://github.com/geopandas/xyzservices/actions/workflows/tests.yaml/badge.svg)](https://github.com/geopandas/xyzservices/actions/workflows/tests.yaml) [![codecov](https://codecov.io/gh/geopandas/xyzservices/branch/main/graph/badge.svg?token=PBSZQA48GY)](https://codecov.io/gh/geopandas/xyzservices)
+[![Tests](https://github.com/geopandas/xyzservices/actions/workflows/tests.yaml/badge.svg)](https://github.com/geopandas/xyzservices/actions/workflows/tests.yaml) [![codecov](https://codecov.io/gh/geopandas/xyzservices/branch/main/graph/badge.svg?token=PBSZQA48GY)](https://codecov.io/gh/geopandas/xyzservices) [![PyPi](https://img.shields.io/pypi/v/xyzservices.svg)](https://pypi.python.org/pypi/xyzservices)
 
 ## Quick Start
 
