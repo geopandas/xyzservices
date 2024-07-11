@@ -1,4 +1,6 @@
-autoupdate_schedule: 'quarterly'
+ci:
+  autofix_prs: false
+  autoupdate_schedule: quarterly
 
 files: 'xyzservices\/'
 repos:
