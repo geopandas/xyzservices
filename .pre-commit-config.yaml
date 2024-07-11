@@ -1,7 +1,9 @@
+autoupdate_schedule: 'quarterly'
+
 files: 'xyzservices\/'
 repos:
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: "v0.2.0"
+    rev: "v0.5.1"
     hooks:
       - id: ruff
       - id: ruff-format

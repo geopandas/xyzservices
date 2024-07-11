@@ -11,6 +11,7 @@ It accesses the defined TileLayer.Providers objects through javascript
 using Selenium as JSON, and then processes this a fully specified
 javascript-independent dictionary and saves that final result as a JSON file.
 """
+
 import datetime
 import json
 import os
@@ -87,9 +88,7 @@ def process_provider(data, name="OpenStreetMap"):
             variant_options = variant_keys.pop("options", {})
             variant_keys = {**variant_keys, **variant_options}
         variant_keys = {**provider_keys, **variant_keys}
-        variant_keys["name"] = "{provider}.{variant}".format(
-            provider=name, variant=variant
-        )
+        variant_keys["name"] = f"{name}.{variant}"
         variant_keys = pythonize_data(variant_keys)
         result[variant] = variant_keys
 

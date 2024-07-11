@@ -238,9 +238,7 @@ def test_filter(test_bunch):
     def custom(provider):
         if hasattr(provider, "subdomains") and provider.subdomains == "abcd":
             return True
-        if hasattr(provider, "r"):
-            return True
-        return False
+        return bool(hasattr(provider, "r"))
 
     assert len(test_bunch.filter(function=custom).flatten()) == 2
 
