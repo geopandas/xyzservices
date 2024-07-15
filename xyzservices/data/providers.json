@@ -761,16 +761,6 @@
             "attribution": "Tiles (C) Esri -- Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012",
             "name": "Esri.WorldStreetMap"
         },
-        "DeLorme": {
-            "url": "https://server.arcgisonline.com/ArcGIS/rest/services/{variant}/MapServer/tile/{z}/{y}/{x}",
-            "variant": "Specialty/DeLorme_World_Base_Map",
-            "html_attribution": "Tiles &copy; Esri &mdash; Copyright: &copy;2012 DeLorme",
-            "attribution": "Tiles (C) Esri -- Copyright: (C)2012 DeLorme",
-            "min_zoom": 1,
-            "max_zoom": 11,
-            "name": "Esri.DeLorme",
-            "status": "broken"
-        },
         "WorldTopoMap": {
             "url": "https://server.arcgisonline.com/ArcGIS/rest/services/{variant}/MapServer/tile/{z}/{y}/{x}",
             "variant": "World_Topo_Map",
@@ -15628,6 +15618,29 @@
             "variant": "TRANSPORTS.DRONES.RESTRICTIONS",
             "name": "GeoportailFrance.Transports_Drones_Restrictions",
             "TileMatrixSet": "PM_3_15",
+            "apikey": "your_api_key_here"
+        },
+        "Test_raster_zone_humide_auvergnera": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    44.1399,
+                    2.07737
+                ],
+                [
+                    46.7242,
+                    7.28787
+                ]
+            ],
+            "min_zoom": 1,
+            "max_zoom": 14,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Test_raster_zone_humide_auvergneRA",
+            "name": "GeoportailFrance.Test_raster_zone_humide_auvergnera",
+            "TileMatrixSet": "LAMB93_50cm_1_14",
             "apikey": "your_api_key_here"
         },
         "Utilityandgovernmentalservices_All": {

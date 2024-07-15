@@ -678,15 +678,6 @@
             "attribution": "Tiles (C) Esri -- Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012",
             "name": "Esri.WorldStreetMap"
         },
-        "DeLorme": {
-            "url": "https://server.arcgisonline.com/ArcGIS/rest/services/{variant}/MapServer/tile/{z}/{y}/{x}",
-            "variant": "Specialty/DeLorme_World_Base_Map",
-            "html_attribution": "Tiles &copy; Esri &mdash; Copyright: &copy;2012 DeLorme",
-            "attribution": "Tiles (C) Esri -- Copyright: (C)2012 DeLorme",
-            "min_zoom": 1,
-            "max_zoom": 11,
-            "name": "Esri.DeLorme"
-        },
         "WorldTopoMap": {
             "url": "https://server.arcgisonline.com/ArcGIS/rest/services/{variant}/MapServer/tile/{z}/{y}/{x}",
             "variant": "World_Topo_Map",
@@ -2665,7 +2656,7 @@
     },
     "GeoportailFrance": {
         "plan": {
-            "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET=PM&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "url": "https://data.geopf.fr/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET=PM&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\" href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
             "bounds": [
@@ -2680,14 +2671,13 @@
             ],
             "min_zoom": 2,
             "max_zoom": 18,
-            "apikey": "choisirgeoportail",
             "format": "image/png",
             "style": "normal",
             "variant": "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2",
             "name": "GeoportailFrance.plan"
         },
         "parcels": {
-            "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET=PM&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "url": "https://data.geopf.fr/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET=PM&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\" href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
             "bounds": [
@@ -2702,14 +2692,13 @@
             ],
             "min_zoom": 2,
             "max_zoom": 20,
-            "apikey": "choisirgeoportail",
             "format": "image/png",
             "style": "PCI vecteur",
             "variant": "CADASTRALPARCELS.PARCELLAIRE_EXPRESS",
             "name": "GeoportailFrance.parcels"
         },
         "orthos": {
-            "url": "https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET=PM&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "url": "https://data.geopf.fr/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET=PM&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\" href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
             "bounds": [
@@ -2724,7 +2713,6 @@
             ],
             "min_zoom": 2,
             "max_zoom": 19,
-            "apikey": "choisirgeoportail",
             "format": "image/jpeg",
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS",
@@ -3077,7 +3065,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2024-07-01",
-        "commit": "commit 090bca0f8cd4200b9f724428a281f569a84c9eac (Bump mocha from 10.4.0 to 10.5.0\n\nBumps [mocha](https://github.com/mochajs/mocha) from 10.4.0 to 10.5.0.\n- [Release notes](https://github.com/mochajs/mocha/releases)\n- [Changelog](https://github.com/mochajs/mocha/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/mochajs/mocha/compare/v10.4.0...v10.5.0)\n\n---\nupdated-dependencies:\n- dependency-name: mocha\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
+        "date_of_creation": "2024-07-15",
+        "commit": "commit d7bd650d054986cfee4dd6ea1cbad13bfa41bd0c (build(deps-dev): bump mocha from 10.5.2 to 10.6.0\n\nBumps [mocha](https://github.com/mochajs/mocha) from 10.5.2 to 10.6.0.\n- [Release notes](https://github.com/mochajs/mocha/releases)\n- [Changelog](https://github.com/mochajs/mocha/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/mochajs/mocha/compare/v10.5.2...v10.6.0)\n\n---\nupdated-dependencies:\n- dependency-name: mocha\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }
