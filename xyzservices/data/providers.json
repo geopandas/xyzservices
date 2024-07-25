@@ -15620,6 +15620,52 @@
             "TileMatrixSet": "PM_3_15",
             "apikey": "your_api_key_here"
         },
+        "Test_fusion_raster_zh_cvdl_et_auvra": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    44.1399,
+                    0.099629
+                ],
+                [
+                    48.9503,
+                    7.28787
+                ]
+            ],
+            "min_zoom": 1,
+            "max_zoom": 14,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Test_fusion_raster_ZH_CVDL_et_AUVRA",
+            "name": "GeoportailFrance.Test_fusion_raster_zh_cvdl_et_auvra",
+            "TileMatrixSet": "LAMB93_50cm_1_14",
+            "apikey": "your_api_key_here"
+        },
+        "Test_raster_zh_centrevdl_bis": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    46.3213,
+                    0.099629
+                ],
+                [
+                    48.9503,
+                    3.13165
+                ]
+            ],
+            "min_zoom": 1,
+            "max_zoom": 14,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Test_raster_ZH_centreVDL_bis",
+            "name": "GeoportailFrance.Test_raster_zh_centrevdl_bis",
+            "TileMatrixSet": "LAMB93_50cm_1_14",
+            "apikey": "your_api_key_here"
+        },
         "Test_raster_zone_humide_auvergnera": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",

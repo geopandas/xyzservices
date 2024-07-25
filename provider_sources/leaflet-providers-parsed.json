@@ -3065,7 +3065,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2024-07-15",
-        "commit": "commit d7bd650d054986cfee4dd6ea1cbad13bfa41bd0c (build(deps-dev): bump mocha from 10.5.2 to 10.6.0\n\nBumps [mocha](https://github.com/mochajs/mocha) from 10.5.2 to 10.6.0.\n- [Release notes](https://github.com/mochajs/mocha/releases)\n- [Changelog](https://github.com/mochajs/mocha/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/mochajs/mocha/compare/v10.5.2...v10.6.0)\n\n---\nupdated-dependencies:\n- dependency-name: mocha\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
+        "date_of_creation": "2024-07-25",
+        "commit": "commit 84477ebfa9ff9e7ca7e87a95c5f21ba1ced9b921 (build(deps-dev): bump uglify-js from 3.18.0 to 3.19.0\n\nBumps [uglify-js](https://github.com/mishoo/UglifyJS) from 3.18.0 to 3.19.0.\n- [Release notes](https://github.com/mishoo/UglifyJS/releases)\n- [Commits](https://github.com/mishoo/UglifyJS/compare/v3.18.0...v3.19.0)\n\n---\nupdated-dependencies:\n- dependency-name: uglify-js\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }
