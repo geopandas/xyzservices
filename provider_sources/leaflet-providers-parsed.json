@@ -3065,7 +3065,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2024-08-01",
+        "date_of_creation": "2024-08-15",
         "commit": "commit 146a20175c9891fa1656cb703f71da0ef878b7ea (build(deps-dev): bump uglify-js from 3.19.0 to 3.19.1\n\nBumps [uglify-js](https://github.com/mishoo/UglifyJS) from 3.19.0 to 3.19.1.\n- [Release notes](https://github.com/mishoo/UglifyJS/releases)\n- [Commits](https://github.com/mishoo/UglifyJS/compare/v3.19.0...v3.19.1)\n\n---\nupdated-dependencies:\n- dependency-name: uglify-js\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }
