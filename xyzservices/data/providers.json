@@ -2991,11 +2991,11 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    -89.0,
+                    -80.0,
                     -180.0
                 ],
                 [
-                    89.0,
+                    80.0,
                     180.0
                 ]
             ],
@@ -3782,12 +3782,12 @@
                 ]
             ],
             "min_zoom": 0,
-            "max_zoom": 10,
+            "max_zoom": 13,
             "format": "image/png",
             "style": "normal",
             "variant": "DELMAR_WMTS",
             "name": "GeoportailFrance.Delmar_wmts",
-            "TileMatrixSet": "PM_0_10",
+            "TileMatrixSet": "PM_0_13",
             "apikey": "your_api_key_here"
         },
         "Dreal_Zonage_pinel": {
@@ -8825,6 +8825,29 @@
             "variant": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST",
             "name": "GeoportailFrance.Limites_administratives_express_Latest",
             "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Litto3d_charente": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    45.9106,
+                    -1.70309
+                ],
+                [
+                    46.3359,
+                    -1.01731
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "LITTO3D_CHARENTE",
+            "name": "GeoportailFrance.Litto3d_charente",
+            "TileMatrixSet": "PM_0_16",
             "apikey": "your_api_key_here"
         },
         "Localisation_Concessions_Hydro": {
