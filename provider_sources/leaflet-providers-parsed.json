@@ -3065,7 +3065,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2024-09-01",
-        "commit": "commit 2316d642a080cbfa14619348e01933c655f0ddb0 (build(deps-dev): bump eslint from 9.9.0 to 9.9.1\n\nBumps [eslint](https://github.com/eslint/eslint) from 9.9.0 to 9.9.1.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/compare/v9.9.0...v9.9.1)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
+        "date_of_creation": "2024-09-15",
+        "commit": "commit 60adc9c538c6d48348c81e5f56c0075d3774aa86 (build(deps-dev): bump @stylistic/eslint-plugin-js from 2.7.2 to 2.8.0\n\nBumps [@stylistic/eslint-plugin-js](https://github.com/eslint-stylistic/eslint-stylistic/tree/HEAD/packages/eslint-plugin-js) from 2.7.2 to 2.8.0.\n- [Release notes](https://github.com/eslint-stylistic/eslint-stylistic/releases)\n- [Changelog](https://github.com/eslint-stylistic/eslint-stylistic/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint-stylistic/eslint-stylistic/commits/v2.8.0/packages/eslint-plugin-js)\n\n---\nupdated-dependencies:\n- dependency-name: \"@stylistic/eslint-plugin-js\"\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }
