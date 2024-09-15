@@ -3008,6 +3008,29 @@
             "TileMatrixSet": "PM_0_21",
             "apikey": "your_api_key_here"
         },
+        "500k": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    40.38,
+                    -6.0
+                ],
+                [
+                    51.45,
+                    11.15
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 11,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "500k",
+            "name": "GeoportailFrance.500k",
+            "TileMatrixSet": "PM_0_11",
+            "apikey": "your_api_key_here"
+        },
         "Acces_Biomethane": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -3506,12 +3529,12 @@
                 ]
             ],
             "min_zoom": 6,
-            "max_zoom": 18,
+            "max_zoom": 16,
             "format": "image/png",
             "style": "CAPACITE.ACCUEIL.ELECTRIQUE",
             "variant": "CAPACITE.ACCUEIL.ELECTRIQUE",
             "name": "GeoportailFrance.Capacite_Accueil_Electrique",
-            "TileMatrixSet": "PM_6_18",
+            "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
         "Cartes-14-18-edugeo_pyr-png_fxx_wm": {
@@ -6294,6 +6317,29 @@
             "style": "INPE",
             "variant": "INPE",
             "name": "GeoportailFrance.Inpe",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Inra_Carte_Sols": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.4756,
+                    -63.3725
+                ],
+                [
+                    51.3121,
+                    55.9259
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "CARTE DES SOLS",
+            "variant": "INRA.CARTE.SOLS",
+            "name": "GeoportailFrance.Inra_Carte_Sols",
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
