@@ -3445,6 +3445,29 @@
             "TileMatrixSet": "PM_0_20",
             "apikey": "your_api_key_here"
         },
+        "Cadastralparcels_Parcellaire_express_L93": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.3252,
+                    -5.1505
+                ],
+                [
+                    51.0991,
+                    9.5705
+                ]
+            ],
+            "min_zoom": 12,
+            "max_zoom": 20,
+            "format": "image/png",
+            "style": "PCI vecteur",
+            "variant": "CADASTRALPARCELS.PARCELLAIRE_EXPRESS.L93",
+            "name": "GeoportailFrance.Cadastralparcels_Parcellaire_express_L93",
+            "TileMatrixSet": "2154_10cm_12_20",
+            "apikey": "your_api_key_here"
+        },
         "Cadastralparcels_Parcels": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -6134,6 +6157,29 @@
             "variant": "HR.ORTHOIMAGERY.ORTHOPHOTOS",
             "name": "GeoportailFrance.Hr_Orthoimagery_Orthophotos",
             "TileMatrixSet": "PM_6_19",
+            "apikey": "your_api_key_here"
+        },
+        "Hr_Orthoimagery_Orthophotos_L93": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    40.0,
+                    -5.0
+                ],
+                [
+                    52.0,
+                    10.0
+                ]
+            ],
+            "min_zoom": 10,
+            "max_zoom": 20,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "HR.ORTHOIMAGERY.ORTHOPHOTOS.L93",
+            "name": "GeoportailFrance.Hr_Orthoimagery_Orthophotos_L93",
+            "TileMatrixSet": "2154_10cm_10_20",
             "apikey": "your_api_key_here"
         },
         "Hydrography_Bcae_2020": {
@@ -14999,6 +15045,75 @@
             "TileMatrixSet": "PM_0_16",
             "apikey": "your_api_key_here"
         },
+        "Raster_zh_auvergnera_masktrue": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    44.1399,
+                    2.07737
+                ],
+                [
+                    46.7242,
+                    7.28787
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 14,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Raster_ZH_auvergneRA_masktrue",
+            "name": "GeoportailFrance.Raster_zh_auvergnera_masktrue",
+            "TileMatrixSet": "LAMB93_50cm_6_14",
+            "apikey": "your_api_key_here"
+        },
+        "Raster_zh_centrevdl_masktrue": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    46.3213,
+                    0.099629
+                ],
+                [
+                    48.9503,
+                    3.13165
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 14,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Raster_ZH_centreVDL_masktrue",
+            "name": "GeoportailFrance.Raster_zh_centrevdl_masktrue",
+            "TileMatrixSet": "LAMB93_50cm_6_14",
+            "apikey": "your_api_key_here"
+        },
+        "Raster_zone_humide_ara_cvdl_mask": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    44.1399,
+                    0.099629
+                ],
+                [
+                    48.9503,
+                    7.28787
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 14,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Raster_zone_humide_ara_cvdl_mask",
+            "name": "GeoportailFrance.Raster_zone_humide_ara_cvdl_mask",
+            "TileMatrixSet": "LAMB93_50cm_6_14",
+            "apikey": "your_api_key_here"
+        },
         "Scan-edugeo_pyr-png_fxx_wm": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -15733,6 +15848,75 @@
             "variant": "TRANSPORTS.DRONES.RESTRICTIONS",
             "name": "GeoportailFrance.Transports_Drones_Restrictions",
             "TileMatrixSet": "PM_3_15",
+            "apikey": "your_api_key_here"
+        },
+        "Test_raster_zh_centrevdl": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    46.3213,
+                    0.099629
+                ],
+                [
+                    48.9503,
+                    3.13165
+                ]
+            ],
+            "min_zoom": 7,
+            "max_zoom": 14,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Test_raster_ZH_centreVDL",
+            "name": "GeoportailFrance.Test_raster_zh_centrevdl",
+            "TileMatrixSet": "LAMB93_50cm_7_14",
+            "apikey": "your_api_key_here"
+        },
+        "Test_raster_zone_humide_ara_cvdl": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    44.1399,
+                    0.099629
+                ],
+                [
+                    48.9503,
+                    7.28787
+                ]
+            ],
+            "min_zoom": 7,
+            "max_zoom": 14,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Test_raster_zone_humide_ara_cvdl",
+            "name": "GeoportailFrance.Test_raster_zone_humide_ara_cvdl",
+            "TileMatrixSet": "LAMB93_50cm_7_14",
+            "apikey": "your_api_key_here"
+        },
+        "Test_raster_zone_humide_auvergnera": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    44.1399,
+                    2.07737
+                ],
+                [
+                    46.7242,
+                    7.28787
+                ]
+            ],
+            "min_zoom": 7,
+            "max_zoom": 14,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Test_raster_zone_humide_auvergneRA",
+            "name": "GeoportailFrance.Test_raster_zone_humide_auvergnera",
+            "TileMatrixSet": "LAMB93_50cm_7_14",
             "apikey": "your_api_key_here"
         },
         "Utilityandgovernmentalservices_All": {
