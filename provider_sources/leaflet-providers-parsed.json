@@ -3065,7 +3065,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2024-09-15",
-        "commit": "commit 60adc9c538c6d48348c81e5f56c0075d3774aa86 (build(deps-dev): bump @stylistic/eslint-plugin-js from 2.7.2 to 2.8.0\n\nBumps [@stylistic/eslint-plugin-js](https://github.com/eslint-stylistic/eslint-stylistic/tree/HEAD/packages/eslint-plugin-js) from 2.7.2 to 2.8.0.\n- [Release notes](https://github.com/eslint-stylistic/eslint-stylistic/releases)\n- [Changelog](https://github.com/eslint-stylistic/eslint-stylistic/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint-stylistic/eslint-stylistic/commits/v2.8.0/packages/eslint-plugin-js)\n\n---\nupdated-dependencies:\n- dependency-name: \"@stylistic/eslint-plugin-js\"\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
+        "date_of_creation": "2024-10-01",
+        "commit": "commit ea77e70cdf5c56638d36d48f76a670e126c347ef (build(deps-dev): bump eslint-plugin-html from 8.1.1 to 8.1.2\n\nBumps [eslint-plugin-html](https://github.com/BenoitZugmeyer/eslint-plugin-html) from 8.1.1 to 8.1.2.\n- [Changelog](https://github.com/BenoitZugmeyer/eslint-plugin-html/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/BenoitZugmeyer/eslint-plugin-html/compare/v8.1.1...v8.1.2)\n\n---\nupdated-dependencies:\n- dependency-name: eslint-plugin-html\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }
