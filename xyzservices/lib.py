@@ -6,13 +6,13 @@ from __future__ import annotations
 import json
 import urllib.request
 import uuid
-from typing import Callable
+from typing import Callable, Dict, Union
 from urllib.parse import quote
 
 QUERY_NAME_TRANSLATION = str.maketrans({x: "" for x in "., -_/"})
 
 
-class Bunch(dict):
+class Bunch(Dict[str, Union["TileProvider", "Bunch"]]):
     """A dict with attribute-access
 
     :class:`Bunch` is used to store :class:`TileProvider` objects.
@@ -39,7 +39,7 @@ class Bunch(dict):
     'https://myserver.com/bw/{z}/{x}/{y}'
     """
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self, raw_bunch_dict: , **kwargs):
         super().__init__()
         self.update(*args, **kwargs)
 
