@@ -61,6 +61,13 @@
                 ]
             ],
             "name": "OpenStreetMap.BZH"
+        },
+        "CAT": {
+            "url": "https://tile.openstreetmap.bzh/ca/{z}/{x}/{y}.png",
+            "max_zoom": 19,
+            "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors, Tiles courtesy of <a href=\"https://www.openstreetmap.cat\" target=\"_blank\">Breton OpenStreetMap Team</a>",
+            "attribution": "(C) OpenStreetMap contributors, Tiles courtesy of Breton OpenStreetMap Team",
+            "name": "OpenStreetMap.CAT"
         }
     },
     "MapTilesAPI": {
@@ -3065,7 +3072,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2024-10-01",
-        "commit": "commit ea77e70cdf5c56638d36d48f76a670e126c347ef (build(deps-dev): bump eslint-plugin-html from 8.1.1 to 8.1.2\n\nBumps [eslint-plugin-html](https://github.com/BenoitZugmeyer/eslint-plugin-html) from 8.1.1 to 8.1.2.\n- [Changelog](https://github.com/BenoitZugmeyer/eslint-plugin-html/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/BenoitZugmeyer/eslint-plugin-html/compare/v8.1.1...v8.1.2)\n\n---\nupdated-dependencies:\n- dependency-name: eslint-plugin-html\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
+        "date_of_creation": "2024-10-15",
+        "commit": "commit e0bf84004f2c2618d8595b2390c7a86e80cdb7d8 (build(deps-dev): bump eslint from 9.11.1 to 9.12.0\n\nBumps [eslint](https://github.com/eslint/eslint) from 9.11.1 to 9.12.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/compare/v9.11.1...v9.12.0)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }
