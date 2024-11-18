@@ -45,4 +45,4 @@ jobs:
       - name: test providers - bash
         run: pytest -v . -m request --cov=xyzservices --cov-append --cov-report term-missing --cov-report xml --color=yes -n auto
 
-      - uses: codecov/codecov-action@v4
+      - uses: codecov/codecov-action@v5
