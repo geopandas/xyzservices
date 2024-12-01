@@ -9185,12 +9185,12 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    41.3252,
-                    -5.1505
+                    -21.3998,
+                    -63.1614
                 ],
                 [
                     51.0991,
-                    9.5705
+                    55.8465
                 ]
             ],
             "min_zoom": 6,
@@ -9603,12 +9603,12 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    41.3252,
-                    -5.1505
+                    -21.3998,
+                    -63.1614
                 ],
                 [
                     51.0991,
-                    9.5705
+                    55.8465
                 ]
             ],
             "min_zoom": 6,
@@ -9858,12 +9858,12 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    41.3252,
-                    -5.1505
+                    -21.3998,
+                    -63.1614
                 ],
                 [
                     51.0991,
-                    9.5705
+                    55.8465
                 ]
             ],
             "min_zoom": 6,
@@ -14454,29 +14454,6 @@
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
-        "Protectedareas_Mnhn_Cdl_Perimeter": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    -21.4756,
-                    -63.3725
-                ],
-                [
-                    51.3121,
-                    55.9259
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "PROTECTEDAREAS.MNHN.CDL.PERIMETER",
-            "name": "GeoportailFrance.Protectedareas_Mnhn_Cdl_Perimeter",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here"
-        },
         "Protectedareas_Mnhn_Conservatoires": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -15141,29 +15118,6 @@
             "style": "normal",
             "variant": "Patinat_PNR",
             "name": "GeoportailFrance.Patinat_pnr",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here"
-        },
-        "Patinat_rb": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    -21.3768,
-                    -61.5181
-                ],
-                [
-                    50.7622,
-                    55.8053
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "Patinat_RB",
-            "name": "GeoportailFrance.Patinat_rb",
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
