@@ -3072,7 +3072,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2024-12-01",
-        "commit": "commit 3b6d9103e2477289d6f5105e6ac83eff20848327 (build(deps-dev): bump @stylistic/eslint-plugin-js from 2.10.1 to 2.11.0\n\nBumps [@stylistic/eslint-plugin-js](https://github.com/eslint-stylistic/eslint-stylistic/tree/HEAD/packages/eslint-plugin-js) from 2.10.1 to 2.11.0.\n- [Release notes](https://github.com/eslint-stylistic/eslint-stylistic/releases)\n- [Changelog](https://github.com/eslint-stylistic/eslint-stylistic/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint-stylistic/eslint-stylistic/commits/v2.11.0/packages/eslint-plugin-js)\n\n---\nupdated-dependencies:\n- dependency-name: \"@stylistic/eslint-plugin-js\"\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
+        "date_of_creation": "2024-12-15",
+        "commit": "commit 3bc05514c54b163608e49c213807b2ab1ecd7553 (build(deps-dev): bump @stylistic/eslint-plugin-js from 2.11.0 to 2.12.0\n\nBumps [@stylistic/eslint-plugin-js](https://github.com/eslint-stylistic/eslint-stylistic/tree/HEAD/packages/eslint-plugin-js) from 2.11.0 to 2.12.0.\n- [Release notes](https://github.com/eslint-stylistic/eslint-stylistic/releases)\n- [Changelog](https://github.com/eslint-stylistic/eslint-stylistic/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint-stylistic/eslint-stylistic/commits/v2.12.0/packages/eslint-plugin-js)\n\n---\nupdated-dependencies:\n- dependency-name: \"@stylistic/eslint-plugin-js\"\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }
