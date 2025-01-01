@@ -727,8 +727,8 @@
             "url": "https://{s}.api.tomtom.com/map/1/tile/{variant}/{style}/{z}/{x}/{y}.{ext}?key={apikey}",
             "variant": "basic",
             "max_zoom": 22,
-            "html_attribution": "<a href=\"https://tomtom.com\" target=\"_blank\">&copy;  1992 - 2024 TomTom.</a> ",
-            "attribution": "(C) 1992 - 2024 TomTom.",
+            "html_attribution": "<a href=\"https://tomtom.com\" target=\"_blank\">&copy;  1992 - 2025 TomTom.</a> ",
+            "attribution": "(C) 1992 - 2025 TomTom.",
             "subdomains": "abcd",
             "style": "main",
             "ext": "png",
@@ -739,8 +739,8 @@
             "url": "https://{s}.api.tomtom.com/map/1/tile/{variant}/{style}/{z}/{x}/{y}.{ext}?key={apikey}",
             "variant": "hybrid",
             "max_zoom": 22,
-            "html_attribution": "<a href=\"https://tomtom.com\" target=\"_blank\">&copy;  1992 - 2024 TomTom.</a> ",
-            "attribution": "(C) 1992 - 2024 TomTom.",
+            "html_attribution": "<a href=\"https://tomtom.com\" target=\"_blank\">&copy;  1992 - 2025 TomTom.</a> ",
+            "attribution": "(C) 1992 - 2025 TomTom.",
             "subdomains": "abcd",
             "style": "main",
             "ext": "png",
@@ -751,8 +751,8 @@
             "url": "https://{s}.api.tomtom.com/map/1/tile/{variant}/{style}/{z}/{x}/{y}.{ext}?key={apikey}",
             "variant": "labels",
             "max_zoom": 22,
-            "html_attribution": "<a href=\"https://tomtom.com\" target=\"_blank\">&copy;  1992 - 2024 TomTom.</a> ",
-            "attribution": "(C) 1992 - 2024 TomTom.",
+            "html_attribution": "<a href=\"https://tomtom.com\" target=\"_blank\">&copy;  1992 - 2025 TomTom.</a> ",
+            "attribution": "(C) 1992 - 2025 TomTom.",
             "subdomains": "abcd",
             "style": "main",
             "ext": "png",
@@ -1041,8 +1041,8 @@
     "HERE": {
         "normalDay": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1058,8 +1058,8 @@
         },
         "normalDayCustom": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1075,8 +1075,8 @@
         },
         "normalDayGrey": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1092,8 +1092,8 @@
         },
         "normalDayMobile": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1109,8 +1109,8 @@
         },
         "normalDayGreyMobile": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1126,8 +1126,8 @@
         },
         "normalDayTransit": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1143,8 +1143,8 @@
         },
         "normalDayTransitMobile": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1160,8 +1160,8 @@
         },
         "normalDayTraffic": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1177,8 +1177,8 @@
         },
         "normalNight": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1194,8 +1194,8 @@
         },
         "normalNightMobile": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1211,8 +1211,8 @@
         },
         "normalNightGrey": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1228,8 +1228,8 @@
         },
         "normalNightGreyMobile": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1245,8 +1245,8 @@
         },
         "normalNightTransit": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1262,8 +1262,8 @@
         },
         "normalNightTransitMobile": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1279,8 +1279,8 @@
         },
         "reducedDay": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1296,8 +1296,8 @@
         },
         "reducedNight": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1313,8 +1313,8 @@
         },
         "basicMap": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1330,8 +1330,8 @@
         },
         "mapLabels": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1347,8 +1347,8 @@
         },
         "trafficFlow": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1364,8 +1364,8 @@
         },
         "carnavDayGrey": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1381,8 +1381,8 @@
         },
         "hybridDay": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1398,8 +1398,8 @@
         },
         "hybridDayMobile": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1415,8 +1415,8 @@
         },
         "hybridDayTransit": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1432,8 +1432,8 @@
         },
         "hybridDayGrey": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1449,8 +1449,8 @@
         },
         "hybridDayTraffic": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1466,8 +1466,8 @@
         },
         "pedestrianDay": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1483,8 +1483,8 @@
         },
         "pedestrianNight": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1500,8 +1500,8 @@
         },
         "satelliteDay": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1517,8 +1517,8 @@
         },
         "terrainDay": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1534,8 +1534,8 @@
         },
         "terrainDayMobile": {
             "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "app_id": "<insert your app_id here>",
@@ -1553,8 +1553,8 @@
     "HEREv3": {
         "normalDay": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1569,8 +1569,8 @@
         },
         "normalDayCustom": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1585,8 +1585,8 @@
         },
         "normalDayGrey": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1601,8 +1601,8 @@
         },
         "normalDayMobile": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1617,8 +1617,8 @@
         },
         "normalDayGreyMobile": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1633,8 +1633,8 @@
         },
         "normalDayTransit": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1649,8 +1649,8 @@
         },
         "normalDayTransitMobile": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1665,8 +1665,8 @@
         },
         "normalNight": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1681,8 +1681,8 @@
         },
         "normalNightMobile": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1697,8 +1697,8 @@
         },
         "normalNightGrey": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1713,8 +1713,8 @@
         },
         "normalNightGreyMobile": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1729,8 +1729,8 @@
         },
         "normalNightTransit": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1745,8 +1745,8 @@
         },
         "normalNightTransitMobile": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1761,8 +1761,8 @@
         },
         "reducedDay": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1777,8 +1777,8 @@
         },
         "reducedNight": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1793,8 +1793,8 @@
         },
         "basicMap": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1809,8 +1809,8 @@
         },
         "mapLabels": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1825,8 +1825,8 @@
         },
         "trafficFlow": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1842,8 +1842,8 @@
         },
         "carnavDayGrey": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1858,8 +1858,8 @@
         },
         "hybridDay": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1874,8 +1874,8 @@
         },
         "hybridDayMobile": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1890,8 +1890,8 @@
         },
         "hybridDayTransit": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1906,8 +1906,8 @@
         },
         "hybridDayGrey": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1922,8 +1922,8 @@
         },
         "pedestrianDay": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1938,8 +1938,8 @@
         },
         "pedestrianNight": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1954,8 +1954,8 @@
         },
         "satelliteDay": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1970,8 +1970,8 @@
         },
         "terrainDay": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1986,8 +1986,8 @@
         },
         "terrainDayMobile": {
             "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2024 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2024 HERE",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -11876,6 +11876,29 @@
             "TileMatrixSet": "PM_0_18",
             "apikey": "your_api_key_here"
         },
+        "Orthoimagery_Ortho_sat_Pleiades_Mayotte_2024_06": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -13.091,
+                    44.9299
+                ],
+                [
+                    -12.5665,
+                    45.317
+                ]
+            ],
+            "min_zoom": 4,
+            "max_zoom": 18,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.MAYOTTE.2024-06",
+            "name": "GeoportailFrance.Orthoimagery_Ortho_sat_Pleiades_Mayotte_2024_06",
+            "TileMatrixSet": "PM_4_18",
+            "apikey": "your_api_key_here"
+        },
         "Orthoimagery_Ortho_sat_Rapideye_2010": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -13810,29 +13833,6 @@
             "TileMatrixSet": "PM_0_10",
             "apikey": "your_api_key_here"
         },
-        "Plan_ign_074_n13_gris": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    45.4544,
-                    5.47119
-                ],
-                [
-                    46.5192,
-                    7.56134
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 13,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "PLAN_IGN_074_N13_GRIS",
-            "name": "GeoportailFrance.Plan_ign_074_n13_gris",
-            "TileMatrixSet": "PM_0_13",
-            "apikey": "your_api_key_here"
-        },
         "Points_Injection_Biomethane": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -15096,6 +15096,29 @@
             "variant": "PVA_IGN_zone-marais-de-Virvee_1984",
             "name": "GeoportailFrance.Pva_ign_zone-marais-de-virvee_1984",
             "TileMatrixSet": "PM_0_17",
+            "apikey": "your_api_key_here"
+        },
+        "Patinat_apb": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3781,
+                    -109.438
+                ],
+                [
+                    50.9841,
+                    55.6872
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patinat_APB",
+            "name": "GeoportailFrance.Patinat_apb",
+            "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
         "Patinat_apg": {
@@ -16757,8 +16780,8 @@
     "OrdnanceSurvey": {
         "Road": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Road_3857/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right 2024",
-            "attribution": "Contains OS data (C) Crown copyright and database right 2024",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2025",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2025",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "min_zoom": 7,
             "max_zoom": 16,
@@ -16777,8 +16800,8 @@
         },
         "Road_27700": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Road_27700/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right 2024",
-            "attribution": "Contains OS data (C) Crown copyright and database right 2024",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2025",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2025",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "crs": "EPSG:27700",
             "min_zoom": 0,
@@ -16798,8 +16821,8 @@
         },
         "Outdoor": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Outdoor_3857/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right 2024",
-            "attribution": "Contains OS data (C) Crown copyright and database right 2024",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2025",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2025",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "min_zoom": 7,
             "max_zoom": 16,
@@ -16818,8 +16841,8 @@
         },
         "Outdoor_27700": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Outdoor_27700/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right 2024",
-            "attribution": "Contains OS data (C) Crown copyright and database right 2024",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2025",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2025",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "crs": "EPSG:27700",
             "min_zoom": 0,
@@ -16839,8 +16862,8 @@
         },
         "Light": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Light_3857/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right 2024",
-            "attribution": "Contains OS data (C) Crown copyright and database right 2024",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2025",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2025",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "min_zoom": 7,
             "max_zoom": 16,
@@ -16859,8 +16882,8 @@
         },
         "Light_27700": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Light_27700/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right 2024",
-            "attribution": "Contains OS data (C) Crown copyright and database right 2024",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2025",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2025",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "crs": "EPSG:27700",
             "min_zoom": 0,
@@ -16880,8 +16903,8 @@
         },
         "Leisure_27700": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Leisure_27700/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right 2024",
-            "attribution": "Contains OS data (C) Crown copyright and database right 2024",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2025",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2025",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "crs": "EPSG:27700",
             "min_zoom": 0,
