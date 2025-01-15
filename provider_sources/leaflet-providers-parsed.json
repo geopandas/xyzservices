@@ -3072,7 +3072,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2025-01-01",
+        "date_of_creation": "2025-01-15",
         "commit": "commit 038cd96be3a6f521ff5f6ac0731e3a5e42d69b3a (build(deps-dev): bump eslint from 9.16.0 to 9.17.0\n\nBumps [eslint](https://github.com/eslint/eslint) from 9.16.0 to 9.17.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/compare/v9.16.0...v9.17.0)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }
