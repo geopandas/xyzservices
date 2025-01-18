@@ -195,18 +195,19 @@ def test_openweathermap(provider_name):
     get_test_result(provider, allow_403=False)
 
 
-@pytest.mark.request
-@pytest.mark.parametrize("provider_name", xyz.HEREv3)
-def test_herev3(provider_name):
-    try:
-        token = os.environ["HEREV3"]
-    except KeyError:
-        pytest.xfail("Missing API token.")
-    if token == "":
-        pytest.xfail("Token empty.")
+# HEREV3 seems to block GHA as it errors with E429
+# @pytest.mark.request
+# @pytest.mark.parametrize("provider_name", xyz.HEREv3)
+# def test_herev3(provider_name):
+#     try:
+#         token = os.environ["HEREV3"]
+#     except KeyError:
+#         pytest.xfail("Missing API token.")
+#     if token == "":
+#         pytest.xfail("Token empty.")
 
-    provider = xyz.HEREv3[provider_name](apiKey=token)
-    get_test_result(provider, allow_403=False)
+#     provider = xyz.HEREv3[provider_name](apiKey=token)
+#     get_test_result(provider, allow_403=False)
 
 
 @pytest.mark.request
