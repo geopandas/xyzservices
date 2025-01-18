@@ -16287,6 +16287,29 @@
             "TileMatrixSet": "PM_0_16",
             "apikey": "your_api_key_here"
         },
+        "Orthophoto_1955_calvados": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    48.742,
+                    -1.17026
+                ],
+                [
+                    49.4485,
+                    0.457061
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "orthophoto_1955_calvados",
+            "name": "GeoportailFrance.Orthophoto_1955_calvados",
+            "TileMatrixSet": "PM_0_18",
+            "apikey": "your_api_key_here"
+        },
         "Testsrd-pcrs86-poitiers": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
