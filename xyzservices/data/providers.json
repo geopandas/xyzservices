@@ -68,13 +68,6 @@
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors, Tiles courtesy of <a href=\"https://www.openstreetmap.cat\" target=\"_blank\">Breton OpenStreetMap Team</a>",
             "attribution": "(C) OpenStreetMap contributors, Tiles courtesy of Breton OpenStreetMap Team",
             "name": "OpenStreetMap.CAT"
-        },
-        "BlackAndWhite": {
-            "url": "http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png",
-            "max_zoom": 18,
-            "attribution": "(C) OpenStreetMap contributors",
-            "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
-            "name": "OpenStreetMap.BlackAndWhite"
         }
     },
     "MapTilesAPI": {
@@ -16292,29 +16285,6 @@
             "variant": "hydro_ardennes_pyramide_raster_wmts",
             "name": "GeoportailFrance.Hydro_ardennes_pyramide_raster_wmts",
             "TileMatrixSet": "PM_0_16",
-            "apikey": "your_api_key_here"
-        },
-        "Orthophoto_1955_calvados": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    48.742,
-                    -1.17026
-                ],
-                [
-                    49.4485,
-                    0.457061
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 18,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "orthophoto_1955_calvados",
-            "name": "GeoportailFrance.Orthophoto_1955_calvados",
-            "TileMatrixSet": "PM_0_18",
             "apikey": "your_api_key_here"
         },
         "Testsrd-pcrs86-poitiers": {

@@ -26,7 +26,6 @@ BROKEN_PROVIDERS = [
     "JusticeMap.nonWhite",
     "JusticeMap.white",
     "JusticeMap.plurality",
-    "Esri.DeLorme",
     "NASAGIBS.ModisTerraChlorophyll",
     "HEREv3.trafficFlow",
     "Stadia.AlidadeSatellite",
@@ -190,6 +189,13 @@ for i in range(len(layers_list)):
         "Ocsge_Usage_2002",
         "Ocsge_Usage_2014",
         "Pcrs_Lamb93",
+        "Geographicalgridsystems_Planignv2_L93",
+        "Cadastralparcels_Parcellaire_express_L93",
+        "Hr_Orthoimagery_Orthophotos_L93",
+        "Raster_zh_centrevdl",
+        "Raster_zh_centrevdl_et_auvergnera",
+        "Raster_zone_humide_ara_cvdl",
+        "Raster_zone_humide_auvergnera",
     ]
 
     if name in possibly_broken_providers:
