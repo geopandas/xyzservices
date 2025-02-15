@@ -3515,6 +3515,29 @@
             "TileMatrixSet": "PM_0_20",
             "apikey": "your_api_key_here"
         },
+        "Cadastralparcels_Parcels_L93": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -41.0,
+                    -6.0
+                ],
+                [
+                    52.0,
+                    10.0
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 20,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "CADASTRALPARCELS.PARCELS.L93",
+            "name": "GeoportailFrance.Cadastralparcels_Parcels_L93",
+            "TileMatrixSet": "2154_10cm_6_20",
+            "apikey": "your_api_key_here"
+        },
         "Cadastralparcels_Qualrefbdp": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -6438,6 +6461,29 @@
             "TileMatrixSet": "PM_6_18",
             "apikey": "your_api_key_here"
         },
+        "Ignf_cosia_2021-2023": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.0,
+                    -5.5
+                ],
+                [
+                    52.0,
+                    10.0
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_COSIA_2021-2023",
+            "name": "GeoportailFrance.Ignf_cosia_2021-2023",
+            "TileMatrixSet": "PM_6_18",
+            "apikey": "your_api_key_here"
+        },
         "Ignf_elevation_Elevationgridcoverage_Shadow": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -9267,27 +9313,96 @@
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
-        "Nl_ign_test_ortho_14_1955_no_data_reproj": {
+        "Nl_ign_test_pcrs_18_refit_1": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    49.1269,
-                    -0.934838
+                    46.7204,
+                    2.49458
                 ],
                 [
-                    49.1453,
-                    -0.906105
+                    46.7276,
+                    2.49723
                 ]
             ],
             "min_zoom": 0,
             "max_zoom": 18,
             "format": "image/png",
             "style": "normal",
-            "variant": "NL_IGN_Test_ortho_14_1955_no_data_reproj",
-            "name": "GeoportailFrance.Nl_ign_test_ortho_14_1955_no_data_reproj",
-            "TileMatrixSet": "PM_0_18",
+            "variant": "NL_IGN_Test_pcrs_18_refit_1",
+            "name": "GeoportailFrance.Nl_ign_test_pcrs_18_refit_1",
+            "TileMatrixSet": "2154_50cm_0_18",
+            "apikey": "your_api_key_here"
+        },
+        "Nl_ign_test_pcrs_18_refit_2": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    46.7204,
+                    2.49458
+                ],
+                [
+                    46.7276,
+                    2.49723
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 21,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "NL_IGN_Test_pcrs_18_refit_2",
+            "name": "GeoportailFrance.Nl_ign_test_pcrs_18_refit_2",
+            "TileMatrixSet": "PM_0_21",
+            "apikey": "your_api_key_here"
+        },
+        "Nl_ign_test_pcrs_18_test_5": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    46.7204,
+                    2.49458
+                ],
+                [
+                    46.7276,
+                    2.49723
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 21,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "NL_IGN_Test_pcrs_18_test_5",
+            "name": "GeoportailFrance.Nl_ign_test_pcrs_18_test_5",
+            "TileMatrixSet": "PM_0_21",
+            "apikey": "your_api_key_here"
+        },
+        "Nl_ign_test_pcrs_18_test_6": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    46.7204,
+                    2.49458
+                ],
+                [
+                    46.7276,
+                    2.49723
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 21,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "NL_IGN_Test_pcrs_18_test_6",
+            "name": "GeoportailFrance.Nl_ign_test_pcrs_18_test_6",
+            "TileMatrixSet": "PM_0_21",
             "apikey": "your_api_key_here"
         },
         "Ocsge_Construction_2010": {
@@ -16179,6 +16294,29 @@
             "TileMatrixSet": "PM_6_21",
             "apikey": "your_api_key_here"
         },
+        "Tn_Roadtransportnetwork_Roadlink": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.4969,
+                    -63.9692
+                ],
+                [
+                    71.5841,
+                    55.9644
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "inspire_common:DEFAULT",
+            "variant": "TN.RoadTransportNetwork.RoadLink",
+            "name": "GeoportailFrance.Tn_Roadtransportnetwork_Roadlink",
+            "TileMatrixSet": "PM_6_18",
+            "apikey": "your_api_key_here"
+        },
         "Traces_Rando_Hivernale": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -16455,6 +16593,29 @@
             "TileMatrixSet": "PM_0_16",
             "apikey": "your_api_key_here"
         },
+        "Orthophoto_1947_calvados": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    48.7508,
+                    -1.16113
+                ],
+                [
+                    49.4308,
+                    0.447995
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "transparent",
+            "variant": "orthophoto_1947_calvados",
+            "name": "GeoportailFrance.Orthophoto_1947_calvados",
+            "TileMatrixSet": "PM_0_18",
+            "apikey": "your_api_key_here"
+        },
         "Orthophoto_1955_calvados": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -16478,26 +16639,72 @@
             "TileMatrixSet": "PM_0_18",
             "apikey": "your_api_key_here"
         },
+        "Orthophoto_1972_calvados": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    48.7508,
+                    -1.16113
+                ],
+                [
+                    49.4308,
+                    0.447995
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "transparent",
+            "variant": "orthophoto_1972_calvados",
+            "name": "GeoportailFrance.Orthophoto_1972_calvados",
+            "TileMatrixSet": "PM_0_18",
+            "apikey": "your_api_key_here"
+        },
         "Orthophoto_1984_calvados": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    48.8398,
-                    -1.17026
+                    48.7508,
+                    -1.16113
                 ],
                 [
-                    49.4025,
-                    0.456179
+                    49.4308,
+                    0.447995
                 ]
             ],
             "min_zoom": 0,
             "max_zoom": 18,
             "format": "image/png",
-            "style": "normal",
+            "style": "transparent",
             "variant": "orthophoto_1984_calvados",
             "name": "GeoportailFrance.Orthophoto_1984_calvados",
+            "TileMatrixSet": "PM_0_18",
+            "apikey": "your_api_key_here"
+        },
+        "Orthophoto_1991_calvados": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    48.7508,
+                    -1.16113
+                ],
+                [
+                    49.4308,
+                    0.447995
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "transparent",
+            "variant": "orthophoto_1991_calvados",
+            "name": "GeoportailFrance.Orthophoto_1991_calvados",
             "TileMatrixSet": "PM_0_18",
             "apikey": "your_api_key_here"
         },
