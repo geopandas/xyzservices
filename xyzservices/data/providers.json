@@ -6513,21 +6513,21 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    45.3839,
-                    -1.57046
+                    41.5,
+                    -5.5
                 ],
                 [
-                    51.0937,
-                    2.80335
+                    52.0,
+                    10.0
                 ]
             ],
             "min_zoom": 0,
-            "max_zoom": 17,
-            "format": "image/tiff",
+            "max_zoom": 18,
+            "format": "image/png",
             "style": "normal",
             "variant": "IGNF_LIDAR-HD_MNH_ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW",
             "name": "GeoportailFrance.Ignf_lidar_hd_mnh_elevation_Elevationgridcoverage_Shadow",
-            "TileMatrixSet": "PM_0_17",
+            "TileMatrixSet": "PM_0_18",
             "apikey": "your_api_key_here"
         },
         "Ignf_lidar_hd_mns_elevation_Elevationgridcoverage_Shadow": {
@@ -6536,17 +6536,17 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    47.644,
-                    -0.5472
+                    41.5,
+                    -5.5
                 ],
                 [
-                    48.1127,
-                    0.1481
+                    52.0,
+                    10.0
                 ]
             ],
             "min_zoom": 0,
             "max_zoom": 18,
-            "format": "image/tiff",
+            "format": "image/png",
             "style": "normal",
             "variant": "IGNF_LIDAR-HD_MNS_ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW",
             "name": "GeoportailFrance.Ignf_lidar_hd_mns_elevation_Elevationgridcoverage_Shadow",
@@ -6559,21 +6559,21 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    45.3839,
-                    -1.57046
+                    41.5,
+                    -5.5
                 ],
                 [
-                    51.0937,
-                    2.80335
+                    52.0,
+                    10.0
                 ]
             ],
             "min_zoom": 0,
-            "max_zoom": 17,
-            "format": "image/tiff",
+            "max_zoom": 18,
+            "format": "image/png",
             "style": "normal",
             "variant": "IGNF_LIDAR-HD_MNT_ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW",
             "name": "GeoportailFrance.Ignf_lidar_hd_mnt_elevation_Elevationgridcoverage_Shadow",
-            "TileMatrixSet": "PM_0_17",
+            "TileMatrixSet": "PM_0_18",
             "apikey": "your_api_key_here"
         },
         "Ign_nl_test_st_amand": {
@@ -9288,6 +9288,29 @@
             "variant": "LSEP-CRUE_PYR-PNG_WLD_WM_EDUGEO_20130128",
             "name": "GeoportailFrance.Lsep-crue_pyr-png_wld_wm_edugeo_20130128",
             "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Maj_evdc": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    46.5514,
+                    0.495276
+                ],
+                [
+                    46.5662,
+                    0.51663
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 22,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "MAJ_EVDC",
+            "name": "GeoportailFrance.Maj_evdc",
+            "TileMatrixSet": "2154_5cm_6_22",
             "apikey": "your_api_key_here"
         },
         "Naturalriskzones_1910floodedwatersheds": {
