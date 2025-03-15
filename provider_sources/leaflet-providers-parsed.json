@@ -294,7 +294,7 @@
     },
     "Thunderforest": {
         "OpenCycleMap": {
-            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}",
+            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}{r}.png?apikey={apikey}",
             "html_attribution": "&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) Thunderforest, (C) OpenStreetMap contributors",
             "variant": "cycle",
@@ -303,7 +303,7 @@
             "name": "Thunderforest.OpenCycleMap"
         },
         "Transport": {
-            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}",
+            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}{r}.png?apikey={apikey}",
             "html_attribution": "&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) Thunderforest, (C) OpenStreetMap contributors",
             "variant": "transport",
@@ -312,7 +312,7 @@
             "name": "Thunderforest.Transport"
         },
         "TransportDark": {
-            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}",
+            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}{r}.png?apikey={apikey}",
             "html_attribution": "&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) Thunderforest, (C) OpenStreetMap contributors",
             "variant": "transport-dark",
@@ -321,7 +321,7 @@
             "name": "Thunderforest.TransportDark"
         },
         "SpinalMap": {
-            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}",
+            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}{r}.png?apikey={apikey}",
             "html_attribution": "&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) Thunderforest, (C) OpenStreetMap contributors",
             "variant": "spinal-map",
@@ -330,7 +330,7 @@
             "name": "Thunderforest.SpinalMap"
         },
         "Landscape": {
-            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}",
+            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}{r}.png?apikey={apikey}",
             "html_attribution": "&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) Thunderforest, (C) OpenStreetMap contributors",
             "variant": "landscape",
@@ -339,7 +339,7 @@
             "name": "Thunderforest.Landscape"
         },
         "Outdoors": {
-            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}",
+            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}{r}.png?apikey={apikey}",
             "html_attribution": "&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) Thunderforest, (C) OpenStreetMap contributors",
             "variant": "outdoors",
@@ -348,7 +348,7 @@
             "name": "Thunderforest.Outdoors"
         },
         "Pioneer": {
-            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}",
+            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}{r}.png?apikey={apikey}",
             "html_attribution": "&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) Thunderforest, (C) OpenStreetMap contributors",
             "variant": "pioneer",
@@ -357,7 +357,7 @@
             "name": "Thunderforest.Pioneer"
         },
         "MobileAtlas": {
-            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}",
+            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}{r}.png?apikey={apikey}",
             "html_attribution": "&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) Thunderforest, (C) OpenStreetMap contributors",
             "variant": "mobile-atlas",
@@ -366,7 +366,7 @@
             "name": "Thunderforest.MobileAtlas"
         },
         "Neighbourhood": {
-            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}",
+            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}{r}.png?apikey={apikey}",
             "html_attribution": "&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) Thunderforest, (C) OpenStreetMap contributors",
             "variant": "neighbourhood",
@@ -486,7 +486,7 @@
             "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
             "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
-            "variant": "streets",
+            "variant": "streets-v2",
             "ext": "png",
             "key": "<insert your MapTiler Cloud API key here>",
             "tileSize": 512,
@@ -499,7 +499,7 @@
             "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
             "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
-            "variant": "basic",
+            "variant": "basic-v2",
             "ext": "png",
             "key": "<insert your MapTiler Cloud API key here>",
             "tileSize": 512,
@@ -512,7 +512,7 @@
             "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
             "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
-            "variant": "bright",
+            "variant": "bright-v2",
             "ext": "png",
             "key": "<insert your MapTiler Cloud API key here>",
             "tileSize": 512,
@@ -564,7 +564,7 @@
             "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
             "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
-            "variant": "toner",
+            "variant": "toner-v2",
             "ext": "png",
             "key": "<insert your MapTiler Cloud API key here>",
             "tileSize": 512,
@@ -577,7 +577,7 @@
             "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
             "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
-            "variant": "topo",
+            "variant": "topo-v2",
             "ext": "png",
             "key": "<insert your MapTiler Cloud API key here>",
             "tileSize": 512,
@@ -590,7 +590,7 @@
             "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
             "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
-            "variant": "voyager",
+            "variant": "voyager-v2",
             "ext": "png",
             "key": "<insert your MapTiler Cloud API key here>",
             "tileSize": 512,
@@ -637,6 +637,110 @@
             "min_zoom": 0,
             "max_zoom": 21,
             "name": "MapTiler.Dataviz"
+        },
+        "DatavizLight": {
+            "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
+            "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
+            "variant": "dataviz-light",
+            "ext": "png",
+            "key": "<insert your MapTiler Cloud API key here>",
+            "tileSize": 512,
+            "zoomOffset": -1,
+            "min_zoom": 0,
+            "max_zoom": 21,
+            "name": "MapTiler.DatavizLight"
+        },
+        "DatavizDark": {
+            "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
+            "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
+            "variant": "dataviz-dark",
+            "ext": "png",
+            "key": "<insert your MapTiler Cloud API key here>",
+            "tileSize": 512,
+            "zoomOffset": -1,
+            "min_zoom": 0,
+            "max_zoom": 21,
+            "name": "MapTiler.DatavizDark"
+        },
+        "Aquarelle": {
+            "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
+            "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
+            "variant": "aquarelle",
+            "ext": "webp",
+            "key": "<insert your MapTiler Cloud API key here>",
+            "tileSize": 512,
+            "zoomOffset": -1,
+            "min_zoom": 0,
+            "max_zoom": 21,
+            "name": "MapTiler.Aquarelle"
+        },
+        "Landscape": {
+            "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
+            "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
+            "variant": "landscape",
+            "ext": "png",
+            "key": "<insert your MapTiler Cloud API key here>",
+            "tileSize": 512,
+            "zoomOffset": -1,
+            "min_zoom": 0,
+            "max_zoom": 21,
+            "name": "MapTiler.Landscape"
+        },
+        "Openstreetmap": {
+            "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
+            "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
+            "variant": "openstreetmap",
+            "ext": "jpg",
+            "key": "<insert your MapTiler Cloud API key here>",
+            "tileSize": 512,
+            "zoomOffset": -1,
+            "min_zoom": 0,
+            "max_zoom": 21,
+            "name": "MapTiler.Openstreetmap"
+        },
+        "Outdoor": {
+            "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
+            "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
+            "variant": "outdoor-v2",
+            "ext": "png",
+            "key": "<insert your MapTiler Cloud API key here>",
+            "tileSize": 512,
+            "zoomOffset": -1,
+            "min_zoom": 0,
+            "max_zoom": 21,
+            "name": "MapTiler.Outdoor"
+        },
+        "Satellite": {
+            "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
+            "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
+            "variant": "satellite",
+            "ext": "jpg",
+            "key": "<insert your MapTiler Cloud API key here>",
+            "tileSize": 512,
+            "zoomOffset": -1,
+            "min_zoom": 0,
+            "max_zoom": 21,
+            "name": "MapTiler.Satellite"
+        },
+        "Winter": {
+            "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
+            "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
+            "variant": "winter-v2",
+            "ext": "png",
+            "key": "<insert your MapTiler Cloud API key here>",
+            "tileSize": 512,
+            "zoomOffset": -1,
+            "min_zoom": 0,
+            "max_zoom": 21,
+            "name": "MapTiler.Winter"
         }
     },
     "TomTom": {
@@ -3072,7 +3176,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2025-03-01",
-        "commit": "commit 2a53d5a03005d42c6c873cf8ccbf70aa8558a0f7 (build(deps-dev): bump @stylistic/eslint-plugin-js from 3.1.0 to 4.1.0\n\nBumps [@stylistic/eslint-plugin-js](https://github.com/eslint-stylistic/eslint-stylistic/tree/HEAD/packages/eslint-plugin-js) from 3.1.0 to 4.1.0.\n- [Release notes](https://github.com/eslint-stylistic/eslint-stylistic/releases)\n- [Changelog](https://github.com/eslint-stylistic/eslint-stylistic/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint-stylistic/eslint-stylistic/commits/v4.1.0/packages/eslint-plugin-js)\n\n---\nupdated-dependencies:\n- dependency-name: \"@stylistic/eslint-plugin-js\"\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
+        "date_of_creation": "2025-03-15",
+        "commit": "commit 16833fd2fffe4dbf77db53a8e96778037084b332 (build(deps-dev): bump eslint from 9.21.0 to 9.22.0\n\nBumps [eslint](https://github.com/eslint/eslint) from 9.21.0 to 9.22.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/compare/v9.21.0...v9.22.0)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }

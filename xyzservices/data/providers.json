@@ -295,7 +295,7 @@
     },
     "Thunderforest": {
         "OpenCycleMap": {
-            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}",
+            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}{r}.png?apikey={apikey}",
             "html_attribution": "&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) Thunderforest, (C) OpenStreetMap contributors",
             "variant": "cycle",
@@ -304,7 +304,7 @@
             "name": "Thunderforest.OpenCycleMap"
         },
         "Transport": {
-            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}",
+            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}{r}.png?apikey={apikey}",
             "html_attribution": "&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) Thunderforest, (C) OpenStreetMap contributors",
             "variant": "transport",
@@ -313,7 +313,7 @@
             "name": "Thunderforest.Transport"
         },
         "TransportDark": {
-            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}",
+            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}{r}.png?apikey={apikey}",
             "html_attribution": "&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) Thunderforest, (C) OpenStreetMap contributors",
             "variant": "transport-dark",
@@ -322,7 +322,7 @@
             "name": "Thunderforest.TransportDark"
         },
         "SpinalMap": {
-            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}",
+            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}{r}.png?apikey={apikey}",
             "html_attribution": "&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) Thunderforest, (C) OpenStreetMap contributors",
             "variant": "spinal-map",
@@ -331,7 +331,7 @@
             "name": "Thunderforest.SpinalMap"
         },
         "Landscape": {
-            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}",
+            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}{r}.png?apikey={apikey}",
             "html_attribution": "&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) Thunderforest, (C) OpenStreetMap contributors",
             "variant": "landscape",
@@ -340,7 +340,7 @@
             "name": "Thunderforest.Landscape"
         },
         "Outdoors": {
-            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}",
+            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}{r}.png?apikey={apikey}",
             "html_attribution": "&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) Thunderforest, (C) OpenStreetMap contributors",
             "variant": "outdoors",
@@ -349,7 +349,7 @@
             "name": "Thunderforest.Outdoors"
         },
         "Pioneer": {
-            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}",
+            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}{r}.png?apikey={apikey}",
             "html_attribution": "&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) Thunderforest, (C) OpenStreetMap contributors",
             "variant": "pioneer",
@@ -358,7 +358,7 @@
             "name": "Thunderforest.Pioneer"
         },
         "MobileAtlas": {
-            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}",
+            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}{r}.png?apikey={apikey}",
             "html_attribution": "&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) Thunderforest, (C) OpenStreetMap contributors",
             "variant": "mobile-atlas",
@@ -367,7 +367,7 @@
             "name": "Thunderforest.MobileAtlas"
         },
         "Neighbourhood": {
-            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}",
+            "url": "https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}{r}.png?apikey={apikey}",
             "html_attribution": "&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
             "attribution": "(C) Thunderforest, (C) OpenStreetMap contributors",
             "variant": "neighbourhood",
@@ -487,7 +487,7 @@
             "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
             "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
-            "variant": "streets",
+            "variant": "streets-v2",
             "ext": "png",
             "key": "<insert your MapTiler Cloud API key here>",
             "tileSize": 512,
@@ -500,7 +500,7 @@
             "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
             "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
-            "variant": "basic",
+            "variant": "basic-v2",
             "ext": "png",
             "key": "<insert your MapTiler Cloud API key here>",
             "tileSize": 512,
@@ -513,7 +513,7 @@
             "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
             "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
-            "variant": "bright",
+            "variant": "bright-v2",
             "ext": "png",
             "key": "<insert your MapTiler Cloud API key here>",
             "tileSize": 512,
@@ -565,7 +565,7 @@
             "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
             "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
-            "variant": "toner",
+            "variant": "toner-v2",
             "ext": "png",
             "key": "<insert your MapTiler Cloud API key here>",
             "tileSize": 512,
@@ -578,7 +578,7 @@
             "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
             "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
-            "variant": "topo",
+            "variant": "topo-v2",
             "ext": "png",
             "key": "<insert your MapTiler Cloud API key here>",
             "tileSize": 512,
@@ -591,7 +591,7 @@
             "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
             "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
-            "variant": "voyager",
+            "variant": "voyager-v2",
             "ext": "png",
             "key": "<insert your MapTiler Cloud API key here>",
             "tileSize": 512,
@@ -639,19 +639,70 @@
             "max_zoom": 21,
             "name": "MapTiler.Dataviz"
         },
-        "Basic4326": {
+        "DatavizLight": {
             "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
             "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
-            "variant": "basic-4326",
+            "variant": "dataviz-light",
             "ext": "png",
             "key": "<insert your MapTiler Cloud API key here>",
             "tileSize": 512,
             "zoomOffset": -1,
             "min_zoom": 0,
             "max_zoom": 21,
-            "name": "MapTiler.Basic4326",
-            "crs": "EPSG:4326"
+            "name": "MapTiler.DatavizLight"
+        },
+        "DatavizDark": {
+            "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
+            "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
+            "variant": "dataviz-dark",
+            "ext": "png",
+            "key": "<insert your MapTiler Cloud API key here>",
+            "tileSize": 512,
+            "zoomOffset": -1,
+            "min_zoom": 0,
+            "max_zoom": 21,
+            "name": "MapTiler.DatavizDark"
+        },
+        "Aquarelle": {
+            "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
+            "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
+            "variant": "aquarelle",
+            "ext": "webp",
+            "key": "<insert your MapTiler Cloud API key here>",
+            "tileSize": 512,
+            "zoomOffset": -1,
+            "min_zoom": 0,
+            "max_zoom": 21,
+            "name": "MapTiler.Aquarelle"
+        },
+        "Landscape": {
+            "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
+            "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
+            "variant": "landscape",
+            "ext": "png",
+            "key": "<insert your MapTiler Cloud API key here>",
+            "tileSize": 512,
+            "zoomOffset": -1,
+            "min_zoom": 0,
+            "max_zoom": 21,
+            "name": "MapTiler.Landscape"
+        },
+        "Openstreetmap": {
+            "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
+            "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
+            "variant": "openstreetmap",
+            "ext": "jpg",
+            "key": "<insert your MapTiler Cloud API key here>",
+            "tileSize": 512,
+            "zoomOffset": -1,
+            "min_zoom": 0,
+            "max_zoom": 21,
+            "name": "MapTiler.Openstreetmap"
         },
         "Outdoor": {
             "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
@@ -666,18 +717,16 @@
             "max_zoom": 21,
             "name": "MapTiler.Outdoor"
         },
-        "Topographique": {
-            "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+        "Satellite": {
+            "url": "https://api.maptiler.com/tiles/{variant}/{z}/{x}/{y}.{ext}?key={key}",
             "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
-            "variant": "topographique",
-            "ext": "png",
+            "variant": "satellite-v2",
+            "ext": "jpg",
             "key": "<insert your MapTiler Cloud API key here>",
-            "tileSize": 512,
-            "zoomOffset": -1,
             "min_zoom": 0,
-            "max_zoom": 21,
-            "name": "MapTiler.Topographique"
+            "max_zoom": 20,
+            "name": "MapTiler.Satellite"
         },
         "Winter": {
             "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
@@ -692,16 +741,32 @@
             "max_zoom": 21,
             "name": "MapTiler.Winter"
         },
-        "Satellite": {
-            "url": "https://api.maptiler.com/tiles/{variant}/{z}/{x}/{y}.{ext}?key={key}",
+        "Basic4326": {
+            "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
             "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
             "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
-            "variant": "satellite-v2",
-            "ext": "jpg",
+            "variant": "basic-4326",
+            "ext": "png",
             "key": "<insert your MapTiler Cloud API key here>",
+            "tileSize": 512,
+            "zoomOffset": -1,
             "min_zoom": 0,
-            "max_zoom": 20,
-            "name": "MapTiler.Satellite"
+            "max_zoom": 21,
+            "name": "MapTiler.Basic4326",
+            "crs": "EPSG:4326"
+        },
+        "Topographique": {
+            "url": "https://api.maptiler.com/maps/{variant}/{z}/{x}/{y}{r}.{ext}?key={key}",
+            "html_attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
+            "attribution": "(C) MapTiler (C) OpenStreetMap contributors",
+            "variant": "topographique",
+            "ext": "png",
+            "key": "<insert your MapTiler Cloud API key here>",
+            "tileSize": 512,
+            "zoomOffset": -1,
+            "min_zoom": 0,
+            "max_zoom": 21,
+            "name": "MapTiler.Topographique"
         },
         "Terrain": {
             "url": "https://api.maptiler.com/tiles/{variant}/{z}/{x}/{y}.{ext}?key={key}",
@@ -3198,7 +3263,7 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    42.0,
+                    41.0,
                     -5.5
                 ],
                 [
@@ -9336,96 +9401,73 @@
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
-        "Nl_ign_test_pcrs_18_refit_1": {
+        "Ocsge_Artif_2016_2017": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    46.7204,
-                    2.49458
+                    -21.3998,
+                    -63.1614
                 ],
                 [
-                    46.7276,
-                    2.49723
+                    51.0991,
+                    55.8465
                 ]
             ],
-            "min_zoom": 0,
-            "max_zoom": 18,
+            "min_zoom": 6,
+            "max_zoom": 16,
             "format": "image/png",
             "style": "normal",
-            "variant": "NL_IGN_Test_pcrs_18_refit_1",
-            "name": "GeoportailFrance.Nl_ign_test_pcrs_18_refit_1",
-            "TileMatrixSet": "2154_50cm_0_18",
+            "variant": "OCSGE.ARTIF.2016-2017",
+            "name": "GeoportailFrance.Ocsge_Artif_2016_2017",
+            "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
-        "Nl_ign_test_pcrs_18_refit_2": {
+        "Ocsge_Artif_2017_2020": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    46.7204,
-                    2.49458
+                    -21.3998,
+                    -63.1614
                 ],
                 [
-                    46.7276,
-                    2.49723
+                    51.0991,
+                    55.8465
                 ]
             ],
-            "min_zoom": 0,
-            "max_zoom": 21,
+            "min_zoom": 6,
+            "max_zoom": 16,
             "format": "image/png",
             "style": "normal",
-            "variant": "NL_IGN_Test_pcrs_18_refit_2",
-            "name": "GeoportailFrance.Nl_ign_test_pcrs_18_refit_2",
-            "TileMatrixSet": "PM_0_21",
+            "variant": "OCSGE.ARTIF.2017-2020",
+            "name": "GeoportailFrance.Ocsge_Artif_2017_2020",
+            "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
-        "Nl_ign_test_pcrs_18_test_5": {
+        "Ocsge_Artif_2021_2023": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    46.7204,
-                    2.49458
+                    -21.3998,
+                    -63.1614
                 ],
                 [
-                    46.7276,
-                    2.49723
+                    51.0991,
+                    55.8465
                 ]
             ],
-            "min_zoom": 0,
-            "max_zoom": 21,
-            "format": "image/jpeg",
-            "style": "normal",
-            "variant": "NL_IGN_Test_pcrs_18_test_5",
-            "name": "GeoportailFrance.Nl_ign_test_pcrs_18_test_5",
-            "TileMatrixSet": "PM_0_21",
-            "apikey": "your_api_key_here"
-        },
-        "Nl_ign_test_pcrs_18_test_6": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    46.7204,
-                    2.49458
-                ],
-                [
-                    46.7276,
-                    2.49723
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 21,
+            "min_zoom": 6,
+            "max_zoom": 16,
             "format": "image/png",
             "style": "normal",
-            "variant": "NL_IGN_Test_pcrs_18_test_6",
-            "name": "GeoportailFrance.Nl_ign_test_pcrs_18_test_6",
-            "TileMatrixSet": "PM_0_21",
+            "variant": "OCSGE.ARTIF.2021-2023",
+            "name": "GeoportailFrance.Ocsge_Artif_2021_2023",
+            "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
         "Ocsge_Construction_2010": {
@@ -10306,29 +10348,6 @@
             "variant": "OFB.ZONES.NECESSITANT.AVIS.GESTIONNAIRE",
             "name": "GeoportailFrance.Ofb_Zones_Necessitant_Avis_Gestionnaire",
             "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here"
-        },
-        "Optimized-planignv2": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    -85.0,
-                    -179.9
-                ],
-                [
-                    85.0,
-                    179.9
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 19,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "OPTIMIZED-PLANIGNV2",
-            "name": "GeoportailFrance.Optimized-planignv2",
-            "TileMatrixSet": "PM_0_19",
             "apikey": "your_api_key_here"
         },
         "Ortho-edugeo_pyr-png_wld_wm": {
@@ -14104,6 +14123,29 @@
             "TileMatrixSet": "2154_5cm_6_22",
             "apikey": "your_api_key_here",
             "status": "broken"
+        },
+        "Pcrs_chantier_d46_test_sde22": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    44.4357,
+                    1.41634
+                ],
+                [
+                    44.4632,
+                    1.45428
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 22,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "PCRS_chantier_D46_test_SDE22",
+            "name": "GeoportailFrance.Pcrs_chantier_d46_test_sde22",
+            "TileMatrixSet": "2154_5cm_6_22",
+            "apikey": "your_api_key_here"
         },
         "Plan_ign_074_gris_n15": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
