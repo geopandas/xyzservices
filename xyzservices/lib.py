@@ -366,7 +366,7 @@ class TileProvider(Bunch):
                 f"The attributes `name`, `url`, "
                 f"and `attribution` are required to initialise "
                 f"a `TileProvider`. Please provide values for: "
-                f'`{"`, `".join(missing)}`'
+                f"`{'`, `'.join(missing)}`"
             )
             raise AttributeError(msg)
 
