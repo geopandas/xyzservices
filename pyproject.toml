@@ -1,9 +1,9 @@
 [tool.ruff]
 line-length = 88
-select = ["E", "F", "W", "I", "UP", "N", "B", "A", "C4", "SIM", "ARG"]
+lint.select = ["E", "F", "W", "I", "UP", "N", "B", "A", "C4", "SIM", "ARG"]
 exclude = ["provider_sources/_compress_providers.py", "doc"]
 target-version = "py38"
-ignore = ["B006", "A003", "B904"]
+lint.ignore = ["B006", "A003", "B904", "C420"]
 
 [tool.pytest.ini_options]
 markers = [
