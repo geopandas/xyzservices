@@ -3176,7 +3176,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2025-04-01",
-        "commit": "commit 65df099ba50665242c954cf2be411d6babd96a75 (build(deps-dev): bump eslint from 9.22.0 to 9.23.0\n\nBumps [eslint](https://github.com/eslint/eslint) from 9.22.0 to 9.23.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/compare/v9.22.0...v9.23.0)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
+        "date_of_creation": "2025-04-15",
+        "commit": "commit 7aafb14c7195456e13da5096d0a8d9e49b404128 (build(deps-dev): bump eslint from 9.23.0 to 9.24.0\n\nBumps [eslint](https://github.com/eslint/eslint) from 9.23.0 to 9.24.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/compare/v9.23.0...v9.24.0)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-version: 9.24.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }
