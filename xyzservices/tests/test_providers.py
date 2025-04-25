@@ -104,7 +104,13 @@ def test_free_providers(name):
     provider = flat_free[name]
     if "Stadia" in name:
         pytest.skip("Stadia doesn't support tile download in this way.")
-    get_test_result(provider)
+    elif "GeoportailFrance" in name:
+        try:
+            get_test_result(provider)
+        except ValueError:
+            pytest.xfail("GeoportailFrance API is unstable.")
+    else:
+        get_test_result(provider)
 
 
 # test providers requiring API keys. Store API keys in GitHub secrets and load them as
