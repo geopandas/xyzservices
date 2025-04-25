@@ -543,5 +543,13 @@
             ],
             "name": "OrdnanceSurvey.Leisure_27700"
         }
+    },
+    "UN": {
+        "ClearMap": {
+            "url": "https://geoservices.un.org/arcgis/rest/services/ClearMap_WebTopo/MapServer/tile/{z}/{y}/{x}",
+            "name": "UN.ClearMap",
+            "html_attribution": "&copy; <a href=\"https://www.un.org/geospatial/mapsgeo/webservices\">United Nations</a> contributors",
+            "attribution": "United Nations"
+        }
     }
 }
