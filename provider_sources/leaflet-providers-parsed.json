@@ -3176,7 +3176,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2025-05-01",
-        "commit": "commit d9274eb27781934ff4f1e5ee341474a497fe7ea0 (build(deps-dev): bump eslint from 9.24.0 to 9.25.1\n\nBumps [eslint](https://github.com/eslint/eslint) from 9.24.0 to 9.25.1.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/compare/v9.24.0...v9.25.1)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-version: 9.25.1\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
+        "date_of_creation": "2025-05-15",
+        "commit": "commit a4e4b2b47a523244fda06b9910eefe03a5e6102a (build(deps-dev): bump mocha from 11.1.0 to 11.2.2\n\nBumps [mocha](https://github.com/mochajs/mocha) from 11.1.0 to 11.2.2.\n- [Release notes](https://github.com/mochajs/mocha/releases)\n- [Changelog](https://github.com/mochajs/mocha/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/mochajs/mocha/compare/v11.1.0...v11.2.2)\n\n---\nupdated-dependencies:\n- dependency-name: mocha\n  dependency-version: 11.2.2\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }
