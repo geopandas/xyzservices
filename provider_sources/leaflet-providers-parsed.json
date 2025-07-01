@@ -3176,7 +3176,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2025-06-15",
-        "commit": "commit 2addc086b7061fc335070472c8e235c504b94d61 (build(deps-dev): bump @stylistic/eslint-plugin-js from 4.4.0 to 4.4.1\n\nBumps [@stylistic/eslint-plugin-js](https://github.com/eslint-stylistic/eslint-stylistic/tree/HEAD/packages/eslint-plugin-js) from 4.4.0 to 4.4.1.\n- [Release notes](https://github.com/eslint-stylistic/eslint-stylistic/releases)\n- [Changelog](https://github.com/eslint-stylistic/eslint-stylistic/blob/v4.4.1/CHANGELOG.md)\n- [Commits](https://github.com/eslint-stylistic/eslint-stylistic/commits/v4.4.1/packages/eslint-plugin-js)\n\n---\nupdated-dependencies:\n- dependency-name: \"@stylistic/eslint-plugin-js\"\n  dependency-version: 4.4.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
+        "date_of_creation": "2025-07-01",
+        "commit": "commit edabf3585f10ce2a38acb51903e9def88b7a8b19 (build(deps-dev): bump eslint from 9.29.0 to 9.30.0\n\nBumps [eslint](https://github.com/eslint/eslint) from 9.29.0 to 9.30.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/compare/v9.29.0...v9.30.0)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-version: 9.30.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }

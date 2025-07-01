@@ -3065,12 +3065,12 @@
                 ]
             ],
             "min_zoom": 0,
-            "max_zoom": 21,
+            "max_zoom": 19,
             "format": "image/jpeg",
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS",
             "name": "GeoportailFrance.orthos",
-            "TileMatrixSet": "PM_0_21",
+            "TileMatrixSet": "PM_0_19",
             "apikey": "your_api_key_here"
         },
         "500k": {
@@ -3116,6 +3116,52 @@
             "style": "ACCES.BIOMETHANE",
             "variant": "ACCES.BIOMETHANE",
             "name": "GeoportailFrance.Acces_Biomethane",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Admin_express_cog_carto_pe_2025": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.4756,
+                    -63.3725
+                ],
+                [
+                    51.3121,
+                    55.9259
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "ADMIN-EXPRESS-COG-CARTO-PE.2025",
+            "name": "GeoportailFrance.Admin_express_cog_carto_pe_2025",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Admin_express_cog_carto_pe_Latest": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.4756,
+                    -63.3725
+                ],
+                [
+                    51.3121,
+                    55.9259
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "ADMIN-EXPRESS-COG-CARTO-PE.LATEST",
+            "name": "GeoportailFrance.Admin_express_cog_carto_pe_Latest",
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
@@ -7398,6 +7444,29 @@
             "variant": "INSTALLATIONS.PV.SOL",
             "name": "GeoportailFrance.Installations_Pv_Sol",
             "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Ks_scan1000": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    40.3635,
+                    -5.23491
+                ],
+                [
+                    45.8939,
+                    -2.57402
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 10,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "KS_scan1000",
+            "name": "GeoportailFrance.Ks_scan1000",
+            "TileMatrixSet": "PM_0_10",
             "apikey": "your_api_key_here"
         },
         "Landcover_Cha00": {
@@ -12403,21 +12472,44 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    14.3798,
-                    -61.2402
+                    1.93254,
+                    -63.1891
                 ],
                 [
-                    14.8887,
-                    -60.7876
+                    18.1429,
+                    -51.5925
                 ]
             ],
             "min_zoom": 0,
-            "max_zoom": 17,
+            "max_zoom": 18,
             "format": "image/jpeg",
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2023",
             "name": "GeoportailFrance.Orthoimagery_Ortho_sat_Pleiades_2023",
-            "TileMatrixSet": "PM_0_17",
+            "TileMatrixSet": "PM_0_18",
+            "apikey": "your_api_key_here"
+        },
+        "Orthoimagery_Ortho_sat_Pleiades_2024": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    17.9802,
+                    -63.1796
+                ],
+                [
+                    47.1589,
+                    -56.0958
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 18,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2024",
+            "name": "GeoportailFrance.Orthoimagery_Ortho_sat_Pleiades_2024",
+            "TileMatrixSet": "PM_0_18",
             "apikey": "your_api_key_here"
         },
         "Orthoimagery_Ortho_sat_Pleiades_2025": {
@@ -13332,13 +13424,13 @@
                     9.66314
                 ]
             ],
-            "min_zoom": 0,
+            "min_zoom": 6,
             "max_zoom": 19,
             "format": "image/jpeg",
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS.IRC.2019",
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_2019",
-            "TileMatrixSet": "PM_0_19",
+            "TileMatrixSet": "PM_6_19",
             "apikey": "your_api_key_here"
         },
         "Orthoimagery_Orthophotos_Irc_2020": {
@@ -13347,21 +13439,21 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    42.9454,
-                    -2.68142
+                    -80.0,
+                    -180.0
                 ],
                 [
-                    49.4512,
-                    7.74363
+                    80.0,
+                    180.0
                 ]
             ],
-            "min_zoom": 0,
+            "min_zoom": 6,
             "max_zoom": 19,
             "format": "image/jpeg",
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS.IRC.2020",
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_2020",
-            "TileMatrixSet": "PM_0_19",
+            "TileMatrixSet": "PM_6_19",
             "apikey": "your_api_key_here"
         },
         "Orthoimagery_Orthophotos_Irc_2021": {
@@ -14651,6 +14743,52 @@
             "variant": "PCRS_chantier_D46_test_SDE22",
             "name": "GeoportailFrance.Pcrs_chantier_d46_test_sde22",
             "TileMatrixSet": "2154_5cm_6_22",
+            "apikey": "your_api_key_here"
+        },
+        "Planign_Lidar_Sursol": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.5561,
+                    54.7936
+                ],
+                [
+                    -20.4503,
+                    55.9352
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "PLANIGN.LIDAR.SURSOL",
+            "name": "GeoportailFrance.Planign_Lidar_Sursol",
+            "TileMatrixSet": "PM_6_18",
+            "apikey": "your_api_key_here"
+        },
+        "Planign_Lidar_Terrain": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.5561,
+                    54.7936
+                ],
+                [
+                    -20.4503,
+                    55.9352
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "PLANIGN.LIDAR.TERRAIN",
+            "name": "GeoportailFrance.Planign_Lidar_Terrain",
+            "TileMatrixSet": "PM_6_18",
             "apikey": "your_api_key_here"
         },
         "Plan_ign_074_gris_n15": {
@@ -17488,12 +17626,12 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    40.576,
-                    -9.88147
+                    -80.0,
+                    -180.0
                 ],
                 [
-                    51.4428,
-                    11.6781
+                    80.0,
+                    180.0
                 ]
             ],
             "min_zoom": 3,
@@ -17618,29 +17756,6 @@
             "variant": "hydro_ardennes_pyramide_raster_wmts",
             "name": "GeoportailFrance.Hydro_ardennes_pyramide_raster_wmts",
             "TileMatrixSet": "PM_0_16",
-            "apikey": "your_api_key_here"
-        },
-        "Martigues_pcrs_zone_1": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    43.4054,
-                    5.04959
-                ],
-                [
-                    43.4141,
-                    5.06223
-                ]
-            ],
-            "min_zoom": 8,
-            "max_zoom": 21,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "martigues_pcrs_zone_1",
-            "name": "GeoportailFrance.Martigues_pcrs_zone_1",
-            "TileMatrixSet": "2154_5cm_8_21",
             "apikey": "your_api_key_here"
         },
         "Orthophoto_1947_calvados": {
@@ -17781,6 +17896,29 @@
             "TileMatrixSet": "2154_5cm_0_22",
             "apikey": "your_api_key_here"
         },
+        "Scan1000_corse_jbn": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.2349,
+                    8.35477
+                ],
+                [
+                    43.0475,
+                    9.75281
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 10,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "scan1000_corse_jbn",
+            "name": "GeoportailFrance.Scan1000_corse_jbn",
+            "TileMatrixSet": "PM_0_10",
+            "apikey": "your_api_key_here"
+        },
         "Testsrd-pcrs86-poitiers": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -17802,29 +17940,6 @@
             "variant": "testSRD-PCRS86-Poitiers",
             "name": "GeoportailFrance.Testsrd-pcrs86-poitiers",
             "TileMatrixSet": "PM_0_10",
-            "apikey": "your_api_key_here"
-        },
-        "Test_mamp_echantillon_martigues_pcrs": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    43.3964,
-                    5.0246
-                ],
-                [
-                    43.4236,
-                    5.06254
-                ]
-            ],
-            "min_zoom": 8,
-            "max_zoom": 21,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "test_mamp_echantillon_martigues_pcrs",
-            "name": "GeoportailFrance.Test_mamp_echantillon_martigues_pcrs",
-            "TileMatrixSet": "2154_5cm_8_21",
             "apikey": "your_api_key_here"
         },
         "Test_mamp_echantillon_pcrs": {
@@ -17850,29 +17965,6 @@
             "TileMatrixSet": "2154_5cm_8_21",
             "apikey": "your_api_key_here"
         },
-        "Test_mamp_echantillon_pcrs1": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    43.3964,
-                    5.0246
-                ],
-                [
-                    43.4236,
-                    5.06254
-                ]
-            ],
-            "min_zoom": 8,
-            "max_zoom": 21,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "test_mamp_echantillon_pcrs1",
-            "name": "GeoportailFrance.Test_mamp_echantillon_pcrs1",
-            "TileMatrixSet": "2154_5cm_8_21",
-            "apikey": "your_api_key_here"
-        },
         "Tuto_scan1000_srd": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -17894,52 +17986,6 @@
             "variant": "tuto_scan1000_SRD",
             "name": "GeoportailFrance.Tuto_scan1000_srd",
             "TileMatrixSet": "PM_0_10",
-            "apikey": "your_api_key_here"
-        },
-        "Zzz_nl_test_prevair_o3_chi_an_euro_dave_20241201_d_1": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    29.9888,
-                    -25.0
-                ],
-                [
-                    70.0,
-                    44.9977
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 6,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "zzz_nl_test_prevair_O3_CHI_AN_EURO_DAVE_20241201_D_1",
-            "name": "GeoportailFrance.Zzz_nl_test_prevair_o3_chi_an_euro_dave_20241201_d_1",
-            "TileMatrixSet": "PM_0_6",
-            "apikey": "your_api_key_here"
-        },
-        "Zzz_nl_test_reserve_biosphere": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    -21.3768,
-                    -61.5181
-                ],
-                [
-                    50.7622,
-                    55.8053
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "zzz_nl_test_reserve_biosphere",
-            "name": "GeoportailFrance.Zzz_nl_test_reserve_biosphere",
-            "TileMatrixSet": "PM_0_16",
             "apikey": "your_api_key_here"
         }
     },
