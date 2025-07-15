@@ -6756,6 +6756,29 @@
             "TileMatrixSet": "PM_6_18",
             "apikey": "your_api_key_here"
         },
+        "Ignf_bd-haie-v1_2020": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.0,
+                    -6.0
+                ],
+                [
+                    52.0,
+                    10.0
+                ]
+            ],
+            "min_zoom": 4,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_BD-HAIE-V1_2020",
+            "name": "GeoportailFrance.Ignf_bd-haie-v1_2020",
+            "TileMatrixSet": "PM_4_18",
+            "apikey": "your_api_key_here"
+        },
         "Ignf_cosia_2017-2020": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -12840,12 +12863,12 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    41.2593,
-                    -5.57103
+                    1.82643,
+                    -54.709
                 ],
                 [
-                    51.1123,
-                    10.7394
+                    51.0991,
+                    9.5705
                 ]
             ],
             "min_zoom": 0,
@@ -17390,29 +17413,6 @@
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
-        "Thr_Orthoimagery_Orthophotos": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    43.1533,
-                    0.0354912
-                ],
-                [
-                    49.6969,
-                    6.02353
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 21,
-            "format": "image/jpeg",
-            "style": "normal",
-            "variant": "THR.ORTHOIMAGERY.ORTHOPHOTOS",
-            "name": "GeoportailFrance.Thr_Orthoimagery_Orthophotos",
-            "TileMatrixSet": "PM_6_21",
-            "apikey": "your_api_key_here"
-        },
         "Tn_Roadtransportnetwork_Roadlink": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -17496,13 +17496,13 @@
                     55.9259
                 ]
             ],
-            "min_zoom": 10,
+            "min_zoom": 8,
             "max_zoom": 18,
             "format": "image/png",
             "style": "normal",
             "variant": "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST",
             "name": "GeoportailFrance.Transportnetwork_Commontransportelements_Markerpost",
-            "TileMatrixSet": "PM_10_18",
+            "TileMatrixSet": "PM_8_18",
             "apikey": "your_api_key_here"
         },
         "Transportnetwork_Commontransportelements_Markerpost_visu": {
@@ -17626,12 +17626,12 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    -80.0,
-                    -180.0
+                    -44.6281,
+                    -63.7846
                 ],
                 [
-                    80.0,
-                    180.0
+                    51.2159,
+                    67.5485
                 ]
             ],
             "min_zoom": 3,
@@ -17687,29 +17687,6 @@
             "variant": "WMTS_BEZIERS-COLOMBIERS_2022110638503087",
             "name": "GeoportailFrance.Wmts_beziers-colombiers_2022110638503087",
             "TileMatrixSet": "PM_0_18",
-            "apikey": "your_api_key_here"
-        },
-        "Zones-a-prospecter-forets-subnaturelles": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    41.3252,
-                    -5.1505
-                ],
-                [
-                    51.0991,
-                    9.5705
-                ]
-            ],
-            "min_zoom": 4,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "ZONES-A-PROSPECTER-FORETS-SUBNATURELLES",
-            "name": "GeoportailFrance.Zones-a-prospecter-forets-subnaturelles",
-            "TileMatrixSet": "PM_4_16",
             "apikey": "your_api_key_here"
         },
         "Hedge_Hedge": {
@@ -17871,29 +17848,6 @@
             "variant": "orthophoto_1991_calvados",
             "name": "GeoportailFrance.Orthophoto_1991_calvados",
             "TileMatrixSet": "PM_0_18",
-            "apikey": "your_api_key_here"
-        },
-        "Pcrs_chantier_cd45_test032025_wmts": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    44.4357,
-                    1.41634
-                ],
-                [
-                    44.4632,
-                    1.45428
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 22,
-            "format": "image/jpeg",
-            "style": "normal",
-            "variant": "pcrs_chantier_cd45_test032025_wmts",
-            "name": "GeoportailFrance.Pcrs_chantier_cd45_test032025_wmts",
-            "TileMatrixSet": "2154_5cm_0_22",
             "apikey": "your_api_key_here"
         },
         "Scan1000_corse_jbn": {
