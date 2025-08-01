@@ -4109,6 +4109,29 @@
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
+        "Dalles_bloc_e": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    46.2743,
+                    0.937634
+                ],
+                [
+                    46.6001,
+                    1.23023
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 22,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "DALLES_BLOC_E",
+            "name": "GeoportailFrance.Dalles_bloc_e",
+            "TileMatrixSet": "2154_5cm_6_22",
+            "apikey": "your_api_key_here"
+        },
         "Debroussaillement": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -4222,6 +4245,29 @@
             "variant": "DREAL.ZONAGE_PINEL",
             "name": "GeoportailFrance.Dreal_Zonage_pinel",
             "TileMatrixSet": "PM_6_18",
+            "apikey": "your_api_key_here"
+        },
+        "Dalles_test_3m": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    43.5411,
+                    3.67633
+                ],
+                [
+                    43.5432,
+                    3.9529
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 22,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "Dalles_Test_3M",
+            "name": "GeoportailFrance.Dalles_test_3m",
+            "TileMatrixSet": "2154_5cm_6_22",
             "apikey": "your_api_key_here"
         },
         "Edugeo_Landuse_Agriculture2012": {
@@ -6785,12 +6831,12 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    41.0,
-                    -5.5
+                    -80.0,
+                    -180.0
                 ],
                 [
-                    52.0,
-                    10.0
+                    80.0,
+                    180.0
                 ]
             ],
             "min_zoom": 6,
@@ -13424,13 +13470,13 @@
                     8.25765
                 ]
             ],
-            "min_zoom": 0,
+            "min_zoom": 6,
             "max_zoom": 19,
             "format": "image/jpeg",
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS.IRC.2018",
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_2018",
-            "TileMatrixSet": "PM_0_19",
+            "TileMatrixSet": "PM_6_19",
             "apikey": "your_api_key_here"
         },
         "Orthoimagery_Orthophotos_Irc_2019": {
@@ -14699,6 +14745,29 @@
             "apikey": "your_api_key_here",
             "status": "broken"
         },
+        "Pcrs_chantier_200m": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    48.5211,
+                    -2.20895
+                ],
+                [
+                    48.7339,
+                    -1.51488
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 22,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "PCRS_chantier_200m",
+            "name": "GeoportailFrance.Pcrs_chantier_200m",
+            "TileMatrixSet": "2154_5cm_6_22",
+            "apikey": "your_api_key_here"
+        },
         "Pcrs_chantier_d034": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -14719,29 +14788,6 @@
             "style": "normal",
             "variant": "PCRS_chantier_D034",
             "name": "GeoportailFrance.Pcrs_chantier_d034",
-            "TileMatrixSet": "2154_5cm_6_22",
-            "apikey": "your_api_key_here"
-        },
-        "Pcrs_chantier_d046_crige": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    44.436,
-                    1.44147
-                ],
-                [
-                    44.4632,
-                    1.45428
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 22,
-            "format": "image/jpeg",
-            "style": "normal",
-            "variant": "PCRS_chantier_D046_CRIGE",
-            "name": "GeoportailFrance.Pcrs_chantier_d046_crige",
             "TileMatrixSet": "2154_5cm_6_22",
             "apikey": "your_api_key_here"
         },
@@ -16240,6 +16286,29 @@
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
+        "Patrinat_bios": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -16.6412,
+                    -146.483
+                ],
+                [
+                    50.8555,
+                    8.9138
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patrinat_BIOS",
+            "name": "GeoportailFrance.Patrinat_bios",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
         "Patrinat_bpm": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -16375,29 +16444,6 @@
             "style": "normal",
             "variant": "Patrinat_PN",
             "name": "GeoportailFrance.Patrinat_pn",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here"
-        },
-        "Patrinat_pn2": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    -21.3863,
-                    -62.018
-                ],
-                [
-                    48.1066,
-                    55.8367
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "Patrinat_PN2",
-            "name": "GeoportailFrance.Patrinat_pn2",
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
