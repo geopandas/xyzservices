@@ -3119,29 +3119,6 @@
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
-        "Admin_express_cog_carto_pe_2025": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    -21.4756,
-                    -63.3725
-                ],
-                [
-                    51.3121,
-                    55.9259
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "ADMIN-EXPRESS-COG-CARTO-PE.2025",
-            "name": "GeoportailFrance.Admin_express_cog_carto_pe_2025",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here"
-        },
         "Admin_express_cog_carto_pe_Latest": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -3162,6 +3139,29 @@
             "style": "normal",
             "variant": "ADMIN-EXPRESS-COG-CARTO-PE.LATEST",
             "name": "GeoportailFrance.Admin_express_cog_carto_pe_Latest",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Adminexpress_cog_carto_pe_2025": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.4756,
+                    -63.3725
+                ],
+                [
+                    51.3121,
+                    55.9259
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "ADMINEXPRESS-COG-CARTO-PE.2025",
+            "name": "GeoportailFrance.Adminexpress_cog_carto_pe_2025",
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
@@ -6854,12 +6854,12 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    41.0,
-                    -5.5
+                    -80.0,
+                    -180.0
                 ],
                 [
-                    52.0,
-                    10.0
+                    80.0,
+                    180.0
                 ]
             ],
             "min_zoom": 6,
@@ -12558,29 +12558,6 @@
             "TileMatrixSet": "PM_0_18",
             "apikey": "your_api_key_here"
         },
-        "Orthoimagery_Ortho_sat_Pleiades_2024": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    17.9802,
-                    -63.1796
-                ],
-                [
-                    47.1589,
-                    -56.0958
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 18,
-            "format": "image/jpeg",
-            "style": "normal",
-            "variant": "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2024",
-            "name": "GeoportailFrance.Orthoimagery_Ortho_sat_Pleiades_2024",
-            "TileMatrixSet": "PM_0_18",
-            "apikey": "your_api_key_here"
-        },
         "Orthoimagery_Ortho_sat_Pleiades_2025": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -14512,6 +14489,29 @@
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS2016",
             "name": "GeoportailFrance.Orthoimagery_Orthophotos2016",
             "TileMatrixSet": "PM_0_18",
+            "apikey": "your_api_key_here"
+        },
+        "Orthoimagery_Orthophotos2016_2020": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -75.0,
+                    -179.0
+                ],
+                [
+                    75.0,
+                    179.0
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 19,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "ORTHOIMAGERY.ORTHOPHOTOS2016-2020",
+            "name": "GeoportailFrance.Orthoimagery_Orthophotos2016_2020",
+            "TileMatrixSet": "PM_6_19",
             "apikey": "your_api_key_here"
         },
         "Orthoimagery_Orthophotos2017": {

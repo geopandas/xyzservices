@@ -3176,7 +3176,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2025-08-01",
-        "commit": "commit 7ea10aae77359a38d215a3c6cd3e7c330935f19c (build(deps-dev): bump eslint from 9.31.0 to 9.32.0\n\nBumps [eslint](https://github.com/eslint/eslint) from 9.31.0 to 9.32.0.\n- [Release notes](https://github.com/eslint/eslint/releases)\n- [Changelog](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/eslint/eslint/compare/v9.31.0...v9.32.0)\n\n---\nupdated-dependencies:\n- dependency-name: eslint\n  dependency-version: 9.32.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
+        "date_of_creation": "2025-08-15",
+        "commit": "commit 1446eeb9a9a26a0f77bf72e4a7c8533eadec4830 (build(deps): bump actions/checkout from 4 to 5\n\nBumps [actions/checkout](https://github.com/actions/checkout) from 4 to 5.\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/v4...v5)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-version: '5'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }
