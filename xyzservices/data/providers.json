@@ -6963,6 +6963,75 @@
             "TileMatrixSet": "PM_0_18",
             "apikey": "your_api_key_here"
         },
+        "Ignf_parcelles-agricole-categorisees_2024": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.4756,
+                    -63.3725
+                ],
+                [
+                    51.3121,
+                    55.9259
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_PARCELLES-AGRICOLE-CATEGORISEES_2024",
+            "name": "GeoportailFrance.Ignf_parcelles-agricole-categorisees_2024",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_prairies-permanentes_2024": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.4756,
+                    -63.3725
+                ],
+                [
+                    51.3121,
+                    55.9259
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_PRAIRIES-PERMANENTES_2024",
+            "name": "GeoportailFrance.Ignf_prairies-permanentes_2024",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_zones-densite-homogene_2024": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.4756,
+                    -63.3725
+                ],
+                [
+                    51.3121,
+                    55.9259
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_ZONES-DENSITE-HOMOGENE_2024",
+            "name": "GeoportailFrance.Ignf_zones-densite-homogene_2024",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
         "Ign_nl_test_st_amand": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -9076,6 +9145,29 @@
             "style": "normal",
             "variant": "LANDCOVER.SYLVOECOREGIONS.ALLUVIUM",
             "name": "GeoportailFrance.Landcover_Sylvoecoregions_Alluvium",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Landuse_Agriculture_2024": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.4756,
+                    -63.3725
+                ],
+                [
+                    51.3121,
+                    55.9259
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "LANDUSE.AGRICULTURE.2024",
+            "name": "GeoportailFrance.Landuse_Agriculture_2024",
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
@@ -12541,20 +12633,43 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    1.93254,
+                    14.3798,
                     -63.1891
                 ],
                 [
                     18.1429,
-                    -51.5925
+                    -60.7876
                 ]
             ],
             "min_zoom": 0,
             "max_zoom": 18,
-            "format": "image/jpeg",
+            "format": "image/png",
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2023",
             "name": "GeoportailFrance.Orthoimagery_Ortho_sat_Pleiades_2023",
+            "TileMatrixSet": "PM_0_18",
+            "apikey": "your_api_key_here"
+        },
+        "Orthoimagery_Ortho_sat_Pleiades_2024": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    17.9802,
+                    -63.1796
+                ],
+                [
+                    47.1589,
+                    -56.0958
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2024",
+            "name": "GeoportailFrance.Orthoimagery_Ortho_sat_Pleiades_2024",
             "TileMatrixSet": "PM_0_18",
             "apikey": "your_api_key_here"
         },
@@ -12564,21 +12679,21 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    -13.0277,
-                    44.9613
+                    -21.3978,
+                    1.43481
                 ],
                 [
-                    -12.6208,
-                    45.3115
+                    49.247,
+                    55.8519
                 ]
             ],
-            "min_zoom": 4,
+            "min_zoom": 0,
             "max_zoom": 18,
-            "format": "image/jpeg",
+            "format": "image/png",
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2025",
             "name": "GeoportailFrance.Orthoimagery_Ortho_sat_Pleiades_2025",
-            "TileMatrixSet": "PM_4_18",
+            "TileMatrixSet": "PM_0_18",
             "apikey": "your_api_key_here"
         },
         "Orthoimagery_Ortho_sat_Pleiades_Mayotte_2024_06": {
@@ -13568,6 +13683,29 @@
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS.IRC.2023",
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_2023",
+            "TileMatrixSet": "PM_6_19",
+            "apikey": "your_api_key_here"
+        },
+        "Orthoimagery_Orthophotos_Irc_2024": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -75.0,
+                    -179.0
+                ],
+                [
+                    75.0,
+                    179.0
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 19,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "ORTHOIMAGERY.ORTHOPHOTOS.IRC.2024",
+            "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_2024",
             "TileMatrixSet": "PM_6_19",
             "apikey": "your_api_key_here"
         },
@@ -14675,6 +14813,29 @@
             "TileMatrixSet": "PM_6_19",
             "apikey": "your_api_key_here"
         },
+        "Orthoimagery_Orthophotos2024": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -75.0,
+                    -179.0
+                ],
+                [
+                    75.0,
+                    179.0
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 19,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "ORTHOIMAGERY.ORTHOPHOTOS2024",
+            "name": "GeoportailFrance.Orthoimagery_Orthophotos2024",
+            "TileMatrixSet": "PM_6_19",
+            "apikey": "your_api_key_here"
+        },
         "Parking_Sup_500": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -14820,12 +14981,12 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    -21.5561,
-                    54.7936
+                    -80.0,
+                    -180.0
                 ],
                 [
-                    -20.4503,
-                    55.9352
+                    80.0,
+                    180.0
                 ]
             ],
             "min_zoom": 6,
@@ -14843,12 +15004,12 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    -21.5561,
-                    54.7936
+                    -80.0,
+                    -180.0
                 ],
                 [
-                    -20.4503,
-                    55.9352
+                    80.0,
+                    180.0
                 ]
             ],
             "min_zoom": 6,
@@ -17565,13 +17726,13 @@
                     55.9259
                 ]
             ],
-            "min_zoom": 6,
+            "min_zoom": 8,
             "max_zoom": 18,
             "format": "image/png",
             "style": "normal",
             "variant": "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST_VISU",
             "name": "GeoportailFrance.Transportnetwork_Commontransportelements_Markerpost_visu",
-            "TileMatrixSet": "PM_6_18",
+            "TileMatrixSet": "PM_8_18",
             "apikey": "your_api_key_here"
         },
         "Transportnetworks_Railways": {
