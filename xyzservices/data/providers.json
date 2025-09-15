@@ -6894,6 +6894,29 @@
             "TileMatrixSet": "PM_6_17",
             "apikey": "your_api_key_here"
         },
+        "Ignf_forets-anciennes": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.3252,
+                    -5.1505
+                ],
+                [
+                    51.0991,
+                    9.5705
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_FORETS-ANCIENNES",
+            "name": "GeoportailFrance.Ignf_forets-anciennes",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
         "Ignf_lidar_hd_mnh_elevation_Elevationgridcoverage_Shadow": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -6961,75 +6984,6 @@
             "variant": "IGNF_LIDAR-HD_MNT_ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW",
             "name": "GeoportailFrance.Ignf_lidar_hd_mnt_elevation_Elevationgridcoverage_Shadow",
             "TileMatrixSet": "PM_0_18",
-            "apikey": "your_api_key_here"
-        },
-        "Ignf_parcelles-agricole-categorisees_2024": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    -21.4756,
-                    -63.3725
-                ],
-                [
-                    51.3121,
-                    55.9259
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "IGNF_PARCELLES-AGRICOLE-CATEGORISEES_2024",
-            "name": "GeoportailFrance.Ignf_parcelles-agricole-categorisees_2024",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here"
-        },
-        "Ignf_prairies-permanentes_2024": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    -21.4756,
-                    -63.3725
-                ],
-                [
-                    51.3121,
-                    55.9259
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "IGNF_PRAIRIES-PERMANENTES_2024",
-            "name": "GeoportailFrance.Ignf_prairies-permanentes_2024",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here"
-        },
-        "Ignf_zones-densite-homogene_2024": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    -21.4756,
-                    -63.3725
-                ],
-                [
-                    51.3121,
-                    55.9259
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "IGNF_ZONES-DENSITE-HOMOGENE_2024",
-            "name": "GeoportailFrance.Ignf_zones-densite-homogene_2024",
-            "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
         "Ign_nl_test_st_amand": {
@@ -12633,12 +12587,12 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    14.3798,
+                    1.93254,
                     -63.1891
                 ],
                 [
                     18.1429,
-                    -60.7876
+                    -51.5925
                 ]
             ],
             "min_zoom": 0,
@@ -17896,6 +17850,52 @@
             "TileMatrixSet": "PM_0_18",
             "apikey": "your_api_key_here"
         },
+        "Zones-a-prospecter-forets-subnaturelles": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.3252,
+                    -5.1505
+                ],
+                [
+                    51.0991,
+                    9.5705
+                ]
+            ],
+            "min_zoom": 4,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "ZONES-A-PROSPECTER-FORETS-SUBNATURELLES",
+            "name": "GeoportailFrance.Zones-a-prospecter-forets-subnaturelles",
+            "TileMatrixSet": "PM_4_16",
+            "apikey": "your_api_key_here"
+        },
+        "Adminexpress-kdep-jpb-test-raster_wmts": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.4215,
+                    -61.875
+                ],
+                [
+                    51.2711,
+                    55.8984
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 11,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "adminexpress-kdep-jpb-test-raster_wmts",
+            "name": "GeoportailFrance.Adminexpress-kdep-jpb-test-raster_wmts",
+            "TileMatrixSet": "PM_0_11",
+            "apikey": "your_api_key_here"
+        },
         "Hedge_Hedge": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -17917,29 +17917,6 @@
             "variant": "hedge.hedge",
             "name": "GeoportailFrance.Hedge_Hedge",
             "TileMatrixSet": "PM_7_18",
-            "apikey": "your_api_key_here"
-        },
-        "Hydro_ardennes_pyramide_raster_wmts": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    47.9409,
-                    1.99937
-                ],
-                [
-                    50.2587,
-                    5.87344
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 16,
-            "format": "image/jpeg",
-            "style": "normal",
-            "variant": "hydro_ardennes_pyramide_raster_wmts",
-            "name": "GeoportailFrance.Hydro_ardennes_pyramide_raster_wmts",
-            "TileMatrixSet": "PM_0_16",
             "apikey": "your_api_key_here"
         },
         "Orthophoto_1947_calvados": {
