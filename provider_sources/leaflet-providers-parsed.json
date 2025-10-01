@@ -3176,7 +3176,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2025-09-15",
-        "commit": "commit 48e4e879b2fccfe6accaaee697e1d23459d8e429 (build(deps): bump actions/setup-node from 4 to 5\n\nBumps [actions/setup-node](https://github.com/actions/setup-node) from 4 to 5.\n- [Release notes](https://github.com/actions/setup-node/releases)\n- [Commits](https://github.com/actions/setup-node/compare/v4...v5)\n\n---\nupdated-dependencies:\n- dependency-name: actions/setup-node\n  dependency-version: '5'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
+        "date_of_creation": "2025-10-01",
+        "commit": "commit 14a4b73c96477ca33d610b92355a1735a02440fd (build(deps-dev): bump chai from 6.0.1 to 6.2.0\n\nBumps [chai](https://github.com/chaijs/chai) from 6.0.1 to 6.2.0.\n- [Release notes](https://github.com/chaijs/chai/releases)\n- [Changelog](https://github.com/chaijs/chai/blob/main/History.md)\n- [Commits](https://github.com/chaijs/chai/compare/v6.0.1...v6.2.0)\n\n---\nupdated-dependencies:\n- dependency-name: chai\n  dependency-version: 6.2.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }
