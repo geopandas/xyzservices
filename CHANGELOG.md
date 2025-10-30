@@ -1,6 +1,27 @@
 Changelog
 =========
 
+xyzservices 2025.10.0 (October 30, 2025)
+----------------------------------------
+
+- Remove deprecated HERE API v2 and rename HEREv3 to HERE updated to API v3
+
+xyzservices 2025.4.0 (April 25, 2025)
+-------------------------------------
+
+- add UN clear map by @fede-bello in #186
+
+xyzservices 2025.1.0 (January 18, 2025)
+---------------------------------------
+
+- Remove OpenStreetMap.BlackAndWhite and properly mark broken as broken by @martinfleis in #183
+
+xyzservices 2024.9.0 (September 3, 2025)
+----------------------------------------
+
+- Adding back NASA's BlueMarble by @betolink in #172
+- Automated update of GeoportailFrance tiles
+
 xyzservices 2024.6.0 (June 6, 2024)
 ------------------------------------
 
