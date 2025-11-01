@@ -2600,7 +2600,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2025-10-30",
+        "date_of_creation": "2025-11-01",
         "commit": "commit 1c3c6b36d03cbd363a4a23663e52ea47dd8c95e9 (3.0.0)"
     }
 }

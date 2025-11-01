@@ -6386,29 +6386,6 @@
             "TileMatrixSet": "PM_6_18",
             "apikey": "your_api_key_here"
         },
-        "Ignf_cosia_2024": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    41.0,
-                    -5.5
-                ],
-                [
-                    52.0,
-                    10.0
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 18,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "IGNF_COSIA_2024",
-            "name": "GeoportailFrance.Ignf_cosia_2024",
-            "TileMatrixSet": "PM_6_18",
-            "apikey": "your_api_key_here"
-        },
         "Ignf_elevation_Elevationgridcoverage_Shadow": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -11998,6 +11975,29 @@
             "TileMatrixSet": "PM_4_18",
             "apikey": "your_api_key_here"
         },
+        "Orthoimagery_Ortho_sat_Pleiades_Mayotte_2025_06": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -13.0168,
+                    44.9963
+                ],
+                [
+                    -12.619,
+                    45.3096
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.MAYOTTE.2025-06",
+            "name": "GeoportailFrance.Orthoimagery_Ortho_sat_Pleiades_Mayotte_2025_06",
+            "TileMatrixSet": "PM_0_18",
+            "apikey": "your_api_key_here"
+        },
         "Orthoimagery_Ortho_sat_Rapideye_2010": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -17012,6 +17012,29 @@
             "variant": "ZONES-A-PROSPECTER-FORETS-SUBNATURELLES",
             "name": "GeoportailFrance.Zones-a-prospecter-forets-subnaturelles",
             "TileMatrixSet": "PM_4_16",
+            "apikey": "your_api_key_here"
+        },
+        "Zzz_score_pol_lumi_chiro_atelier3_sdk": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    48.5656,
+                    2.0879
+                ],
+                [
+                    49.0722,
+                    2.79035
+                ]
+            ],
+            "min_zoom": 12,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "ZZZ_Score_pol_lumi_chiro_Atelier3_SDK",
+            "name": "GeoportailFrance.Zzz_score_pol_lumi_chiro_atelier3_sdk",
+            "TileMatrixSet": "PM_12_18",
             "apikey": "your_api_key_here"
         },
         "Adminexpress-kdep-jpb-test-raster_wmts": {
