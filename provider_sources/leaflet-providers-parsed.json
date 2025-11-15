@@ -2600,7 +2600,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2025-11-01",
-        "commit": "commit 1c3c6b36d03cbd363a4a23663e52ea47dd8c95e9 (3.0.0)"
+        "date_of_creation": "2025-11-15",
+        "commit": "commit 8513b65d6a21e667fff274aaafe8544e37af4db9 (build(deps-dev): bump mocha from 11.7.4 to 11.7.5\n\nBumps [mocha](https://github.com/mochajs/mocha) from 11.7.4 to 11.7.5.\n- [Release notes](https://github.com/mochajs/mocha/releases)\n- [Changelog](https://github.com/mochajs/mocha/blob/v11.7.5/CHANGELOG.md)\n- [Commits](https://github.com/mochajs/mocha/compare/v11.7.4...v11.7.5)\n\n---\nupdated-dependencies:\n- dependency-name: mocha\n  dependency-version: 11.7.5\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }
