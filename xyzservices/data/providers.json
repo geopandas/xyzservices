@@ -242,6 +242,26 @@
             "ext": "png",
             "name": "Stadia.StamenTonerLite"
         },
+        "StamenTonerDark": {
+            "url": "https://tiles.stadiamaps.com/tiles/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "min_zoom": 0,
+            "max_zoom": 20,
+            "html_attribution": "&copy; <a href=\"https://www.stadiamaps.com/\" target=\"_blank\">Stadia Maps</a> &copy; <a href=\"https://www.stamen.com/\" target=\"_blank\">Stamen Design</a> &copy; <a href=\"https://openmaptiles.org/\" target=\"_blank\">OpenMapTiles</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) Stadia Maps (C) Stamen Design (C) OpenMapTiles (C) OpenStreetMap contributors",
+            "variant": "stamen_toner_dark",
+            "ext": "png",
+            "name": "Stadia.StamenTonerDark"
+        },
+        "StamenTonerBlacklite": {
+            "url": "https://tiles.stadiamaps.com/tiles/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "min_zoom": 0,
+            "max_zoom": 20,
+            "html_attribution": "&copy; <a href=\"https://www.stadiamaps.com/\" target=\"_blank\">Stadia Maps</a> &copy; <a href=\"https://www.stamen.com/\" target=\"_blank\">Stamen Design</a> &copy; <a href=\"https://openmaptiles.org/\" target=\"_blank\">OpenMapTiles</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) Stadia Maps (C) Stamen Design (C) OpenMapTiles (C) OpenStreetMap contributors",
+            "variant": "stamen_toner_blacklite",
+            "ext": "png",
+            "name": "Stadia.StamenTonerBlacklite"
+        },
         "StamenWatercolor": {
             "url": "https://tiles.stadiamaps.com/tiles/{variant}/{z}/{x}/{y}.{ext}",
             "min_zoom": 1,
@@ -1098,7 +1118,7 @@
     },
     "HERE": {
         "exploreDay": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1114,7 +1134,7 @@
             "name": "HERE.exploreDay"
         },
         "liteDay": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1130,7 +1150,7 @@
             "name": "HERE.liteDay"
         },
         "logisticsDay": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1146,7 +1166,7 @@
             "name": "HERE.logisticsDay"
         },
         "topoDay": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1162,7 +1182,7 @@
             "name": "HERE.topoDay"
         },
         "logisticsNight": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1178,7 +1198,7 @@
             "name": "HERE.logisticsNight"
         },
         "exploreNight": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1194,7 +1214,7 @@
             "name": "HERE.exploreNight"
         },
         "topoNight": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1210,7 +1230,7 @@
             "name": "HERE.topoNight"
         },
         "liteNight": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1226,7 +1246,7 @@
             "name": "HERE.liteNight"
         },
         "exploreSatelliteDay": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1242,7 +1262,7 @@
             "name": "HERE.exploreSatelliteDay"
         },
         "liteSatelliteDay": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1258,7 +1278,7 @@
             "name": "HERE.liteSatelliteDay"
         },
         "logisticsSatelliteDay": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1274,7 +1294,7 @@
             "name": "HERE.logisticsSatelliteDay"
         },
         "basicMap": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1290,7 +1310,7 @@
             "name": "HERE.basicMap"
         },
         "mapLabels": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1306,7 +1326,7 @@
             "name": "HERE.mapLabels"
         },
         "trafficFlow": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1322,7 +1342,7 @@
             "name": "HERE.trafficFlow"
         },
         "carnavDayGrey": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1338,7 +1358,7 @@
             "name": "HERE.carnavDayGrey"
         },
         "hybridDay": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1354,7 +1374,7 @@
             "name": "HERE.hybridDay"
         },
         "hybridDayMobile": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1370,7 +1390,7 @@
             "name": "HERE.hybridDayMobile"
         },
         "hybridDayTransit": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1386,7 +1406,7 @@
             "name": "HERE.hybridDayTransit"
         },
         "hybridDayGrey": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1402,7 +1422,7 @@
             "name": "HERE.hybridDayGrey"
         },
         "pedestrianDay": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1418,7 +1438,7 @@
             "name": "HERE.pedestrianDay"
         },
         "pedestrianNight": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1434,7 +1454,7 @@
             "name": "HERE.pedestrianNight"
         },
         "satelliteDay": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1450,7 +1470,7 @@
             "name": "HERE.satelliteDay"
         },
         "terrainDay": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1466,7 +1486,7 @@
             "name": "HERE.terrainDay"
         },
         "terrainDayMobile": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -6890,6 +6910,98 @@
             "variant": "IGNF_POI-TRAVAIL-EMPLOI-FORMATION",
             "name": "GeoportailFrance.Ignf_poi-travail-emploi-formation",
             "TileMatrixSet": "PM_6_18",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_rpg_parcelles-agricoles-categorisees_2024": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.4756,
+                    -63.3725
+                ],
+                [
+                    51.3121,
+                    55.9259
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_RPG_PARCELLES-AGRICOLES-CATEGORISEES_2024",
+            "name": "GeoportailFrance.Ignf_rpg_parcelles-agricoles-categorisees_2024",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_rpg_parcelles-eligibles-iae": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.4756,
+                    -63.3725
+                ],
+                [
+                    51.3121,
+                    55.9259
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_RPG_PARCELLES-ELIGIBLES-IAE",
+            "name": "GeoportailFrance.Ignf_rpg_parcelles-eligibles-iae",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_rpg_prairies-permanentes_2024": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.4756,
+                    -63.3725
+                ],
+                [
+                    51.3121,
+                    55.9259
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_RPG_PRAIRIES-PERMANENTES_2024",
+            "name": "GeoportailFrance.Ignf_rpg_prairies-permanentes_2024",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_rpg_zones-densite-homogene_2024": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.4756,
+                    -63.3725
+                ],
+                [
+                    51.3121,
+                    55.9259
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_RPG_ZONES-DENSITE-HOMOGENE_2024",
+            "name": "GeoportailFrance.Ignf_rpg_zones-densite-homogene_2024",
+            "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
         "Ign_nl_test_st_amand": {
@@ -17060,7 +17172,7 @@
             "TileMatrixSet": "PM_4_16",
             "apikey": "your_api_key_here"
         },
-        "Zzz_demo_raster_4_canaux_nodata_transparent": {
+        "Zzz_le_havre_3_canaux_sortie_3c_deflate_tiled": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -17074,16 +17186,16 @@
                     0.171565
                 ]
             ],
-            "min_zoom": 0,
-            "max_zoom": 19,
+            "min_zoom": 14,
+            "max_zoom": 20,
             "format": "image/png",
             "style": "normal",
-            "variant": "ZZZ_Demo_raster_4_canaux_nodata_transparent",
-            "name": "GeoportailFrance.Zzz_demo_raster_4_canaux_nodata_transparent",
-            "TileMatrixSet": "PM_0_19",
+            "variant": "ZZZ_Le_Havre_3_canaux_sortie_3c_deflate_tiled",
+            "name": "GeoportailFrance.Zzz_le_havre_3_canaux_sortie_3c_deflate_tiled",
+            "TileMatrixSet": "2154_5cm_14_20",
             "apikey": "your_api_key_here"
         },
-        "Zzz_demo_raster_4_canaux_nodata_transparent_jpg": {
+        "Zzz_le_havre_3_canaux_sortie_3c_deflate_tiled_jpeg": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -17097,13 +17209,82 @@
                     0.171565
                 ]
             ],
-            "min_zoom": 0,
-            "max_zoom": 19,
+            "min_zoom": 14,
+            "max_zoom": 20,
             "format": "image/jpeg",
             "style": "normal",
-            "variant": "ZZZ_Demo_raster_4_canaux_nodata_transparent_jpg",
-            "name": "GeoportailFrance.Zzz_demo_raster_4_canaux_nodata_transparent_jpg",
-            "TileMatrixSet": "PM_0_19",
+            "variant": "ZZZ_Le_Havre_3_canaux_sortie_3c_deflate_tiled_jpeg",
+            "name": "GeoportailFrance.Zzz_le_havre_3_canaux_sortie_3c_deflate_tiled_jpeg",
+            "TileMatrixSet": "2154_5cm_14_20",
+            "apikey": "your_api_key_here"
+        },
+        "Zzz_le_havre_3_canaux_sortie_3c_jpeg_tiled_jpeg": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    49.4331,
+                    0.0285308
+                ],
+                [
+                    49.616,
+                    0.171565
+                ]
+            ],
+            "min_zoom": 14,
+            "max_zoom": 20,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "ZZZ_Le_Havre_3_canaux_sortie_3c_jpeg_tiled_jpeg",
+            "name": "GeoportailFrance.Zzz_le_havre_3_canaux_sortie_3c_jpeg_tiled_jpeg",
+            "TileMatrixSet": "2154_5cm_14_20",
+            "apikey": "your_api_key_here"
+        },
+        "Zzz_le_havre_3_canaux_srce": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    49.4331,
+                    0.0285308
+                ],
+                [
+                    49.616,
+                    0.171565
+                ]
+            ],
+            "min_zoom": 14,
+            "max_zoom": 20,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "ZZZ_Le_Havre_3_canaux_srce",
+            "name": "GeoportailFrance.Zzz_le_havre_3_canaux_srce",
+            "TileMatrixSet": "2154_5cm_14_20",
+            "apikey": "your_api_key_here"
+        },
+        "Zzz_le_havre_4_canaux_sortie_4c_deflate_tiled": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    49.4331,
+                    0.0285308
+                ],
+                [
+                    49.616,
+                    0.171565
+                ]
+            ],
+            "min_zoom": 14,
+            "max_zoom": 20,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "ZZZ_Le_Havre_4_canaux_sortie_4c_deflate_tiled",
+            "name": "GeoportailFrance.Zzz_le_havre_4_canaux_sortie_4c_deflate_tiled",
+            "TileMatrixSet": "2154_5cm_14_20",
             "apikey": "your_api_key_here"
         },
         "Zzz_score_pol_lumi_chiro_atelier3_sdk": {
@@ -17313,29 +17494,6 @@
             "TileMatrixSet": "PM_0_10",
             "apikey": "your_api_key_here"
         },
-        "Testsrd-pcrs86-poitiers": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    46.5758,
-                    0.30613
-                ],
-                [
-                    46.5907,
-                    0.32753
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 10,
-            "format": "image/jpeg",
-            "style": "normal",
-            "variant": "testSRD-PCRS86-Poitiers",
-            "name": "GeoportailFrance.Testsrd-pcrs86-poitiers",
-            "TileMatrixSet": "PM_0_10",
-            "apikey": "your_api_key_here"
-        },
         "Test_mamp_pcrs": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -17403,29 +17561,6 @@
             "variant": "test_mamp_pcrs_marseille",
             "name": "GeoportailFrance.Test_mamp_pcrs_marseille",
             "TileMatrixSet": "2154_5cm_8_21",
-            "apikey": "your_api_key_here"
-        },
-        "Tuto_scan1000_srd": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    41.2349,
-                    8.35477
-                ],
-                [
-                    43.0475,
-                    9.75281
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 10,
-            "format": "image/jpeg",
-            "style": "normal",
-            "variant": "tuto_scan1000_SRD",
-            "name": "GeoportailFrance.Tuto_scan1000_srd",
-            "TileMatrixSet": "PM_0_10",
             "apikey": "your_api_key_here"
         }
     },

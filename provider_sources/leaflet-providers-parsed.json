@@ -241,6 +241,26 @@
             "ext": "png",
             "name": "Stadia.StamenTonerLite"
         },
+        "StamenTonerDark": {
+            "url": "https://tiles.stadiamaps.com/tiles/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "min_zoom": 0,
+            "max_zoom": 20,
+            "html_attribution": "&copy; <a href=\"https://www.stadiamaps.com/\" target=\"_blank\">Stadia Maps</a> &copy; <a href=\"https://www.stamen.com/\" target=\"_blank\">Stamen Design</a> &copy; <a href=\"https://openmaptiles.org/\" target=\"_blank\">OpenMapTiles</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) Stadia Maps (C) Stamen Design (C) OpenMapTiles (C) OpenStreetMap contributors",
+            "variant": "stamen_toner_dark",
+            "ext": "png",
+            "name": "Stadia.StamenTonerDark"
+        },
+        "StamenTonerBlacklite": {
+            "url": "https://tiles.stadiamaps.com/tiles/{variant}/{z}/{x}/{y}{r}.{ext}",
+            "min_zoom": 0,
+            "max_zoom": 20,
+            "html_attribution": "&copy; <a href=\"https://www.stadiamaps.com/\" target=\"_blank\">Stadia Maps</a> &copy; <a href=\"https://www.stamen.com/\" target=\"_blank\">Stamen Design</a> &copy; <a href=\"https://openmaptiles.org/\" target=\"_blank\">OpenMapTiles</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            "attribution": "(C) Stadia Maps (C) Stamen Design (C) OpenMapTiles (C) OpenStreetMap contributors",
+            "variant": "stamen_toner_blacklite",
+            "ext": "png",
+            "name": "Stadia.StamenTonerBlacklite"
+        },
         "StamenWatercolor": {
             "url": "https://tiles.stadiamaps.com/tiles/{variant}/{z}/{x}/{y}.{ext}",
             "min_zoom": 1,
@@ -966,7 +986,7 @@
     },
     "HERE": {
         "exploreDay": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -982,7 +1002,7 @@
             "name": "HERE.exploreDay"
         },
         "liteDay": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -998,7 +1018,7 @@
             "name": "HERE.liteDay"
         },
         "logisticsDay": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1014,7 +1034,7 @@
             "name": "HERE.logisticsDay"
         },
         "topoDay": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1030,7 +1050,7 @@
             "name": "HERE.topoDay"
         },
         "logisticsNight": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1046,7 +1066,7 @@
             "name": "HERE.logisticsNight"
         },
         "exploreNight": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1062,7 +1082,7 @@
             "name": "HERE.exploreNight"
         },
         "topoNight": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1078,7 +1098,7 @@
             "name": "HERE.topoNight"
         },
         "liteNight": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1094,7 +1114,7 @@
             "name": "HERE.liteNight"
         },
         "exploreSatelliteDay": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1110,7 +1130,7 @@
             "name": "HERE.exploreSatelliteDay"
         },
         "liteSatelliteDay": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1126,7 +1146,7 @@
             "name": "HERE.liteSatelliteDay"
         },
         "logisticsSatelliteDay": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1142,7 +1162,7 @@
             "name": "HERE.logisticsSatelliteDay"
         },
         "basicMap": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1158,7 +1178,7 @@
             "name": "HERE.basicMap"
         },
         "mapLabels": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1174,7 +1194,7 @@
             "name": "HERE.mapLabels"
         },
         "trafficFlow": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1190,7 +1210,7 @@
             "name": "HERE.trafficFlow"
         },
         "carnavDayGrey": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1206,7 +1226,7 @@
             "name": "HERE.carnavDayGrey"
         },
         "hybridDay": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1222,7 +1242,7 @@
             "name": "HERE.hybridDay"
         },
         "hybridDayMobile": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1238,7 +1258,7 @@
             "name": "HERE.hybridDayMobile"
         },
         "hybridDayTransit": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1254,7 +1274,7 @@
             "name": "HERE.hybridDayTransit"
         },
         "hybridDayGrey": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1270,7 +1290,7 @@
             "name": "HERE.hybridDayGrey"
         },
         "pedestrianDay": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1286,7 +1306,7 @@
             "name": "HERE.pedestrianDay"
         },
         "pedestrianNight": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1302,7 +1322,7 @@
             "name": "HERE.pedestrianNight"
         },
         "satelliteDay": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1318,7 +1338,7 @@
             "name": "HERE.satelliteDay"
         },
         "terrainDay": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -1334,7 +1354,7 @@
             "name": "HERE.terrainDay"
         },
         "terrainDayMobile": {
-            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
             "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
@@ -2600,7 +2620,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2025-11-15",
-        "commit": "commit 8513b65d6a21e667fff274aaafe8544e37af4db9 (build(deps-dev): bump mocha from 11.7.4 to 11.7.5\n\nBumps [mocha](https://github.com/mochajs/mocha) from 11.7.4 to 11.7.5.\n- [Release notes](https://github.com/mochajs/mocha/releases)\n- [Changelog](https://github.com/mochajs/mocha/blob/v11.7.5/CHANGELOG.md)\n- [Commits](https://github.com/mochajs/mocha/compare/v11.7.4...v11.7.5)\n\n---\nupdated-dependencies:\n- dependency-name: mocha\n  dependency-version: 11.7.5\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
+        "date_of_creation": "2025-11-22",
+        "commit": "commit 1c83b6ce1c65ee9c713ad4e841fe3a6ea0827d55 (docs(changelog): for #671)"
     }
 }
