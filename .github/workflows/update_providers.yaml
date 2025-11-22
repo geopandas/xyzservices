@@ -37,8 +37,8 @@ jobs:
 
       - name: Commit files
         run: |
-          git config --global user.name 'Martin Fleischmann'
-          git config --global user.email 'martinfleis@users.noreply.github.com'
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.comm'
           git add provider_sources/leaflet-providers-parsed.json
           git add xyzservices/data/providers.json
           git commit -am "Update leaflet providers/compress JSON [automated]"
