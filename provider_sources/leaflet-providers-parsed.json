@@ -2620,7 +2620,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2025-11-22",
-        "commit": "commit 1c83b6ce1c65ee9c713ad4e841fe3a6ea0827d55 (docs(changelog): for #671)"
+        "date_of_creation": "2025-12-15",
+        "commit": "commit bed4216d77bd9905240bcf49b3ac5c601cde08a4 (build(deps): bump actions/checkout from 5 to 6\n\nBumps [actions/checkout](https://github.com/actions/checkout) from 5 to 6.\n- [Release notes](https://github.com/actions/checkout/releases)\n- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/actions/checkout/compare/v5...v6)\n\n---\nupdated-dependencies:\n- dependency-name: actions/checkout\n  dependency-version: '6'\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }
