@@ -805,8 +805,8 @@
             "url": "https://{s}.api.tomtom.com/map/1/tile/{variant}/{style}/{z}/{x}/{y}.{ext}?key={apikey}",
             "variant": "basic",
             "max_zoom": 22,
-            "html_attribution": "<a href=\"https://tomtom.com\" target=\"_blank\">&copy;  1992 - 2025 TomTom.</a> ",
-            "attribution": "(C) 1992 - 2025 TomTom.",
+            "html_attribution": "<a href=\"https://tomtom.com\" target=\"_blank\">&copy;  1992 - 2026 TomTom.</a> ",
+            "attribution": "(C) 1992 - 2026 TomTom.",
             "subdomains": "abcd",
             "style": "main",
             "ext": "png",
@@ -817,8 +817,8 @@
             "url": "https://{s}.api.tomtom.com/map/1/tile/{variant}/{style}/{z}/{x}/{y}.{ext}?key={apikey}",
             "variant": "hybrid",
             "max_zoom": 22,
-            "html_attribution": "<a href=\"https://tomtom.com\" target=\"_blank\">&copy;  1992 - 2025 TomTom.</a> ",
-            "attribution": "(C) 1992 - 2025 TomTom.",
+            "html_attribution": "<a href=\"https://tomtom.com\" target=\"_blank\">&copy;  1992 - 2026 TomTom.</a> ",
+            "attribution": "(C) 1992 - 2026 TomTom.",
             "subdomains": "abcd",
             "style": "main",
             "ext": "png",
@@ -829,8 +829,8 @@
             "url": "https://{s}.api.tomtom.com/map/1/tile/{variant}/{style}/{z}/{x}/{y}.{ext}?key={apikey}",
             "variant": "labels",
             "max_zoom": 22,
-            "html_attribution": "<a href=\"https://tomtom.com\" target=\"_blank\">&copy;  1992 - 2025 TomTom.</a> ",
-            "attribution": "(C) 1992 - 2025 TomTom.",
+            "html_attribution": "<a href=\"https://tomtom.com\" target=\"_blank\">&copy;  1992 - 2026 TomTom.</a> ",
+            "attribution": "(C) 1992 - 2026 TomTom.",
             "subdomains": "abcd",
             "style": "main",
             "ext": "png",
@@ -1119,8 +1119,8 @@
     "HERE": {
         "exploreDay": {
             "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
+            "html_attribution": "Map &copy; 1987-2026 <a href=\"http://platform.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2026 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1135,8 +1135,8 @@
         },
         "liteDay": {
             "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
+            "html_attribution": "Map &copy; 1987-2026 <a href=\"http://platform.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2026 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1151,8 +1151,8 @@
         },
         "logisticsDay": {
             "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
+            "html_attribution": "Map &copy; 1987-2026 <a href=\"http://platform.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2026 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1167,8 +1167,8 @@
         },
         "topoDay": {
             "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
+            "html_attribution": "Map &copy; 1987-2026 <a href=\"http://platform.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2026 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1183,8 +1183,8 @@
         },
         "logisticsNight": {
             "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
+            "html_attribution": "Map &copy; 1987-2026 <a href=\"http://platform.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2026 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1199,8 +1199,8 @@
         },
         "exploreNight": {
             "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
+            "html_attribution": "Map &copy; 1987-2026 <a href=\"http://platform.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2026 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1215,8 +1215,8 @@
         },
         "topoNight": {
             "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
+            "html_attribution": "Map &copy; 1987-2026 <a href=\"http://platform.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2026 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1231,8 +1231,8 @@
         },
         "liteNight": {
             "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
+            "html_attribution": "Map &copy; 1987-2026 <a href=\"http://platform.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2026 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1247,8 +1247,8 @@
         },
         "exploreSatelliteDay": {
             "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
+            "html_attribution": "Map &copy; 1987-2026 <a href=\"http://platform.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2026 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1263,8 +1263,8 @@
         },
         "liteSatelliteDay": {
             "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
+            "html_attribution": "Map &copy; 1987-2026 <a href=\"http://platform.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2026 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1279,8 +1279,8 @@
         },
         "logisticsSatelliteDay": {
             "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
+            "html_attribution": "Map &copy; 1987-2026 <a href=\"http://platform.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2026 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1295,8 +1295,8 @@
         },
         "basicMap": {
             "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
+            "html_attribution": "Map &copy; 1987-2026 <a href=\"http://platform.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2026 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1311,8 +1311,8 @@
         },
         "mapLabels": {
             "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
+            "html_attribution": "Map &copy; 1987-2026 <a href=\"http://platform.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2026 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1327,8 +1327,8 @@
         },
         "trafficFlow": {
             "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
+            "html_attribution": "Map &copy; 1987-2026 <a href=\"http://platform.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2026 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1343,8 +1343,8 @@
         },
         "carnavDayGrey": {
             "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
+            "html_attribution": "Map &copy; 1987-2026 <a href=\"http://platform.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2026 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1359,8 +1359,8 @@
         },
         "hybridDay": {
             "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
+            "html_attribution": "Map &copy; 1987-2026 <a href=\"http://platform.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2026 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1375,8 +1375,8 @@
         },
         "hybridDayMobile": {
             "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
+            "html_attribution": "Map &copy; 1987-2026 <a href=\"http://platform.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2026 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1391,8 +1391,8 @@
         },
         "hybridDayTransit": {
             "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
+            "html_attribution": "Map &copy; 1987-2026 <a href=\"http://platform.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2026 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1407,8 +1407,8 @@
         },
         "hybridDayGrey": {
             "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
+            "html_attribution": "Map &copy; 1987-2026 <a href=\"http://platform.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2026 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1423,8 +1423,8 @@
         },
         "pedestrianDay": {
             "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
+            "html_attribution": "Map &copy; 1987-2026 <a href=\"http://platform.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2026 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1439,8 +1439,8 @@
         },
         "pedestrianNight": {
             "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
+            "html_attribution": "Map &copy; 1987-2026 <a href=\"http://platform.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2026 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1455,8 +1455,8 @@
         },
         "satelliteDay": {
             "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
+            "html_attribution": "Map &copy; 1987-2026 <a href=\"http://platform.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2026 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1471,8 +1471,8 @@
         },
         "terrainDay": {
             "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
+            "html_attribution": "Map &copy; 1987-2026 <a href=\"http://platform.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2026 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -1487,8 +1487,8 @@
         },
         "terrainDayMobile": {
             "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
+            "html_attribution": "Map &copy; 1987-2026 <a href=\"http://platform.here.com\">HERE</a>",
+            "attribution": "Map (C) 1987-2026 HERE",
             "subdomains": "1234",
             "mapID": "newest",
             "apiKey": "<insert your apiKey here>",
@@ -2951,6 +2951,98 @@
             "variant": "BDCARTO_ETAT-MAJOR.NIVEAU4",
             "name": "GeoportailFrance.Bdcarto_etat_major_Niveau4",
             "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Bdtopo-diff-bati": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.4756,
+                    -63.3725
+                ],
+                [
+                    51.3121,
+                    55.9259
+                ]
+            ],
+            "min_zoom": 7,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "BDTOPO-DIFF-BATI",
+            "name": "GeoportailFrance.Bdtopo-diff-bati",
+            "TileMatrixSet": "PM_7_18",
+            "apikey": "your_api_key_here"
+        },
+        "Bdtopo-diff-hydrographie": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.4756,
+                    -63.3725
+                ],
+                [
+                    51.3121,
+                    55.9259
+                ]
+            ],
+            "min_zoom": 7,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "BDTOPO-DIFF-HYDROGRAPHIE",
+            "name": "GeoportailFrance.Bdtopo-diff-hydrographie",
+            "TileMatrixSet": "PM_7_18",
+            "apikey": "your_api_key_here"
+        },
+        "Bdtopo-diff-reseau_routier": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.4756,
+                    -63.3725
+                ],
+                [
+                    51.3121,
+                    55.9259
+                ]
+            ],
+            "min_zoom": 7,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "BDTOPO-DIFF-RESEAU_ROUTIER",
+            "name": "GeoportailFrance.Bdtopo-diff-reseau_routier",
+            "TileMatrixSet": "PM_7_18",
+            "apikey": "your_api_key_here"
+        },
+        "Bdtopo-diff-zone_activites": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.4756,
+                    -63.3725
+                ],
+                [
+                    51.3121,
+                    55.9259
+                ]
+            ],
+            "min_zoom": 7,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "BDTOPO-DIFF-ZONE_ACTIVITES",
+            "name": "GeoportailFrance.Bdtopo-diff-zone_activites",
+            "TileMatrixSet": "PM_7_18",
             "apikey": "your_api_key_here"
         },
         "Besoin_Chaleur_Industriel": {
@@ -7050,6 +7142,29 @@
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
+        "Inrae_grain-bocager": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.2585,
+                    -5.18504
+                ],
+                [
+                    51.1303,
+                    9.69171
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 15,
+            "format": "image/png",
+            "style": "grains_bocagers",
+            "variant": "INRAE_GRAIN-BOCAGER",
+            "name": "GeoportailFrance.Inrae_grain-bocager",
+            "TileMatrixSet": "PM_6_15",
+            "apikey": "your_api_key_here"
+        },
         "Insee_Filosofi_Enfants_0_17_Ans_Secret": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -10199,29 +10314,6 @@
             "variant": "ORTHO-EDUGEO_PYR-PNG_WLD_WM",
             "name": "GeoportailFrance.Ortho-edugeo_pyr-png_wld_wm",
             "TileMatrixSet": "PM_6_18",
-            "apikey": "your_api_key_here"
-        },
-        "Ortho-pcrs_1-0_0m05_tiff-jpeg75_lamb93_34-c_2024-01-01": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    43.5733,
-                    3.38363
-                ],
-                [
-                    43.9766,
-                    3.99481
-                ]
-            ],
-            "min_zoom": 14,
-            "max_zoom": 22,
-            "format": "image/jpeg",
-            "style": "normal",
-            "variant": "ORTHO-PCRS_1-0_0M05_TIFF-JPEG75_LAMB93_34-C_2024-01-01",
-            "name": "GeoportailFrance.Ortho-pcrs_1-0_0m05_tiff-jpeg75_lamb93_34-c_2024-01-01",
-            "TileMatrixSet": "2154_5cm_14_22",
             "apikey": "your_api_key_here"
         },
         "Orthoimagery_Edugeo_Ajaccio1975": {
@@ -13997,6 +14089,29 @@
             "TileMatrixSet": "PM_6_19",
             "apikey": "your_api_key_here"
         },
+        "Orthoimagery_Orthophotos2021_2023": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -75.0,
+                    -179.0
+                ],
+                [
+                    75.0,
+                    179.0
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 19,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "ORTHOIMAGERY.ORTHOPHOTOS2021-2023",
+            "name": "GeoportailFrance.Orthoimagery_Orthophotos2021_2023",
+            "TileMatrixSet": "PM_6_19",
+            "apikey": "your_api_key_here"
+        },
         "Orthoimagery_Orthophotos2022": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -14251,6 +14366,29 @@
             "TileMatrixSet": "2154_5cm_6_22",
             "apikey": "your_api_key_here"
         },
+        "Pcrs86_blocg_80": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    46.6676,
+                    -0.0923602
+                ],
+                [
+                    47.0169,
+                    0.934121
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 22,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "PCRS86_blocG_80",
+            "name": "GeoportailFrance.Pcrs86_blocg_80",
+            "TileMatrixSet": "2154_5cm_6_22",
+            "apikey": "your_api_key_here"
+        },
         "Pcrs86_bloch_80": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -14318,6 +14456,29 @@
             "variant": "PCRS86_blocM_80",
             "name": "GeoportailFrance.Pcrs86_blocm_80",
             "TileMatrixSet": "2154_5cm_6_22",
+            "apikey": "your_api_key_here"
+        },
+        "Pcrs_34_2024_bloc_c": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    43.5733,
+                    3.38363
+                ],
+                [
+                    43.9766,
+                    3.99481
+                ]
+            ],
+            "min_zoom": 14,
+            "max_zoom": 22,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "PCRS_34_2024_Bloc_C",
+            "name": "GeoportailFrance.Pcrs_34_2024_bloc_c",
+            "TileMatrixSet": "2154_5cm_14_22",
             "apikey": "your_api_key_here"
         },
         "Pcrs_metropole_montpellier": {
@@ -17704,8 +17865,8 @@
     "OrdnanceSurvey": {
         "Road": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Road_3857/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right 2025",
-            "attribution": "Contains OS data (C) Crown copyright and database right 2025",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2026",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2026",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "min_zoom": 7,
             "max_zoom": 16,
@@ -17724,8 +17885,8 @@
         },
         "Road_27700": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Road_27700/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right 2025",
-            "attribution": "Contains OS data (C) Crown copyright and database right 2025",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2026",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2026",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "crs": "EPSG:27700",
             "min_zoom": 0,
@@ -17745,8 +17906,8 @@
         },
         "Outdoor": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Outdoor_3857/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right 2025",
-            "attribution": "Contains OS data (C) Crown copyright and database right 2025",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2026",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2026",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "min_zoom": 7,
             "max_zoom": 16,
@@ -17765,8 +17926,8 @@
         },
         "Outdoor_27700": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Outdoor_27700/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right 2025",
-            "attribution": "Contains OS data (C) Crown copyright and database right 2025",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2026",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2026",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "crs": "EPSG:27700",
             "min_zoom": 0,
@@ -17786,8 +17947,8 @@
         },
         "Light": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Light_3857/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right 2025",
-            "attribution": "Contains OS data (C) Crown copyright and database right 2025",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2026",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2026",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "min_zoom": 7,
             "max_zoom": 16,
@@ -17806,8 +17967,8 @@
         },
         "Light_27700": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Light_27700/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right 2025",
-            "attribution": "Contains OS data (C) Crown copyright and database right 2025",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2026",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2026",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "crs": "EPSG:27700",
             "min_zoom": 0,
@@ -17827,8 +17988,8 @@
         },
         "Leisure_27700": {
             "url": "https://api.os.uk/maps/raster/v1/zxy/Leisure_27700/{z}/{x}/{y}.png?key={key}",
-            "html_attribution": "Contains OS data &copy Crown copyright and database right 2025",
-            "attribution": "Contains OS data (C) Crown copyright and database right 2025",
+            "html_attribution": "Contains OS data &copy Crown copyright and database right 2026",
+            "attribution": "Contains OS data (C) Crown copyright and database right 2026",
             "key": "<insert your valid OS MapsAPI Key. Get a free key here - https://osdatahub.os.uk/>",
             "crs": "EPSG:27700",
             "min_zoom": 0,
