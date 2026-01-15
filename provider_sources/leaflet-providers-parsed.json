@@ -2620,7 +2620,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2026-01-01",
+        "date_of_creation": "2026-01-15",
         "commit": "commit de148ef7f6af2398909b648c95fb31175b48f682 (build(deps-dev): bump chai from 6.2.1 to 6.2.2\n\nBumps [chai](https://github.com/chaijs/chai) from 6.2.1 to 6.2.2.\n- [Release notes](https://github.com/chaijs/chai/releases)\n- [Changelog](https://github.com/chaijs/chai/blob/main/History.md)\n- [Commits](https://github.com/chaijs/chai/compare/v6.2.1...v6.2.2)\n\n---\nupdated-dependencies:\n- dependency-name: chai\n  dependency-version: 6.2.2\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>)"
     }
 }
