@@ -3068,6 +3068,29 @@
             "TileMatrixSet": "PM_7_18",
             "apikey": "your_api_key_here"
         },
+        "Belmessieri__raster_wmts": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    43.4872,
+                    5.4605
+                ],
+                [
+                    43.5229,
+                    5.47433
+                ]
+            ],
+            "min_zoom": 8,
+            "max_zoom": 21,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "BELMESSIERI__raster_wmts",
+            "name": "GeoportailFrance.Belmessieri__raster_wmts",
+            "TileMatrixSet": "2154_5cm_8_21",
+            "apikey": "your_api_key_here"
+        },
         "Besoin_Chaleur_Industriel": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -12392,11 +12415,11 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    -46.4976,
+                    -46.4975,
                     -63.1796
                 ],
                 [
-                    49.247,
+                    50.1242,
                     77.626
                 ]
             ],
@@ -14642,6 +14665,29 @@
             "TileMatrixSet": "2154_5cm_6_22",
             "apikey": "your_api_key_here"
         },
+        "Pcrs_34_2024_bloc_b": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    43.3941,
+                    3.0
+                ],
+                [
+                    43.9244,
+                    3.38599
+                ]
+            ],
+            "min_zoom": 14,
+            "max_zoom": 22,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "PCRS_34_2024_Bloc_B",
+            "name": "GeoportailFrance.Pcrs_34_2024_bloc_b",
+            "TileMatrixSet": "2154_5cm_14_22",
+            "apikey": "your_api_key_here"
+        },
         "Pcrs_34_2024_bloc_c": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -14686,6 +14732,29 @@
             "variant": "PCRS_Metropole_Montpellier",
             "name": "GeoportailFrance.Pcrs_metropole_montpellier",
             "TileMatrixSet": "2154_5cm_6_22",
+            "apikey": "your_api_key_here"
+        },
+        "Pcrs_chantier_aix_marseille_provence_tholonet_v02_": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    43.4305,
+                    5.44814
+                ],
+                [
+                    43.5491,
+                    5.67135
+                ]
+            ],
+            "min_zoom": 8,
+            "max_zoom": 21,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "PCRS_chantier_Aix_Marseille_Provence_Tholonet_V02_",
+            "name": "GeoportailFrance.Pcrs_chantier_aix_marseille_provence_tholonet_v02_",
+            "TileMatrixSet": "2154_5cm_8_21",
             "apikey": "your_api_key_here"
         },
         "Pcrs_chantier_d46_test_sde22": {
@@ -14909,12 +14978,35 @@
                     55.9259
                 ]
             ],
-            "min_zoom": 4,
-            "max_zoom": 16,
+            "min_zoom": 6,
+            "max_zoom": 18,
             "format": "image/png",
             "style": "POTENTIEL.SOLAIRE.PARKING500",
             "variant": "POTENTIEL.SOLAIRE.PARKING500",
             "name": "GeoportailFrance.Potentiel_Solaire_Parking500",
+            "TileMatrixSet": "PM_6_18",
+            "apikey": "your_api_key_here"
+        },
+        "Potentiel_Solaire_Parking500_Multi": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.4756,
+                    -63.3725
+                ],
+                [
+                    51.3121,
+                    55.9259
+                ]
+            ],
+            "min_zoom": 4,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "POTENTIEL.SOLAIRE.PARKING500",
+            "variant": "POTENTIEL.SOLAIRE.PARKING500.MULTI",
+            "name": "GeoportailFrance.Potentiel_Solaire_Parking500_Multi",
             "TileMatrixSet": "PM_4_16",
             "apikey": "your_api_key_here"
         },
@@ -16965,29 +17057,6 @@
             "TileMatrixSet": "2154_5cm_14_22",
             "apikey": "your_api_key_here"
         },
-        "Guadeloupe_2024_test_wmts": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    15.8191,
-                    -61.8157
-                ],
-                [
-                    16.5147,
-                    -61.0008
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 16,
-            "format": "image/jpeg",
-            "style": "normal",
-            "variant": "guadeloupe_2024_test_wmts",
-            "name": "GeoportailFrance.Guadeloupe_2024_test_wmts",
-            "TileMatrixSet": "PM_0_16",
-            "apikey": "your_api_key_here"
-        },
         "Hedge_Hedge": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -17144,8 +17213,31 @@
             "max_zoom": 21,
             "format": "image/jpeg",
             "style": "normal",
-            "variant": "pcrs_metropole_aix_marseille_provence_martigues_test",
+            "variant": "pcrs_metropole_aix_marseille_provence_Martigues_test",
             "name": "GeoportailFrance.Pcrs_metropole_aix_marseille_provence_martigues_test",
+            "TileMatrixSet": "2154_5cm_8_21",
+            "apikey": "your_api_key_here"
+        },
+        "Pcrs_metropole_aix_marseille_provence_ct6": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    43.3878,
+                    4.9626
+                ],
+                [
+                    43.4517,
+                    5.03877
+                ]
+            ],
+            "min_zoom": 8,
+            "max_zoom": 21,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "pcrs_metropole_aix_marseille_provence_ct6",
+            "name": "GeoportailFrance.Pcrs_metropole_aix_marseille_provence_ct6",
             "TileMatrixSet": "2154_5cm_8_21",
             "apikey": "your_api_key_here"
         },
@@ -17170,29 +17262,6 @@
             "variant": "route500logoplugin_WMTS",
             "name": "GeoportailFrance.Route500logoplugin_wmts",
             "TileMatrixSet": "PM_5_17",
-            "apikey": "your_api_key_here"
-        },
-        "Test_mamp_pcrs_restreint_def_martigues": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    43.3964,
-                    5.04928
-                ],
-                [
-                    43.4231,
-                    5.06254
-                ]
-            ],
-            "min_zoom": 8,
-            "max_zoom": 21,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "test_mamp_pcrs_restreint_def_Martigues",
-            "name": "GeoportailFrance.Test_mamp_pcrs_restreint_def_martigues",
-            "TileMatrixSet": "2154_5cm_8_21",
             "apikey": "your_api_key_here"
         }
     },
