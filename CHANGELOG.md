@@ -1,6 +1,12 @@
 Changelog
 =========
 
+xyzservices 2026.3.0 (March 30, 2026)
+-------------------------------------
+
+- Update URL of ThunderForest tiles and add Atlas style
+- Fix TileProvider.from_qms API URL.
+
 xyzservices 2025.10.0 (October 30, 2025)
 ----------------------------------------
 
