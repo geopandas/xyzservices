@@ -573,7 +573,7 @@ class TileProvider(Bunch):
 
         service_id = service["id"]
         service_details = json.load(
-            urllib.request.urlopen(f"{qms_api_url}/{service_id}")
+            urllib.request.urlopen(f"{qms_api_url}/{service_id}/")
         )
 
         return cls(
