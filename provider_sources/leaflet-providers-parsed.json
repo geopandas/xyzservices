@@ -126,13 +126,6 @@
         "attribution": "Map data: (C) OpenStreetMap contributors | Map style: (C) OpenRailwayMap (CC-BY-SA)",
         "name": "OpenRailwayMap"
     },
-    "OpenFireMap": {
-        "url": "http://openfiremap.org/hytiles/{z}/{x}/{y}.png",
-        "max_zoom": 19,
-        "html_attribution": "Map data: &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors | Map style: &copy; <a href=\"http://www.openfiremap.org\">OpenFireMap</a> (<a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">CC-BY-SA</a>)",
-        "attribution": "Map data: (C) OpenStreetMap contributors | Map style: (C) OpenFireMap (CC-BY-SA)",
-        "name": "OpenFireMap"
-    },
     "SafeCast": {
         "url": "https://s3.amazonaws.com/te512.safecast.org/{z}/{x}/{y}.png",
         "max_zoom": 16,
@@ -2629,7 +2622,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2026-04-02",
-        "commit": "commit 620d157808bd5c331837d0c1d7df47a0a080758a (docs(changelog): for #690)"
+        "date_of_creation": "2026-04-16",
+        "commit": "commit 719641d674836cf0e4fd65a90f1dbd54fbb873d1 (docs(changelog): #697)"
     }
 }
