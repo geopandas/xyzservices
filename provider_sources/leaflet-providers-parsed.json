@@ -2049,7 +2049,7 @@
     },
     "JusticeMap": {
         "income": {
-            "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
+            "url": "https://maptile3.org/2020/{size}/{variant}/{z}/{x}/{y}.png",
             "html_attribution": "<a href=\"http://www.justicemap.org/terms.php\">Justice Map</a>",
             "attribution": "Justice Map",
             "size": "county",
@@ -2067,7 +2067,7 @@
             "name": "JusticeMap.income"
         },
         "americanIndian": {
-            "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
+            "url": "https://maptile3.org/2020/{size}/{variant}/{z}/{x}/{y}.png",
             "html_attribution": "<a href=\"http://www.justicemap.org/terms.php\">Justice Map</a>",
             "attribution": "Justice Map",
             "size": "county",
@@ -2085,7 +2085,7 @@
             "name": "JusticeMap.americanIndian"
         },
         "asian": {
-            "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
+            "url": "https://maptile3.org/2020/{size}/{variant}/{z}/{x}/{y}.png",
             "html_attribution": "<a href=\"http://www.justicemap.org/terms.php\">Justice Map</a>",
             "attribution": "Justice Map",
             "size": "county",
@@ -2103,7 +2103,7 @@
             "name": "JusticeMap.asian"
         },
         "black": {
-            "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
+            "url": "https://maptile3.org/2020/{size}/{variant}/{z}/{x}/{y}.png",
             "html_attribution": "<a href=\"http://www.justicemap.org/terms.php\">Justice Map</a>",
             "attribution": "Justice Map",
             "size": "county",
@@ -2121,7 +2121,7 @@
             "name": "JusticeMap.black"
         },
         "hispanic": {
-            "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
+            "url": "https://maptile3.org/2020/{size}/{variant}/{z}/{x}/{y}.png",
             "html_attribution": "<a href=\"http://www.justicemap.org/terms.php\">Justice Map</a>",
             "attribution": "Justice Map",
             "size": "county",
@@ -2139,7 +2139,7 @@
             "name": "JusticeMap.hispanic"
         },
         "multi": {
-            "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
+            "url": "https://maptile3.org/2020/{size}/{variant}/{z}/{x}/{y}.png",
             "html_attribution": "<a href=\"http://www.justicemap.org/terms.php\">Justice Map</a>",
             "attribution": "Justice Map",
             "size": "county",
@@ -2157,7 +2157,7 @@
             "name": "JusticeMap.multi"
         },
         "nonWhite": {
-            "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
+            "url": "https://maptile3.org/2020/{size}/{variant}/{z}/{x}/{y}.png",
             "html_attribution": "<a href=\"http://www.justicemap.org/terms.php\">Justice Map</a>",
             "attribution": "Justice Map",
             "size": "county",
@@ -2175,7 +2175,7 @@
             "name": "JusticeMap.nonWhite"
         },
         "white": {
-            "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
+            "url": "https://maptile3.org/2020/{size}/{variant}/{z}/{x}/{y}.png",
             "html_attribution": "<a href=\"http://www.justicemap.org/terms.php\">Justice Map</a>",
             "attribution": "Justice Map",
             "size": "county",
@@ -2193,7 +2193,7 @@
             "name": "JusticeMap.white"
         },
         "plurality": {
-            "url": "https://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png",
+            "url": "https://maptile3.org/2020/{size}/{variant}/{z}/{x}/{y}.png",
             "html_attribution": "<a href=\"http://www.justicemap.org/terms.php\">Justice Map</a>",
             "attribution": "Justice Map",
             "size": "county",
@@ -2622,7 +2622,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2026-06-02",
-        "commit": "commit 719641d674836cf0e4fd65a90f1dbd54fbb873d1 (docs(changelog): #697)"
+        "date_of_creation": "2026-06-11",
+        "commit": "commit 3cee97052bd9cf0dd21aa8dcfc938497a63fdc8c (docs(changelog): #791)"
     }
 }
