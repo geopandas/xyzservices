@@ -9,6 +9,12 @@ on:
       - "*"
   schedule:
     - cron: "59 23 * * 3"
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Manual Release
+        default: test
+        required: false
 
 jobs:
   unittests:
