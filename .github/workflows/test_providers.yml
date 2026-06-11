@@ -1,14 +1,20 @@
 name: Test providers
 
 on:
-    push:
-      branches:
-        - "*"
-    pull_request:
-      branches:
-        - "*"
-    schedule:
-      - cron: "59 23 * * 3"
+  push:
+    branches:
+      - "*"
+  pull_request:
+    branches:
+      - "*"
+  schedule:
+    - cron: "59 23 * * 3"
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Manual Release
+        default: test
+        required: false
 
 jobs:
   provider_testing:
@@ -40,7 +46,6 @@ jobs:
 
       - name: Install xyzservices
         run: pip install .
-
 
       - name: test providers - bash
         run: pytest -v . -m request --cov=xyzservices --cov-append --cov-report term-missing --cov-report xml --color=yes -n auto
