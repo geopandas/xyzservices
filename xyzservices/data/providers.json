@@ -7237,6 +7237,29 @@
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
+        "Ignf_masque-carto-formations-vegetales_2010": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    15.832,
+                    -61.8098
+                ],
+                [
+                    16.5145,
+                    -61.002
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_MASQUE-CARTO-FORMATIONS-VEGETALES_2010",
+            "name": "GeoportailFrance.Ignf_masque-carto-formations-vegetales_2010",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
         "Ignf_masque-carto-formations-vegetales_2016": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -7326,6 +7349,29 @@
             "style": "normal",
             "variant": "IGNF_MASQUE-CARTO-FORMATIONS-VEGETALES_2023",
             "name": "GeoportailFrance.Ignf_masque-carto-formations-vegetales_2023",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_masque-carto-formations-vegetales_2024": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    15.832,
+                    -61.8098
+                ],
+                [
+                    16.5145,
+                    -61.002
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_MASQUE-CARTO-FORMATIONS-VEGETALES_2024",
+            "name": "GeoportailFrance.Ignf_masque-carto-formations-vegetales_2024",
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
@@ -13246,12 +13292,12 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    41.316,
-                    -5.16931
+                    -22.0,
+                    -10.0
                 ],
                 [
-                    51.1027,
-                    9.57647
+                    52.0,
+                    56.0
                 ]
             ],
             "min_zoom": 0,
