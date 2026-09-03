@@ -1399,93 +1399,103 @@
     },
     "CartoDB": {
         "Positron": {
-            "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png",
+            "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png?key={apikey}",
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
             "max_zoom": 20,
             "variant": "light_all",
+            "apikey": "<insert your API key here>",
             "name": "CartoDB.Positron"
         },
         "PositronNoLabels": {
-            "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png",
+            "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png?key={apikey}",
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
             "max_zoom": 20,
             "variant": "light_nolabels",
+            "apikey": "<insert your API key here>",
             "name": "CartoDB.PositronNoLabels"
         },
         "PositronOnlyLabels": {
-            "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png",
+            "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png?key={apikey}",
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
             "max_zoom": 20,
             "variant": "light_only_labels",
+            "apikey": "<insert your API key here>",
             "name": "CartoDB.PositronOnlyLabels"
         },
         "DarkMatter": {
-            "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png",
+            "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png?key={apikey}",
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
             "max_zoom": 20,
             "variant": "dark_all",
+            "apikey": "<insert your API key here>",
             "name": "CartoDB.DarkMatter"
         },
         "DarkMatterNoLabels": {
-            "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png",
+            "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png?key={apikey}",
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
             "max_zoom": 20,
             "variant": "dark_nolabels",
+            "apikey": "<insert your API key here>",
             "name": "CartoDB.DarkMatterNoLabels"
         },
         "DarkMatterOnlyLabels": {
-            "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png",
+            "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png?key={apikey}",
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
             "max_zoom": 20,
             "variant": "dark_only_labels",
+            "apikey": "<insert your API key here>",
             "name": "CartoDB.DarkMatterOnlyLabels"
         },
         "Voyager": {
-            "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png",
+            "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png?key={apikey}",
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
             "max_zoom": 20,
             "variant": "rastertiles/voyager",
+            "apikey": "<insert your API key here>",
             "name": "CartoDB.Voyager"
         },
         "VoyagerNoLabels": {
-            "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png",
+            "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png?key={apikey}",
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
             "max_zoom": 20,
             "variant": "rastertiles/voyager_nolabels",
+            "apikey": "<insert your API key here>",
             "name": "CartoDB.VoyagerNoLabels"
         },
         "VoyagerOnlyLabels": {
-            "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png",
+            "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png?key={apikey}",
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
             "max_zoom": 20,
             "variant": "rastertiles/voyager_only_labels",
+            "apikey": "<insert your API key here>",
             "name": "CartoDB.VoyagerOnlyLabels"
         },
         "VoyagerLabelsUnder": {
-            "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png",
+            "url": "https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png?key={apikey}",
             "html_attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
             "attribution": "(C) OpenStreetMap contributors (C) CARTO",
             "subdomains": "abcd",
             "max_zoom": 20,
             "variant": "rastertiles/voyager_labels_under",
+            "apikey": "<insert your API key here>",
             "name": "CartoDB.VoyagerLabelsUnder"
         }
     },
@@ -2622,7 +2632,7 @@
     },
     "_meta": {
         "description": "JSON representation of the leaflet providers defined by the leaflet-providers.js extension to Leaflet (https://github.com/leaflet-extras/leaflet-providers)",
-        "date_of_creation": "2026-09-02",
-        "commit": "commit 3cee97052bd9cf0dd21aa8dcfc938497a63fdc8c (docs(changelog): #791)"
+        "date_of_creation": "2026-09-03",
+        "commit": "commit 51cb2dc5f7487ba7a639da5694de92ef1a6a457a (docs(readme): fix apikey parameter for cartodb)"
     }
 }
