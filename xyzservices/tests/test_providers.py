@@ -247,3 +247,17 @@ def test_os(provider_name):
 
 # NOTE: AzureMaps are not tested as their free account is limited to
 # 5000 downloads (total, not per month)
+
+
+@pytest.mark.request
+@pytest.mark.parametrize("provider_name", xyz.CartoDB)
+def test_carto(provider_name):
+    try:
+        token = os.environ["CARTO"]
+    except KeyError:
+        pytest.xfail("Missing API token.")
+    if token == "":
+        pytest.xfail("Token empty.")
+
+    provider = xyz.CartoDB[provider_name](apikey=token)
+    get_test_result(provider, allow_403=False)

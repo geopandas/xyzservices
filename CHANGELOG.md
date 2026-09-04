@@ -1,6 +1,11 @@
 Changelog
 =========
 
+xyzservices 2026.9.0 (September 4, 2026)
+----------------------------------------
+
+- Update CartoDB tiles to require API key.
+
 xyzservices 2026.3.0 (March 30, 2026)
 -------------------------------------
 
