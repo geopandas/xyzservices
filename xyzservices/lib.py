@@ -7,6 +7,7 @@ from __future__ import annotations
 import json
 import urllib.request
 import uuid
+import warnings
 from typing import Callable
 from urllib.parse import quote
 
@@ -443,14 +444,23 @@ class TileProvider(Bunch):
 
         provider.update(kwargs)
 
-        if provider.requires_token():
-            raise ValueError(
-                "Token is required for this provider, but not provided. "
-                "You can either update TileProvider or pass respective keywords "
-                "to build_url()."
-            )
+        url = provider.get("url")
 
-        url = provider.pop("url")
+        if provider.requires_token():
+            if provider.name.startswith("CartoDB"):
+                url = url.removesuffix("?key={apikey}")
+                warnings.warn(
+                    "CartoDB tiles now require an API key. "
+                    "Please provide one to continue using the tiles. You can request "
+                    "the key at https://carto.com/basemaps/apikey/.",
+                    stacklevel=2,
+                )
+            else:
+                raise ValueError(
+                    "Token is required for this provider, but not provided. "
+                    "You can either update TileProvider or pass respective keywords "
+                    "to build_url()."
+                )
 
         if scale_factor:
             r = scale_factor
