@@ -44,11 +44,11 @@ of available XYZ tile sources. You can also explore it as a standard `dict` usin
 `TileProvider` object with all the details you may need:
 
 ```py
->>> xyz.CartoDB.Positron.url
-'https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png'
+>>> xyz.OpenStreetMap.Mapnik.url
+'https://tile.openstreetmap.org/{z}/{x}/{y}.png'
 
->>> xyz.CartoDB.Positron.attribution
-'(C) OpenStreetMap contributors (C) CARTO'
+>>> xyz.OpenStreetMap.Mapnik.attribution
+'(C) OpenStreetMap contributors'
 ```
 
 You can also check if the `TileProvider` needs API token and pass it to the object if

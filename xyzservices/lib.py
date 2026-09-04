@@ -419,14 +419,14 @@ class TileProvider(Bunch):
         --------
         >>> import xyzservices.providers as xyz
 
-        >>> xyz.CartoDB.DarkMatter.build_url()
-        'https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png'
+        >>> xyz.OpenStreetMap.Mapnik.build_url()
+        'https://tile.openstreetmap.org/{z}/{x}/{y}.png'
 
-        >>> xyz.CartoDB.DarkMatter.build_url(x=9, y=11, z=5)
-        'https://a.basemaps.cartocdn.com/dark_all/5/9/11.png'
+        >>> xyz.OpenStreetMap.Mapnik.build_url(x=9, y=11, z=5)
+        'https://tile.openstreetmap.org/5/9/11.png'
 
-        >>> xyz.CartoDB.DarkMatter.build_url(x=9, y=11, z=5, scale_factor="@2x")
-        'https://a.basemaps.cartocdn.com/dark_all/5/9/11@2x.png'
+        >>> xyz.CartoDB.DarkMatter.build_url(scale_factor="@2x", apikey='my-key')
+        'https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png?key=key'
 
         >>> xyz.MapBox.build_url(accessToken="my_token")
         'https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token=my_token'
