@@ -7224,26 +7224,49 @@
             "TileMatrixSet": "PM_6_18",
             "apikey": "your_api_key_here"
         },
-        "Ignf_lidar-hd_class-pm": {
+        "Ignf_indicateurs-nationaux-nature-en-ville_2017-2023": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    42.7659,
-                    -1.92907
+                    -21.3896,
+                    -63.1619
                 ],
                 [
-                    49.4904,
-                    7.16643
+                    51.089,
+                    55.8367
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_INDICATEURS-NATIONAUX-NATURE-EN-VILLE_2017-2023",
+            "name": "GeoportailFrance.Ignf_indicateurs-nationaux-nature-en-ville_2017-2023",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_lidar-hd_class": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -75.0,
+                    -179.0
+                ],
+                [
+                    75.0,
+                    179.0
                 ]
             ],
             "min_zoom": 0,
             "max_zoom": 18,
             "format": "image/png",
-            "style": "normal",
-            "variant": "IGNF_LIDAR-HD_CLASS-PM",
-            "name": "GeoportailFrance.Ignf_lidar-hd_class-pm",
+            "style": "cartes-classes-p",
+            "variant": "IGNF_LIDAR-HD_CLASS",
+            "name": "GeoportailFrance.Ignf_lidar-hd_class",
             "TileMatrixSet": "PM_0_18",
             "apikey": "your_api_key_here"
         },
@@ -7681,6 +7704,29 @@
             "style": "normal",
             "variant": "IGNF_PHOTOVOLTAIQUE-SOL_2021-2023",
             "name": "GeoportailFrance.Ignf_photovoltaique-sol_2021-2023",
+            "TileMatrixSet": "PM_6_18",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_plan-ign-hd": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -80.0,
+                    -180.0
+                ],
+                [
+                    80.0,
+                    180.0
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 18,
+            "format": "image/jpeg",
+            "style": "PLAN-IGN-HD",
+            "variant": "IGNF_PLAN-IGN-HD",
+            "name": "GeoportailFrance.Ignf_plan-ign-hd",
             "TileMatrixSet": "PM_6_18",
             "apikey": "your_api_key_here"
         },
@@ -16104,29 +16150,6 @@
             "TileMatrixSet": "2154_5cm_6_22",
             "apikey": "your_api_key_here"
         },
-        "Planign_Lidar_Sursol": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    -21.4074,
-                    6.00348
-                ],
-                [
-                    45.0986,
-                    55.8796
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 18,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "PLANIGN.LIDAR.SURSOL",
-            "name": "GeoportailFrance.Planign_Lidar_Sursol",
-            "TileMatrixSet": "PM_6_18",
-            "apikey": "your_api_key_here"
-        },
         "Planign_Lidar_Terrain": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -18841,6 +18864,29 @@
             "TileMatrixSet": "PM_0_18",
             "apikey": "your_api_key_here"
         },
+        "Part_logements_dpe_efg_commune": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.0871,
+                    -5.27344
+                ],
+                [
+                    51.2711,
+                    9.84375
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 16,
+            "format": "image/jpeg",
+            "style": "part_logements_dpe_efg_commune",
+            "variant": "part_logements_dpe_efg_commune",
+            "name": "GeoportailFrance.Part_logements_dpe_efg_commune",
+            "TileMatrixSet": "PM_0_16",
+            "apikey": "your_api_key_here"
+        },
         "Pcrs_metropole_aix_marseille_provence_marseillesud_test": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -18908,6 +18954,29 @@
             "variant": "route500logoplugin_WMTS",
             "name": "GeoportailFrance.Route500logoplugin_wmts",
             "TileMatrixSet": "PM_5_17",
+            "apikey": "your_api_key_here"
+        },
+        "Service_el11_wmts": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    47.8951,
+                    4.6234
+                ],
+                [
+                    48.7652,
+                    4.92393
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 22,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "service_el11_wmts",
+            "name": "GeoportailFrance.Service_el11_wmts",
+            "TileMatrixSet": "2154_5cm_0_22",
             "apikey": "your_api_key_here"
         },
         "Sigio_mask_v4": {
