@@ -8,6 +8,7 @@ import json
 import urllib.request
 import uuid
 import warnings
+from html import escape
 from typing import Callable
 from urllib.parse import quote
 
@@ -527,6 +528,8 @@ class TileProvider(Bunch):
         provider_info = ""
         for key, val in self.items():
             if key != "name":
+                if key != "html_attribution":
+                    val = escape(str(val))
                 provider_info += f"<dt><span>{key}</span></dt><dd>{val}</dd>"
 
         style = "" if inside else f"<style>{CSS_STYLE}</style>"

@@ -174,6 +174,22 @@ def test_html_repr(basic_provider, retina_provider):
     assert bunch_repr.count('<div class="xyz-header">') == 3
 
 
+def test_html_repr_escapes_values(private_provider, html_attr_provider):
+    private_repr = private_provider._repr_html_()
+    assert (
+        "<dt><span>accessToken</span></dt>"
+        "<dd>&lt;insert your access token here&gt;</dd>"
+    ) in private_repr
+    assert "<insert your access token here>" not in private_repr
+
+    # html_attribution is HTML and is rendered as such
+    html_attr_repr = html_attr_provider._repr_html_()
+    assert (
+        "<dt><span>html_attribution</span></dt><dd>"
+        '&copy; <a href="https://xyzservices.readthedocs.io">xyzservices</a></dd>'
+    ) in html_attr_repr
+
+
 def test_copy(basic_provider):
     basic2 = basic_provider.copy()
     assert isinstance(basic2, TileProvider)
