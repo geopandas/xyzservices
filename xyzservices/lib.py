@@ -104,11 +104,11 @@ class Bunch(dict):
         --------
         >>> import xyzservices.providers as xyz
         >>> len(xyz)
-        36
+        40
 
         >>> flat = xyz.flatten()
-        >>> len(xyz)
-        207
+        >>> len(flat)
+        974
 
         """
 
@@ -353,7 +353,7 @@ class TileProvider(Bunch):
     >>> public_provider.build_url()
     'https://myserver.com/tiles/{z}/{x}/{y}.png'
     >>> private_provider.build_url(x=12, y=21, z=11, accessToken="my_token")
-    'https://myserver.com/tiles/11/12/21.png?access_token=my_token'
+    'https://myserver.com/tiles/11/12/21.png?apikey=my_token'
 
     """
 
@@ -428,7 +428,7 @@ class TileProvider(Bunch):
         'https://tile.openstreetmap.org/5/9/11.png'
 
         >>> xyz.CartoDB.DarkMatter.build_url(scale_factor="@2x", apikey='my-key')
-        'https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png?key=key'
+        'https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png?key=my-key'
 
         >>> xyz.MapBox.build_url(accessToken="my_token")
         'https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token=my_token'
@@ -498,7 +498,7 @@ class TileProvider(Bunch):
         >>> xyz.MapBox.requires_token()
         True
 
-        >>> xyz.CartoDB.Positron
+        >>> xyz.OpenStreetMap.Mapnik.requires_token()
         False
 
         We can specify this API key by calling the object or overriding the attribute.
