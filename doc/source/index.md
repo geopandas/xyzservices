@@ -107,6 +107,7 @@ caption: Documentation
 hidden: true
 ---
 introduction
+ecosystem
 registration
 api
 gallery
